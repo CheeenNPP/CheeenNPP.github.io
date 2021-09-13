@@ -1,6 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>Ground Zero</title>
+    <url>/2021/09/13/Ground-Zero/</url>
+    <content><![CDATA[<p>一切的开端</p>
+<p><img src="https://cnpp-image.oss-cn-beijing.aliyuncs.com/my-blog/2021-09-13-ground-zero/mgsv-gz-fox.jpg" alt="mgsv-gz-fox"></p>
+<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><h2 id="正文"><a href="#正文" class="headerlink" title="正文"></a>正文</h2><h2 id="后记"><a href="#后记" class="headerlink" title="后记"></a>后记</h2>]]></content>
+      <categories>
+        <category>生活-随笔</category>
+      </categories>
+      <tags>
+        <tag>生活</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Hello World</title>
     <url>/2021/08/14/hello-world/</url>
     <content><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>

@@ -6,7 +6,7 @@
   <link href="https://cheeennpp.github.io/atom.xml" rel="self"/>
   
   <link href="https://cheeennpp.github.io/"/>
-  <updated>1985-10-26T08:15:00.000Z</updated>
+  <updated>2021-09-13T06:10:19.730Z</updated>
   <id>https://cheeennpp.github.io/</id>
   
   <author>
@@ -17,11 +17,37 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>Ground Zero</title>
+    <link href="https://cheeennpp.github.io/2021/09/13/Ground-Zero/"/>
+    <id>https://cheeennpp.github.io/2021/09/13/Ground-Zero/</id>
+    <published>2021-09-13T05:43:30.000Z</published>
+    <updated>2021-09-13T06:10:19.730Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;一切的开端&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://cnpp-image.oss-cn-beijing.aliyuncs.com/my-blog/2021-09-13-ground-zero/mgsv-gz-fox.jpg&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="生活-随笔" scheme="https://cheeennpp.github.io/categories/%E7%94%9F%E6%B4%BB-%E9%9A%8F%E7%AC%94/"/>
+    
+    
+    <category term="生活" scheme="https://cheeennpp.github.io/tags/%E7%94%9F%E6%B4%BB/"/>
+    
+  </entry>
+  
+  <entry>
     <title>Hello World</title>
     <link href="https://cheeennpp.github.io/2021/08/14/hello-world/"/>
     <id>https://cheeennpp.github.io/2021/08/14/hello-world/</id>
     <published>2021-08-13T17:21:06.488Z</published>
-    <updated>1985-10-26T08:15:00.000Z</updated>
+    <updated>2021-09-13T02:55:17.753Z</updated>
     
     
       
