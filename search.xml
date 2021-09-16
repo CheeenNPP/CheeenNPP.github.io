@@ -44,9 +44,9 @@
 <h2 id="随笔"><a href="#随笔" class="headerlink" title="随笔"></a>随笔</h2><p>HMC189A是<strong>Hittile</strong>的老产品，现在在<strong>Analog</strong>公司下已显示淘汰了：</p>
 <p><a href="https://www.analog.com/en/products/hmc189a.html">https://www.analog.com/en/products/hmc189a.html</a></p>
 <p>不过呢，这玩意是2-4GHz输入的<strong>2倍频器</strong>，也就是说，用常见的2.4GHz锁相环合成器搭配它，就能跃升至C波段，再也不用望着那些昂贵（且没啥拆机货）的C波段PLL、VCO流口水啦！当然HMC189A本身也是非常的便宜。</p>
-<p><img src="https://cnpp-image.oss-cn-beijing.aliyuncs.com/my-blog/HMC189A%E5%80%8D%E9%A2%91%E5%99%A8/1-1.png" alt="1-1"></p>
 <span id="more"></span>
 
+<p><img src="https://cnpp-image.oss-cn-beijing.aliyuncs.com/my-blog/HMC189A%E5%80%8D%E9%A2%91%E5%99%A8/1-1.png" alt="1-1"></p>
 <p>做了个小模块，用的是<strong>JLCPCB</strong>的四层阻抗工艺，7628层压结构。输入由ADF4351模块提供。ADF4351无分频的输出范围是2200-4400MHz，在这一段是较为纯净的正弦波。当然这个范围也正和HMC189A“般配”。</p>
 <p><img src="https://cnpp-image.oss-cn-beijing.aliyuncs.com/my-blog/HMC189A%E5%80%8D%E9%A2%91%E5%99%A8/1-2.jpg" alt="1-2"></p>
 <p>在大扫频范围下观察输出，感觉隔离度起码有20dB以上吧（只是随便测下）：</p>
