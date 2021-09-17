@@ -40,16 +40,16 @@
 <span id="more"></span>
 
 <h2 id="1-定向耦合器"><a href="#1-定向耦合器" class="headerlink" title="1.定向耦合器"></a>1.定向耦合器</h2><p>在射频电路中，定向耦合器是非常重要的部件，用于功率分配和获取反射信号等。下图是<a href="https://blog.minicircuits.com/directional-couplers-their-operation-and-application/">Mini-Circuits的介绍文章</a>中给出的定向耦合器示意图：</p>
-<p><img src="%E5%AE%9A%E5%90%91%E8%80%A6%E5%90%88%E5%99%A8%E4%B8%8E%E5%AE%9A%E5%90%91%E7%94%B5%E6%A1%A5/1-1.png" alt="1-1"></p>
+<p><img src="https://cnpp-image.oss-cn-beijing.aliyuncs.com/my-blog/%E5%AE%9A%E5%90%91%E8%80%A6%E5%90%88%E5%99%A8%E4%B8%8E%E5%AE%9A%E5%90%91%E7%94%B5%E6%A1%A5/1-1.png" alt="1-1"></p>
 <p>信号由P1输入，P2输出，一小部分信号耦合至P3（耦合端口）输出，而极少有信号从P4（隔离端口）输出。这样一来，P3相当于从P1至P2方向的信号中“采样”了少许。这种配置的一个典型应用就是从FMCW雷达的功率输出端采样参考信号，用于和回波混频（图片来自<a href="https://www.analog.com/media/en/technical-documentation/data-sheets/ADF4158.pdf">ADF4158-DataSheet</a>）：</p>
-<p><img src="%E5%AE%9A%E5%90%91%E8%80%A6%E5%90%88%E5%99%A8%E4%B8%8E%E5%AE%9A%E5%90%91%E7%94%B5%E6%A1%A5/1-2.png" alt="1-2"></p>
+<p><img src="https://cnpp-image.oss-cn-beijing.aliyuncs.com/my-blog/%E5%AE%9A%E5%90%91%E8%80%A6%E5%90%88%E5%99%A8%E4%B8%8E%E5%AE%9A%E5%90%91%E7%94%B5%E6%A1%A5/1-2.png" alt="1-2"></p>
 <p>回到上一张图片，若信号由P2射入P1，定向耦合器的特性会使得P3成为隔离端口，难以得到信号。不过，在由P2向P1耦合功率时，P1也向P2射有反射信号呢，可想而知，此时的反射波会在P3体现。这种配置常用于反射参数的测量（<a href="https://www.tek.com/document/poster/vector-network-analyzer-fundamentals">Vector Network Analyzer Fundamentals</a>）：</p>
-<p><img src="%E5%AE%9A%E5%90%91%E8%80%A6%E5%90%88%E5%99%A8%E4%B8%8E%E5%AE%9A%E5%90%91%E7%94%B5%E6%A1%A5/1-3.png" alt="1-3"></p>
+<p><img src="https://cnpp-image.oss-cn-beijing.aliyuncs.com/my-blog/%E5%AE%9A%E5%90%91%E8%80%A6%E5%90%88%E5%99%A8%E4%B8%8E%E5%AE%9A%E5%90%91%E7%94%B5%E6%A1%A5/1-3.png" alt="1-3"></p>
 <p>在分布参数电路中，利用近场电磁波的特性可以设计出平行线定向耦合器（《射频/微波电路导论》，雷振亚，西安电子科技大学出版社，P80）：</p>
-<p><img src="%E5%AE%9A%E5%90%91%E8%80%A6%E5%90%88%E5%99%A8%E4%B8%8E%E5%AE%9A%E5%90%91%E7%94%B5%E6%A1%A5/1-4.jpg" alt="1-4"></p>
+<p><img src="https://cnpp-image.oss-cn-beijing.aliyuncs.com/my-blog/%E5%AE%9A%E5%90%91%E8%80%A6%E5%90%88%E5%99%A8%E4%B8%8E%E5%AE%9A%E5%90%91%E7%94%B5%E6%A1%A5/1-4.jpg" alt="1-4"></p>
 <p>以及矩形波导定向耦合器（《简明微波》，梁昌洪，高等教育出版社，P237）：</p>
-<p><img src="%E5%AE%9A%E5%90%91%E8%80%A6%E5%90%88%E5%99%A8%E4%B8%8E%E5%AE%9A%E5%90%91%E7%94%B5%E6%A1%A5/1-5.jpg" alt="1-5"></p>
-<p><img src="%E5%AE%9A%E5%90%91%E8%80%A6%E5%90%88%E5%99%A8%E4%B8%8E%E5%AE%9A%E5%90%91%E7%94%B5%E6%A1%A5/1-6.jpg" alt="1-6"></p>
+<p><img src="https://cnpp-image.oss-cn-beijing.aliyuncs.com/my-blog/%E5%AE%9A%E5%90%91%E8%80%A6%E5%90%88%E5%99%A8%E4%B8%8E%E5%AE%9A%E5%90%91%E7%94%B5%E6%A1%A5/1-5.jpg" alt="1-5"></p>
+<p><img src="https://cnpp-image.oss-cn-beijing.aliyuncs.com/my-blog/%E5%AE%9A%E5%90%91%E8%80%A6%E5%90%88%E5%99%A8%E4%B8%8E%E5%AE%9A%E5%90%91%E7%94%B5%E6%A1%A5/1-6.jpg" alt="1-6"></p>
 <h2 id="2-定向电桥"><a href="#2-定向电桥" class="headerlink" title="2.定向电桥"></a>2.定向电桥</h2><p>有空再写</p>
 ]]></content>
       <categories>
