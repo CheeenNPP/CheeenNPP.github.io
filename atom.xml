@@ -6,7 +6,7 @@
   <link href="https://cheeennpp.github.io/atom.xml" rel="self"/>
   
   <link href="https://cheeennpp.github.io/"/>
-  <updated>2021-09-16T13:41:40.913Z</updated>
+  <updated>2021-09-17T15:01:57.573Z</updated>
   <id>https://cheeennpp.github.io/</id>
   
   <author>
@@ -21,11 +21,11 @@
     <link href="https://cheeennpp.github.io/2021/09/16/%E5%AE%9A%E5%90%91%E8%80%A6%E5%90%88%E5%99%A8%E4%B8%8E%E5%AE%9A%E5%90%91%E7%94%B5%E6%A1%A5/"/>
     <id>https://cheeennpp.github.io/2021/09/16/%E5%AE%9A%E5%90%91%E8%80%A6%E5%90%88%E5%99%A8%E4%B8%8E%E5%AE%9A%E5%90%91%E7%94%B5%E6%A1%A5/</id>
     <published>2021-09-16T03:33:54.000Z</published>
-    <updated>2021-09-16T13:41:40.913Z</updated>
+    <updated>2021-09-17T15:01:57.573Z</updated>
     
     
     <summary type="html">&lt;p&gt;&lt;img src=&quot;https://cnpp-image.oss-cn-beijing.aliyuncs.com/my-blog/%E5%AE%9A%E5%90%91%E8%80%A6%E5%90%88%E5%99%A8%E4%B8%8E%E5%AE%9A%E5%90%91%E7%94%B5%E6%A1%A5/title.png&quot; alt=&quot;title&quot;&gt;&lt;/p&gt;
-&lt;h2 id=&quot;随笔&quot;&gt;&lt;a href=&quot;#随笔&quot; class=&quot;headerlink&quot; title=&quot;随笔&quot;&gt;&lt;/a&gt;随笔&lt;/h2&gt;&lt;p&gt;近日在学习&lt;a href=&quot;https://hforsten.com/&quot;&gt;Henrik’s Blog&lt;/a&gt;的&lt;br&gt;&lt;a href=&quot;https://hforsten.com/improved-homemade-vna.html&quot;&gt;Improved homemade VNA&lt;/a&gt;一文，其中介绍了定向电桥的制作方法，并给出了下面两个资料链接：&lt;/p&gt;
+&lt;h2 id=&quot;0-引子&quot;&gt;&lt;a href=&quot;#0-引子&quot; class=&quot;headerlink&quot; title=&quot;0.引子&quot;&gt;&lt;/a&gt;0.引子&lt;/h2&gt;&lt;p&gt;近日在学习&lt;a href=&quot;https://hforsten.com/&quot;&gt;Henrik’s Blog&lt;/a&gt;的&lt;br&gt;&lt;a href=&quot;https://hforsten.com/improved-homemade-vna.html&quot;&gt;Improved homemade VNA&lt;/a&gt;一文，其中介绍了定向电桥的制作方法，并给出了下面两个资料链接：&lt;/p&gt;
 &lt;p&gt;&lt;a href=&quot;http://www.ke5fx.com/Broadband_Coupler_Dunsmore.pdf&quot;&gt;http://www.ke5fx.com/Broadband_Coupler_Dunsmore.pdf&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;&lt;a href=&quot;https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&amp;amp;arnumber=7345756&quot;&gt;https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&amp;amp;arnumber=7345756&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;此前一直没有理解这种几个电阻构成的网络是如何实现定向耦合的效果，今天终于有了一个较为清晰的认识。&lt;/p&gt;</summary>
