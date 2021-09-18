@@ -1,6 +1,43 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>Ground Zero</title>
+    <url>/2021/09/13/Ground-Zero/</url>
+    <content><![CDATA[<blockquote class="blockquote-center">
+            <p>一切的开端</p>
+
+          </blockquote>
+
+<p><img src="https://cnpp-image.oss-cn-beijing.aliyuncs.com/my-blog/2021-09-13-ground-zero/mgsv-gz-fox.jpg" alt="mgsv-gz-fox"></p>
+<p>现在的时间是2021年9月13日，我开始落笔写下第一篇博客。已然处于本科的随后一个秋季，保研的幻想已随着来去无踪的新冠疫情破灭，考研的决心却仍飘渺。在这些许已预料到的境遇之中，酝酿着慵懒颓唐的心态。</p>
+<p>手头几个颇有挑战与乐趣的项目业已搁置，要考研。许诺之中的电赛，本是见面眼红的死敌，却被一道晴天霹雳击开的天堑隔开，对峙良久，反而成了面面相觑。在这样一个马鞍点上，收起悬而未决之意，反而略有闲心，操刀小烹，组织些珍视的图文于次僻所，聊解心头的熵结。</p>
+]]></content>
+      <categories>
+        <category>生活-随笔</category>
+      </categories>
+      <tags>
+        <tag>生活</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Hello World</title>
+    <url>/2021/08/14/hello-world/</url>
+    <content><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
+<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p>
+<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p>
+<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p>
+<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
+]]></content>
+  </entry>
+  <entry>
     <title>HMC189A倍频器</title>
     <url>/2021/09/13/HMC189A%E5%80%8D%E9%A2%91%E5%99%A8/</url>
     <content><![CDATA[<p><img src="https://cnpp-image.oss-cn-beijing.aliyuncs.com/my-blog/HMC189A%E5%80%8D%E9%A2%91%E5%99%A8/title.jpg" alt="title"></p>
@@ -50,7 +87,25 @@
 <p>以及矩形波导定向耦合器（《简明微波》，梁昌洪，高等教育出版社，P237）：</p>
 <p><img src="https://cnpp-image.oss-cn-beijing.aliyuncs.com/my-blog/%E5%AE%9A%E5%90%91%E8%80%A6%E5%90%88%E5%99%A8%E4%B8%8E%E5%AE%9A%E5%90%91%E7%94%B5%E6%A1%A5/1-5.jpg" alt="1-5"></p>
 <p><img src="https://cnpp-image.oss-cn-beijing.aliyuncs.com/my-blog/%E5%AE%9A%E5%90%91%E8%80%A6%E5%90%88%E5%99%A8%E4%B8%8E%E5%AE%9A%E5%90%91%E7%94%B5%E6%A1%A5/1-6.jpg" alt="1-6"></p>
-<h2 id="2-定向电桥"><a href="#2-定向电桥" class="headerlink" title="2.定向电桥"></a>2.定向电桥</h2><p>有空再写</p>
+<p>这种定向耦合器损耗较小，一般工作在较高频率，缺点是低频下难以设计使用，而且带宽较小。若是在集中参数电路领域考虑，怎样的网络形式能实现类似定向耦合器的耦合与耦合特性呢？答案就是经典的<a href="https://en.wikipedia.org/wiki/Wheatstone_bridge">惠斯通电桥</a>。</p>
+<h2 id="2-定向电桥"><a href="#2-定向电桥" class="headerlink" title="2.定向电桥"></a>2.定向电桥</h2><p>在左侧是惠斯通电桥的基本形式：</p>
+<p><img src="https://cnpp-image.oss-cn-beijing.aliyuncs.com/my-blog/%E5%AE%9A%E5%90%91%E8%80%A6%E5%90%88%E5%99%A8%E4%B8%8E%E5%AE%9A%E5%90%91%E7%94%B5%E6%A1%A5/2-1.PNG" alt="2-1"></p>
+<p>如有</p>
+<p>$$<br>\frac{R_1}{R_5}=\frac{R_4}{R_3}，即R_1R_3=R_4R_5<br>$$</p>
+<p>则电桥平衡。于是先保证此平衡状态，由公式可知只要确保电阻比例一致即可，那么同步调整左右两臂电阻，并由对角线的两个电阻处就能取得按比例分配的<strong>源电压</strong>。暂且认为由$R_4$、$R_5$处取得电压（即从这两个电阻处引出接口）（电桥结构对称，选另一对电阻情况相同）。考虑端口阻抗匹配，令$R_4=R_5=Z_0$，那么只要保证$R_1R_3=Z_0^2$，电桥可以保持平衡。在此前提下选择$R_1$、$R_3$的比例，即可控制$V$分给$V_4$、$V_5$的比例，如右侧电路。</p>
+<p>按照这样的分配思路，使$V_4$较大，$V_5$较小，那么$V_4$处就可以作为传输端口<code>P2</code>，$V_5$处作为耦合端口<code>C</code>，引出端口，如下左图：</p>
+<p><img src="https://cnpp-image.oss-cn-beijing.aliyuncs.com/my-blog/%E5%AE%9A%E5%90%91%E8%80%A6%E5%90%88%E5%99%A8%E4%B8%8E%E5%AE%9A%E5%90%91%E7%94%B5%E6%A1%A5/2-2.PNG" alt="2-2"></p>
+<p>这样一来，耦合实现了，那么定向性是如何保证的呢？尝试将信号从传输端口<code>P2</code>接入，注意原<strong>输出电阻</strong>变为了信号源<strong>内阻</strong>，原<code>P1</code>处的源<strong>内阻</strong>现在作为<strong>输出电阻</strong>，如右侧电路。</p>
+<p>此时输入处于一个“悬空”的状态，可能不太好分析，不如把地（零电位点）设为源处，因为电桥中所有端口的电压我们都是通过电位差定义的（差分输入/输出），所以地的位置无关紧要（方便分析即可）。接着，再把电路“扭转”一下：</p>
+<p><img src="https://cnpp-image.oss-cn-beijing.aliyuncs.com/my-blog/%E5%AE%9A%E5%90%91%E8%80%A6%E5%90%88%E5%99%A8%E4%B8%8E%E5%AE%9A%E5%90%91%E7%94%B5%E6%A1%A5/2-3.PNG" alt="2-3"></p>
+<p>太巧妙了，此时又形成了一个电桥，再细看，耦合端口恰好就处于平衡处！还记得之前我们设置的条件，$R_1R_3=Z_0^2$，那么就在此刻惊天妙手，令$R_2=Z_0$，在上图的电桥中有:</p>
+<p>$$<br>\frac{Z_0}{R_3}=\frac{R_1}{R_2}<br>$$</p>
+<p>电桥平衡，耦合端口输出为零！</p>
+<p>如此一来，就由惠斯通电桥实现了定向耦合器，整理一下，如下图A所示：</p>
+<p><img src="https://cnpp-image.oss-cn-beijing.aliyuncs.com/my-blog/%E5%AE%9A%E5%90%91%E8%80%A6%E5%90%88%E5%99%A8%E4%B8%8E%E5%AE%9A%E5%90%91%E7%94%B5%E6%A1%A5/2-4.PNG" alt="2-4"></p>
+<p>最后还有一个小问题，那就是输出端口<code>P2</code>是悬空的，那么就需要加入一个平衡转不平衡的变压器（巴伦）。图B即是最终的配置。这里使用了传输线变压器作为巴伦，优点是带宽较高（有空再来研究一下这个）。定向电桥就完成了。同样，它可以正向、反向使用，用于功率分配和测量反射等，如图B、C、D。</p>
+<p>我认为，在保证线路阻抗一致性下，这种定向电桥的带宽主要取决于巴伦的性能，通常这个巴伦会使用一段同轴传输线外套数个高频磁环制成，工作带宽在100kHz至10GHz左右（<a href="https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=7345756">A 300kHz-13.5GHz Directional Bridge</a>）。</p>
+<h2 id="3-总结"><a href="#3-总结" class="headerlink" title="3.总结"></a>3.总结</h2><p>有空实际做一个试试吧。</p>
 ]]></content>
       <categories>
         <category>EE-随笔</category>
@@ -58,43 +113,6 @@
       <tags>
         <tag>射频</tag>
       </tags>
-  </entry>
-  <entry>
-    <title>Ground Zero</title>
-    <url>/2021/09/13/Ground-Zero/</url>
-    <content><![CDATA[<blockquote class="blockquote-center">
-            <p>一切的开端</p>
-
-          </blockquote>
-
-<p><img src="https://cnpp-image.oss-cn-beijing.aliyuncs.com/my-blog/2021-09-13-ground-zero/mgsv-gz-fox.jpg" alt="mgsv-gz-fox"></p>
-<p>现在的时间是2021年9月13日，我开始落笔写下第一篇博客。已然处于本科的随后一个秋季，保研的幻想已随着来去无踪的新冠疫情破灭，考研的决心却仍飘渺。在这些许已预料到的境遇之中，酝酿着慵懒颓唐的心态。</p>
-<p>手头几个颇有挑战与乐趣的项目业已搁置，要考研。许诺之中的电赛，本是见面眼红的死敌，却被一道晴天霹雳击开的天堑隔开，对峙良久，反而成了面面相觑。在这样一个马鞍点上，收起悬而未决之意，反而略有闲心，操刀小烹，组织些珍视的图文于次僻所，聊解心头的熵结。</p>
-]]></content>
-      <categories>
-        <category>生活-随笔</category>
-      </categories>
-      <tags>
-        <tag>生活</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Hello World</title>
-    <url>/2021/08/14/hello-world/</url>
-    <content><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
-]]></content>
   </entry>
   <entry>
     <title>博客结构</title>
