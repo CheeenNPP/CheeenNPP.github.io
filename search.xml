@@ -138,4 +138,26 @@
         <tag>射频</tag>
       </tags>
   </entry>
+  <entry>
+    <title>LMT4601 uModule</title>
+    <url>/2021/09/19/LMT4601-uModule/</url>
+    <content><![CDATA[<p><img src="https://cnpp-image.oss-cn-beijing.aliyuncs.com/my-blog/LMT4601-uModule/title.jpg" alt="title" /></p>
+<h2 id="随笔"><a class="markdownIt-Anchor" href="#随笔"></a> 随笔</h2>
+<p>今日在<s>海鲜市场</s><code>30包邮</code>提得两片带板凌力尔特<s>特供巧克力月饼</s>，参数看上去甚是生猛，更兼有远端检测和锁相环等花哨功能：</p>
+<p><img src="https://cnpp-image.oss-cn-beijing.aliyuncs.com/my-blog/LMT4601-uModule/2-1.png" alt="2-1" /></p>
+<span id="more"></span>
+<p><img src="https://cnpp-image.oss-cn-beijing.aliyuncs.com/my-blog/LMT4601-uModule/2-2.png" alt="2-2" /></p>
+<p><img src="https://cnpp-image.oss-cn-beijing.aliyuncs.com/my-blog/LMT4601-uModule/1-1.jpg" alt="1-1" /></p>
+<p><img src="https://cnpp-image.oss-cn-beijing.aliyuncs.com/my-blog/LMT4601-uModule/1-2.JPG" alt="1-2" /></p>
+<p><img src="https://cnpp-image.oss-cn-beijing.aliyuncs.com/my-blog/LMT4601-uModule/1-3.JPG" alt="1-3" /></p>
+<p><img src="https://cnpp-image.oss-cn-beijing.aliyuncs.com/my-blog/LMT4601-uModule/1-4.JPG" alt="1-4" /></p>
+<p>也许能做一个超大输出电流精密电源吧。</p>
+]]></content>
+      <categories>
+        <category>EE-随笔</category>
+      </categories>
+      <tags>
+        <tag>射频</tag>
+      </tags>
+  </entry>
 </search>
