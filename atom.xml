@@ -6,7 +6,7 @@
   <link href="https://cheeennpp.github.io/atom.xml" rel="self"/>
   
   <link href="https://cheeennpp.github.io/"/>
-  <updated>2021-09-20T06:15:20.090Z</updated>
+  <updated>2021-09-22T11:25:47.153Z</updated>
   <id>https://cheeennpp.github.io/</id>
   
   <author>
@@ -17,11 +17,53 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>HP-12C Calculator</title>
+    <link href="https://cheeennpp.github.io/2021/09/22/HP-12C-Calculator/"/>
+    <id>https://cheeennpp.github.io/2021/09/22/HP-12C-Calculator/</id>
+    <published>2021-09-22T10:52:15.000Z</published>
+    <updated>2021-09-22T11:25:47.153Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;&lt;img src=&quot;https://cnpp-image.oss-cn-beijing.aliyuncs.com/my-blog/HP-12C-Calculator/title.JPG&quot; alt=&quot;title&quot; /&gt;&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="计算器" scheme="https://cheeennpp.github.io/categories/%E8%AE%A1%E7%AE%97%E5%99%A8/"/>
+    
+    
+    <category term="Vintage" scheme="https://cheeennpp.github.io/tags/Vintage/"/>
+    
+    <category term="Hewlett-Packard" scheme="https://cheeennpp.github.io/tags/Hewlett-Packard/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>CASIO fx-50F Calculator</title>
+    <link href="https://cheeennpp.github.io/2021/09/22/CASIO-fx-50F-Calculator/"/>
+    <id>https://cheeennpp.github.io/2021/09/22/CASIO-fx-50F-Calculator/</id>
+    <published>2021-09-22T10:51:24.000Z</published>
+    <updated>2021-09-22T11:24:23.927Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;&lt;img src=&quot;https://cnpp-image.oss-cn-beijing.aliyuncs.com/my-blog/CASIO-fx-50F-Calculator/title.jpg&quot; alt=&quot;title&quot; /&gt;&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="计算器" scheme="https://cheeennpp.github.io/categories/%E8%AE%A1%E7%AE%97%E5%99%A8/"/>
+    
+    
+    <category term="CASIO" scheme="https://cheeennpp.github.io/tags/CASIO/"/>
+    
+    <category term="Vintage" scheme="https://cheeennpp.github.io/tags/Vintage/"/>
+    
+  </entry>
+  
+  <entry>
     <title>LMT4601 uModule</title>
     <link href="https://cheeennpp.github.io/2021/09/19/LMT4601-uModule/"/>
     <id>https://cheeennpp.github.io/2021/09/19/LMT4601-uModule/</id>
     <published>2021-09-19T14:59:49.000Z</published>
-    <updated>2021-09-20T06:15:20.090Z</updated>
+    <updated>2021-09-22T11:16:24.521Z</updated>
     
     
     <summary type="html">&lt;p&gt;&lt;img src=&quot;https://cnpp-image.oss-cn-beijing.aliyuncs.com/my-blog/LMT4601-uModule/title.jpg&quot; alt=&quot;title&quot; /&gt;&lt;/p&gt;
@@ -43,7 +85,7 @@
     <link href="https://cheeennpp.github.io/2021/09/16/%E5%AE%9A%E5%90%91%E8%80%A6%E5%90%88%E5%99%A8%E4%B8%8E%E5%AE%9A%E5%90%91%E7%94%B5%E6%A1%A5/"/>
     <id>https://cheeennpp.github.io/2021/09/16/%E5%AE%9A%E5%90%91%E8%80%A6%E5%90%88%E5%99%A8%E4%B8%8E%E5%AE%9A%E5%90%91%E7%94%B5%E6%A1%A5/</id>
     <published>2021-09-16T03:33:54.000Z</published>
-    <updated>2021-09-20T13:18:48.054Z</updated>
+    <updated>2021-09-22T11:18:18.899Z</updated>
     
     
     <summary type="html">&lt;p&gt;&lt;img src=&quot;https://cnpp-image.oss-cn-beijing.aliyuncs.com/my-blog/%E5%AE%9A%E5%90%91%E8%80%A6%E5%90%88%E5%99%A8%E4%B8%8E%E5%AE%9A%E5%90%91%E7%94%B5%E6%A1%A5/title.png&quot; alt=&quot;title&quot; /&gt;&lt;/p&gt;
@@ -56,7 +98,7 @@
     
     
     
-    <category term="BestCircuits" scheme="https://cheeennpp.github.io/categories/BestCircuits/"/>
+    <category term="魔法电路" scheme="https://cheeennpp.github.io/categories/%E9%AD%94%E6%B3%95%E7%94%B5%E8%B7%AF/"/>
     
     
     <category term="射频" scheme="https://cheeennpp.github.io/tags/%E5%B0%84%E9%A2%91/"/>
