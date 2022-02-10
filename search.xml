@@ -24,24 +24,6 @@
       </tags>
   </entry>
   <entry>
-    <title>CORDIC算法的理解和Verilog实现</title>
-    <url>/2022/01/19/CORDIC%E7%AE%97%E6%B3%95%E7%9A%84%E7%90%86%E8%A7%A3%E5%92%8CVerilog%E5%AE%9E%E7%8E%B0/</url>
-    <content><![CDATA[<p><img src="https://cnpp-image.oss-cn-beijing.aliyuncs.com/my-blog/CORDIC%E7%AE%97%E6%B3%95%E7%9A%84%E7%90%86%E8%A7%A3%E5%92%8CVerilog%E5%AE%9E%E7%8E%B0/title.jpg" alt="title" /></p>
-<h2 id="0引子"><a class="markdownIt-Anchor" href="#0引子"></a> 0.引子</h2>
-<span id="more"></span>
-<p><img src="https://cnpp-image.oss-cn-beijing.aliyuncs.com/my-blog/CORDIC%E7%AE%97%E6%B3%95%E7%9A%84%E7%90%86%E8%A7%A3%E5%92%8CVerilog%E5%AE%9E%E7%8E%B0/1-1.png" alt="1-1" /></p>
-<blockquote>
-<p>施工中</p>
-</blockquote>
-]]></content>
-      <categories>
-        <category>算法</category>
-      </categories>
-      <tags>
-        <tag>Verilog</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>Ground Zero</title>
     <url>/2021/09/13/Ground-Zero/</url>
     <content><![CDATA[<blockquote class="blockquote-center">
@@ -57,6 +39,24 @@
       </categories>
       <tags>
         <tag>生活</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>CORDIC算法的理解和Verilog实现</title>
+    <url>/2022/01/19/CORDIC%E7%AE%97%E6%B3%95%E7%9A%84%E7%90%86%E8%A7%A3%E5%92%8CVerilog%E5%AE%9E%E7%8E%B0/</url>
+    <content><![CDATA[<p><img src="https://cnpp-image.oss-cn-beijing.aliyuncs.com/my-blog/CORDIC%E7%AE%97%E6%B3%95%E7%9A%84%E7%90%86%E8%A7%A3%E5%92%8CVerilog%E5%AE%9E%E7%8E%B0/title.jpg" alt="title" /></p>
+<h2 id="0引子"><a class="markdownIt-Anchor" href="#0引子"></a> 0.引子</h2>
+<span id="more"></span>
+<p><img src="https://cnpp-image.oss-cn-beijing.aliyuncs.com/my-blog/CORDIC%E7%AE%97%E6%B3%95%E7%9A%84%E7%90%86%E8%A7%A3%E5%92%8CVerilog%E5%AE%9E%E7%8E%B0/1-1.png" alt="1-1" /></p>
+<blockquote>
+<p>施工中</p>
+</blockquote>
+]]></content>
+      <categories>
+        <category>算法</category>
+      </categories>
+      <tags>
+        <tag>Verilog</tag>
       </tags>
   </entry>
   <entry>
