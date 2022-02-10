@@ -158,6 +158,31 @@
 ]]></content>
   </entry>
   <entry>
+    <title>【EE随笔-3】 高线性度混频器ADL5350</title>
+    <url>/2022/02/10/%E3%80%90EE%E9%9A%8F%E7%AC%94-3%E3%80%91-%E9%AB%98%E7%BA%BF%E6%80%A7%E5%BA%A6%E6%B7%B7%E9%A2%91%E5%99%A8ADL5350/</url>
+    <content><![CDATA[<p><img src="https://cnpp-image.oss-cn-beijing.aliyuncs.com/my-blog/%E3%80%90EE%E9%9A%8F%E7%AC%94-3%E3%80%91-%E9%AB%98%E7%BA%BF%E6%80%A7%E5%BA%A6%E6%B7%B7%E9%A2%91%E5%99%A8ADL5350/title.png" alt="title" /></p>
+<h2 id="随笔"><a class="markdownIt-Anchor" href="#随笔"></a> 随笔</h2>
+<p>好基友LingMao这两天在为新项目选型，提到了ADI的一款高线性度混频器<code>ADL5350</code>：</p>
+<p><a href="https://www.analog.com/en/products/adl5350.html">https://www.analog.com/en/products/adl5350.html</a></p>
+<p><img src="https://cnpp-image.oss-cn-beijing.aliyuncs.com/my-blog/%E3%80%90EE%E9%9A%8F%E7%AC%94-3%E3%80%91-%E9%AB%98%E7%BA%BF%E6%80%A7%E5%BA%A6%E6%B7%B7%E9%A2%91%E5%99%A8ADL5350/1-1.png" alt="1-1" /></p>
+<p>并发现在ADI技术论坛上有这样一个回复，ADL5350的RF和IF在芯片内是连在一起的，这下在使用中，输出滤波器不仅需要对付混频后的镜像，还要对付下RF或者IF信号（因为ADL5350既可以用作上变频器，也可以用作下变频器）。在手册中，给出了ADL5350的原理说明，它是一种GaAs pHEMT （氮化镓赝调制掺杂异质结场效应晶体管）单端无源混频器，通过FET结沟道的导电性变化来调制RF信号：</p>
+<span id="more"></span>
+<p><img src="https://cnpp-image.oss-cn-beijing.aliyuncs.com/my-blog/%E3%80%90EE%E9%9A%8F%E7%AC%94-3%E3%80%91-%E9%AB%98%E7%BA%BF%E6%80%A7%E5%BA%A6%E6%B7%B7%E9%A2%91%E5%99%A8ADL5350/1-2.png" alt="1-2" /></p>
+<p>芯片外围需要不少LC网络。RF信号经过带通网络，抑制镜像并减弱宽带噪声。RF与IF在芯片内一同连接到时变负载上，这样RF信号就会受LO信号调制，并在IF端由带通网络抑制RF信号并选出混频信号。RF和IF端口应该是对称设计，并且可以互换。</p>
+<p>此外ADL5350使用了FET作为混频核心，但属于无源混频器，这使我想起了之前在电赛训练器件，经常会有“不允许使用其他有源器件”的限制，当时就“二极管是不是有源器件”、“变压器是不是有源器件”展开过激烈的讨论（本质还是想钻空子整活）。混频器也有有源与无源之分，但我未作详细的了解。在看到ADL5350手册中“The ADL5350 is a GaAs pHEMT, single-ended, passive mixer with an integrated LO buffer amplifier.”中的Passive一词时，一时不知如何翻译。索性去查询了一下电学中Passive的含义：</p>
+<p><a href="https://www.electrical4u.com/active-and-passive-elements-of-electrical-circuit/">https://www.electrical4u.com/active-and-passive-elements-of-electrical-circuit/</a></p>
+<blockquote>
+<p>A passive component is an electronic component which can only receive energy, which it can either dissipate, absorb or store it in an electric field or a magnetic field. Passive elements do not need any form of electrical power to operate.</p>
+</blockquote>
+<p>如此想来，混频核心需要使用电源的吉尔伯特型混频器、收音机里常用的单晶体管混频器等属于有源混频器；二极管混频器属于无源混频器。ADL5350的混频核心是时变负载，在工作时吸收RF或IF信号，因此属于无源混频器；同样，开关混频器也属于无源混频器。</p>
+<p>其实我认为做有源与无源的区分不是重点，重点是了解各种混频器的性能和特点，比如混频增益与线性度等。</p>
+<p>此外，在讨论中有群友提到：平衡混频器有一种用法，可以从IF口输入DC电流，RF的信号就会直接从LO出去，调电流就能调衰减。感觉是个值得研究的点。正巧我与LingMao在讨论衰减器与检波器配合完成较精准的电平控制的问题，衰减器的选型很是麻烦，不知这种混频器作为衰减器的用法能不能提供另一种可能。</p>
+]]></content>
+      <tags>
+        <tag>射频</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>博客结构</title>
     <url>/2021/09/13/%E5%8D%9A%E5%AE%A2%E7%BB%93%E6%9E%84/</url>
     <content><![CDATA[<h2 id="前言"><a class="markdownIt-Anchor" href="#前言"></a> 前言</h2>
@@ -224,31 +249,6 @@
       <categories>
         <category>射频电路</category>
       </categories>
-      <tags>
-        <tag>射频</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>【EE随笔-3】 高线性度混频器ADL5350</title>
-    <url>/2022/02/10/%E3%80%90EE%E9%9A%8F%E7%AC%94-3%E3%80%91-%E9%AB%98%E7%BA%BF%E6%80%A7%E5%BA%A6%E6%B7%B7%E9%A2%91%E5%99%A8ADL5350/</url>
-    <content><![CDATA[<p><img src="https://cnpp-image.oss-cn-beijing.aliyuncs.com/my-blog/%E3%80%90EE%E9%9A%8F%E7%AC%94-3%E3%80%91-%E9%AB%98%E7%BA%BF%E6%80%A7%E5%BA%A6%E6%B7%B7%E9%A2%91%E5%99%A8ADL5350/title.png" alt="title" /></p>
-<h2 id="随笔"><a class="markdownIt-Anchor" href="#随笔"></a> 随笔</h2>
-<p>好基友LingMao这两天在为新项目选型，提到了ADI的一款高线性度混频器<code>ADL5350</code>：</p>
-<p><a href="https://www.analog.com/en/products/adl5350.html">https://www.analog.com/en/products/adl5350.html</a></p>
-<p><img src="https://cnpp-image.oss-cn-beijing.aliyuncs.com/my-blog/%E3%80%90EE%E9%9A%8F%E7%AC%94-3%E3%80%91-%E9%AB%98%E7%BA%BF%E6%80%A7%E5%BA%A6%E6%B7%B7%E9%A2%91%E5%99%A8ADL5350/1-1.png" alt="1-1" /></p>
-<p>并发现在ADI技术论坛上有这样一个回复，ADL5350的RF和IF在芯片内是连在一起的，这下在使用中，输出滤波器不仅需要对付混频后的镜像，还要对付下RF或者IF信号（因为ADL5350既可以用作上变频器，也可以用作下变频器）。在手册中，给出了ADL5350的原理说明，它是一种GaAs pHEMT （氮化镓赝调制掺杂异质结场效应晶体管）单端无源混频器，通过FET结沟道的导电性变化来调制RF信号：</p>
-<span id="more"></span>
-<p><img src="https://cnpp-image.oss-cn-beijing.aliyuncs.com/my-blog/%E3%80%90EE%E9%9A%8F%E7%AC%94-3%E3%80%91-%E9%AB%98%E7%BA%BF%E6%80%A7%E5%BA%A6%E6%B7%B7%E9%A2%91%E5%99%A8ADL5350/1-2.png" alt="1-2" /></p>
-<p>芯片外围需要不少LC网络。RF信号经过带通网络，抑制镜像并减弱宽带噪声。RF与IF在芯片内一同连接到时变负载上，这样RF信号就会受LO信号调制，并在IF端由带通网络抑制RF信号并选出混频信号。RF和IF端口应该是对称设计，并且可以互换。</p>
-<p>此外ADL5350使用了FET作为混频核心，但属于无源混频器，这使我想起了之前在电赛训练器件，经常会有“不允许使用其他有源器件”的限制，当时就“二极管是不是有源器件”、“变压器是不是有源器件”展开过激烈的讨论（本质还是想钻空子整活）。混频器也有有源与无源之分，但我未作详细的了解。在看到ADL5350手册中“The ADL5350 is a GaAs pHEMT, single-ended, passive mixer with an integrated LO buffer amplifier.”中的Passive一词时，一时不知如何翻译。索性去查询了一下电学中Passive的含义：</p>
-<p><a href="https://www.electrical4u.com/active-and-passive-elements-of-electrical-circuit/">https://www.electrical4u.com/active-and-passive-elements-of-electrical-circuit/</a></p>
-<blockquote>
-<p>A passive component is an electronic component which can only receive energy, which it can either dissipate, absorb or store it in an electric field or a magnetic field. Passive elements do not need any form of electrical power to operate.</p>
-</blockquote>
-<p>如此想来，混频核心需要使用电源的吉尔伯特型混频器、收音机里常用的单晶体管混频器等属于有源混频器；二极管混频器属于无源混频器。ADL5350的混频核心是时变负载，在工作时吸收RF或IF信号，因此属于无源混频器；同样，开关混频器也属于无源混频器。</p>
-<p>其实我认为做有源与无源的区分不是重点，重点是了解各种混频器的性能和特点，比如混频增益与线性度等。</p>
-<p>此外，在讨论中有群友提到：平衡混频器有一种用法，可以从IF口输入DC电流，RF的信号就会直接从LO出去，调电流就能调衰减。感觉是个值得研究的点。正巧我与LingMao在讨论衰减器与检波器配合完成较精准的电平控制的问题，衰减器的选型很是麻烦，不知这种混频器作为衰减器的用法能不能提供另一种可能。</p>
-]]></content>
       <tags>
         <tag>射频</tag>
       </tags>
