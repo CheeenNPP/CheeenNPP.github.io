@@ -6,7 +6,7 @@
   <link href="https://cheeennpp.github.io/atom.xml" rel="self"/>
   
   <link href="https://cheeennpp.github.io/"/>
-  <updated>2022-01-12T09:30:39.094Z</updated>
+  <updated>2022-02-10T15:45:03.642Z</updated>
   <id>https://cheeennpp.github.io/</id>
   
   <author>
@@ -17,11 +17,53 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>【EE随笔-3】 高线性度混频器ADL5350</title>
+    <link href="https://cheeennpp.github.io/2022/02/10/%E3%80%90EE%E9%9A%8F%E7%AC%94-3%E3%80%91-%E9%AB%98%E7%BA%BF%E6%80%A7%E5%BA%A6%E6%B7%B7%E9%A2%91%E5%99%A8ADL5350/"/>
+    <id>https://cheeennpp.github.io/2022/02/10/%E3%80%90EE%E9%9A%8F%E7%AC%94-3%E3%80%91-%E9%AB%98%E7%BA%BF%E6%80%A7%E5%BA%A6%E6%B7%B7%E9%A2%91%E5%99%A8ADL5350/</id>
+    <published>2022-02-10T14:04:31.000Z</published>
+    <updated>2022-02-10T15:45:03.642Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;&lt;img src=&quot;https://cnpp-image.oss-cn-beijing.aliyuncs.com/my-blog/%E3%80%90EE%E9%9A%8F%E7%AC%94-3%E3%80%91-%E9%AB%98%E7%BA%BF%E6%80%A7%E5%BA%A6%E6%B7%B7%E9%A2%91%E5%99%A8ADL5350/title.png&quot; alt=&quot;title&quot; /&gt;&lt;/p&gt;
+&lt;h2 id=&quot;随笔&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#随笔&quot;&gt;&lt;/a&gt; 随笔&lt;/h2&gt;
+&lt;p&gt;好基友LingMao这两天在为新项目选型，提到了ADI的一款高线性度混频器&lt;code&gt;ADL5350&lt;/code&gt;：&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://www.analog.com/en/products/adl5350.html&quot;&gt;https://www.analog.com/en/products/adl5350.html&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;%E3%80%90EE%E9%9A%8F%E7%AC%94-3%E3%80%91-%E9%AB%98%E7%BA%BF%E6%80%A7%E5%BA%A6%E6%B7%B7%E9%A2%91%E5%99%A8ADL5350/1-1.png&quot; alt=&quot;1-1&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;并发现在ADI技术论坛上有这样一个回复，ADL5350的RF和IF在芯片内是连在一起的，这下在使用中，输出滤波器不仅需要对付混频后的镜像，还要对付下RF或者IF信号（因为ADL5350既可以用作上变频器，也可以用作下变频器）。在手册中，给出了ADL5350的原理说明，它是一种GaAs pHEMT （氮化镓赝调制掺杂异质结场效应晶体管）单端无源混频器，通过FET结沟道的导电性变化来调制RF信号：&lt;/p&gt;</summary>
+    
+    
+    
+    
+    <category term="射频" scheme="https://cheeennpp.github.io/tags/%E5%B0%84%E9%A2%91/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>CORDIC算法的理解和Verilog实现</title>
+    <link href="https://cheeennpp.github.io/2022/01/19/CORDIC%E7%AE%97%E6%B3%95%E7%9A%84%E7%90%86%E8%A7%A3%E5%92%8CVerilog%E5%AE%9E%E7%8E%B0/"/>
+    <id>https://cheeennpp.github.io/2022/01/19/CORDIC%E7%AE%97%E6%B3%95%E7%9A%84%E7%90%86%E8%A7%A3%E5%92%8CVerilog%E5%AE%9E%E7%8E%B0/</id>
+    <published>2022-01-19T11:40:32.000Z</published>
+    <updated>2022-02-10T13:58:39.952Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;&lt;img src=&quot;https://cnpp-image.oss-cn-beijing.aliyuncs.com/my-blog/CORDIC%E7%AE%97%E6%B3%95%E7%9A%84%E7%90%86%E8%A7%A3%E5%92%8CVerilog%E5%AE%9E%E7%8E%B0/title.jpg&quot; alt=&quot;title&quot; /&gt;&lt;/p&gt;
+&lt;h2 id=&quot;0引子&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#0引子&quot;&gt;&lt;/a&gt; 0.引子&lt;/h2&gt;</summary>
+    
+    
+    
+    <category term="算法" scheme="https://cheeennpp.github.io/categories/%E7%AE%97%E6%B3%95/"/>
+    
+    
+    <category term="Verilog" scheme="https://cheeennpp.github.io/tags/Verilog/"/>
+    
+  </entry>
+  
+  <entry>
     <title>射频电路的自动增益控制</title>
     <link href="https://cheeennpp.github.io/2022/01/12/%E5%B0%84%E9%A2%91%E7%94%B5%E8%B7%AF%E7%9A%84%E8%87%AA%E5%8A%A8%E5%A2%9E%E7%9B%8A%E6%8E%A7%E5%88%B6/"/>
     <id>https://cheeennpp.github.io/2022/01/12/%E5%B0%84%E9%A2%91%E7%94%B5%E8%B7%AF%E7%9A%84%E8%87%AA%E5%8A%A8%E5%A2%9E%E7%9B%8A%E6%8E%A7%E5%88%B6/</id>
     <published>2022-01-12T06:50:51.000Z</published>
-    <updated>2022-01-12T09:30:39.094Z</updated>
+    <updated>2022-02-10T13:58:32.593Z</updated>
     
     
     <summary type="html">&lt;p&gt;&lt;img src=&quot;https://cnpp-image.oss-cn-beijing.aliyuncs.com/my-blog/%E5%B0%84%E9%A2%91%E7%94%B5%E8%B7%AF%E7%9A%84%E8%87%AA%E5%8A%A8%E5%A2%9E%E7%9B%8A%E6%8E%A7%E5%88%B6/title.png&quot; alt=&quot;title&quot; /&gt;&lt;/p&gt;
@@ -41,7 +83,7 @@
     <link href="https://cheeennpp.github.io/2021/09/22/HP-12C-Calculator/"/>
     <id>https://cheeennpp.github.io/2021/09/22/HP-12C-Calculator/</id>
     <published>2021-09-22T10:52:15.000Z</published>
-    <updated>2021-09-22T11:25:47.153Z</updated>
+    <updated>2022-02-10T13:58:18.782Z</updated>
     
     
     <summary type="html">&lt;p&gt;&lt;img src=&quot;https://cnpp-image.oss-cn-beijing.aliyuncs.com/my-blog/HP-12C-Calculator/title.JPG&quot; alt=&quot;title&quot; /&gt;&lt;/p&gt;</summary>
@@ -62,7 +104,7 @@
     <link href="https://cheeennpp.github.io/2021/09/22/CASIO-fx-50F-Calculator/"/>
     <id>https://cheeennpp.github.io/2021/09/22/CASIO-fx-50F-Calculator/</id>
     <published>2021-09-22T10:51:24.000Z</published>
-    <updated>2021-09-22T11:24:23.927Z</updated>
+    <updated>2022-02-10T13:57:54.312Z</updated>
     
     
     <summary type="html">&lt;p&gt;&lt;img src=&quot;https://cnpp-image.oss-cn-beijing.aliyuncs.com/my-blog/CASIO-fx-50F-Calculator/title.jpg&quot; alt=&quot;title&quot; /&gt;&lt;/p&gt;</summary>
@@ -79,11 +121,11 @@
   </entry>
   
   <entry>
-    <title>LMT4601 uModule</title>
+    <title>【EE随笔-2】LMT4601 uModule</title>
     <link href="https://cheeennpp.github.io/2021/09/19/LMT4601-uModule/"/>
     <id>https://cheeennpp.github.io/2021/09/19/LMT4601-uModule/</id>
     <published>2021-09-19T14:59:49.000Z</published>
-    <updated>2021-09-22T11:16:24.521Z</updated>
+    <updated>2022-02-10T14:00:24.152Z</updated>
     
     
     <summary type="html">&lt;p&gt;&lt;img src=&quot;https://cnpp-image.oss-cn-beijing.aliyuncs.com/my-blog/LMT4601-uModule/title.jpg&quot; alt=&quot;title&quot; /&gt;&lt;/p&gt;
@@ -126,11 +168,11 @@
   </entry>
   
   <entry>
-    <title>HMC189A倍频器</title>
+    <title>【EE随笔-1】HMC189A倍频器</title>
     <link href="https://cheeennpp.github.io/2021/09/13/HMC189A%E5%80%8D%E9%A2%91%E5%99%A8/"/>
     <id>https://cheeennpp.github.io/2021/09/13/HMC189A%E5%80%8D%E9%A2%91%E5%99%A8/</id>
     <published>2021-09-13T07:18:51.000Z</published>
-    <updated>2021-09-18T13:21:21.205Z</updated>
+    <updated>2022-02-10T14:00:26.030Z</updated>
     
     
     <summary type="html">&lt;p&gt;&lt;img src=&quot;https://cnpp-image.oss-cn-beijing.aliyuncs.com/my-blog/HMC189A%E5%80%8D%E9%A2%91%E5%99%A8/title.jpg&quot; alt=&quot;title&quot; /&gt;&lt;/p&gt;
