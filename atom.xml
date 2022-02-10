@@ -6,7 +6,7 @@
   <link href="https://cheeennpp.github.io/atom.xml" rel="self"/>
   
   <link href="https://cheeennpp.github.io/"/>
-  <updated>2022-02-10T15:45:03.642Z</updated>
+  <updated>2022-02-10T15:49:32.622Z</updated>
   <id>https://cheeennpp.github.io/</id>
   
   <author>
@@ -21,14 +21,14 @@
     <link href="https://cheeennpp.github.io/2022/02/10/%E3%80%90EE%E9%9A%8F%E7%AC%94-3%E3%80%91-%E9%AB%98%E7%BA%BF%E6%80%A7%E5%BA%A6%E6%B7%B7%E9%A2%91%E5%99%A8ADL5350/"/>
     <id>https://cheeennpp.github.io/2022/02/10/%E3%80%90EE%E9%9A%8F%E7%AC%94-3%E3%80%91-%E9%AB%98%E7%BA%BF%E6%80%A7%E5%BA%A6%E6%B7%B7%E9%A2%91%E5%99%A8ADL5350/</id>
     <published>2022-02-10T14:04:31.000Z</published>
-    <updated>2022-02-10T15:45:03.642Z</updated>
+    <updated>2022-02-10T15:49:32.622Z</updated>
     
     
     <summary type="html">&lt;p&gt;&lt;img src=&quot;https://cnpp-image.oss-cn-beijing.aliyuncs.com/my-blog/%E3%80%90EE%E9%9A%8F%E7%AC%94-3%E3%80%91-%E9%AB%98%E7%BA%BF%E6%80%A7%E5%BA%A6%E6%B7%B7%E9%A2%91%E5%99%A8ADL5350/title.png&quot; alt=&quot;title&quot; /&gt;&lt;/p&gt;
 &lt;h2 id=&quot;随笔&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#随笔&quot;&gt;&lt;/a&gt; 随笔&lt;/h2&gt;
 &lt;p&gt;好基友LingMao这两天在为新项目选型，提到了ADI的一款高线性度混频器&lt;code&gt;ADL5350&lt;/code&gt;：&lt;/p&gt;
 &lt;p&gt;&lt;a href=&quot;https://www.analog.com/en/products/adl5350.html&quot;&gt;https://www.analog.com/en/products/adl5350.html&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;%E3%80%90EE%E9%9A%8F%E7%AC%94-3%E3%80%91-%E9%AB%98%E7%BA%BF%E6%80%A7%E5%BA%A6%E6%B7%B7%E9%A2%91%E5%99%A8ADL5350/1-1.png&quot; alt=&quot;1-1&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://cnpp-image.oss-cn-beijing.aliyuncs.com/my-blog/%E3%80%90EE%E9%9A%8F%E7%AC%94-3%E3%80%91-%E9%AB%98%E7%BA%BF%E6%80%A7%E5%BA%A6%E6%B7%B7%E9%A2%91%E5%99%A8ADL5350/1-1.png&quot; alt=&quot;1-1&quot; /&gt;&lt;/p&gt;
 &lt;p&gt;并发现在ADI技术论坛上有这样一个回复，ADL5350的RF和IF在芯片内是连在一起的，这下在使用中，输出滤波器不仅需要对付混频后的镜像，还要对付下RF或者IF信号（因为ADL5350既可以用作上变频器，也可以用作下变频器）。在手册中，给出了ADL5350的原理说明，它是一种GaAs pHEMT （氮化镓赝调制掺杂异质结场效应晶体管）单端无源混频器，通过FET结沟道的导电性变化来调制RF信号：&lt;/p&gt;</summary>
     
     
