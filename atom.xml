@@ -6,7 +6,7 @@
   <link href="https://cheeennpp.github.io/atom.xml" rel="self"/>
   
   <link href="https://cheeennpp.github.io/"/>
-  <updated>2022-02-10T15:49:32.622Z</updated>
+  <updated>2022-02-16T14:19:07.932Z</updated>
   <id>https://cheeennpp.github.io/</id>
   
   <author>
@@ -18,17 +18,17 @@
   
   <entry>
     <title>【EE随笔-3】 高线性度混频器ADL5350</title>
-    <link href="https://cheeennpp.github.io/2022/02/10/%E3%80%90EE%E9%9A%8F%E7%AC%94-3%E3%80%91-%E9%AB%98%E7%BA%BF%E6%80%A7%E5%BA%A6%E6%B7%B7%E9%A2%91%E5%99%A8ADL5350/"/>
-    <id>https://cheeennpp.github.io/2022/02/10/%E3%80%90EE%E9%9A%8F%E7%AC%94-3%E3%80%91-%E9%AB%98%E7%BA%BF%E6%80%A7%E5%BA%A6%E6%B7%B7%E9%A2%91%E5%99%A8ADL5350/</id>
+    <link href="https://cheeennpp.github.io/2022/02/10/blog010-2022-02-10/"/>
+    <id>https://cheeennpp.github.io/2022/02/10/blog010-2022-02-10/</id>
     <published>2022-02-10T14:04:31.000Z</published>
-    <updated>2022-02-10T15:49:32.622Z</updated>
+    <updated>2022-02-16T14:19:07.932Z</updated>
     
     
-    <summary type="html">&lt;p&gt;&lt;img src=&quot;https://cnpp-image.oss-cn-beijing.aliyuncs.com/my-blog/%E3%80%90EE%E9%9A%8F%E7%AC%94-3%E3%80%91-%E9%AB%98%E7%BA%BF%E6%80%A7%E5%BA%A6%E6%B7%B7%E9%A2%91%E5%99%A8ADL5350/title.png&quot; alt=&quot;title&quot; /&gt;&lt;/p&gt;
+    <summary type="html">&lt;p&gt;&lt;img src=&quot;https://cnpp-image.oss-cn-beijing.aliyuncs.com/my-blog/blog010-2022-02-10/title.png&quot; alt=&quot;title&quot; /&gt;&lt;/p&gt;
 &lt;h2 id=&quot;随笔&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#随笔&quot;&gt;&lt;/a&gt; 随笔&lt;/h2&gt;
 &lt;p&gt;好基友LingMao这两天在为新项目选型，提到了ADI的一款高线性度混频器&lt;code&gt;ADL5350&lt;/code&gt;：&lt;/p&gt;
 &lt;p&gt;&lt;a href=&quot;https://www.analog.com/en/products/adl5350.html&quot;&gt;https://www.analog.com/en/products/adl5350.html&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;https://cnpp-image.oss-cn-beijing.aliyuncs.com/my-blog/%E3%80%90EE%E9%9A%8F%E7%AC%94-3%E3%80%91-%E9%AB%98%E7%BA%BF%E6%80%A7%E5%BA%A6%E6%B7%B7%E9%A2%91%E5%99%A8ADL5350/1-1.png&quot; alt=&quot;1-1&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://cnpp-image.oss-cn-beijing.aliyuncs.com/my-blog/blog010-2022-02-10/1-1.png&quot; alt=&quot;1-1&quot; /&gt;&lt;/p&gt;
 &lt;p&gt;并发现在ADI技术论坛上有这样一个回复，ADL5350的RF和IF在芯片内是连在一起的，这下在使用中，输出滤波器不仅需要对付混频后的镜像，还要对付下RF或者IF信号（因为ADL5350既可以用作上变频器，也可以用作下变频器）。在手册中，给出了ADL5350的原理说明，它是一种GaAs pHEMT （氮化镓赝调制掺杂异质结场效应晶体管）单端无源混频器，通过FET结沟道的导电性变化来调制RF信号：&lt;/p&gt;</summary>
     
     
@@ -40,13 +40,13 @@
   
   <entry>
     <title>CORDIC算法的理解和Verilog实现</title>
-    <link href="https://cheeennpp.github.io/2022/01/19/CORDIC%E7%AE%97%E6%B3%95%E7%9A%84%E7%90%86%E8%A7%A3%E5%92%8CVerilog%E5%AE%9E%E7%8E%B0/"/>
-    <id>https://cheeennpp.github.io/2022/01/19/CORDIC%E7%AE%97%E6%B3%95%E7%9A%84%E7%90%86%E8%A7%A3%E5%92%8CVerilog%E5%AE%9E%E7%8E%B0/</id>
+    <link href="https://cheeennpp.github.io/2022/01/19/blog008-2022-01-19/"/>
+    <id>https://cheeennpp.github.io/2022/01/19/blog008-2022-01-19/</id>
     <published>2022-01-19T11:40:32.000Z</published>
-    <updated>2022-02-10T13:58:39.952Z</updated>
+    <updated>2022-02-16T14:16:59.629Z</updated>
     
     
-    <summary type="html">&lt;p&gt;&lt;img src=&quot;https://cnpp-image.oss-cn-beijing.aliyuncs.com/my-blog/CORDIC%E7%AE%97%E6%B3%95%E7%9A%84%E7%90%86%E8%A7%A3%E5%92%8CVerilog%E5%AE%9E%E7%8E%B0/title.jpg&quot; alt=&quot;title&quot; /&gt;&lt;/p&gt;
+    <summary type="html">&lt;p&gt;&lt;img src=&quot;https://cnpp-image.oss-cn-beijing.aliyuncs.com/my-blog/blog008-2022-01-19/title.jpg&quot; alt=&quot;title&quot; /&gt;&lt;/p&gt;
 &lt;h2 id=&quot;0引子&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#0引子&quot;&gt;&lt;/a&gt; 0.引子&lt;/h2&gt;</summary>
     
     
@@ -60,13 +60,13 @@
   
   <entry>
     <title>射频电路的自动增益控制</title>
-    <link href="https://cheeennpp.github.io/2022/01/12/%E5%B0%84%E9%A2%91%E7%94%B5%E8%B7%AF%E7%9A%84%E8%87%AA%E5%8A%A8%E5%A2%9E%E7%9B%8A%E6%8E%A7%E5%88%B6/"/>
-    <id>https://cheeennpp.github.io/2022/01/12/%E5%B0%84%E9%A2%91%E7%94%B5%E8%B7%AF%E7%9A%84%E8%87%AA%E5%8A%A8%E5%A2%9E%E7%9B%8A%E6%8E%A7%E5%88%B6/</id>
+    <link href="https://cheeennpp.github.io/2022/01/12/blog009-2022-01-12/"/>
+    <id>https://cheeennpp.github.io/2022/01/12/blog009-2022-01-12/</id>
     <published>2022-01-12T06:50:51.000Z</published>
-    <updated>2022-02-10T13:58:32.593Z</updated>
+    <updated>2022-02-16T14:18:19.792Z</updated>
     
     
-    <summary type="html">&lt;p&gt;&lt;img src=&quot;https://cnpp-image.oss-cn-beijing.aliyuncs.com/my-blog/%E5%B0%84%E9%A2%91%E7%94%B5%E8%B7%AF%E7%9A%84%E8%87%AA%E5%8A%A8%E5%A2%9E%E7%9B%8A%E6%8E%A7%E5%88%B6/title.png&quot; alt=&quot;title&quot; /&gt;&lt;/p&gt;
+    <summary type="html">&lt;p&gt;&lt;img src=&quot;https://cnpp-image.oss-cn-beijing.aliyuncs.com/my-blog/blog009-2022-01-12/title.png&quot; alt=&quot;title&quot; /&gt;&lt;/p&gt;
 &lt;h2 id=&quot;0引子&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#0引子&quot;&gt;&lt;/a&gt; 0.引子&lt;/h2&gt;</summary>
     
     
@@ -80,13 +80,13 @@
   
   <entry>
     <title>HP-12C Calculator</title>
-    <link href="https://cheeennpp.github.io/2021/09/22/HP-12C-Calculator/"/>
-    <id>https://cheeennpp.github.io/2021/09/22/HP-12C-Calculator/</id>
+    <link href="https://cheeennpp.github.io/2021/09/22/blog007-2021-09-22/"/>
+    <id>https://cheeennpp.github.io/2021/09/22/blog007-2021-09-22/</id>
     <published>2021-09-22T10:52:15.000Z</published>
-    <updated>2022-02-10T13:58:18.782Z</updated>
+    <updated>2022-02-16T14:15:45.535Z</updated>
     
     
-    <summary type="html">&lt;p&gt;&lt;img src=&quot;https://cnpp-image.oss-cn-beijing.aliyuncs.com/my-blog/HP-12C-Calculator/title.JPG&quot; alt=&quot;title&quot; /&gt;&lt;/p&gt;</summary>
+    <summary type="html">&lt;p&gt;&lt;img src=&quot;https://cnpp-image.oss-cn-beijing.aliyuncs.com/my-blog/blog007-2021-09-22/title.JPG&quot; alt=&quot;title&quot; /&gt;&lt;/p&gt;</summary>
     
     
     
@@ -101,13 +101,13 @@
   
   <entry>
     <title>CASIO fx-50F Calculator</title>
-    <link href="https://cheeennpp.github.io/2021/09/22/CASIO-fx-50F-Calculator/"/>
-    <id>https://cheeennpp.github.io/2021/09/22/CASIO-fx-50F-Calculator/</id>
+    <link href="https://cheeennpp.github.io/2021/09/22/blog006-2021-09-22/"/>
+    <id>https://cheeennpp.github.io/2021/09/22/blog006-2021-09-22/</id>
     <published>2021-09-22T10:51:24.000Z</published>
-    <updated>2022-02-10T13:57:54.312Z</updated>
+    <updated>2022-02-16T14:14:53.200Z</updated>
     
     
-    <summary type="html">&lt;p&gt;&lt;img src=&quot;https://cnpp-image.oss-cn-beijing.aliyuncs.com/my-blog/CASIO-fx-50F-Calculator/title.jpg&quot; alt=&quot;title&quot; /&gt;&lt;/p&gt;</summary>
+    <summary type="html">&lt;p&gt;&lt;img src=&quot;https://cnpp-image.oss-cn-beijing.aliyuncs.com/my-blog/blog006-2021-09-22/title.jpg&quot; alt=&quot;title&quot; /&gt;&lt;/p&gt;</summary>
     
     
     
@@ -122,16 +122,16 @@
   
   <entry>
     <title>【EE随笔-2】LMT4601 uModule</title>
-    <link href="https://cheeennpp.github.io/2021/09/19/LMT4601-uModule/"/>
-    <id>https://cheeennpp.github.io/2021/09/19/LMT4601-uModule/</id>
+    <link href="https://cheeennpp.github.io/2021/09/19/blog005-2021-09-19/"/>
+    <id>https://cheeennpp.github.io/2021/09/19/blog005-2021-09-19/</id>
     <published>2021-09-19T14:59:49.000Z</published>
-    <updated>2022-02-10T14:00:24.152Z</updated>
+    <updated>2022-02-16T14:13:45.005Z</updated>
     
     
-    <summary type="html">&lt;p&gt;&lt;img src=&quot;https://cnpp-image.oss-cn-beijing.aliyuncs.com/my-blog/LMT4601-uModule/title.jpg&quot; alt=&quot;title&quot; /&gt;&lt;/p&gt;
+    <summary type="html">&lt;p&gt;&lt;img src=&quot;https://cnpp-image.oss-cn-beijing.aliyuncs.com/my-blog/blog005-2021-09-19/title.jpg&quot; alt=&quot;title&quot; /&gt;&lt;/p&gt;
 &lt;h2 id=&quot;随笔&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#随笔&quot;&gt;&lt;/a&gt; 随笔&lt;/h2&gt;
 &lt;p&gt;今日在&lt;s&gt;海鲜市场&lt;/s&gt;&lt;code&gt;30包邮&lt;/code&gt;提得两片带板凌力尔特&lt;s&gt;特供巧克力月饼&lt;/s&gt;，参数看上去甚是生猛，更兼有远端检测和锁相环等花哨功能：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;https://cnpp-image.oss-cn-beijing.aliyuncs.com/my-blog/LMT4601-uModule/2-1.png&quot; alt=&quot;2-1&quot; /&gt;&lt;/p&gt;</summary>
+&lt;p&gt;&lt;img src=&quot;https://cnpp-image.oss-cn-beijing.aliyuncs.com/my-blog/blog005-2021-09-19/2-1.png&quot; alt=&quot;2-1&quot; /&gt;&lt;/p&gt;</summary>
     
     
     
@@ -144,13 +144,13 @@
   
   <entry>
     <title>定向耦合器与定向电桥</title>
-    <link href="https://cheeennpp.github.io/2021/09/16/%E5%AE%9A%E5%90%91%E8%80%A6%E5%90%88%E5%99%A8%E4%B8%8E%E5%AE%9A%E5%90%91%E7%94%B5%E6%A1%A5/"/>
-    <id>https://cheeennpp.github.io/2021/09/16/%E5%AE%9A%E5%90%91%E8%80%A6%E5%90%88%E5%99%A8%E4%B8%8E%E5%AE%9A%E5%90%91%E7%94%B5%E6%A1%A5/</id>
+    <link href="https://cheeennpp.github.io/2021/09/16/blog004-2021-09-16/"/>
+    <id>https://cheeennpp.github.io/2021/09/16/blog004-2021-09-16/</id>
     <published>2021-09-16T03:33:54.000Z</published>
-    <updated>2022-01-12T06:51:38.650Z</updated>
+    <updated>2022-02-16T14:12:46.670Z</updated>
     
     
-    <summary type="html">&lt;p&gt;&lt;img src=&quot;https://cnpp-image.oss-cn-beijing.aliyuncs.com/my-blog/%E5%AE%9A%E5%90%91%E8%80%A6%E5%90%88%E5%99%A8%E4%B8%8E%E5%AE%9A%E5%90%91%E7%94%B5%E6%A1%A5/title.png&quot; alt=&quot;title&quot; /&gt;&lt;/p&gt;
+    <summary type="html">&lt;p&gt;&lt;img src=&quot;https://cnpp-image.oss-cn-beijing.aliyuncs.com/my-blog/blog004-2021-09-16/title.png&quot; alt=&quot;title&quot; /&gt;&lt;/p&gt;
 &lt;h2 id=&quot;0引子&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#0引子&quot;&gt;&lt;/a&gt; 0.引子&lt;/h2&gt;
 &lt;p&gt;近日在学习&lt;a href=&quot;https://hforsten.com/&quot;&gt;Henrik’s Blog&lt;/a&gt;的&lt;br /&gt;
 &lt;a href=&quot;https://hforsten.com/improved-homemade-vna.html&quot;&gt;Improved homemade VNA&lt;/a&gt;一文，其中介绍了定向电桥的制作方法，并给出了下面两个资料链接：&lt;/p&gt;
@@ -169,13 +169,13 @@
   
   <entry>
     <title>【EE随笔-1】HMC189A倍频器</title>
-    <link href="https://cheeennpp.github.io/2021/09/13/HMC189A%E5%80%8D%E9%A2%91%E5%99%A8/"/>
-    <id>https://cheeennpp.github.io/2021/09/13/HMC189A%E5%80%8D%E9%A2%91%E5%99%A8/</id>
+    <link href="https://cheeennpp.github.io/2021/09/13/blog003-2021-09-13/"/>
+    <id>https://cheeennpp.github.io/2021/09/13/blog003-2021-09-13/</id>
     <published>2021-09-13T07:18:51.000Z</published>
-    <updated>2022-02-10T14:00:26.030Z</updated>
+    <updated>2022-02-16T14:11:29.100Z</updated>
     
     
-    <summary type="html">&lt;p&gt;&lt;img src=&quot;https://cnpp-image.oss-cn-beijing.aliyuncs.com/my-blog/HMC189A%E5%80%8D%E9%A2%91%E5%99%A8/title.jpg&quot; alt=&quot;title&quot; /&gt;&lt;/p&gt;
+    <summary type="html">&lt;p&gt;&lt;img src=&quot;https://cnpp-image.oss-cn-beijing.aliyuncs.com/my-blog/blog003-2021-09-13/title.jpg&quot; alt=&quot;title&quot; /&gt;&lt;/p&gt;
 &lt;h2 id=&quot;随笔&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#随笔&quot;&gt;&lt;/a&gt; 随笔&lt;/h2&gt;
 &lt;p&gt;HMC189A是&lt;strong&gt;Hittile&lt;/strong&gt;的老产品，现在在&lt;strong&gt;Analog&lt;/strong&gt;公司下已显示淘汰了：&lt;/p&gt;
 &lt;p&gt;&lt;a href=&quot;https://www.analog.com/en/products/hmc189a.html&quot;&gt;https://www.analog.com/en/products/hmc189a.html&lt;/a&gt;&lt;/p&gt;
@@ -192,10 +192,10 @@
   
   <entry>
     <title>博客结构</title>
-    <link href="https://cheeennpp.github.io/2021/09/13/%E5%8D%9A%E5%AE%A2%E7%BB%93%E6%9E%84/"/>
-    <id>https://cheeennpp.github.io/2021/09/13/%E5%8D%9A%E5%AE%A2%E7%BB%93%E6%9E%84/</id>
+    <link href="https://cheeennpp.github.io/2021/09/13/blog002-2021-09-13/"/>
+    <id>https://cheeennpp.github.io/2021/09/13/blog002-2021-09-13/</id>
     <published>2021-09-13T07:05:39.000Z</published>
-    <updated>2021-09-13T07:12:24.770Z</updated>
+    <updated>2022-02-16T13:57:02.816Z</updated>
     
     
       
@@ -217,10 +217,10 @@
   
   <entry>
     <title>Ground Zero</title>
-    <link href="https://cheeennpp.github.io/2021/09/13/Ground-Zero/"/>
-    <id>https://cheeennpp.github.io/2021/09/13/Ground-Zero/</id>
+    <link href="https://cheeennpp.github.io/2021/09/13/blog001-2021-09-13/"/>
+    <id>https://cheeennpp.github.io/2021/09/13/blog001-2021-09-13/</id>
     <published>2021-09-13T05:43:30.000Z</published>
-    <updated>2021-09-18T13:45:44.723Z</updated>
+    <updated>2022-02-16T14:09:18.266Z</updated>
     
     
       
