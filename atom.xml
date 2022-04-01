@@ -6,7 +6,7 @@
   <link href="https://cheeennpp.github.io/atom.xml" rel="self"/>
   
   <link href="https://cheeennpp.github.io/"/>
-  <updated>2022-04-01T09:34:52.487Z</updated>
+  <updated>2022-04-01T09:39:13.022Z</updated>
   <id>https://cheeennpp.github.io/</id>
   
   <author>
@@ -21,11 +21,10 @@
     <link href="https://cheeennpp.github.io/2022/03/27/blog011-2022-03-27/"/>
     <id>https://cheeennpp.github.io/2022/03/27/blog011-2022-03-27/</id>
     <published>2022-03-27T04:21:11.000Z</published>
-    <updated>2022-04-01T09:34:52.487Z</updated>
+    <updated>2022-04-01T09:39:13.022Z</updated>
     
     
-    <summary type="html">&lt;p&gt;&lt;img src=&quot;https://cnpp-image.oss-cn-beijing.aliyuncs.com/my-blog/blog011-2022-03-27/title.jpg&quot; alt=&quot;title&quot; /&gt;&lt;/p&gt;
-&lt;p&gt;换到&lt;strong&gt;KiCad6.0&lt;/strong&gt;后画的第一块板子，为白菜价的ADF4350做一个小模块，主要还是作验证之用，方便之后开发体积更小、功能更专一的模组（比如专门输出2.2-4.4GHz的纯正弦波）。&lt;/p&gt;</summary>
+    <summary type="html">&lt;p&gt;&lt;img src=&quot;https://cnpp-image.oss-cn-beijing.aliyuncs.com/my-blog/blog011-2022-03-27/title.jpg&quot; alt=&quot;title&quot; /&gt;&lt;/p&gt;</summary>
     
     
     
@@ -39,15 +38,10 @@
     <link href="https://cheeennpp.github.io/2022/02/10/blog010-2022-02-10/"/>
     <id>https://cheeennpp.github.io/2022/02/10/blog010-2022-02-10/</id>
     <published>2022-02-10T14:04:31.000Z</published>
-    <updated>2022-03-27T04:22:23.747Z</updated>
+    <updated>2022-04-01T09:37:45.241Z</updated>
     
     
-    <summary type="html">&lt;p&gt;&lt;img src=&quot;https://cnpp-image.oss-cn-beijing.aliyuncs.com/my-blog/blog010-2022-02-10/title.png&quot; alt=&quot;title&quot; /&gt;&lt;/p&gt;
-&lt;h2 id=&quot;随笔&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#随笔&quot;&gt;&lt;/a&gt; 随笔&lt;/h2&gt;
-&lt;p&gt;好基友LingMao这两天在为新项目选型，提到了ADI的一款高线性度混频器&lt;code&gt;ADL5350&lt;/code&gt;：&lt;/p&gt;
-&lt;p&gt;&lt;a href=&quot;https://www.analog.com/en/products/adl5350.html&quot;&gt;https://www.analog.com/en/products/adl5350.html&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;https://cnpp-image.oss-cn-beijing.aliyuncs.com/my-blog/blog010-2022-02-10/1-1.png&quot; alt=&quot;1-1&quot; /&gt;&lt;/p&gt;
-&lt;p&gt;并发现在ADI技术论坛上有这样一个回复，ADL5350的RF和IF在芯片内是连在一起的，这下在使用中，输出滤波器不仅需要对付混频后的镜像，还要对付下RF或者IF信号（因为ADL5350既可以用作上变频器，也可以用作下变频器）。在手册中，给出了ADL5350的原理说明，它是一种GaAs pHEMT （氮化镓赝调制掺杂异质结场效应晶体管）单端无源混频器，通过FET结沟道的导电性变化来调制RF信号：&lt;/p&gt;</summary>
+    <summary type="html">&lt;p&gt;&lt;img src=&quot;https://cnpp-image.oss-cn-beijing.aliyuncs.com/my-blog/blog010-2022-02-10/title.png&quot; alt=&quot;title&quot; /&gt;&lt;/p&gt;</summary>
     
     
     
@@ -143,13 +137,10 @@
     <link href="https://cheeennpp.github.io/2021/09/19/blog005-2021-09-19/"/>
     <id>https://cheeennpp.github.io/2021/09/19/blog005-2021-09-19/</id>
     <published>2021-09-19T14:59:49.000Z</published>
-    <updated>2022-02-16T14:13:45.005Z</updated>
+    <updated>2022-04-01T09:38:31.424Z</updated>
     
     
-    <summary type="html">&lt;p&gt;&lt;img src=&quot;https://cnpp-image.oss-cn-beijing.aliyuncs.com/my-blog/blog005-2021-09-19/title.jpg&quot; alt=&quot;title&quot; /&gt;&lt;/p&gt;
-&lt;h2 id=&quot;随笔&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#随笔&quot;&gt;&lt;/a&gt; 随笔&lt;/h2&gt;
-&lt;p&gt;今日在&lt;s&gt;海鲜市场&lt;/s&gt;&lt;code&gt;30包邮&lt;/code&gt;提得两片带板凌力尔特&lt;s&gt;特供巧克力月饼&lt;/s&gt;，参数看上去甚是生猛，更兼有远端检测和锁相环等花哨功能：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;https://cnpp-image.oss-cn-beijing.aliyuncs.com/my-blog/blog005-2021-09-19/2-1.png&quot; alt=&quot;2-1&quot; /&gt;&lt;/p&gt;</summary>
+    <summary type="html">&lt;p&gt;&lt;img src=&quot;https://cnpp-image.oss-cn-beijing.aliyuncs.com/my-blog/blog005-2021-09-19/title.jpg&quot; alt=&quot;title&quot; /&gt;&lt;/p&gt;</summary>
     
     
     
@@ -165,16 +156,10 @@
     <link href="https://cheeennpp.github.io/2021/09/16/blog004-2021-09-16/"/>
     <id>https://cheeennpp.github.io/2021/09/16/blog004-2021-09-16/</id>
     <published>2021-09-16T03:33:54.000Z</published>
-    <updated>2022-02-16T14:12:46.670Z</updated>
+    <updated>2022-04-01T09:38:44.953Z</updated>
     
     
-    <summary type="html">&lt;p&gt;&lt;img src=&quot;https://cnpp-image.oss-cn-beijing.aliyuncs.com/my-blog/blog004-2021-09-16/title.png&quot; alt=&quot;title&quot; /&gt;&lt;/p&gt;
-&lt;h2 id=&quot;0引子&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#0引子&quot;&gt;&lt;/a&gt; 0.引子&lt;/h2&gt;
-&lt;p&gt;近日在学习&lt;a href=&quot;https://hforsten.com/&quot;&gt;Henrik’s Blog&lt;/a&gt;的&lt;br /&gt;
-&lt;a href=&quot;https://hforsten.com/improved-homemade-vna.html&quot;&gt;Improved homemade VNA&lt;/a&gt;一文，其中介绍了定向电桥的制作方法，并给出了下面两个资料链接：&lt;/p&gt;
-&lt;p&gt;&lt;a href=&quot;http://www.ke5fx.com/Broadband_Coupler_Dunsmore.pdf&quot;&gt;http://www.ke5fx.com/Broadband_Coupler_Dunsmore.pdf&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href=&quot;https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&amp;amp;arnumber=7345756&quot;&gt;https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&amp;amp;arnumber=7345756&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;此前一直没有理解这种几个电阻构成的网络是如何实现定向耦合的效果，今天终于有了一个较为清晰的认识。&lt;/p&gt;</summary>
+    <summary type="html">&lt;p&gt;&lt;img src=&quot;https://cnpp-image.oss-cn-beijing.aliyuncs.com/my-blog/blog004-2021-09-16/title.png&quot; alt=&quot;title&quot; /&gt;&lt;/p&gt;</summary>
     
     
     
@@ -190,14 +175,10 @@
     <link href="https://cheeennpp.github.io/2021/09/13/blog003-2021-09-13/"/>
     <id>https://cheeennpp.github.io/2021/09/13/blog003-2021-09-13/</id>
     <published>2021-09-13T07:18:51.000Z</published>
-    <updated>2022-02-16T14:11:29.100Z</updated>
+    <updated>2022-04-01T09:38:55.007Z</updated>
     
     
-    <summary type="html">&lt;p&gt;&lt;img src=&quot;https://cnpp-image.oss-cn-beijing.aliyuncs.com/my-blog/blog003-2021-09-13/title.jpg&quot; alt=&quot;title&quot; /&gt;&lt;/p&gt;
-&lt;h2 id=&quot;随笔&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#随笔&quot;&gt;&lt;/a&gt; 随笔&lt;/h2&gt;
-&lt;p&gt;HMC189A是&lt;strong&gt;Hittile&lt;/strong&gt;的老产品，现在在&lt;strong&gt;Analog&lt;/strong&gt;公司下已显示淘汰了：&lt;/p&gt;
-&lt;p&gt;&lt;a href=&quot;https://www.analog.com/en/products/hmc189a.html&quot;&gt;https://www.analog.com/en/products/hmc189a.html&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;不过呢，这玩意是2-4GHz输入的&lt;strong&gt;2倍频器&lt;/strong&gt;，也就是说，用常见的2.4GHz锁相环合成器搭配它，就能跃升至C波段，再也不用望着那些昂贵（且没啥拆机货）的C波段PLL、VCO流口水啦！当然HMC189A本身也是非常的便宜。&lt;/p&gt;</summary>
+    <summary type="html">&lt;p&gt;&lt;img src=&quot;https://cnpp-image.oss-cn-beijing.aliyuncs.com/my-blog/blog003-2021-09-13/title.jpg&quot; alt=&quot;title&quot; /&gt;&lt;/p&gt;</summary>
     
     
     
