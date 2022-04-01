@@ -6,7 +6,7 @@
   <link href="https://cheeennpp.github.io/atom.xml" rel="self"/>
   
   <link href="https://cheeennpp.github.io/"/>
-  <updated>2022-02-16T14:19:07.932Z</updated>
+  <updated>2022-04-01T09:34:52.487Z</updated>
   <id>https://cheeennpp.github.io/</id>
   
   <author>
@@ -17,11 +17,29 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>ADF4350模块设计笔记</title>
+    <link href="https://cheeennpp.github.io/2022/03/27/blog011-2022-03-27/"/>
+    <id>https://cheeennpp.github.io/2022/03/27/blog011-2022-03-27/</id>
+    <published>2022-03-27T04:21:11.000Z</published>
+    <updated>2022-04-01T09:34:52.487Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;&lt;img src=&quot;https://cnpp-image.oss-cn-beijing.aliyuncs.com/my-blog/blog011-2022-03-27/title.jpg&quot; alt=&quot;title&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;换到&lt;strong&gt;KiCad6.0&lt;/strong&gt;后画的第一块板子，为白菜价的ADF4350做一个小模块，主要还是作验证之用，方便之后开发体积更小、功能更专一的模组（比如专门输出2.2-4.4GHz的纯正弦波）。&lt;/p&gt;</summary>
+    
+    
+    
+    
+    <category term="射频" scheme="https://cheeennpp.github.io/tags/%E5%B0%84%E9%A2%91/"/>
+    
+  </entry>
+  
+  <entry>
     <title>【EE随笔-3】 高线性度混频器ADL5350</title>
     <link href="https://cheeennpp.github.io/2022/02/10/blog010-2022-02-10/"/>
     <id>https://cheeennpp.github.io/2022/02/10/blog010-2022-02-10/</id>
     <published>2022-02-10T14:04:31.000Z</published>
-    <updated>2022-02-16T14:19:07.932Z</updated>
+    <updated>2022-03-27T04:22:23.747Z</updated>
     
     
     <summary type="html">&lt;p&gt;&lt;img src=&quot;https://cnpp-image.oss-cn-beijing.aliyuncs.com/my-blog/blog010-2022-02-10/title.png&quot; alt=&quot;title&quot; /&gt;&lt;/p&gt;
@@ -93,9 +111,9 @@
     <category term="计算器" scheme="https://cheeennpp.github.io/categories/%E8%AE%A1%E7%AE%97%E5%99%A8/"/>
     
     
-    <category term="Vintage" scheme="https://cheeennpp.github.io/tags/Vintage/"/>
-    
     <category term="Hewlett-Packard" scheme="https://cheeennpp.github.io/tags/Hewlett-Packard/"/>
+    
+    <category term="Vintage" scheme="https://cheeennpp.github.io/tags/Vintage/"/>
     
   </entry>
   
@@ -114,9 +132,9 @@
     <category term="计算器" scheme="https://cheeennpp.github.io/categories/%E8%AE%A1%E7%AE%97%E5%99%A8/"/>
     
     
-    <category term="CASIO" scheme="https://cheeennpp.github.io/tags/CASIO/"/>
-    
     <category term="Vintage" scheme="https://cheeennpp.github.io/tags/Vintage/"/>
+    
+    <category term="CASIO" scheme="https://cheeennpp.github.io/tags/CASIO/"/>
     
   </entry>
   

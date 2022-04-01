@@ -1,0 +1,682 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 5.4.0">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+<link rel="stylesheet" href="/lib/font-awesome/css/font-awesome.min.css">
+
+<script id="hexo-configurations">
+    var NexT = window.NexT || {};
+    var CONFIG = {"hostname":"cheeennpp.github.io","root":"/","scheme":"Pisces","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
+  </script>
+
+  <meta name="description" content="换到KiCad6.0后画的第一块板子，为白菜价的ADF4350做一个小模块，主要还是作验证之用，方便之后开发体积更小、功能更专一的模组（比如专门输出2.2-4.4GHz的纯正弦波）。">
+<meta property="og:type" content="article">
+<meta property="og:title" content="ADF4350模块设计笔记">
+<meta property="og:url" content="https://cheeennpp.github.io/2022/03/27/blog011-2022-03-27/index.html">
+<meta property="og:site_name" content="橙的核电站">
+<meta property="og:description" content="换到KiCad6.0后画的第一块板子，为白菜价的ADF4350做一个小模块，主要还是作验证之用，方便之后开发体积更小、功能更专一的模组（比如专门输出2.2-4.4GHz的纯正弦波）。">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://cnpp-image.oss-cn-beijing.aliyuncs.com/my-blog/blog011-2022-03-27/title.jpg">
+<meta property="og:image" content="https://cnpp-image.oss-cn-beijing.aliyuncs.com/my-blog/blog011-2022-03-27/1-1.png">
+<meta property="og:image" content="https://cnpp-image.oss-cn-beijing.aliyuncs.com/my-blog/blog011-2022-03-27/1-2.png">
+<meta property="og:image" content="https://cnpp-image.oss-cn-beijing.aliyuncs.com/my-blog/blog011-2022-03-27/1-3.png">
+<meta property="og:image" content="https://cnpp-image.oss-cn-beijing.aliyuncs.com/my-blog/blog011-2022-03-27/1-4.png">
+<meta property="og:image" content="https://cnpp-image.oss-cn-beijing.aliyuncs.com/my-blog/blog011-2022-03-27/1-5.png">
+<meta property="og:image" content="https://cnpp-image.oss-cn-beijing.aliyuncs.com/my-blog/blog011-2022-03-27/2-1.png">
+<meta property="og:image" content="https://cnpp-image.oss-cn-beijing.aliyuncs.com/my-blog/blog011-2022-03-27/2-2.png">
+<meta property="og:image" content="https://cnpp-image.oss-cn-beijing.aliyuncs.com/my-blog/blog011-2022-03-27/2-3.png">
+<meta property="og:image" content="https://cnpp-image.oss-cn-beijing.aliyuncs.com/my-blog/blog011-2022-03-27/3-1.jpg">
+<meta property="article:published_time" content="2022-03-27T04:21:11.000Z">
+<meta property="article:modified_time" content="2022-04-01T09:34:52.487Z">
+<meta property="article:author" content="CNPP">
+<meta property="article:tag" content="射频">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://cnpp-image.oss-cn-beijing.aliyuncs.com/my-blog/blog011-2022-03-27/title.jpg">
+
+<link rel="canonical" href="https://cheeennpp.github.io/2022/03/27/blog011-2022-03-27/">
+
+
+<script id="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome : false,
+    isPost : true,
+    lang   : 'zh-CN'
+  };
+</script>
+
+  <title>ADF4350模块设计笔记 | 橙的核电站</title>
+  
+
+
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header { opacity: initial; }
+
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+<link rel="alternate" href="/atom.xml" title="橙的核电站" type="application/atom+xml">
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div class="container use-motion">
+    <div class="headband"></div>
+
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏">
+      <span class="toggle-line toggle-line-first"></span>
+      <span class="toggle-line toggle-line-middle"></span>
+      <span class="toggle-line toggle-line-last"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <h1 class="site-title">橙的核电站</h1>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+      <p class="site-subtitle" itemprop="description">发条已装备-试运行</p>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+    </div>
+  </div>
+</div>
+
+
+
+
+<nav class="site-nav">
+  <ul id="menu" class="menu">
+        <li class="menu-item menu-item-home">
+
+    <a href="/" rel="section"><i class="fa fa-fw fa-home"></i>首页</a>
+
+  </li>
+        <li class="menu-item menu-item-categories">
+
+    <a href="/categories/" rel="section"><i class="fa fa-fw fa-th"></i>分类</a>
+
+  </li>
+        <li class="menu-item menu-item-tags">
+
+    <a href="/tags/" rel="section"><i class="fa fa-fw fa-tags"></i>标签</a>
+
+  </li>
+        <li class="menu-item menu-item-archives">
+
+    <a href="/archives/" rel="section"><i class="fa fa-fw fa-archive"></i>归档</a>
+
+  </li>
+        <li class="menu-item menu-item-about">
+
+    <a href="/about/" rel="section"><i class="fa fa-fw fa-user"></i>关于</a>
+
+  </li>
+  </ul>
+</nav>
+
+
+
+
+</div>
+    </header>
+
+    
+  <div class="back-to-top">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+
+
+    <main class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+
+          <div class="content post posts-expand">
+            
+
+    
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://cheeennpp.github.io/2022/03/27/blog011-2022-03-27/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="https://cnpp-image.oss-cn-beijing.aliyuncs.com/my-blog/image/header-an94.jpg">
+      <meta itemprop="name" content="CNPP">
+      <meta itemprop="description" content="EE一枚">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="橙的核电站">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          ADF4350模块设计笔记
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2022-03-27 12:21:11" itemprop="dateCreated datePublished" datetime="2022-03-27T12:21:11+08:00">2022-03-27</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2022-04-01 17:34:52" itemprop="dateModified" datetime="2022-04-01T17:34:52+08:00">2022-04-01</time>
+              </span>
+
+          
+            <span class="post-meta-item" title="阅读次数" id="busuanzi_container_page_pv" style="display: none;">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-eye"></i>
+              </span>
+              <span class="post-meta-item-text">阅读次数：</span>
+              <span id="busuanzi_value_page_pv"></span>
+            </span>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+        <p><img src="https://cnpp-image.oss-cn-beijing.aliyuncs.com/my-blog/blog011-2022-03-27/title.jpg" alt="title" /></p>
+<p>换到<strong>KiCad6.0</strong>后画的第一块板子，为白菜价的ADF4350做一个小模块，主要还是作验证之用，方便之后开发体积更小、功能更专一的模组（比如专门输出2.2-4.4GHz的纯正弦波）。</p>
+<span id="more"></span>
+<p>新Ki的改动不小，感觉整个操作逻辑在向鼠标偏移，而且少了我前最喜欢的<code>C</code>热键，还是有些不快的。不过弧形线和从选择的轮廓生成区域的功能非常方便，插件管理也更优秀了。</p>
+<h2 id="0资料汇总"><a class="markdownIt-Anchor" href="#0资料汇总"></a> 0.资料汇总</h2>
+<p>ADF4350与ADF4351相差不大，所以设计时参考了二者的相关资料。此外，ADF4350的数据手册似乎有些小错，于是又去查阅的ADF4351数据手册相同部分的内容。</p>
+<ul>
+<li>ADF4350锁相环数据手册：<a target="_blank" rel="noopener" href="https://www.analog.com/media/en/technical-documentation/data-sheets/ADF4350.pdf">https://www.analog.com/media/en/technical-documentation/data-sheets/ADF4350.pdf</a></li>
+<li>EVAL-ADF4350EB2Z评估板手册：<a target="_blank" rel="noopener" href="https://www.analog.com/media/en/technical-documentation/user-guides/UG-110.pdf">https://www.analog.com/media/en/technical-documentation/user-guides/UG-110.pdf</a></li>
+<li>ADF4351锁相环数据手册：<a target="_blank" rel="noopener" href="https://www.analog.com/media/en/technical-documentation/data-sheets/ADF4351.pdf">https://www.analog.com/media/en/technical-documentation/data-sheets/ADF4351.pdf</a></li>
+<li>EVAL-ADF4350EB2Z评估板手册：<a target="_blank" rel="noopener" href="https://www.analog.com/media/cn/technical-documentation/user-guides/UG-435.pdf">https://www.analog.com/media/cn/technical-documentation/user-guides/UG-435.pdf</a></li>
+<li>ADP3334低压差稳压器数据手册：<a target="_blank" rel="noopener" href="https://www.analog.com/media/en/technical-documentation/data-sheets/ADP3334.pdf">https://www.analog.com/media/en/technical-documentation/data-sheets/ADP3334.pdf</a></li>
+<li>HMC284射频单刀双掷开关数据手册：<a target="_blank" rel="noopener" href="https://www.analog.com/media/en/technical-documentation/data-sheets/hmc284a.pdf">https://www.analog.com/media/en/technical-documentation/data-sheets/hmc284a.pdf</a></li>
+</ul>
+<h2 id="1设计要点"><a class="markdownIt-Anchor" href="#1设计要点"></a> 1.设计要点</h2>
+<h3 id="11杂七杂八"><a class="markdownIt-Anchor" href="#11杂七杂八"></a> 1.1.杂七杂八</h3>
+<ul>
+<li>ADF4350的框图，没啥用，暂且放在这里。<br />
+<img src="https://cnpp-image.oss-cn-beijing.aliyuncs.com/my-blog/blog011-2022-03-27/1-1.png" alt="1-1" /></li>
+<li>极限参数中，供点耐受范围基本是-0.3V至+3.9V，看来不需要提供5V级别的供电。</li>
+<li>电流需求方面，数字与模拟部分合21mA，输出级6至24mA，VCO 70mA，低功耗模式下全片7至1000uA。VCO部分的电流需求还是较大的，在使用HMC860、HMC1060这种多路LDO的时候需要注意合理分配。</li>
+<li>参考时钟输入允许小于10MHz的信号，但要保证压摆率大于21V/us，在使用某些正弦输出的振荡器时要注意处理。</li>
+</ul>
+<h3 id="12输出级设计"><a class="markdownIt-Anchor" href="#12输出级设计"></a> 1.2.输出级设计</h3>
+<p>ADF4350的输出级类似集电极开路的长尾差分对，需要接入输出负载才可工作。根据使用场景，可分为有耗宽带输出匹配和窄带无耗输出匹配。同时，若有单端的输出需求，还可选择使用宽带巴伦或是窄带巴伦。</p>
+<p>这些选择决定了正常输出的频率范围以及输出功率，在将ADF4350作为本振等用途时，这些参数至关重要，需要仔细考量。下面这部分是对ADF4350手册中27页往后<code>OUTPUT MATCHING</code>部分给出的接法：</p>
+<p><img src="https://cnpp-image.oss-cn-beijing.aliyuncs.com/my-blog/blog011-2022-03-27/1-2.png" alt="1-2" /></p>
+<p>使用电阻匹配为宽带匹配；使用电感作为负载，为窄带匹配，但此时输出功率得以增强，可达到5dBm。电感匹配差分输出的元件参数选择如下：</p>
+<table>
+<thead>
+<tr>
+<th>Frequency Range (MHz)</th>
+<th>L (nH)</th>
+<th>C (nF)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>137.5 to 500</td>
+<td>100</td>
+<td>1</td>
+</tr>
+<tr>
+<td>500 to 1000</td>
+<td>47</td>
+<td>1</td>
+</tr>
+<tr>
+<td>1000 to 2000</td>
+<td>7.5</td>
+<td>1</td>
+</tr>
+<tr>
+<td>2000 to 4400</td>
+<td>3.9</td>
+<td>1</td>
+</tr>
+</tbody>
+</table>
+<p>如果需要单端输出，可直接将差分输出的一个端口接匹配负载，使用另一个端口。这样相当于浪费了一个端口的功率。如果使用巴伦转换，则理想情况可以将两个端口的功率合路输出。ADF4350的手册中给出了一个使用无耗元件搭建窄带巴伦的示意，如上图的<code>Figure 39</code>。所需元件参数选择如下：</p>
+<table>
+<thead>
+<tr>
+<th>Frequency Range (MHz)</th>
+<th>Inductor L1 (nH)</th>
+<th>Capacitor C1 (pF)</th>
+<th>RF Choke Inductor (nH)</th>
+<th>DC Blocking Capacitor (pF)</th>
+<th>Measured Output Power (dBm)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>137 to 300</td>
+<td>100</td>
+<td>10</td>
+<td>390</td>
+<td>1000</td>
+<td>9</td>
+</tr>
+<tr>
+<td>300 to 460</td>
+<td>51</td>
+<td>5.6</td>
+<td>180</td>
+<td>120</td>
+<td>10</td>
+</tr>
+<tr>
+<td>400 to 600</td>
+<td>30</td>
+<td>5.6</td>
+<td>120</td>
+<td>120</td>
+<td>10</td>
+</tr>
+<tr>
+<td>600 to 900</td>
+<td>18</td>
+<td>4</td>
+<td>68</td>
+<td>120</td>
+<td>10</td>
+</tr>
+<tr>
+<td>860 to 1240</td>
+<td>12</td>
+<td>2.2</td>
+<td>39</td>
+<td>10</td>
+<td>9</td>
+</tr>
+<tr>
+<td>1200 to 1600</td>
+<td>5.6</td>
+<td>1.2</td>
+<td>15</td>
+<td>10</td>
+<td>9</td>
+</tr>
+<tr>
+<td>1600 to 3600</td>
+<td>3.3</td>
+<td>0.7</td>
+<td>10</td>
+<td>10</td>
+<td>8</td>
+</tr>
+<tr>
+<td>2800 to 3800</td>
+<td>2.2</td>
+<td>0.5</td>
+<td>10</td>
+<td>10</td>
+<td>8</td>
+</tr>
+</tbody>
+</table>
+<p>从输出功率的数据看，巴伦起到了输出合路的功能，例如将两个无耗输出匹配时单端口输出的最大功率5dBm合路为10dBm。这种分立式巴伦应该是通过将两个输出端口的信号移相再合成实现的，工作带宽较窄。</p>
+<p>如果使用变压器巴伦，则带宽可以大大拓宽，例如著名的<code>TCM1-63AX+</code>：</p>
+<p><img src="https://cnpp-image.oss-cn-beijing.aliyuncs.com/my-blog/blog011-2022-03-27/1-3.png" alt="1-3" /></p>
+<p>作为测试的第一版，我决定依然采用无耗匹配，差分输出，之后在外部测试一下使用变压器巴伦的效果。此外，变压器巴伦有电流型、电压型之分，有直流接法和隔直接法之分，有待研究，先将部分资料记录在此：</p>
+<ul>
+<li>Current vs. Voltage Baluns: <a target="_blank" rel="noopener" href="https://www.markimicrowave.com/blog/current-vs-voltage-baluns/">https://www.markimicrowave.com/blog/current-vs-voltage-baluns/</a>]</li>
+<li>Baluns: What They Do And How They Do lt: <a target="_blank" rel="noopener" href="https://www.eznec.com/Amateur/Articles/Baluns.pdf">https://www.eznec.com/Amateur/Articles/Baluns.pdf</a></li>
+<li>RF Transformer TCM1-63AX+: <a target="_blank" rel="noopener" href="https://www.minicircuits.com/pdfs/TCM1-63AX+.pdf">https://www.minicircuits.com/pdfs/TCM1-63AX+.pdf</a></li>
+<li>RF 1:1 Transmission Line ETC1-1-13: <a target="_blank" rel="noopener" href="https://cdn.macom.com/datasheets/ETC1-1-13.pdf">https://cdn.macom.com/datasheets/ETC1-1-13.pdf</a></li>
+</ul>
+<p>对于备用输出端口B，不使用的时候可空置。最终输出级的设计如下图：</p>
+<p><img src="https://cnpp-image.oss-cn-beijing.aliyuncs.com/my-blog/blog011-2022-03-27/1-4.png" alt="1-4" /></p>
+<h3 id="13参考输入设计"><a class="markdownIt-Anchor" href="#13参考输入设计"></a> 1.3.参考输入设计</h3>
+<p>参考输入端基本照抄了评估板的设计。由于想加一个外部输入的选择，又不想用跳线（排针太高）和开关（太奇怪），毕竟有可能要把参考时钟给到100MHz，所以上了一片射频SPDT，然后为了方便控制，又上了个sot23封装的双非门处理逻辑，再上了个拨码开关控制非门输入，简直就是简直了。这么麻烦主要还是因为我想把通信接口往<code>PMOD</code>上靠，而<code>PMOD</code>定义给出的8根数据线实在不够呀。</p>
+<p>最终参考输入的设计如下图：</p>
+<p><img src="https://cnpp-image.oss-cn-beijing.aliyuncs.com/my-blog/blog011-2022-03-27/1-5.png" alt="1-5" /></p>
+<h2 id="2原理图及pcb设计"><a class="markdownIt-Anchor" href="#2原理图及pcb设计"></a> 2.原理图及PCB设计</h2>
+<p>基本上是照抄ADF4350的评估板，稳压器采用了ADP3334，虽说感觉LT1763更合适。这二者都号称对输出电容很宽容，但上次调LT1763给我振了个爽，不知道这次用ADP3334会不会翻车。其实最理想的选择也许是HMC860，专为RF电路设计，QFN封装也更小。但HMC860的输出电流实在是太小了，对于ADF4350的几组供电来说捉襟见肘，还是下一版再考虑吧。</p>
+<p>环路滤波器和射频输出部分的布局参考了ADF4351评估板。这ADF4350和ADF4351芯片差别不大，评估板的差别倒是挺大的，不知道是不是同一组开发的。</p>
+<p><img src="https://cnpp-image.oss-cn-beijing.aliyuncs.com/my-blog/blog011-2022-03-27/2-1.png" alt="2-1" /></p>
+<p>最后是完工的PCB设计样貌：</p>
+<p><img src="https://cnpp-image.oss-cn-beijing.aliyuncs.com/my-blog/blog011-2022-03-27/2-2.png" alt="2-2" /></p>
+<p><img src="https://cnpp-image.oss-cn-beijing.aliyuncs.com/my-blog/blog011-2022-03-27/2-3.png" alt="2-3" /></p>
+<h2 id="3上料焊接"><a class="markdownIt-Anchor" href="#3上料焊接"></a> 3.上料焊接</h2>
+<p>3月27日在嘉立创投板，4月1日拿到：</p>
+<p><img src="https://cnpp-image.oss-cn-beijing.aliyuncs.com/my-blog/blog011-2022-03-27/3-1.jpg" alt="3-1" /></p>
+<blockquote>
+<p>配BOM，未完待续</p>
+</blockquote>
+<h2 id="4驱动程序设计"><a class="markdownIt-Anchor" href="#4驱动程序设计"></a> 4.驱动程序设计</h2>
+<h2 id="5测试"><a class="markdownIt-Anchor" href="#5测试"></a> 5.测试</h2>
+
+    </div>
+
+    
+    
+    
+        
+
+<div>
+<ul class="post-copyright">
+  <li class="post-copyright-author">
+    <strong>本文作者： </strong>CNPP
+  </li>
+  <li class="post-copyright-link">
+    <strong>本文链接：</strong>
+    <a href="https://cheeennpp.github.io/2022/03/27/blog011-2022-03-27/" title="ADF4350模块设计笔记">https://cheeennpp.github.io/2022/03/27/blog011-2022-03-27/</a>
+  </li>
+  <li class="post-copyright-license">
+    <strong>版权声明： </strong>本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" rel="noopener" target="_blank"><i class="fa fa-fw fa-creative-commons"></i>BY-NC-SA</a> 许可协议。转载请注明出处！
+  </li>
+</ul>
+</div>
+
+        
+
+  <div class="followme">
+    <p>欢迎关注我的其它发布渠道</p>
+
+    <div class="social-list">
+
+        <div class="social-item">
+          <a target="_blank" class="social-link" href="/atom.xml">
+            <span class="icon">
+              <i class="fa fa-rss"></i>
+            </span>
+
+            <span class="label">RSS</span>
+          </a>
+        </div>
+    </div>
+  </div>
+
+
+      <footer class="post-footer">
+          <div class="post-tags">
+              <a href="/tags/%E5%B0%84%E9%A2%91/" rel="tag"># 射频</a>
+          </div>
+
+        
+
+
+        
+    <div class="post-nav">
+      <div class="post-nav-item">
+    <a href="/2022/02/10/blog010-2022-02-10/" rel="prev" title="【EE随笔-3】 高线性度混频器ADL5350">
+      <i class="fa fa-chevron-left"></i> 【EE随笔-3】 高线性度混频器ADL5350
+    </a></div>
+      <div class="post-nav-item"></div>
+    </div>
+      </footer>
+    
+  </article>
+  
+  
+  
+
+
+
+          </div>
+          
+
+<script>
+  window.addEventListener('tabs:register', () => {
+    let { activeClass } = CONFIG.comments;
+    if (CONFIG.comments.storage) {
+      activeClass = localStorage.getItem('comments_active') || activeClass;
+    }
+    if (activeClass) {
+      let activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
+      if (activeTab) {
+        activeTab.click();
+      }
+    }
+  });
+  if (CONFIG.comments.storage) {
+    window.addEventListener('tabs:click', event => {
+      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
+      let commentClass = event.target.classList[1];
+      localStorage.setItem('comments_active', commentClass);
+    });
+  }
+</script>
+
+        </div>
+          
+  
+  <div class="toggle sidebar-toggle">
+    <span class="toggle-line toggle-line-first"></span>
+    <span class="toggle-line toggle-line-middle"></span>
+    <span class="toggle-line toggle-line-last"></span>
+  </div>
+
+  <aside class="sidebar">
+    <div class="sidebar-inner">
+
+      <ul class="sidebar-nav motion-element">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+      <!--noindex-->
+      <div class="post-toc-wrap sidebar-panel">
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#0%E8%B5%84%E6%96%99%E6%B1%87%E6%80%BB"><span class="nav-text"> 0.资料汇总</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#1%E8%AE%BE%E8%AE%A1%E8%A6%81%E7%82%B9"><span class="nav-text"> 1.设计要点</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#11%E6%9D%82%E4%B8%83%E6%9D%82%E5%85%AB"><span class="nav-text"> 1.1.杂七杂八</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#12%E8%BE%93%E5%87%BA%E7%BA%A7%E8%AE%BE%E8%AE%A1"><span class="nav-text"> 1.2.输出级设计</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#13%E5%8F%82%E8%80%83%E8%BE%93%E5%85%A5%E8%AE%BE%E8%AE%A1"><span class="nav-text"> 1.3.参考输入设计</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2%E5%8E%9F%E7%90%86%E5%9B%BE%E5%8F%8Apcb%E8%AE%BE%E8%AE%A1"><span class="nav-text"> 2.原理图及PCB设计</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3%E4%B8%8A%E6%96%99%E7%84%8A%E6%8E%A5"><span class="nav-text"> 3.上料焊接</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#4%E9%A9%B1%E5%8A%A8%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1"><span class="nav-text"> 4.驱动程序设计</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#5%E6%B5%8B%E8%AF%95"><span class="nav-text"> 5.测试</span></a></li></ol></div>
+      </div>
+      <!--/noindex-->
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <img class="site-author-image" itemprop="image" alt="CNPP"
+      src="https://cnpp-image.oss-cn-beijing.aliyuncs.com/my-blog/image/header-an94.jpg">
+  <p class="site-author-name" itemprop="name">CNPP</p>
+  <div class="site-description" itemprop="description">EE一枚</div>
+</div>
+<div class="site-state-wrap motion-element">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+          <a href="/archives/">
+        
+          <span class="site-state-item-count">12</span>
+          <span class="site-state-item-name">日志</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+            <a href="/categories/">
+          
+        <span class="site-state-item-count">5</span>
+        <span class="site-state-item-name">分类</span></a>
+      </div>
+      <div class="site-state-item site-state-tags">
+            <a href="/tags/">
+          
+        <span class="site-state-item-count">7</span>
+        <span class="site-state-item-name">标签</span></a>
+      </div>
+  </nav>
+</div>
+  <div class="links-of-author motion-element">
+      <span class="links-of-author-item">
+        <a href="https://github.com/CheeenNPP" title="GitHub → https:&#x2F;&#x2F;github.com&#x2F;CheeenNPP" rel="noopener" target="_blank"><i class="fa fa-fw fa-github"></i>GitHub</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="/cheeennp@outlook.com" title="E-Mail → cheeennp@outlook.com"><i class="fa fa-fw fa-envelope"></i>E-Mail</a>
+      </span>
+  </div>
+  <div class="cc-license motion-element" itemprop="license">
+    <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" class="cc-opacity" rel="noopener" target="_blank"><img src="/images/cc-by-nc-sa.svg" alt="Creative Commons"></a>
+  </div>
+
+
+  <div class="links-of-blogroll motion-element">
+    <div class="links-of-blogroll-title">
+      <i class="fa fa-fw fa-link"></i>
+      Links
+    </div>
+    <ul class="links-of-blogroll-list">
+        <li class="links-of-blogroll-item">
+          <a href="https://www.emoe.xyz/" title="https:&#x2F;&#x2F;www.emoe.xyz" rel="noopener" target="_blank">E萌工作室</a>
+        </li>
+    </ul>
+  </div>
+
+      </div>
+
+    </div>
+  </aside>
+  <div id="sidebar-dimmer"></div>
+
+
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        
+
+        
+
+<div class="copyright">
+  
+  &copy; 2021 – 
+  <span itemprop="copyrightYear">2022</span>
+  <span class="with-love">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">CNPP</span>
+</div>
+  <div class="powered-by">由 <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> & <a href="https://pisces.theme-next.org/" class="theme-link" rel="noopener" target="_blank">NexT.Pisces</a> 强力驱动
+  </div>
+
+        
+<div class="busuanzi-count">
+  <script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+    <span class="post-meta-item" id="busuanzi_container_site_uv" style="display: none;">
+      <span class="post-meta-item-icon">
+        <i class="fa fa-user"></i>
+      </span>
+      <span class="site-uv" title="总访客量">
+        <span id="busuanzi_value_site_uv"></span>
+      </span>
+    </span>
+    <span class="post-meta-divider">|</span>
+    <span class="post-meta-item" id="busuanzi_container_site_pv" style="display: none;">
+      <span class="post-meta-item-icon">
+        <i class="fa fa-eye"></i>
+      </span>
+      <span class="site-pv" title="总访问量">
+        <span id="busuanzi_value_site_pv"></span>
+      </span>
+    </span>
+</div>
+
+
+
+
+
+
+
+
+      </div>
+    </footer>
+  </div>
+
+  
+  <script src="/lib/anime.min.js"></script>
+  <script src="/lib/velocity/velocity.min.js"></script>
+  <script src="/lib/velocity/velocity.ui.min.js"></script>
+
+<script src="/js/utils.js"></script>
+
+<script src="/js/motion.js"></script>
+
+
+<script src="/js/schemes/pisces.js"></script>
+
+
+<script src="/js/next-boot.js"></script>
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+      
+<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/katex@0/dist/katex.min.css">
+
+
+  
+
+</body>
+</html>
