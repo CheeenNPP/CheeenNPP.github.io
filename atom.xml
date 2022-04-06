@@ -6,7 +6,7 @@
   <link href="https://cheeennpp.github.io/atom.xml" rel="self"/>
   
   <link href="https://cheeennpp.github.io/"/>
-  <updated>2022-04-01T09:54:59.869Z</updated>
+  <updated>2022-04-06T08:25:50.936Z</updated>
   <id>https://cheeennpp.github.io/</id>
   
   <author>
@@ -17,16 +17,47 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>振荡器资料收集</title>
+    <link href="https://cheeennpp.github.io/2022/04/06/blog012-2022-04-06/"/>
+    <id>https://cheeennpp.github.io/2022/04/06/blog012-2022-04-06/</id>
+    <published>2022-04-06T08:14:33.000Z</published>
+    <updated>2022-04-06T08:25:50.936Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;span id=&quot;more&quot;&gt;&lt;/span&gt;
+&lt;h2 id=&quot;0资料收集&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#0资料收集&quot;&gt;&lt;/a&gt; 0.资料收集&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Designing RC Oscillator</summary>
+        
+      
+    
+    
+    
+    <category term="模拟电路" scheme="https://cheeennpp.github.io/categories/%E6%A8%A1%E6%8B%9F%E7%94%B5%E8%B7%AF/"/>
+    
+    
+    <category term="模拟" scheme="https://cheeennpp.github.io/tags/%E6%A8%A1%E6%8B%9F/"/>
+    
+  </entry>
+  
+  <entry>
     <title>ADF4350模块设计笔记</title>
     <link href="https://cheeennpp.github.io/2022/03/27/blog011-2022-03-27/"/>
     <id>https://cheeennpp.github.io/2022/03/27/blog011-2022-03-27/</id>
     <published>2022-03-27T04:21:11.000Z</published>
-    <updated>2022-04-01T09:54:59.869Z</updated>
+    <updated>2022-04-06T08:13:10.846Z</updated>
     
     
     <summary type="html">&lt;p&gt;&lt;img src=&quot;https://cnpp-image.oss-cn-beijing.aliyuncs.com/my-blog/blog011-2022-03-27/title.jpg&quot; alt=&quot;title&quot; /&gt;&lt;/p&gt;</summary>
     
     
+    
+    <category term="射频电路" scheme="https://cheeennpp.github.io/categories/%E5%B0%84%E9%A2%91%E7%94%B5%E8%B7%AF/"/>
     
     
     <category term="射频" scheme="https://cheeennpp.github.io/tags/%E5%B0%84%E9%A2%91/"/>
@@ -38,12 +69,14 @@
     <link href="https://cheeennpp.github.io/2022/02/10/blog010-2022-02-10/"/>
     <id>https://cheeennpp.github.io/2022/02/10/blog010-2022-02-10/</id>
     <published>2022-02-10T14:04:31.000Z</published>
-    <updated>2022-04-01T09:37:45.241Z</updated>
+    <updated>2022-04-06T08:12:59.310Z</updated>
     
     
     <summary type="html">&lt;p&gt;&lt;img src=&quot;https://cnpp-image.oss-cn-beijing.aliyuncs.com/my-blog/blog010-2022-02-10/title.png&quot; alt=&quot;title&quot; /&gt;&lt;/p&gt;</summary>
     
     
+    
+    <category term="射频电路" scheme="https://cheeennpp.github.io/categories/%E5%B0%84%E9%A2%91%E7%94%B5%E8%B7%AF/"/>
     
     
     <category term="射频" scheme="https://cheeennpp.github.io/tags/%E5%B0%84%E9%A2%91/"/>
