@@ -19,6 +19,23 @@
       </tags>
   </entry>
   <entry>
+    <title>博客结构</title>
+    <url>/2021/09/13/blog002-2021-09-13/</url>
+    <content><![CDATA[<h2 id="前言"><a class="markdownIt-Anchor" href="#前言"></a> 前言</h2>
+<p>一个EE的博客。</p>
+<ul>
+<li>日常的制作进度，开坑想法，小成果等，会放<code>EE-随笔</code><strong>分类</strong>中，这些仅作记录，并没有完整的工程结构。</li>
+<li>一个完整的项目，会放在特定的<strong>分类</strong>中，并会围绕此，结合Github仓库，构建工程。</li>
+</ul>
+]]></content>
+      <categories>
+        <category>生活-随笔</category>
+      </categories>
+      <tags>
+        <tag>生活</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>【EE随笔-1】HMC189A倍频器</title>
     <url>/2021/09/13/blog003-2021-09-13/</url>
     <content><![CDATA[<p><img src="https://cnpp-image.oss-cn-beijing.aliyuncs.com/my-blog/blog003-2021-09-13/title.jpg" alt="title" /></p>
@@ -46,23 +63,6 @@
       </categories>
       <tags>
         <tag>射频</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>博客结构</title>
-    <url>/2021/09/13/blog002-2021-09-13/</url>
-    <content><![CDATA[<h2 id="前言"><a class="markdownIt-Anchor" href="#前言"></a> 前言</h2>
-<p>一个EE的博客。</p>
-<ul>
-<li>日常的制作进度，开坑想法，小成果等，会放<code>EE-随笔</code><strong>分类</strong>中，这些仅作记录，并没有完整的工程结构。</li>
-<li>一个完整的项目，会放在特定的<strong>分类</strong>中，并会围绕此，结合Github仓库，构建工程。</li>
-</ul>
-]]></content>
-      <categories>
-        <category>生活-随笔</category>
-      </categories>
-      <tags>
-        <tag>生活</tag>
       </tags>
   </entry>
   <entry>
