@@ -19,6 +19,36 @@
       </tags>
   </entry>
   <entry>
+    <title>【EE随笔-1】HMC189A倍频器</title>
+    <url>/2021/09/13/blog003-2021-09-13/</url>
+    <content><![CDATA[<p><img src="https://cnpp-image.oss-cn-beijing.aliyuncs.com/my-blog/blog003-2021-09-13/title.jpg" alt="title" /></p>
+<span id="more"></span>
+<h2 id="随笔"><a class="markdownIt-Anchor" href="#随笔"></a> 随笔</h2>
+<p>HMC189A是<strong>Hittile</strong>的老产品，现在在<strong>Analog</strong>公司下已显示淘汰了：</p>
+<p><a href="https://www.analog.com/en/products/hmc189a.html">https://www.analog.com/en/products/hmc189a.html</a></p>
+<p>不过呢，这玩意是2-4GHz输入的<strong>2倍频器</strong>，也就是说，用常见的2.4GHz锁相环合成器搭配它，就能跃升至C波段，再也不用望着那些昂贵（且没啥拆机货）的C波段PLL、VCO流口水啦！当然HMC189A本身也是非常的便宜。</p>
+<p><img src="https://cnpp-image.oss-cn-beijing.aliyuncs.com/my-blog/blog003-2021-09-13/1-1.png" alt="1-1" /></p>
+<p>做了个小模块，用的是<strong>JLCPCB</strong>的四层阻抗工艺，7628层压结构。输入由ADF4351模块提供。ADF4351无分频的输出范围是2200-4400MHz，在这一段是较为纯净的正弦波。当然这个范围也正和HMC189A“般配”。</p>
+<p><img src="https://cnpp-image.oss-cn-beijing.aliyuncs.com/my-blog/blog003-2021-09-13/1-2.jpg" alt="1-2" /></p>
+<p>在大扫频范围下观察输出，感觉隔离度起码有20dB以上吧（只是随便测下）：</p>
+<p><img src="https://cnpp-image.oss-cn-beijing.aliyuncs.com/my-blog/blog003-2021-09-13/1-3.jpg" alt="1-3" /></p>
+<p>倍频至5.8GHz，频谱仪开了10dB衰减，又外接了10dB衰减器：</p>
+<p><img src="https://cnpp-image.oss-cn-beijing.aliyuncs.com/my-blog/blog003-2021-09-13/1-4.jpg" alt="1-4" /></p>
+<p>挑战一把8GHz：（至少还是有输出的）</p>
+<p><img src="https://cnpp-image.oss-cn-beijing.aliyuncs.com/my-blog/blog003-2021-09-13/1-5.jpg" alt="1-5" /></p>
+<p>其实此时，锁相环模块的输出功率已经衰减了很多，应该是模块上的滤波网络并没有做好支持。此外，HMC189A的需求十分吓人，输入功率要达到+15dBm才能达到最佳性能：</p>
+<p><img src="https://cnpp-image.oss-cn-beijing.aliyuncs.com/my-blog/blog003-2021-09-13/1-6.png" alt="1-6" /></p>
+<h2 id="总结"><a class="markdownIt-Anchor" href="#总结"></a> 总结</h2>
+<p>发现这个倍频器真的是十分开心，S波段的PLL——ADF4350也是拆机市场上的常客，这下C波段FMCW雷达项目的成本又可以大大降低了。</p>
+]]></content>
+      <categories>
+        <category>EE-随笔</category>
+      </categories>
+      <tags>
+        <tag>射频</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>博客结构</title>
     <url>/2021/09/13/blog002-2021-09-13/</url>
     <content><![CDATA[<h2 id="前言"><a class="markdownIt-Anchor" href="#前言"></a> 前言</h2>
@@ -90,36 +120,6 @@
       </tags>
   </entry>
   <entry>
-    <title>【EE随笔-1】HMC189A倍频器</title>
-    <url>/2021/09/13/blog003-2021-09-13/</url>
-    <content><![CDATA[<p><img src="https://cnpp-image.oss-cn-beijing.aliyuncs.com/my-blog/blog003-2021-09-13/title.jpg" alt="title" /></p>
-<span id="more"></span>
-<h2 id="随笔"><a class="markdownIt-Anchor" href="#随笔"></a> 随笔</h2>
-<p>HMC189A是<strong>Hittile</strong>的老产品，现在在<strong>Analog</strong>公司下已显示淘汰了：</p>
-<p><a href="https://www.analog.com/en/products/hmc189a.html">https://www.analog.com/en/products/hmc189a.html</a></p>
-<p>不过呢，这玩意是2-4GHz输入的<strong>2倍频器</strong>，也就是说，用常见的2.4GHz锁相环合成器搭配它，就能跃升至C波段，再也不用望着那些昂贵（且没啥拆机货）的C波段PLL、VCO流口水啦！当然HMC189A本身也是非常的便宜。</p>
-<p><img src="https://cnpp-image.oss-cn-beijing.aliyuncs.com/my-blog/blog003-2021-09-13/1-1.png" alt="1-1" /></p>
-<p>做了个小模块，用的是<strong>JLCPCB</strong>的四层阻抗工艺，7628层压结构。输入由ADF4351模块提供。ADF4351无分频的输出范围是2200-4400MHz，在这一段是较为纯净的正弦波。当然这个范围也正和HMC189A“般配”。</p>
-<p><img src="https://cnpp-image.oss-cn-beijing.aliyuncs.com/my-blog/blog003-2021-09-13/1-2.jpg" alt="1-2" /></p>
-<p>在大扫频范围下观察输出，感觉隔离度起码有20dB以上吧（只是随便测下）：</p>
-<p><img src="https://cnpp-image.oss-cn-beijing.aliyuncs.com/my-blog/blog003-2021-09-13/1-3.jpg" alt="1-3" /></p>
-<p>倍频至5.8GHz，频谱仪开了10dB衰减，又外接了10dB衰减器：</p>
-<p><img src="https://cnpp-image.oss-cn-beijing.aliyuncs.com/my-blog/blog003-2021-09-13/1-4.jpg" alt="1-4" /></p>
-<p>挑战一把8GHz：（至少还是有输出的）</p>
-<p><img src="https://cnpp-image.oss-cn-beijing.aliyuncs.com/my-blog/blog003-2021-09-13/1-5.jpg" alt="1-5" /></p>
-<p>其实此时，锁相环模块的输出功率已经衰减了很多，应该是模块上的滤波网络并没有做好支持。此外，HMC189A的需求十分吓人，输入功率要达到+15dBm才能达到最佳性能：</p>
-<p><img src="https://cnpp-image.oss-cn-beijing.aliyuncs.com/my-blog/blog003-2021-09-13/1-6.png" alt="1-6" /></p>
-<h2 id="总结"><a class="markdownIt-Anchor" href="#总结"></a> 总结</h2>
-<p>发现这个倍频器真的是十分开心，S波段的PLL——ADF4350也是拆机市场上的常客，这下C波段FMCW雷达项目的成本又可以大大降低了。</p>
-]]></content>
-      <categories>
-        <category>EE-随笔</category>
-      </categories>
-      <tags>
-        <tag>射频</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>【EE随笔-2】LMT4601 uModule</title>
     <url>/2021/09/19/blog005-2021-09-19/</url>
     <content><![CDATA[<p><img src="https://cnpp-image.oss-cn-beijing.aliyuncs.com/my-blog/blog005-2021-09-19/title.jpg" alt="title" /></p>
@@ -164,6 +164,24 @@
       <tags>
         <tag>CASIO</tag>
         <tag>Vintage</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>CORDIC算法的理解和Verilog实现</title>
+    <url>/2022/01/19/blog008-2022-01-19/</url>
+    <content><![CDATA[<p><img src="https://cnpp-image.oss-cn-beijing.aliyuncs.com/my-blog/blog008-2022-01-19/title.jpg" alt="title" /></p>
+<span id="more"></span>
+<h2 id="0引子"><a class="markdownIt-Anchor" href="#0引子"></a> 0.引子</h2>
+<p><img src="https://cnpp-image.oss-cn-beijing.aliyuncs.com/my-blog/blog008-2022-01-19/1-1.png" alt="1-1" /></p>
+<blockquote>
+<p>施工中</p>
+</blockquote>
+]]></content>
+      <categories>
+        <category>算法</category>
+      </categories>
+      <tags>
+        <tag>Verilog</tag>
       </tags>
   </entry>
   <entry>
@@ -232,6 +250,34 @@
 <blockquote>
 <p>施工中</p>
 </blockquote>
+]]></content>
+      <categories>
+        <category>射频电路</category>
+      </categories>
+      <tags>
+        <tag>射频</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>【EE随笔-3】 高线性度混频器ADL5350</title>
+    <url>/2022/02/10/blog010-2022-02-10/</url>
+    <content><![CDATA[<p><img src="https://cnpp-image.oss-cn-beijing.aliyuncs.com/my-blog/blog010-2022-02-10/title.png" alt="title" /></p>
+<span id="more"></span>
+<h2 id="随笔"><a class="markdownIt-Anchor" href="#随笔"></a> 随笔</h2>
+<p>好基友LingMao这两天在为新项目选型，提到了ADI的一款高线性度混频器<code>ADL5350</code>：</p>
+<p><a href="https://www.analog.com/en/products/adl5350.html">https://www.analog.com/en/products/adl5350.html</a></p>
+<p><img src="https://cnpp-image.oss-cn-beijing.aliyuncs.com/my-blog/blog010-2022-02-10/1-1.png" alt="1-1" /></p>
+<p>并发现在ADI技术论坛上有这样一个回复，ADL5350的RF和IF在芯片内是连在一起的，这下在使用中，输出滤波器不仅需要对付混频后的镜像，还要对付下RF或者IF信号（因为ADL5350既可以用作上变频器，也可以用作下变频器）。在手册中，给出了ADL5350的原理说明，它是一种GaAs pHEMT （氮化镓赝调制掺杂异质结场效应晶体管）单端无源混频器，通过FET结沟道的导电性变化来调制RF信号：</p>
+<p><img src="https://cnpp-image.oss-cn-beijing.aliyuncs.com/my-blog/blog010-2022-02-10/1-2.png" alt="1-2" /></p>
+<p>芯片外围需要不少LC网络。RF信号经过带通网络，抑制镜像并减弱宽带噪声。RF与IF在芯片内一同连接到时变负载上，这样RF信号就会受LO信号调制，并在IF端由带通网络抑制RF信号并选出混频信号。RF和IF端口应该是对称设计，并且可以互换。</p>
+<p>此外ADL5350使用了FET作为混频核心，但属于无源混频器，这使我想起了之前在电赛训练器件，经常会有“不允许使用其他有源器件”的限制，当时就“二极管是不是有源器件”、“变压器是不是有源器件”展开过激烈的讨论（本质还是想钻空子整活）。混频器也有有源与无源之分，但我未作详细的了解。在看到ADL5350手册中“The ADL5350 is a GaAs pHEMT, single-ended, passive mixer with an integrated LO buffer amplifier.”中的Passive一词时，一时不知如何翻译。索性去查询了一下电学中Passive的含义：</p>
+<p><a href="https://www.electrical4u.com/active-and-passive-elements-of-electrical-circuit/">https://www.electrical4u.com/active-and-passive-elements-of-electrical-circuit/</a></p>
+<blockquote>
+<p>A passive component is an electronic component which can only receive energy, which it can either dissipate, absorb or store it in an electric field or a magnetic field. Passive elements do not need any form of electrical power to operate.</p>
+</blockquote>
+<p>如此想来，混频核心需要使用电源的吉尔伯特型混频器、收音机里常用的单晶体管混频器等属于有源混频器；二极管混频器属于无源混频器。ADL5350的混频核心是时变负载，在工作时吸收RF或IF信号，因此属于无源混频器；同样，开关混频器也属于无源混频器。</p>
+<p>其实我认为做有源与无源的区分不是重点，重点是了解各种混频器的性能和特点，比如混频增益与线性度等。</p>
+<p>此外，在讨论中有群友提到：平衡混频器有一种用法，可以从IF口输入DC电流，RF的信号就会直接从LO出去，调电流就能调衰减。感觉是个值得研究的点。正巧我与LingMao在讨论衰减器与检波器配合完成较精准的电平控制的问题，衰减器的选型很是麻烦，不知这种混频器作为衰减器的用法能不能提供另一种可能。</p>
 ]]></content>
       <categories>
         <category>射频电路</category>
@@ -421,50 +467,23 @@
       </tags>
   </entry>
   <entry>
-    <title>CORDIC算法的理解和Verilog实现</title>
-    <url>/2022/01/19/blog008-2022-01-19/</url>
-    <content><![CDATA[<p><img src="https://cnpp-image.oss-cn-beijing.aliyuncs.com/my-blog/blog008-2022-01-19/title.jpg" alt="title" /></p>
-<span id="more"></span>
-<h2 id="0引子"><a class="markdownIt-Anchor" href="#0引子"></a> 0.引子</h2>
-<p><img src="https://cnpp-image.oss-cn-beijing.aliyuncs.com/my-blog/blog008-2022-01-19/1-1.png" alt="1-1" /></p>
-<blockquote>
-<p>施工中</p>
-</blockquote>
+    <title>Hello World</title>
+    <url>/2021/08/14/hello-world/</url>
+    <content><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
+<h2 id="quick-start"><a class="markdownIt-Anchor" href="#quick-start"></a> Quick Start</h2>
+<h3 id="create-a-new-post"><a class="markdownIt-Anchor" href="#create-a-new-post"></a> Create a new post</h3>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p>
+<h3 id="run-server"><a class="markdownIt-Anchor" href="#run-server"></a> Run server</h3>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p>
+<h3 id="generate-static-files"><a class="markdownIt-Anchor" href="#generate-static-files"></a> Generate static files</h3>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p>
+<h3 id="deploy-to-remote-sites"><a class="markdownIt-Anchor" href="#deploy-to-remote-sites"></a> Deploy to remote sites</h3>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
 ]]></content>
-      <categories>
-        <category>算法</category>
-      </categories>
-      <tags>
-        <tag>Verilog</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>【EE随笔-3】 高线性度混频器ADL5350</title>
-    <url>/2022/02/10/blog010-2022-02-10/</url>
-    <content><![CDATA[<p><img src="https://cnpp-image.oss-cn-beijing.aliyuncs.com/my-blog/blog010-2022-02-10/title.png" alt="title" /></p>
-<span id="more"></span>
-<h2 id="随笔"><a class="markdownIt-Anchor" href="#随笔"></a> 随笔</h2>
-<p>好基友LingMao这两天在为新项目选型，提到了ADI的一款高线性度混频器<code>ADL5350</code>：</p>
-<p><a href="https://www.analog.com/en/products/adl5350.html">https://www.analog.com/en/products/adl5350.html</a></p>
-<p><img src="https://cnpp-image.oss-cn-beijing.aliyuncs.com/my-blog/blog010-2022-02-10/1-1.png" alt="1-1" /></p>
-<p>并发现在ADI技术论坛上有这样一个回复，ADL5350的RF和IF在芯片内是连在一起的，这下在使用中，输出滤波器不仅需要对付混频后的镜像，还要对付下RF或者IF信号（因为ADL5350既可以用作上变频器，也可以用作下变频器）。在手册中，给出了ADL5350的原理说明，它是一种GaAs pHEMT （氮化镓赝调制掺杂异质结场效应晶体管）单端无源混频器，通过FET结沟道的导电性变化来调制RF信号：</p>
-<p><img src="https://cnpp-image.oss-cn-beijing.aliyuncs.com/my-blog/blog010-2022-02-10/1-2.png" alt="1-2" /></p>
-<p>芯片外围需要不少LC网络。RF信号经过带通网络，抑制镜像并减弱宽带噪声。RF与IF在芯片内一同连接到时变负载上，这样RF信号就会受LO信号调制，并在IF端由带通网络抑制RF信号并选出混频信号。RF和IF端口应该是对称设计，并且可以互换。</p>
-<p>此外ADL5350使用了FET作为混频核心，但属于无源混频器，这使我想起了之前在电赛训练器件，经常会有“不允许使用其他有源器件”的限制，当时就“二极管是不是有源器件”、“变压器是不是有源器件”展开过激烈的讨论（本质还是想钻空子整活）。混频器也有有源与无源之分，但我未作详细的了解。在看到ADL5350手册中“The ADL5350 is a GaAs pHEMT, single-ended, passive mixer with an integrated LO buffer amplifier.”中的Passive一词时，一时不知如何翻译。索性去查询了一下电学中Passive的含义：</p>
-<p><a href="https://www.electrical4u.com/active-and-passive-elements-of-electrical-circuit/">https://www.electrical4u.com/active-and-passive-elements-of-electrical-circuit/</a></p>
-<blockquote>
-<p>A passive component is an electronic component which can only receive energy, which it can either dissipate, absorb or store it in an electric field or a magnetic field. Passive elements do not need any form of electrical power to operate.</p>
-</blockquote>
-<p>如此想来，混频核心需要使用电源的吉尔伯特型混频器、收音机里常用的单晶体管混频器等属于有源混频器；二极管混频器属于无源混频器。ADL5350的混频核心是时变负载，在工作时吸收RF或IF信号，因此属于无源混频器；同样，开关混频器也属于无源混频器。</p>
-<p>其实我认为做有源与无源的区分不是重点，重点是了解各种混频器的性能和特点，比如混频增益与线性度等。</p>
-<p>此外，在讨论中有群友提到：平衡混频器有一种用法，可以从IF口输入DC电流，RF的信号就会直接从LO出去，调电流就能调衰减。感觉是个值得研究的点。正巧我与LingMao在讨论衰减器与检波器配合完成较精准的电平控制的问题，衰减器的选型很是麻烦，不知这种混频器作为衰减器的用法能不能提供另一种可能。</p>
-]]></content>
-      <categories>
-        <category>射频电路</category>
-      </categories>
-      <tags>
-        <tag>射频</tag>
-      </tags>
   </entry>
   <entry>
     <title>振荡器资料收集</title>
@@ -511,24 +530,5 @@
       <tags>
         <tag>模拟</tag>
       </tags>
-  </entry>
-  <entry>
-    <title>Hello World</title>
-    <url>/2021/08/14/hello-world/</url>
-    <content><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="quick-start"><a class="markdownIt-Anchor" href="#quick-start"></a> Quick Start</h2>
-<h3 id="create-a-new-post"><a class="markdownIt-Anchor" href="#create-a-new-post"></a> Create a new post</h3>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="run-server"><a class="markdownIt-Anchor" href="#run-server"></a> Run server</h3>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="generate-static-files"><a class="markdownIt-Anchor" href="#generate-static-files"></a> Generate static files</h3>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="deploy-to-remote-sites"><a class="markdownIt-Anchor" href="#deploy-to-remote-sites"></a> Deploy to remote sites</h3>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
-]]></content>
   </entry>
 </search>
