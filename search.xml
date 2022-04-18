@@ -167,24 +167,6 @@
       </tags>
   </entry>
   <entry>
-    <title>CORDIC算法的理解和Verilog实现</title>
-    <url>/2022/01/19/blog008-2022-01-19/</url>
-    <content><![CDATA[<p><img src="https://cnpp-image.oss-cn-beijing.aliyuncs.com/my-blog/blog008-2022-01-19/title.jpg" alt="title" /></p>
-<span id="more"></span>
-<h2 id="0引子"><a class="markdownIt-Anchor" href="#0引子"></a> 0.引子</h2>
-<p><img src="https://cnpp-image.oss-cn-beijing.aliyuncs.com/my-blog/blog008-2022-01-19/1-1.png" alt="1-1" /></p>
-<blockquote>
-<p>施工中</p>
-</blockquote>
-]]></content>
-      <categories>
-        <category>算法</category>
-      </categories>
-      <tags>
-        <tag>Verilog</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>HP-12C Calculator</title>
     <url>/2021/09/22/blog007-2021-09-22/</url>
     <content><![CDATA[<p><img src="https://cnpp-image.oss-cn-beijing.aliyuncs.com/my-blog/blog007-2021-09-22/title.JPG" alt="title" /></p>
@@ -207,6 +189,24 @@
       <tags>
         <tag>Vintage</tag>
         <tag>Hewlett-Packard</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>CORDIC算法的理解和Verilog实现</title>
+    <url>/2022/01/19/blog008-2022-01-19/</url>
+    <content><![CDATA[<p><img src="https://cnpp-image.oss-cn-beijing.aliyuncs.com/my-blog/blog008-2022-01-19/title.jpg" alt="title" /></p>
+<span id="more"></span>
+<h2 id="0引子"><a class="markdownIt-Anchor" href="#0引子"></a> 0.引子</h2>
+<p><img src="https://cnpp-image.oss-cn-beijing.aliyuncs.com/my-blog/blog008-2022-01-19/1-1.png" alt="1-1" /></p>
+<blockquote>
+<p>施工中</p>
+</blockquote>
+]]></content>
+      <categories>
+        <category>算法</category>
+      </categories>
+      <tags>
+        <tag>Verilog</tag>
       </tags>
   </entry>
   <entry>
@@ -284,6 +284,54 @@
       </categories>
       <tags>
         <tag>射频</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>振荡器资料收集</title>
+    <url>/2022/04/06/blog012-2022-04-06/</url>
+    <content><![CDATA[<p>平衡的艺术</p>
+<span id="more"></span>
+<h2 id="0资料收集"><a class="markdownIt-Anchor" href="#0资料收集"></a> 0.资料收集</h2>
+<h3 id="01状态可变振荡器"><a class="markdownIt-Anchor" href="#01状态可变振荡器"></a> 0.1.状态可变振荡器</h3>
+<ul>
+<li>DIGITALLY PROGRAMMABLE, TIME-CONTINUOUS ACTIVE FILTER：<a href="https://www.ti.com.cn/cn/lit/an/sbfa005/sbfa005.pdf?ts=1648699984042&amp;ref_url=https%253A%252F%252Fwww.ti.com.cn%252Fproduct%252Fcn%252FUAF42">https://www.ti.com.cn/cn/lit/an/sbfa005/sbfa005.pdf?ts=1648699984042&amp;ref_url=https%3A%2F%2Fwww.ti.com.cn%2Fproduct%2Fcn%2FUAF42</a></li>
+<li>FILTER DESIGN PROGRAM FOR THE UAF42 UNIVERSAL ACTIVE FILTER：<a href="https://www.ti.com.cn/cn/lit/an/sbfa002/sbfa002.pdf?ts=1648699989423&amp;ref_url=https%253A%252F%252Fwww.ti.com.cn%252Fproduct%252Fcn%252FUAF42">https://www.ti.com.cn/cn/lit/an/sbfa002/sbfa002.pdf?ts=1648699989423&amp;ref_url=https%3A%2F%2Fwww.ti.com.cn%2Fproduct%2Fcn%2FUAF42</a></li>
+<li>Designing RC Oscillator Circuits with Low Voltage Operational Amplifiers and Comparators for Precision Sensor Applications：<a href="https://www.onsemi.com/pub/Collateral/AND8054-D.PDF">https://www.onsemi.com/pub/Collateral/AND8054-D.PDF</a></li>
+<li>Designing Operational Amplifier Oscillator Circuits For Sensor Applications：<a href="https://ww1.microchip.com/downloads/en/Appnotes/00866a.pdf">https://ww1.microchip.com/downloads/en/Appnotes/00866a.pdf</a></li>
+<li>Nice state variable oscillator：<a href="https://www.eevblog.com/forum/projects/nice-state-variable-oscillator/">https://www.eevblog.com/forum/projects/nice-state-variable-oscillator/</a></li>
+<li>Developing a State Variable Oscillator for Audio Applications：<a href="http://www.williamsonic.com/AudioOsc/">http://www.williamsonic.com/AudioOsc/</a></li>
+<li>Fast Amplitude Stabilization of an RC Oscillator：<a href="https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&amp;arnumber=1050492">https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&amp;arnumber=1050492</a></li>
+<li>STATE WARIABLE OSCELLATOR HAVING IMPROVED REJECTION OF LEVELER-INDUCED DISTORTION：<a href="https://patentimages.storage.googleapis.com/11/ff/9f/cce62d8c83fc0c/US4560958.pdf">https://patentimages.storage.googleapis.com/11/ff/9f/cce62d8c83fc0c/US4560958.pdf</a></li>
+</ul>
+<h3 id="02文氏桥振荡器等"><a class="markdownIt-Anchor" href="#02文氏桥振荡器等"></a> 0.2.文氏桥振荡器等</h3>
+<ul>
+<li>Sine Wave Oscillators：<a href="https://www.kennethkuhn.com/students/ee431/oscillators_sine_wave.pdf">https://www.kennethkuhn.com/students/ee431/oscillators_sine_wave.pdf</a></li>
+<li>Using lamps for stabilizing oscillators：<a href="http://www.tronola.com/moorepage/Lamps.html">http://www.tronola.com/moorepage/Lamps.html</a></li>
+<li>Wien Bridge Oscillator：<a href="https://stompville.co.uk/?p=872">https://stompville.co.uk/?p=872</a></li>
+<li>Oscillators：<a href="http://jewel.buet.ac.bd/Electronics/Oscillators.pdf">http://jewel.buet.ac.bd/Electronics/Oscillators.pdf</a></li>
+<li>Oscillator Circuits：<a href="https://sites.science.oregonstate.edu/~giebultt/COURSES/ph412/Reading/oscillators-1p.pdf">https://sites.science.oregonstate.edu/~giebultt/COURSES/ph412/Reading/oscillators-1p.pdf</a></li>
+<li>Transistors Tutorial Part 7: “Oscillators”：<a href="http://www.learningelectronics.net/VA3AVR/tutorial/xtor/xtor7/xtor7.html">http://www.learningelectronics.net/VA3AVR/tutorial/xtor/xtor7/xtor7.html</a></li>
+</ul>
+<h3 id="03正交振荡器"><a class="markdownIt-Anchor" href="#03正交振荡器"></a> 0.3.正交振荡器</h3>
+<ul>
+<li>Quadrature Oscillator：<a href="https://freecircuitdiagram.com/979-quadrature-oscillator/">https://freecircuitdiagram.com/979-quadrature-oscillator/</a></li>
+<li>Quadrature Oscillators Using Operational Amplifiers：<a href="https://www.hindawi.com/journals/apec/2011/320367/">https://www.hindawi.com/journals/apec/2011/320367/</a></li>
+<li>Electronically Tunable Quadrature Sinusoidal Oscillator with Equal Output Amplitudes during Frequency Tuning Process：<a href="https://www.hindawi.com/journals/jece/2017/8575743/">https://www.hindawi.com/journals/jece/2017/8575743/</a></li>
+</ul>
+<h3 id="04数字振荡器"><a class="markdownIt-Anchor" href="#04数字振荡器"></a> 0.4.数字振荡器</h3>
+<ul>
+<li>A QUADRATURE OSCILLATOR：<a href="https://flylib.com/books/en/2.729.1/a_quadrature_oscillator.html">https://flylib.com/books/en/2.729.1/a_quadrature_oscillator.html</a></li>
+<li>Digital Sine Oscillator Design：<a href="https://www.njohnson.co.uk/pdf/drdes/Chap7.pdf">https://www.njohnson.co.uk/pdf/drdes/Chap7.pdf</a></li>
+<li>A New Recursive Quadrature Oscillator：<a href="https://www.vicanek.de/articles/QuadOsc.pdf">https://www.vicanek.de/articles/QuadOsc.pdf</a></li>
+<li>How to implement a digital oscillator?：<a href="https://www.vicanek.de/articles/QuadOsc.pdf">https://www.vicanek.de/articles/QuadOsc.pdf</a></li>
+<li>Digitally controlled oscillator for all-digital frequency locked loops：<a href="http://www.romjist.ro/full-texts/paper577.pdf">http://www.romjist.ro/full-texts/paper577.pdf</a></li>
+</ul>
+]]></content>
+      <categories>
+        <category>模拟电路</category>
+      </categories>
+      <tags>
+        <tag>模拟</tag>
       </tags>
   </entry>
   <entry>
@@ -464,54 +512,6 @@
       </categories>
       <tags>
         <tag>射频</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>振荡器资料收集</title>
-    <url>/2022/04/06/blog012-2022-04-06/</url>
-    <content><![CDATA[<p>平衡的艺术</p>
-<span id="more"></span>
-<h2 id="0资料收集"><a class="markdownIt-Anchor" href="#0资料收集"></a> 0.资料收集</h2>
-<h3 id="01状态可变振荡器"><a class="markdownIt-Anchor" href="#01状态可变振荡器"></a> 0.1.状态可变振荡器</h3>
-<ul>
-<li>DIGITALLY PROGRAMMABLE, TIME-CONTINUOUS ACTIVE FILTER：<a href="https://www.ti.com.cn/cn/lit/an/sbfa005/sbfa005.pdf?ts=1648699984042&amp;ref_url=https%253A%252F%252Fwww.ti.com.cn%252Fproduct%252Fcn%252FUAF42">https://www.ti.com.cn/cn/lit/an/sbfa005/sbfa005.pdf?ts=1648699984042&amp;ref_url=https%3A%2F%2Fwww.ti.com.cn%2Fproduct%2Fcn%2FUAF42</a></li>
-<li>FILTER DESIGN PROGRAM FOR THE UAF42 UNIVERSAL ACTIVE FILTER：<a href="https://www.ti.com.cn/cn/lit/an/sbfa002/sbfa002.pdf?ts=1648699989423&amp;ref_url=https%253A%252F%252Fwww.ti.com.cn%252Fproduct%252Fcn%252FUAF42">https://www.ti.com.cn/cn/lit/an/sbfa002/sbfa002.pdf?ts=1648699989423&amp;ref_url=https%3A%2F%2Fwww.ti.com.cn%2Fproduct%2Fcn%2FUAF42</a></li>
-<li>Designing RC Oscillator Circuits with Low Voltage Operational Amplifiers and Comparators for Precision Sensor Applications：<a href="https://www.onsemi.com/pub/Collateral/AND8054-D.PDF">https://www.onsemi.com/pub/Collateral/AND8054-D.PDF</a></li>
-<li>Designing Operational Amplifier Oscillator Circuits For Sensor Applications：<a href="https://ww1.microchip.com/downloads/en/Appnotes/00866a.pdf">https://ww1.microchip.com/downloads/en/Appnotes/00866a.pdf</a></li>
-<li>Nice state variable oscillator：<a href="https://www.eevblog.com/forum/projects/nice-state-variable-oscillator/">https://www.eevblog.com/forum/projects/nice-state-variable-oscillator/</a></li>
-<li>Developing a State Variable Oscillator for Audio Applications：<a href="http://www.williamsonic.com/AudioOsc/">http://www.williamsonic.com/AudioOsc/</a></li>
-<li>Fast Amplitude Stabilization of an RC Oscillator：<a href="https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&amp;arnumber=1050492">https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&amp;arnumber=1050492</a></li>
-<li>STATE WARIABLE OSCELLATOR HAVING IMPROVED REJECTION OF LEVELER-INDUCED DISTORTION：<a href="https://patentimages.storage.googleapis.com/11/ff/9f/cce62d8c83fc0c/US4560958.pdf">https://patentimages.storage.googleapis.com/11/ff/9f/cce62d8c83fc0c/US4560958.pdf</a></li>
-</ul>
-<h3 id="02文氏桥振荡器等"><a class="markdownIt-Anchor" href="#02文氏桥振荡器等"></a> 0.2.文氏桥振荡器等</h3>
-<ul>
-<li>Sine Wave Oscillators：<a href="https://www.kennethkuhn.com/students/ee431/oscillators_sine_wave.pdf">https://www.kennethkuhn.com/students/ee431/oscillators_sine_wave.pdf</a></li>
-<li>Using lamps for stabilizing oscillators：<a href="http://www.tronola.com/moorepage/Lamps.html">http://www.tronola.com/moorepage/Lamps.html</a></li>
-<li>Wien Bridge Oscillator：<a href="https://stompville.co.uk/?p=872">https://stompville.co.uk/?p=872</a></li>
-<li>Oscillators：<a href="http://jewel.buet.ac.bd/Electronics/Oscillators.pdf">http://jewel.buet.ac.bd/Electronics/Oscillators.pdf</a></li>
-<li>Oscillator Circuits：<a href="https://sites.science.oregonstate.edu/~giebultt/COURSES/ph412/Reading/oscillators-1p.pdf">https://sites.science.oregonstate.edu/~giebultt/COURSES/ph412/Reading/oscillators-1p.pdf</a></li>
-<li>Transistors Tutorial Part 7: “Oscillators”：<a href="http://www.learningelectronics.net/VA3AVR/tutorial/xtor/xtor7/xtor7.html">http://www.learningelectronics.net/VA3AVR/tutorial/xtor/xtor7/xtor7.html</a></li>
-</ul>
-<h3 id="03正交振荡器"><a class="markdownIt-Anchor" href="#03正交振荡器"></a> 0.3.正交振荡器</h3>
-<ul>
-<li>Quadrature Oscillator：<a href="https://freecircuitdiagram.com/979-quadrature-oscillator/">https://freecircuitdiagram.com/979-quadrature-oscillator/</a></li>
-<li>Quadrature Oscillators Using Operational Amplifiers：<a href="https://www.hindawi.com/journals/apec/2011/320367/">https://www.hindawi.com/journals/apec/2011/320367/</a></li>
-<li>Electronically Tunable Quadrature Sinusoidal Oscillator with Equal Output Amplitudes during Frequency Tuning Process：<a href="https://www.hindawi.com/journals/jece/2017/8575743/">https://www.hindawi.com/journals/jece/2017/8575743/</a></li>
-</ul>
-<h3 id="04数字振荡器"><a class="markdownIt-Anchor" href="#04数字振荡器"></a> 0.4.数字振荡器</h3>
-<ul>
-<li>A QUADRATURE OSCILLATOR：<a href="https://flylib.com/books/en/2.729.1/a_quadrature_oscillator.html">https://flylib.com/books/en/2.729.1/a_quadrature_oscillator.html</a></li>
-<li>Digital Sine Oscillator Design：<a href="https://www.njohnson.co.uk/pdf/drdes/Chap7.pdf">https://www.njohnson.co.uk/pdf/drdes/Chap7.pdf</a></li>
-<li>A New Recursive Quadrature Oscillator：<a href="https://www.vicanek.de/articles/QuadOsc.pdf">https://www.vicanek.de/articles/QuadOsc.pdf</a></li>
-<li>How to implement a digital oscillator?：<a href="https://www.vicanek.de/articles/QuadOsc.pdf">https://www.vicanek.de/articles/QuadOsc.pdf</a></li>
-<li>Digitally controlled oscillator for all-digital frequency locked loops：<a href="http://www.romjist.ro/full-texts/paper577.pdf">http://www.romjist.ro/full-texts/paper577.pdf</a></li>
-</ul>
-]]></content>
-      <categories>
-        <category>模拟电路</category>
-      </categories>
-      <tags>
-        <tag>模拟</tag>
       </tags>
   </entry>
   <entry>
