@@ -165,6 +165,88 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://cheeennpp.github.io/2022/05/12/blog014-2022-05-12/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="https://cnpp-image.oss-cn-beijing.aliyuncs.com/my-blog/image/header-cheeen-1.jpg">
+      <meta itemprop="name" content="CNPP">
+      <meta itemprop="description" content="BH9FQG">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="橙的核电站">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2022/05/12/blog014-2022-05-12/" class="post-title-link" itemprop="url">经典双平衡混频器NE602</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+              
+
+              <time title="创建时间：2022-05-12 18:23:42 / 修改时间：21:26:42" itemprop="dateCreated datePublished" datetime="2022-05-12T18:23:42+08:00">2022-05-12</time>
+            </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E5%B0%84%E9%A2%91%E7%94%B5%E8%B7%AF/" itemprop="url" rel="index"><span itemprop="name">射频电路</span></a>
+                </span>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <p><img src="blog014-2022-05-12/title.jpg" alt="title" /></p>
+<h2 id="0前言"><a class="markdownIt-Anchor" href="#0前言"></a> 0.前言</h2>
+<p>在电子DIY领域，总有那么几款芯片被人津津乐道，拥有浩瀚的应用电路，甚至是许多人接触电子后第一个认识的芯片。比如有着“万能芯片”之称的<strong>555</strong>定时器，数模混合的特性使它拥有了无线可能，我制作的第一个电路就是一个基于<strong>555</strong>的方波、三角波和正弦波发生器；再之后，我又借着<strong>555</strong>，走上了开关电源之路，制作了高压电容充电器、等离子扬声器和无线充电器等视听与可玩性俱佳的小玩意</p>
+<p>据说，自七十年代初到之后的很长一段时间，运放<strong>741</strong>是最为常运的放大器，现在在一些电子DIY网站上找到的很多老电路图中的运放都是这款。而对于零零后的我们，这一最常用运放的地位也许该让位给了<strong>358</strong>，它得益于宽供电范围，比较低的输入输出下轨，可适用于大多数供电场合。它稳定的性能也使得我现在遇到电路中疑似运放故障的问题时，依然会换上一片358进行交叉排除。</p>
+<p>而今天所要说的，是射频领域的“万能芯片”：<strong>NE602</strong>双平衡混频器，也包括它的姊妹型号<strong>NE612</strong>、<strong>SA602</strong>、<strong>SA612</strong>。</p>
+<h2 id="资料收集"><a class="markdownIt-Anchor" href="#资料收集"></a> 资料收集</h2>
+<ul>
+<li>SA612A Double-balanced mixer and oscillator product data sheet: <a target="_blank" rel="noopener" href="https://www.nxp.com.cn/docs/en/data-sheet/SA612A.pdf">https://www.nxp.com.cn/docs/en/data-sheet/SA612A.pdf</a></li>
+<li>AN1982 Applying the oscillator of the NE602 in low-power mixer applications: <a target="_blank" rel="noopener" href="https://docs.rs-online.com/3cf1/0900766b80027aa2.pdf">https://docs.rs-online.com/3cf1/0900766b80027aa2.pdf</a></li>
+<li>AN1983 Crystal oscillators and frequency multipliers using the NE602 and NE5212: <a target="_blank" rel="noopener" href="https://web.stanford.edu/class/ee133/appnotes/AN1983.pdf">https://web.stanford.edu/class/ee133/appnotes/AN1983.pdf</a></li>
+<li>PA1DSP - Why NOT to use the NE602: <a target="_blank" rel="noopener" href="https://studyres.com/doc/7790754/pa1dsp---why-not-to-use-the-ne602?page=1">https://studyres.com/doc/7790754/pa1dsp---why-not-to-use-the-ne602?page=1</a></li>
+<li>Modernization of QRP RADIOS and Development of the QCX transceiver: <a target="_blank" rel="noopener" href="https://www.qrp-labs.com/images/news/dayton2018/seminar.pdf">https://www.qrp-labs.com/images/news/dayton2018/seminar.pdf</a></li>
+<li>Single-chip frequency conventer: <a target="_blank" rel="noopener" href="http://www.n5dux.com/ham/files/pdf/Single-Chip%20Frequency%20Converter.pdf">http://www.n5dux.com/ham/files/pdf/Single-Chip Frequency Converter.pdf</a></li>
+<li>Using the NE602: <a target="_blank" rel="noopener" href="http://www.lb3hc.net/wp-content/uploads/2019/12/UsingTheNe602.pdf">http://www.lb3hc.net/wp-content/uploads/2019/12/UsingTheNe602.pdf</a></li>
+</ul>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
     <link itemprop="mainEntityOfPage" href="https://cheeennpp.github.io/2022/04/24/blog013-2022-04-24/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -878,87 +960,6 @@
   
   
 
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="https://cheeennpp.github.io/2021/09/16/blog004-2021-09-16/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="https://cnpp-image.oss-cn-beijing.aliyuncs.com/my-blog/image/header-cheeen-1.jpg">
-      <meta itemprop="name" content="CNPP">
-      <meta itemprop="description" content="BH9FQG">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="橙的核电站">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/2021/09/16/blog004-2021-09-16/" class="post-title-link" itemprop="url">定向耦合器与定向电桥</a>
-        </h2>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
-
-              <time title="创建时间：2021-09-16 11:33:54" itemprop="dateCreated datePublished" datetime="2021-09-16T11:33:54+08:00">2021-09-16</time>
-            </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-calendar-check-o"></i>
-                </span>
-                <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2022-04-01 17:38:44" itemprop="dateModified" datetime="2022-04-01T17:38:44+08:00">2022-04-01</time>
-              </span>
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              <span class="post-meta-item-text">分类于</span>
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/%E5%B0%84%E9%A2%91%E7%94%B5%E8%B7%AF/" itemprop="url" rel="index"><span itemprop="name">射频电路</span></a>
-                </span>
-            </span>
-
-          
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <p><img src="https://cnpp-image.oss-cn-beijing.aliyuncs.com/my-blog/blog004-2021-09-16/title.png" alt="title" /></p>
-          <!--noindex-->
-            <div class="post-button">
-              <a class="btn" href="/2021/09/16/blog004-2021-09-16/#more" rel="contents">
-                阅读全文 &raquo;
-              </a>
-            </div>
-          <!--/noindex-->
-        
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
 
   
   <nav class="pagination">
@@ -1030,7 +1031,7 @@
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">14</span>
+          <span class="site-state-item-count">15</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
