@@ -19,6 +19,23 @@
       </tags>
   </entry>
   <entry>
+    <title>博客结构</title>
+    <url>/2021/09/13/blog002-2021-09-13/</url>
+    <content><![CDATA[<h2 id="前言"><a class="markdownIt-Anchor" href="#前言"></a> 前言</h2>
+<p>一个EE的博客。</p>
+<ul>
+<li>日常的制作进度，开坑想法，小成果等，会放<code>EE-随笔</code><strong>分类</strong>中，这些仅作记录，并没有完整的工程结构。</li>
+<li>一个完整的项目，会放在特定的<strong>分类</strong>中，并会围绕此，结合Github仓库，构建工程。</li>
+</ul>
+]]></content>
+      <categories>
+        <category>生活-随笔</category>
+      </categories>
+      <tags>
+        <tag>生活</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>【EE随笔-1】HMC189A倍频器</title>
     <url>/2021/09/13/blog003-2021-09-13/</url>
     <content><![CDATA[<p><img src="https://cnpp-image.oss-cn-beijing.aliyuncs.com/my-blog/blog003-2021-09-13/title.jpg" alt="title" /></p>
@@ -46,47 +63,6 @@
       </categories>
       <tags>
         <tag>射频</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>博客结构</title>
-    <url>/2021/09/13/blog002-2021-09-13/</url>
-    <content><![CDATA[<h2 id="前言"><a class="markdownIt-Anchor" href="#前言"></a> 前言</h2>
-<p>一个EE的博客。</p>
-<ul>
-<li>日常的制作进度，开坑想法，小成果等，会放<code>EE-随笔</code><strong>分类</strong>中，这些仅作记录，并没有完整的工程结构。</li>
-<li>一个完整的项目，会放在特定的<strong>分类</strong>中，并会围绕此，结合Github仓库，构建工程。</li>
-</ul>
-]]></content>
-      <categories>
-        <category>生活-随笔</category>
-      </categories>
-      <tags>
-        <tag>生活</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>【EE随笔-2】LMT4601 uModule</title>
-    <url>/2021/09/19/blog005-2021-09-19/</url>
-    <content><![CDATA[<p><img src="https://cnpp-image.oss-cn-beijing.aliyuncs.com/my-blog/blog005-2021-09-19/title.jpg" alt="title" /></p>
-<span id="more"></span>
-<h2 id="随笔"><a class="markdownIt-Anchor" href="#随笔"></a> 随笔</h2>
-<p>今日在<s>海鲜市场</s><code>30包邮</code>提得两片带板凌力尔特<s>特供巧克力月饼</s>，参数看上去甚是生猛，更兼有远端检测和锁相环等花哨功能：</p>
-<p><img src="https://cnpp-image.oss-cn-beijing.aliyuncs.com/my-blog/blog005-2021-09-19/2-1.png" alt="2-1" /></p>
-<p><img src="https://cnpp-image.oss-cn-beijing.aliyuncs.com/my-blog/blog005-2021-09-19/2-2.png" alt="2-2" /></p>
-<p><img src="https://cnpp-image.oss-cn-beijing.aliyuncs.com/my-blog/blog005-2021-09-19/1-1.jpg" alt="1-1" /></p>
-<p><img src="https://cnpp-image.oss-cn-beijing.aliyuncs.com/my-blog/blog005-2021-09-19/1-2.jpg" alt="1-2" /></p>
-<p><img src="https://cnpp-image.oss-cn-beijing.aliyuncs.com/my-blog/blog005-2021-09-19/1-3.jpg" alt="1-3" /></p>
-<p><img src="https://cnpp-image.oss-cn-beijing.aliyuncs.com/my-blog/blog005-2021-09-19/1-4.jpg" alt="1-4" /></p>
-<p>也许能做一个超大输出电流精密电源吧。</p>
-<p>至于PLL的功能，是将开关频率同步至外部的参考频率，以避免向系统中引入额外的谐波分量。在<strong>Linear</strong>的应用笔记中，也介绍过一种使用<code>D触发器</code>将开关频率与参考频率同步的方法：</p>
-<p><img src="https://cnpp-image.oss-cn-beijing.aliyuncs.com/my-blog/blog005-2021-09-19/3-1.png" alt="3-1" /></p>
-]]></content>
-      <categories>
-        <category>EE-随笔</category>
-      </categories>
-      <tags>
-        <tag>电源</tag>
       </tags>
   </entry>
   <entry>
@@ -144,6 +120,53 @@
       </tags>
   </entry>
   <entry>
+    <title>【EE随笔-2】LMT4601 uModule</title>
+    <url>/2021/09/19/blog005-2021-09-19/</url>
+    <content><![CDATA[<p><img src="https://cnpp-image.oss-cn-beijing.aliyuncs.com/my-blog/blog005-2021-09-19/title.jpg" alt="title" /></p>
+<span id="more"></span>
+<h2 id="随笔"><a class="markdownIt-Anchor" href="#随笔"></a> 随笔</h2>
+<p>今日在<s>海鲜市场</s><code>30包邮</code>提得两片带板凌力尔特<s>特供巧克力月饼</s>，参数看上去甚是生猛，更兼有远端检测和锁相环等花哨功能：</p>
+<p><img src="https://cnpp-image.oss-cn-beijing.aliyuncs.com/my-blog/blog005-2021-09-19/2-1.png" alt="2-1" /></p>
+<p><img src="https://cnpp-image.oss-cn-beijing.aliyuncs.com/my-blog/blog005-2021-09-19/2-2.png" alt="2-2" /></p>
+<p><img src="https://cnpp-image.oss-cn-beijing.aliyuncs.com/my-blog/blog005-2021-09-19/1-1.jpg" alt="1-1" /></p>
+<p><img src="https://cnpp-image.oss-cn-beijing.aliyuncs.com/my-blog/blog005-2021-09-19/1-2.jpg" alt="1-2" /></p>
+<p><img src="https://cnpp-image.oss-cn-beijing.aliyuncs.com/my-blog/blog005-2021-09-19/1-3.jpg" alt="1-3" /></p>
+<p><img src="https://cnpp-image.oss-cn-beijing.aliyuncs.com/my-blog/blog005-2021-09-19/1-4.jpg" alt="1-4" /></p>
+<p>也许能做一个超大输出电流精密电源吧。</p>
+<p>至于PLL的功能，是将开关频率同步至外部的参考频率，以避免向系统中引入额外的谐波分量。在<strong>Linear</strong>的应用笔记中，也介绍过一种使用<code>D触发器</code>将开关频率与参考频率同步的方法：</p>
+<p><img src="https://cnpp-image.oss-cn-beijing.aliyuncs.com/my-blog/blog005-2021-09-19/3-1.png" alt="3-1" /></p>
+]]></content>
+      <categories>
+        <category>EE-随笔</category>
+      </categories>
+      <tags>
+        <tag>电源</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>CASIO fx-50F Calculator</title>
+    <url>/2021/09/22/blog006-2021-09-22/</url>
+    <content><![CDATA[<p><img src="https://cnpp-image.oss-cn-beijing.aliyuncs.com/my-blog/blog006-2021-09-22/title.jpg" alt="title" /></p>
+<span id="more"></span>
+<p><img src="https://cnpp-image.oss-cn-beijing.aliyuncs.com/my-blog/blog006-2021-09-22/1-1.jpg" alt="1-1" /></p>
+<p><img src="https://cnpp-image.oss-cn-beijing.aliyuncs.com/my-blog/blog006-2021-09-22/1-2.jpg" alt="1-2" /></p>
+<p><img src="https://cnpp-image.oss-cn-beijing.aliyuncs.com/my-blog/blog006-2021-09-22/1-3.jpg" alt="1-3" /></p>
+<p><img src="https://cnpp-image.oss-cn-beijing.aliyuncs.com/my-blog/blog006-2021-09-22/1-4.jpg" alt="1-4" /></p>
+<p><img src="https://cnpp-image.oss-cn-beijing.aliyuncs.com/my-blog/blog006-2021-09-22/1-5.jpg" alt="1-5" /></p>
+<p><img src="https://cnpp-image.oss-cn-beijing.aliyuncs.com/my-blog/blog006-2021-09-22/1-6.jpg" alt="1-6" /></p>
+<blockquote>
+<p>施工中</p>
+</blockquote>
+]]></content>
+      <categories>
+        <category>计算器</category>
+      </categories>
+      <tags>
+        <tag>CASIO</tag>
+        <tag>Vintage</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>HP-12C Calculator</title>
     <url>/2021/09/22/blog007-2021-09-22/</url>
     <content><![CDATA[<p><img src="https://cnpp-image.oss-cn-beijing.aliyuncs.com/my-blog/blog007-2021-09-22/title.JPG" alt="title" /></p>
@@ -164,8 +187,8 @@
         <category>计算器</category>
       </categories>
       <tags>
-        <tag>Hewlett-Packard</tag>
         <tag>Vintage</tag>
+        <tag>Hewlett-Packard</tag>
       </tags>
   </entry>
   <entry>
@@ -218,26 +241,21 @@
       </tags>
   </entry>
   <entry>
-    <title>CASIO fx-50F Calculator</title>
-    <url>/2021/09/22/blog006-2021-09-22/</url>
-    <content><![CDATA[<p><img src="https://cnpp-image.oss-cn-beijing.aliyuncs.com/my-blog/blog006-2021-09-22/title.jpg" alt="title" /></p>
+    <title>CORDIC算法的理解和Verilog实现</title>
+    <url>/2022/01/19/blog008-2022-01-19/</url>
+    <content><![CDATA[<p><img src="https://cnpp-image.oss-cn-beijing.aliyuncs.com/my-blog/blog008-2022-01-19/title.jpg" alt="title" /></p>
 <span id="more"></span>
-<p><img src="https://cnpp-image.oss-cn-beijing.aliyuncs.com/my-blog/blog006-2021-09-22/1-1.jpg" alt="1-1" /></p>
-<p><img src="https://cnpp-image.oss-cn-beijing.aliyuncs.com/my-blog/blog006-2021-09-22/1-2.jpg" alt="1-2" /></p>
-<p><img src="https://cnpp-image.oss-cn-beijing.aliyuncs.com/my-blog/blog006-2021-09-22/1-3.jpg" alt="1-3" /></p>
-<p><img src="https://cnpp-image.oss-cn-beijing.aliyuncs.com/my-blog/blog006-2021-09-22/1-4.jpg" alt="1-4" /></p>
-<p><img src="https://cnpp-image.oss-cn-beijing.aliyuncs.com/my-blog/blog006-2021-09-22/1-5.jpg" alt="1-5" /></p>
-<p><img src="https://cnpp-image.oss-cn-beijing.aliyuncs.com/my-blog/blog006-2021-09-22/1-6.jpg" alt="1-6" /></p>
+<h2 id="0引子"><a class="markdownIt-Anchor" href="#0引子"></a> 0.引子</h2>
+<p><img src="https://cnpp-image.oss-cn-beijing.aliyuncs.com/my-blog/blog008-2022-01-19/1-1.png" alt="1-1" /></p>
 <blockquote>
 <p>施工中</p>
 </blockquote>
 ]]></content>
       <categories>
-        <category>计算器</category>
+        <category>算法</category>
       </categories>
       <tags>
-        <tag>Vintage</tag>
-        <tag>CASIO</tag>
+        <tag>Verilog</tag>
       </tags>
   </entry>
   <entry>
@@ -449,24 +467,6 @@
       </tags>
   </entry>
   <entry>
-    <title>CORDIC算法的理解和Verilog实现</title>
-    <url>/2022/01/19/blog008-2022-01-19/</url>
-    <content><![CDATA[<p><img src="https://cnpp-image.oss-cn-beijing.aliyuncs.com/my-blog/blog008-2022-01-19/title.jpg" alt="title" /></p>
-<span id="more"></span>
-<h2 id="0引子"><a class="markdownIt-Anchor" href="#0引子"></a> 0.引子</h2>
-<p><img src="https://cnpp-image.oss-cn-beijing.aliyuncs.com/my-blog/blog008-2022-01-19/1-1.png" alt="1-1" /></p>
-<blockquote>
-<p>施工中</p>
-</blockquote>
-]]></content>
-      <categories>
-        <category>算法</category>
-      </categories>
-      <tags>
-        <tag>Verilog</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>振荡器资料收集</title>
     <url>/2022/04/06/blog012-2022-04-06/</url>
     <content><![CDATA[<p>平衡的艺术</p>
@@ -512,32 +512,6 @@
       </categories>
       <tags>
         <tag>模拟</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>经典双平衡混频器NE602</title>
-    <url>/2022/05/12/blog014-2022-05-12/</url>
-    <content><![CDATA[<p><img src="blog014-2022-05-12/title.jpg" alt="title" /></p>
-<h2 id="0前言"><a class="markdownIt-Anchor" href="#0前言"></a> 0.前言</h2>
-<p>在电子DIY领域，总有那么几款芯片被人津津乐道，拥有浩瀚的应用电路，甚至是许多人接触电子后第一个认识的芯片。比如有着“万能芯片”之称的<strong>555</strong>定时器，数模混合的特性使它拥有了无线可能，我制作的第一个电路就是一个基于<strong>555</strong>的方波、三角波和正弦波发生器；再之后，我又借着<strong>555</strong>，走上了开关电源之路，制作了高压电容充电器、等离子扬声器和无线充电器等视听与可玩性俱佳的小玩意</p>
-<p>据说，自七十年代初到之后的很长一段时间，运放<strong>741</strong>是最为常运的放大器，现在在一些电子DIY网站上找到的很多老电路图中的运放都是这款。而对于零零后的我们，这一最常用运放的地位也许该让位给了<strong>358</strong>，它得益于宽供电范围，比较低的输入输出下轨，可适用于大多数供电场合。它稳定的性能也使得我现在遇到电路中疑似运放故障的问题时，依然会换上一片358进行交叉排除。</p>
-<p>而今天所要说的，是射频领域的“万能芯片”：<strong>NE602</strong>双平衡混频器，也包括它的姊妹型号<strong>NE612</strong>、<strong>SA602</strong>、<strong>SA612</strong>。</p>
-<h2 id="资料收集"><a class="markdownIt-Anchor" href="#资料收集"></a> 资料收集</h2>
-<ul>
-<li>SA612A Double-balanced mixer and oscillator product data sheet: <a href="https://www.nxp.com.cn/docs/en/data-sheet/SA612A.pdf">https://www.nxp.com.cn/docs/en/data-sheet/SA612A.pdf</a></li>
-<li>AN1982 Applying the oscillator of the NE602 in low-power mixer applications: <a href="https://docs.rs-online.com/3cf1/0900766b80027aa2.pdf">https://docs.rs-online.com/3cf1/0900766b80027aa2.pdf</a></li>
-<li>AN1983 Crystal oscillators and frequency multipliers using the NE602 and NE5212: <a href="https://web.stanford.edu/class/ee133/appnotes/AN1983.pdf">https://web.stanford.edu/class/ee133/appnotes/AN1983.pdf</a></li>
-<li>PA1DSP - Why NOT to use the NE602: <a href="https://studyres.com/doc/7790754/pa1dsp---why-not-to-use-the-ne602?page=1">https://studyres.com/doc/7790754/pa1dsp---why-not-to-use-the-ne602?page=1</a></li>
-<li>Modernization of QRP RADIOS and Development of the QCX transceiver: <a href="https://www.qrp-labs.com/images/news/dayton2018/seminar.pdf">https://www.qrp-labs.com/images/news/dayton2018/seminar.pdf</a></li>
-<li>Single-chip frequency conventer: <a href="http://www.n5dux.com/ham/files/pdf/Single-Chip%20Frequency%20Converter.pdf">http://www.n5dux.com/ham/files/pdf/Single-Chip Frequency Converter.pdf</a></li>
-<li>Using the NE602: <a href="http://www.lb3hc.net/wp-content/uploads/2019/12/UsingTheNe602.pdf">http://www.lb3hc.net/wp-content/uploads/2019/12/UsingTheNe602.pdf</a></li>
-</ul>
-]]></content>
-      <categories>
-        <category>射频电路</category>
-      </categories>
-      <tags>
-        <tag>射频</tag>
       </tags>
   </entry>
   <entry>
@@ -677,6 +651,32 @@
       </categories>
       <tags>
         <tag>数字图像处理</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>经典双平衡混频器NE602</title>
+    <url>/2022/05/12/blog014-2022-05-12/</url>
+    <content><![CDATA[<p><img src="blog014-2022-05-12/title.jpg" alt="title" /></p>
+<h2 id="0前言"><a class="markdownIt-Anchor" href="#0前言"></a> 0.前言</h2>
+<p>在电子DIY领域，总有那么几款芯片被人津津乐道，拥有浩瀚的应用电路，甚至是许多人接触电子后第一个认识的芯片。比如有着“万能芯片”之称的<strong>555</strong>定时器，数模混合的特性使它拥有了无线可能，我制作的第一个电路就是一个基于<strong>555</strong>的方波、三角波和正弦波发生器；再之后，我又借着<strong>555</strong>，走上了开关电源之路，制作了高压电容充电器、等离子扬声器和无线充电器等视听与可玩性俱佳的小玩意</p>
+<p>据说，自七十年代初到之后的很长一段时间，运放<strong>741</strong>是最为常运的放大器，现在在一些电子DIY网站上找到的很多老电路图中的运放都是这款。而对于零零后的我们，这一最常用运放的地位也许该让位给了<strong>358</strong>，它得益于宽供电范围，比较低的输入输出下轨，可适用于大多数供电场合。它稳定的性能也使得我现在遇到电路中疑似运放故障的问题时，依然会换上一片358进行交叉排除。</p>
+<p>而今天所要说的，是射频领域的“万能芯片”：<strong>NE602</strong>双平衡混频器，也包括它的姊妹型号<strong>NE612</strong>、<strong>SA602</strong>、<strong>SA612</strong>。</p>
+<h2 id="资料收集"><a class="markdownIt-Anchor" href="#资料收集"></a> 资料收集</h2>
+<ul>
+<li>SA612A Double-balanced mixer and oscillator product data sheet: <a href="https://www.nxp.com.cn/docs/en/data-sheet/SA612A.pdf">https://www.nxp.com.cn/docs/en/data-sheet/SA612A.pdf</a></li>
+<li>AN1982 Applying the oscillator of the NE602 in low-power mixer applications: <a href="https://docs.rs-online.com/3cf1/0900766b80027aa2.pdf">https://docs.rs-online.com/3cf1/0900766b80027aa2.pdf</a></li>
+<li>AN1983 Crystal oscillators and frequency multipliers using the NE602 and NE5212: <a href="https://web.stanford.edu/class/ee133/appnotes/AN1983.pdf">https://web.stanford.edu/class/ee133/appnotes/AN1983.pdf</a></li>
+<li>PA1DSP - Why NOT to use the NE602: <a href="https://studyres.com/doc/7790754/pa1dsp---why-not-to-use-the-ne602?page=1">https://studyres.com/doc/7790754/pa1dsp---why-not-to-use-the-ne602?page=1</a></li>
+<li>Modernization of QRP RADIOS and Development of the QCX transceiver: <a href="https://www.qrp-labs.com/images/news/dayton2018/seminar.pdf">https://www.qrp-labs.com/images/news/dayton2018/seminar.pdf</a></li>
+<li>Single-chip frequency conventer: <a href="http://www.n5dux.com/ham/files/pdf/Single-Chip%20Frequency%20Converter.pdf">http://www.n5dux.com/ham/files/pdf/Single-Chip Frequency Converter.pdf</a></li>
+<li>Using the NE602: <a href="http://www.lb3hc.net/wp-content/uploads/2019/12/UsingTheNe602.pdf">http://www.lb3hc.net/wp-content/uploads/2019/12/UsingTheNe602.pdf</a></li>
+</ul>
+]]></content>
+      <categories>
+        <category>射频电路</category>
+      </categories>
+      <tags>
+        <tag>射频</tag>
       </tags>
   </entry>
   <entry>
