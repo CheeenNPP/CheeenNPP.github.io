@@ -192,6 +192,24 @@
       </tags>
   </entry>
   <entry>
+    <title>CORDIC算法的理解和Verilog实现</title>
+    <url>/2022/01/19/blog008-2022-01-19/</url>
+    <content><![CDATA[<p><img src="https://cnpp-image.oss-cn-beijing.aliyuncs.com/my-blog/blog008-2022-01-19/title.jpg" alt="title" /></p>
+<span id="more"></span>
+<h2 id="0引子"><a class="markdownIt-Anchor" href="#0引子"></a> 0.引子</h2>
+<p><img src="https://cnpp-image.oss-cn-beijing.aliyuncs.com/my-blog/blog008-2022-01-19/1-1.png" alt="1-1" /></p>
+<blockquote>
+<p>施工中</p>
+</blockquote>
+]]></content>
+      <categories>
+        <category>算法</category>
+      </categories>
+      <tags>
+        <tag>Verilog</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>射频电路的自动增益控制</title>
     <url>/2022/01/12/blog009-2022-01-12/</url>
     <content><![CDATA[<p><img src="https://cnpp-image.oss-cn-beijing.aliyuncs.com/my-blog/blog009-2022-01-12/title.png" alt="title" /></p>
@@ -238,24 +256,6 @@
       </categories>
       <tags>
         <tag>射频</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>CORDIC算法的理解和Verilog实现</title>
-    <url>/2022/01/19/blog008-2022-01-19/</url>
-    <content><![CDATA[<p><img src="https://cnpp-image.oss-cn-beijing.aliyuncs.com/my-blog/blog008-2022-01-19/title.jpg" alt="title" /></p>
-<span id="more"></span>
-<h2 id="0引子"><a class="markdownIt-Anchor" href="#0引子"></a> 0.引子</h2>
-<p><img src="https://cnpp-image.oss-cn-beijing.aliyuncs.com/my-blog/blog008-2022-01-19/1-1.png" alt="1-1" /></p>
-<blockquote>
-<p>施工中</p>
-</blockquote>
-]]></content>
-      <categories>
-        <category>算法</category>
-      </categories>
-      <tags>
-        <tag>Verilog</tag>
       </tags>
   </entry>
   <entry>
@@ -515,6 +515,32 @@
       </tags>
   </entry>
   <entry>
+    <title>经典双平衡混频器NE602</title>
+    <url>/2022/05/12/blog014-2022-05-12/</url>
+    <content><![CDATA[<p><img src="https://cnpp-image.oss-cn-beijing.aliyuncs.com/my-blog/blog014-2022-05-12/title.jpg" alt="title" /></p>
+<h2 id="0前言"><a class="markdownIt-Anchor" href="#0前言"></a> 0.前言</h2>
+<p>在电子DIY领域，总有那么几款芯片被人津津乐道，拥有浩瀚的应用电路，甚至是许多人接触电子后第一个认识的芯片。比如有着“万能芯片”之称的<strong>555</strong>定时器，数模混合的特性使它拥有了无线可能，我制作的第一个电路就是一个基于<strong>555</strong>的方波、三角波和正弦波发生器；再之后，我又借着<strong>555</strong>，走上了开关电源之路，制作了高压电容充电器、等离子扬声器和无线充电器等视听与可玩性俱佳的小玩意</p>
+<p>据说，自七十年代初到之后的很长一段时间，运放<strong>741</strong>是最为常运的放大器，现在在一些电子DIY网站上找到的很多老电路图中的运放都是这款。而对于零零后的我们，这一最常用运放的地位也许该让位给了<strong>358</strong>，它得益于宽供电范围，比较低的输入输出下轨，可适用于大多数供电场合。它稳定的性能也使得我现在遇到电路中疑似运放故障的问题时，依然会换上一片358进行交叉排除。</p>
+<p>而今天所要说的，是射频领域的“万能芯片”：<strong>NE602</strong>双平衡混频器，也包括它的姊妹型号<strong>NE612</strong>、<strong>SA602</strong>、<strong>SA612</strong>。</p>
+<h2 id="资料收集"><a class="markdownIt-Anchor" href="#资料收集"></a> 资料收集</h2>
+<ul>
+<li>SA612A Double-balanced mixer and oscillator product data sheet: <a href="https://www.nxp.com.cn/docs/en/data-sheet/SA612A.pdf">https://www.nxp.com.cn/docs/en/data-sheet/SA612A.pdf</a></li>
+<li>AN1982 Applying the oscillator of the NE602 in low-power mixer applications: <a href="https://docs.rs-online.com/3cf1/0900766b80027aa2.pdf">https://docs.rs-online.com/3cf1/0900766b80027aa2.pdf</a></li>
+<li>AN1983 Crystal oscillators and frequency multipliers using the NE602 and NE5212: <a href="https://web.stanford.edu/class/ee133/appnotes/AN1983.pdf">https://web.stanford.edu/class/ee133/appnotes/AN1983.pdf</a></li>
+<li>PA1DSP - Why NOT to use the NE602: <a href="https://studyres.com/doc/7790754/pa1dsp---why-not-to-use-the-ne602?page=1">https://studyres.com/doc/7790754/pa1dsp---why-not-to-use-the-ne602?page=1</a></li>
+<li>Modernization of QRP RADIOS and Development of the QCX transceiver: <a href="https://www.qrp-labs.com/images/news/dayton2018/seminar.pdf">https://www.qrp-labs.com/images/news/dayton2018/seminar.pdf</a></li>
+<li>Single-chip frequency conventer: <a href="http://www.n5dux.com/ham/files/pdf/Single-Chip%20Frequency%20Converter.pdf">http://www.n5dux.com/ham/files/pdf/Single-Chip Frequency Converter.pdf</a></li>
+<li>Using the NE602: <a href="http://www.lb3hc.net/wp-content/uploads/2019/12/UsingTheNe602.pdf">http://www.lb3hc.net/wp-content/uploads/2019/12/UsingTheNe602.pdf</a></li>
+</ul>
+]]></content>
+      <categories>
+        <category>射频电路</category>
+      </categories>
+      <tags>
+        <tag>射频</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>图像抖动及其应用</title>
     <url>/2022/04/24/blog013-2022-04-24/</url>
     <content><![CDATA[<p><img src="https://cnpp-image.oss-cn-beijing.aliyuncs.com/my-blog/blog013-2022-04-24/title.jpg" alt="title" /></p>
@@ -651,32 +677,6 @@
       </categories>
       <tags>
         <tag>数字图像处理</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>经典双平衡混频器NE602</title>
-    <url>/2022/05/12/blog014-2022-05-12/</url>
-    <content><![CDATA[<p><img src="blog014-2022-05-12/title.jpg" alt="title" /></p>
-<h2 id="0前言"><a class="markdownIt-Anchor" href="#0前言"></a> 0.前言</h2>
-<p>在电子DIY领域，总有那么几款芯片被人津津乐道，拥有浩瀚的应用电路，甚至是许多人接触电子后第一个认识的芯片。比如有着“万能芯片”之称的<strong>555</strong>定时器，数模混合的特性使它拥有了无线可能，我制作的第一个电路就是一个基于<strong>555</strong>的方波、三角波和正弦波发生器；再之后，我又借着<strong>555</strong>，走上了开关电源之路，制作了高压电容充电器、等离子扬声器和无线充电器等视听与可玩性俱佳的小玩意</p>
-<p>据说，自七十年代初到之后的很长一段时间，运放<strong>741</strong>是最为常运的放大器，现在在一些电子DIY网站上找到的很多老电路图中的运放都是这款。而对于零零后的我们，这一最常用运放的地位也许该让位给了<strong>358</strong>，它得益于宽供电范围，比较低的输入输出下轨，可适用于大多数供电场合。它稳定的性能也使得我现在遇到电路中疑似运放故障的问题时，依然会换上一片358进行交叉排除。</p>
-<p>而今天所要说的，是射频领域的“万能芯片”：<strong>NE602</strong>双平衡混频器，也包括它的姊妹型号<strong>NE612</strong>、<strong>SA602</strong>、<strong>SA612</strong>。</p>
-<h2 id="资料收集"><a class="markdownIt-Anchor" href="#资料收集"></a> 资料收集</h2>
-<ul>
-<li>SA612A Double-balanced mixer and oscillator product data sheet: <a href="https://www.nxp.com.cn/docs/en/data-sheet/SA612A.pdf">https://www.nxp.com.cn/docs/en/data-sheet/SA612A.pdf</a></li>
-<li>AN1982 Applying the oscillator of the NE602 in low-power mixer applications: <a href="https://docs.rs-online.com/3cf1/0900766b80027aa2.pdf">https://docs.rs-online.com/3cf1/0900766b80027aa2.pdf</a></li>
-<li>AN1983 Crystal oscillators and frequency multipliers using the NE602 and NE5212: <a href="https://web.stanford.edu/class/ee133/appnotes/AN1983.pdf">https://web.stanford.edu/class/ee133/appnotes/AN1983.pdf</a></li>
-<li>PA1DSP - Why NOT to use the NE602: <a href="https://studyres.com/doc/7790754/pa1dsp---why-not-to-use-the-ne602?page=1">https://studyres.com/doc/7790754/pa1dsp---why-not-to-use-the-ne602?page=1</a></li>
-<li>Modernization of QRP RADIOS and Development of the QCX transceiver: <a href="https://www.qrp-labs.com/images/news/dayton2018/seminar.pdf">https://www.qrp-labs.com/images/news/dayton2018/seminar.pdf</a></li>
-<li>Single-chip frequency conventer: <a href="http://www.n5dux.com/ham/files/pdf/Single-Chip%20Frequency%20Converter.pdf">http://www.n5dux.com/ham/files/pdf/Single-Chip Frequency Converter.pdf</a></li>
-<li>Using the NE602: <a href="http://www.lb3hc.net/wp-content/uploads/2019/12/UsingTheNe602.pdf">http://www.lb3hc.net/wp-content/uploads/2019/12/UsingTheNe602.pdf</a></li>
-</ul>
-]]></content>
-      <categories>
-        <category>射频电路</category>
-      </categories>
-      <tags>
-        <tag>射频</tag>
       </tags>
   </entry>
   <entry>
