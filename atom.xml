@@ -6,7 +6,7 @@
   <link href="https://cheeennpp.github.io/atom.xml" rel="self"/>
   
   <link href="https://cheeennpp.github.io/"/>
-  <updated>2022-05-12T13:49:44.814Z</updated>
+  <updated>2022-05-13T14:39:34.143Z</updated>
   <id>https://cheeennpp.github.io/</id>
   
   <author>
@@ -21,17 +21,10 @@
     <link href="https://cheeennpp.github.io/2022/05/12/blog014-2022-05-12/"/>
     <id>https://cheeennpp.github.io/2022/05/12/blog014-2022-05-12/</id>
     <published>2022-05-12T10:23:42.000Z</published>
-    <updated>2022-05-12T13:49:44.814Z</updated>
+    <updated>2022-05-13T14:39:34.143Z</updated>
     
     
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;&lt;img src=&quot;https://cnpp-image.oss-cn-beijing.aliyuncs.com/my-blog/blog014-2022-05-12/title.jpg&quot; alt=&quot;title&quot; /&gt;&lt;/p&gt;
-&lt;h2 id=&quot;0前言&quot;&gt;&lt;a</summary>
-        
-      
+    <summary type="html">&lt;p&gt;&lt;img src=&quot;https://cnpp-image.oss-cn-beijing.aliyuncs.com/my-blog/blog014-2022-05-12/title.jpg&quot; alt=&quot;title&quot; /&gt;&lt;/p&gt;</summary>
     
     
     
@@ -171,9 +164,9 @@
     <category term="计算器" scheme="https://cheeennpp.github.io/categories/%E8%AE%A1%E7%AE%97%E5%99%A8/"/>
     
     
-    <category term="Vintage" scheme="https://cheeennpp.github.io/tags/Vintage/"/>
-    
     <category term="Hewlett-Packard" scheme="https://cheeennpp.github.io/tags/Hewlett-Packard/"/>
+    
+    <category term="Vintage" scheme="https://cheeennpp.github.io/tags/Vintage/"/>
     
   </entry>
   
@@ -192,9 +185,9 @@
     <category term="计算器" scheme="https://cheeennpp.github.io/categories/%E8%AE%A1%E7%AE%97%E5%99%A8/"/>
     
     
-    <category term="CASIO" scheme="https://cheeennpp.github.io/tags/CASIO/"/>
-    
     <category term="Vintage" scheme="https://cheeennpp.github.io/tags/Vintage/"/>
+    
+    <category term="CASIO" scheme="https://cheeennpp.github.io/tags/CASIO/"/>
     
   </entry>
   
