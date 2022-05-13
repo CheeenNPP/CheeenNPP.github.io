@@ -19,6 +19,23 @@
       </tags>
   </entry>
   <entry>
+    <title>博客结构</title>
+    <url>/2021/09/13/blog002-2021-09-13/</url>
+    <content><![CDATA[<h2 id="前言"><a class="markdownIt-Anchor" href="#前言"></a> 前言</h2>
+<p>一个EE的博客。</p>
+<ul>
+<li>日常的制作进度，开坑想法，小成果等，会放<code>EE-随笔</code><strong>分类</strong>中，这些仅作记录，并没有完整的工程结构。</li>
+<li>一个完整的项目，会放在特定的<strong>分类</strong>中，并会围绕此，结合Github仓库，构建工程。</li>
+</ul>
+]]></content>
+      <categories>
+        <category>生活-随笔</category>
+      </categories>
+      <tags>
+        <tag>生活</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>【EE随笔-1】HMC189A倍频器</title>
     <url>/2021/09/13/blog003-2021-09-13/</url>
     <content><![CDATA[<p><img src="https://cnpp-image.oss-cn-beijing.aliyuncs.com/my-blog/blog003-2021-09-13/title.jpg" alt="title" /></p>
@@ -46,47 +63,6 @@
       </categories>
       <tags>
         <tag>射频</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>博客结构</title>
-    <url>/2021/09/13/blog002-2021-09-13/</url>
-    <content><![CDATA[<h2 id="前言"><a class="markdownIt-Anchor" href="#前言"></a> 前言</h2>
-<p>一个EE的博客。</p>
-<ul>
-<li>日常的制作进度，开坑想法，小成果等，会放<code>EE-随笔</code><strong>分类</strong>中，这些仅作记录，并没有完整的工程结构。</li>
-<li>一个完整的项目，会放在特定的<strong>分类</strong>中，并会围绕此，结合Github仓库，构建工程。</li>
-</ul>
-]]></content>
-      <categories>
-        <category>生活-随笔</category>
-      </categories>
-      <tags>
-        <tag>生活</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>【EE随笔-2】LMT4601 uModule</title>
-    <url>/2021/09/19/blog005-2021-09-19/</url>
-    <content><![CDATA[<p><img src="https://cnpp-image.oss-cn-beijing.aliyuncs.com/my-blog/blog005-2021-09-19/title.jpg" alt="title" /></p>
-<span id="more"></span>
-<h2 id="随笔"><a class="markdownIt-Anchor" href="#随笔"></a> 随笔</h2>
-<p>今日在<s>海鲜市场</s><code>30包邮</code>提得两片带板凌力尔特<s>特供巧克力月饼</s>，参数看上去甚是生猛，更兼有远端检测和锁相环等花哨功能：</p>
-<p><img src="https://cnpp-image.oss-cn-beijing.aliyuncs.com/my-blog/blog005-2021-09-19/2-1.png" alt="2-1" /></p>
-<p><img src="https://cnpp-image.oss-cn-beijing.aliyuncs.com/my-blog/blog005-2021-09-19/2-2.png" alt="2-2" /></p>
-<p><img src="https://cnpp-image.oss-cn-beijing.aliyuncs.com/my-blog/blog005-2021-09-19/1-1.jpg" alt="1-1" /></p>
-<p><img src="https://cnpp-image.oss-cn-beijing.aliyuncs.com/my-blog/blog005-2021-09-19/1-2.jpg" alt="1-2" /></p>
-<p><img src="https://cnpp-image.oss-cn-beijing.aliyuncs.com/my-blog/blog005-2021-09-19/1-3.jpg" alt="1-3" /></p>
-<p><img src="https://cnpp-image.oss-cn-beijing.aliyuncs.com/my-blog/blog005-2021-09-19/1-4.jpg" alt="1-4" /></p>
-<p>也许能做一个超大输出电流精密电源吧。</p>
-<p>至于PLL的功能，是将开关频率同步至外部的参考频率，以避免向系统中引入额外的谐波分量。在<strong>Linear</strong>的应用笔记中，也介绍过一种使用<code>D触发器</code>将开关频率与参考频率同步的方法：</p>
-<p><img src="https://cnpp-image.oss-cn-beijing.aliyuncs.com/my-blog/blog005-2021-09-19/3-1.png" alt="3-1" /></p>
-]]></content>
-      <categories>
-        <category>EE-随笔</category>
-      </categories>
-      <tags>
-        <tag>电源</tag>
       </tags>
   </entry>
   <entry>
@@ -144,28 +120,27 @@
       </tags>
   </entry>
   <entry>
-    <title>HP-12C Calculator</title>
-    <url>/2021/09/22/blog007-2021-09-22/</url>
-    <content><![CDATA[<p><img src="https://cnpp-image.oss-cn-beijing.aliyuncs.com/my-blog/blog007-2021-09-22/title.JPG" alt="title" /></p>
+    <title>【EE随笔-2】LMT4601 uModule</title>
+    <url>/2021/09/19/blog005-2021-09-19/</url>
+    <content><![CDATA[<p><img src="https://cnpp-image.oss-cn-beijing.aliyuncs.com/my-blog/blog005-2021-09-19/title.jpg" alt="title" /></p>
 <span id="more"></span>
-<p><img src="https://cnpp-image.oss-cn-beijing.aliyuncs.com/my-blog/blog007-2021-09-22/1-1.jpg" alt="1-1" /></p>
-<p><img src="https://cnpp-image.oss-cn-beijing.aliyuncs.com/my-blog/blog007-2021-09-22/1-2.jpg" alt="1-2" /></p>
-<p><img src="https://cnpp-image.oss-cn-beijing.aliyuncs.com/my-blog/blog007-2021-09-22/1-3.jpg" alt="1-3" /></p>
-<p><img src="https://cnpp-image.oss-cn-beijing.aliyuncs.com/my-blog/blog007-2021-09-22/1-4.jpg" alt="1-4" /></p>
-<p><img src="https://cnpp-image.oss-cn-beijing.aliyuncs.com/my-blog/blog007-2021-09-22/1-5.jpg" alt="1-5" /></p>
-<p><img src="https://cnpp-image.oss-cn-beijing.aliyuncs.com/my-blog/blog007-2021-09-22/1-6.jpg" alt="1-6" /></p>
-<p><img src="https://cnpp-image.oss-cn-beijing.aliyuncs.com/my-blog/blog007-2021-09-22/1-7.jpg" alt="1-7" /></p>
-<p><img src="https://cnpp-image.oss-cn-beijing.aliyuncs.com/my-blog/blog007-2021-09-22/1-8.jpg" alt="1-8" /></p>
-<blockquote>
-<p>施工中</p>
-</blockquote>
+<h2 id="随笔"><a class="markdownIt-Anchor" href="#随笔"></a> 随笔</h2>
+<p>今日在<s>海鲜市场</s><code>30包邮</code>提得两片带板凌力尔特<s>特供巧克力月饼</s>，参数看上去甚是生猛，更兼有远端检测和锁相环等花哨功能：</p>
+<p><img src="https://cnpp-image.oss-cn-beijing.aliyuncs.com/my-blog/blog005-2021-09-19/2-1.png" alt="2-1" /></p>
+<p><img src="https://cnpp-image.oss-cn-beijing.aliyuncs.com/my-blog/blog005-2021-09-19/2-2.png" alt="2-2" /></p>
+<p><img src="https://cnpp-image.oss-cn-beijing.aliyuncs.com/my-blog/blog005-2021-09-19/1-1.jpg" alt="1-1" /></p>
+<p><img src="https://cnpp-image.oss-cn-beijing.aliyuncs.com/my-blog/blog005-2021-09-19/1-2.jpg" alt="1-2" /></p>
+<p><img src="https://cnpp-image.oss-cn-beijing.aliyuncs.com/my-blog/blog005-2021-09-19/1-3.jpg" alt="1-3" /></p>
+<p><img src="https://cnpp-image.oss-cn-beijing.aliyuncs.com/my-blog/blog005-2021-09-19/1-4.jpg" alt="1-4" /></p>
+<p>也许能做一个超大输出电流精密电源吧。</p>
+<p>至于PLL的功能，是将开关频率同步至外部的参考频率，以避免向系统中引入额外的谐波分量。在<strong>Linear</strong>的应用笔记中，也介绍过一种使用<code>D触发器</code>将开关频率与参考频率同步的方法：</p>
+<p><img src="https://cnpp-image.oss-cn-beijing.aliyuncs.com/my-blog/blog005-2021-09-19/3-1.png" alt="3-1" /></p>
 ]]></content>
       <categories>
-        <category>计算器</category>
+        <category>EE-随笔</category>
       </categories>
       <tags>
-        <tag>Hewlett-Packard</tag>
-        <tag>Vintage</tag>
+        <tag>电源</tag>
       </tags>
   </entry>
   <entry>
@@ -187,8 +162,51 @@
         <category>计算器</category>
       </categories>
       <tags>
-        <tag>Vintage</tag>
         <tag>CASIO</tag>
+        <tag>Vintage</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>HP-12C Calculator</title>
+    <url>/2021/09/22/blog007-2021-09-22/</url>
+    <content><![CDATA[<p><img src="https://cnpp-image.oss-cn-beijing.aliyuncs.com/my-blog/blog007-2021-09-22/title.JPG" alt="title" /></p>
+<span id="more"></span>
+<p><img src="https://cnpp-image.oss-cn-beijing.aliyuncs.com/my-blog/blog007-2021-09-22/1-1.jpg" alt="1-1" /></p>
+<p><img src="https://cnpp-image.oss-cn-beijing.aliyuncs.com/my-blog/blog007-2021-09-22/1-2.jpg" alt="1-2" /></p>
+<p><img src="https://cnpp-image.oss-cn-beijing.aliyuncs.com/my-blog/blog007-2021-09-22/1-3.jpg" alt="1-3" /></p>
+<p><img src="https://cnpp-image.oss-cn-beijing.aliyuncs.com/my-blog/blog007-2021-09-22/1-4.jpg" alt="1-4" /></p>
+<p><img src="https://cnpp-image.oss-cn-beijing.aliyuncs.com/my-blog/blog007-2021-09-22/1-5.jpg" alt="1-5" /></p>
+<p><img src="https://cnpp-image.oss-cn-beijing.aliyuncs.com/my-blog/blog007-2021-09-22/1-6.jpg" alt="1-6" /></p>
+<p><img src="https://cnpp-image.oss-cn-beijing.aliyuncs.com/my-blog/blog007-2021-09-22/1-7.jpg" alt="1-7" /></p>
+<p><img src="https://cnpp-image.oss-cn-beijing.aliyuncs.com/my-blog/blog007-2021-09-22/1-8.jpg" alt="1-8" /></p>
+<blockquote>
+<p>施工中</p>
+</blockquote>
+]]></content>
+      <categories>
+        <category>计算器</category>
+      </categories>
+      <tags>
+        <tag>Vintage</tag>
+        <tag>Hewlett-Packard</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>CORDIC算法的理解和Verilog实现</title>
+    <url>/2022/01/19/blog008-2022-01-19/</url>
+    <content><![CDATA[<p><img src="https://cnpp-image.oss-cn-beijing.aliyuncs.com/my-blog/blog008-2022-01-19/title.jpg" alt="title" /></p>
+<span id="more"></span>
+<h2 id="0引子"><a class="markdownIt-Anchor" href="#0引子"></a> 0.引子</h2>
+<p><img src="https://cnpp-image.oss-cn-beijing.aliyuncs.com/my-blog/blog008-2022-01-19/1-1.png" alt="1-1" /></p>
+<blockquote>
+<p>施工中</p>
+</blockquote>
+]]></content>
+      <categories>
+        <category>算法</category>
+      </categories>
+      <tags>
+        <tag>Verilog</tag>
       </tags>
   </entry>
   <entry>
@@ -241,24 +259,6 @@
       </tags>
   </entry>
   <entry>
-    <title>CORDIC算法的理解和Verilog实现</title>
-    <url>/2022/01/19/blog008-2022-01-19/</url>
-    <content><![CDATA[<p><img src="https://cnpp-image.oss-cn-beijing.aliyuncs.com/my-blog/blog008-2022-01-19/title.jpg" alt="title" /></p>
-<span id="more"></span>
-<h2 id="0引子"><a class="markdownIt-Anchor" href="#0引子"></a> 0.引子</h2>
-<p><img src="https://cnpp-image.oss-cn-beijing.aliyuncs.com/my-blog/blog008-2022-01-19/1-1.png" alt="1-1" /></p>
-<blockquote>
-<p>施工中</p>
-</blockquote>
-]]></content>
-      <categories>
-        <category>算法</category>
-      </categories>
-      <tags>
-        <tag>Verilog</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>【EE随笔-3】 高线性度混频器ADL5350</title>
     <url>/2022/02/10/blog010-2022-02-10/</url>
     <content><![CDATA[<p><img src="https://cnpp-image.oss-cn-beijing.aliyuncs.com/my-blog/blog010-2022-02-10/title.png" alt="title" /></p>
@@ -284,54 +284,6 @@
       </categories>
       <tags>
         <tag>射频</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>振荡器资料收集</title>
-    <url>/2022/04/06/blog012-2022-04-06/</url>
-    <content><![CDATA[<p>平衡的艺术</p>
-<span id="more"></span>
-<h2 id="0资料收集"><a class="markdownIt-Anchor" href="#0资料收集"></a> 0.资料收集</h2>
-<h3 id="01状态可变振荡器"><a class="markdownIt-Anchor" href="#01状态可变振荡器"></a> 0.1.状态可变振荡器</h3>
-<ul>
-<li>DIGITALLY PROGRAMMABLE, TIME-CONTINUOUS ACTIVE FILTER：<a href="https://www.ti.com.cn/cn/lit/an/sbfa005/sbfa005.pdf?ts=1648699984042&amp;ref_url=https%253A%252F%252Fwww.ti.com.cn%252Fproduct%252Fcn%252FUAF42">https://www.ti.com.cn/cn/lit/an/sbfa005/sbfa005.pdf?ts=1648699984042&amp;ref_url=https%3A%2F%2Fwww.ti.com.cn%2Fproduct%2Fcn%2FUAF42</a></li>
-<li>FILTER DESIGN PROGRAM FOR THE UAF42 UNIVERSAL ACTIVE FILTER：<a href="https://www.ti.com.cn/cn/lit/an/sbfa002/sbfa002.pdf?ts=1648699989423&amp;ref_url=https%253A%252F%252Fwww.ti.com.cn%252Fproduct%252Fcn%252FUAF42">https://www.ti.com.cn/cn/lit/an/sbfa002/sbfa002.pdf?ts=1648699989423&amp;ref_url=https%3A%2F%2Fwww.ti.com.cn%2Fproduct%2Fcn%2FUAF42</a></li>
-<li>Designing RC Oscillator Circuits with Low Voltage Operational Amplifiers and Comparators for Precision Sensor Applications：<a href="https://www.onsemi.com/pub/Collateral/AND8054-D.PDF">https://www.onsemi.com/pub/Collateral/AND8054-D.PDF</a></li>
-<li>Designing Operational Amplifier Oscillator Circuits For Sensor Applications：<a href="https://ww1.microchip.com/downloads/en/Appnotes/00866a.pdf">https://ww1.microchip.com/downloads/en/Appnotes/00866a.pdf</a></li>
-<li>Nice state variable oscillator：<a href="https://www.eevblog.com/forum/projects/nice-state-variable-oscillator/">https://www.eevblog.com/forum/projects/nice-state-variable-oscillator/</a></li>
-<li>Developing a State Variable Oscillator for Audio Applications：<a href="http://www.williamsonic.com/AudioOsc/">http://www.williamsonic.com/AudioOsc/</a></li>
-<li>Fast Amplitude Stabilization of an RC Oscillator：<a href="https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&amp;arnumber=1050492">https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&amp;arnumber=1050492</a></li>
-<li>STATE WARIABLE OSCELLATOR HAVING IMPROVED REJECTION OF LEVELER-INDUCED DISTORTION：<a href="https://patentimages.storage.googleapis.com/11/ff/9f/cce62d8c83fc0c/US4560958.pdf">https://patentimages.storage.googleapis.com/11/ff/9f/cce62d8c83fc0c/US4560958.pdf</a></li>
-</ul>
-<h3 id="02文氏桥振荡器等"><a class="markdownIt-Anchor" href="#02文氏桥振荡器等"></a> 0.2.文氏桥振荡器等</h3>
-<ul>
-<li>Sine Wave Oscillators：<a href="https://www.kennethkuhn.com/students/ee431/oscillators_sine_wave.pdf">https://www.kennethkuhn.com/students/ee431/oscillators_sine_wave.pdf</a></li>
-<li>Using lamps for stabilizing oscillators：<a href="http://www.tronola.com/moorepage/Lamps.html">http://www.tronola.com/moorepage/Lamps.html</a></li>
-<li>Wien Bridge Oscillator：<a href="https://stompville.co.uk/?p=872">https://stompville.co.uk/?p=872</a></li>
-<li>Oscillators：<a href="http://jewel.buet.ac.bd/Electronics/Oscillators.pdf">http://jewel.buet.ac.bd/Electronics/Oscillators.pdf</a></li>
-<li>Oscillator Circuits：<a href="https://sites.science.oregonstate.edu/~giebultt/COURSES/ph412/Reading/oscillators-1p.pdf">https://sites.science.oregonstate.edu/~giebultt/COURSES/ph412/Reading/oscillators-1p.pdf</a></li>
-<li>Transistors Tutorial Part 7: “Oscillators”：<a href="http://www.learningelectronics.net/VA3AVR/tutorial/xtor/xtor7/xtor7.html">http://www.learningelectronics.net/VA3AVR/tutorial/xtor/xtor7/xtor7.html</a></li>
-</ul>
-<h3 id="03正交振荡器"><a class="markdownIt-Anchor" href="#03正交振荡器"></a> 0.3.正交振荡器</h3>
-<ul>
-<li>Quadrature Oscillator：<a href="https://freecircuitdiagram.com/979-quadrature-oscillator/">https://freecircuitdiagram.com/979-quadrature-oscillator/</a></li>
-<li>Quadrature Oscillators Using Operational Amplifiers：<a href="https://www.hindawi.com/journals/apec/2011/320367/">https://www.hindawi.com/journals/apec/2011/320367/</a></li>
-<li>Electronically Tunable Quadrature Sinusoidal Oscillator with Equal Output Amplitudes during Frequency Tuning Process：<a href="https://www.hindawi.com/journals/jece/2017/8575743/">https://www.hindawi.com/journals/jece/2017/8575743/</a></li>
-</ul>
-<h3 id="04数字振荡器"><a class="markdownIt-Anchor" href="#04数字振荡器"></a> 0.4.数字振荡器</h3>
-<ul>
-<li>A QUADRATURE OSCILLATOR：<a href="https://flylib.com/books/en/2.729.1/a_quadrature_oscillator.html">https://flylib.com/books/en/2.729.1/a_quadrature_oscillator.html</a></li>
-<li>Digital Sine Oscillator Design：<a href="https://www.njohnson.co.uk/pdf/drdes/Chap7.pdf">https://www.njohnson.co.uk/pdf/drdes/Chap7.pdf</a></li>
-<li>A New Recursive Quadrature Oscillator：<a href="https://www.vicanek.de/articles/QuadOsc.pdf">https://www.vicanek.de/articles/QuadOsc.pdf</a></li>
-<li>How to implement a digital oscillator?：<a href="https://www.vicanek.de/articles/QuadOsc.pdf">https://www.vicanek.de/articles/QuadOsc.pdf</a></li>
-<li>Digitally controlled oscillator for all-digital frequency locked loops：<a href="http://www.romjist.ro/full-texts/paper577.pdf">http://www.romjist.ro/full-texts/paper577.pdf</a></li>
-</ul>
-]]></content>
-      <categories>
-        <category>模拟电路</category>
-      </categories>
-      <tags>
-        <tag>模拟</tag>
       </tags>
   </entry>
   <entry>
@@ -515,102 +467,51 @@
       </tags>
   </entry>
   <entry>
-    <title>经典双平衡混频器NE602</title>
-    <url>/2022/05/12/blog014-2022-05-12/</url>
-    <content><![CDATA[<p><img src="https://cnpp-image.oss-cn-beijing.aliyuncs.com/my-blog/blog014-2022-05-12/title.jpg" alt="title" /></p>
+    <title>振荡器资料收集</title>
+    <url>/2022/04/06/blog012-2022-04-06/</url>
+    <content><![CDATA[<p>平衡的艺术</p>
 <span id="more"></span>
-<h2 id="0前言"><a class="markdownIt-Anchor" href="#0前言"></a> 0.前言</h2>
-<p>在电子DIY领域，总有那么几款芯片被人津津乐道，拥有浩瀚的应用电路，甚至是许多人接触电子后第一个认识的芯片。比如有着“万能芯片”之称的<strong>555</strong>定时器，数模混合的特性使它拥有了无线可能，我制作的第一个电路就是一个基于<strong>555</strong>的方波、三角波和正弦波发生器；再之后，我又借着<strong>555</strong>，走上了开关电源之路，制作了高压电容充电器、等离子扬声器和无线充电器等视听与可玩性俱佳的小玩意</p>
-<p>据说，自七十年代初到之后的很长一段时间，运放<strong>741</strong>是最为常运的放大器，现在在一些电子DIY网站上找到的很多老电路图中的运放都是这款。而对于零零后的我们，这一最常用运放的地位也许该让位给了<strong>358</strong>，它得益于宽供电范围，比较低的输入输出下轨，可适用于大多数供电场合。它稳定的性能也使得我现在遇到电路中疑似运放故障的问题时，依然会换上一片358进行交叉排除。</p>
-<p>而今天所要说的，是射频领域的“万能芯片”：<strong>NE602</strong>双平衡混频器，也包括它的姊妹型号<strong>NE612</strong>、<strong>SA602</strong>、<strong>SA612</strong>。我第一次见到这颗芯片是在“蛙鸣”短波电台中，之后在矿石收音机论坛和各种业余无线电的DIY书籍中也频频见到它的身影，当然，这都是高中时（2018年左右）的记忆了。而最近当我拆开初版<strong>NanoVNA</strong>的屏蔽壳时，它依然在那里（不过是现在生产更多的型号<strong>SA612</strong>），在这台可以工作至900MHz的完备的掌上矢量网络分析仪中。</p>
-<p>随着我对射频与无线电的兴趣一步步加深，脑海中也逐渐浮现了一些射频仪表、收发信机之类的设计灵感。在选型时，我想找一个1GHz以下，功耗尽可能低的混频器，发现竟鲜有相关的产品（<strong>ADI</strong>挺有名的AD831混频器功耗几乎有1W，正常工作时就已经能达到烫手的程度），在道路尽头等待我的，依旧是<strong>NE602</strong>系列，以及另一款在<strong>ICOM</strong>的手台中很常用的<strong>uPC2757</strong>。</p>
-<p>也许这就是经典吧。真好最近我想尝试制作一个低成本的射频<strong>I-V</strong>法阻抗分析仪，并以<strong>SA612</strong>为主要混频器，于是一边写下此文，一边先行学习这颗经典芯片的使用方法。</p>
-<h2 id="1资料收集"><a class="markdownIt-Anchor" href="#1资料收集"></a> 1.资料收集</h2>
+<h2 id="0资料收集"><a class="markdownIt-Anchor" href="#0资料收集"></a> 0.资料收集</h2>
+<h3 id="01状态可变振荡器"><a class="markdownIt-Anchor" href="#01状态可变振荡器"></a> 0.1.状态可变振荡器</h3>
 <ul>
-<li>SA612A Double-balanced mixer and oscillator product data sheet: <a href="https://www.nxp.com.cn/docs/en/data-sheet/SA612A.pdf">https://www.nxp.com.cn/docs/en/data-sheet/SA612A.pdf</a></li>
-<li>AN1982 Applying the oscillator of the NE602 in low-power mixer applications: <a href="https://docs.rs-online.com/3cf1/0900766b80027aa2.pdf">https://docs.rs-online.com/3cf1/0900766b80027aa2.pdf</a></li>
-<li>AN1983 Crystal oscillators and frequency multipliers using the NE602 and NE5212: <a href="https://web.stanford.edu/class/ee133/appnotes/AN1983.pdf">https://web.stanford.edu/class/ee133/appnotes/AN1983.pdf</a></li>
-<li>PA1DSP - Why NOT to use the NE602: <a href="https://studyres.com/doc/7790754/pa1dsp---why-not-to-use-the-ne602?page=1">https://studyres.com/doc/7790754/pa1dsp---why-not-to-use-the-ne602?page=1</a></li>
-<li>Modernization of QRP RADIOS and Development of the QCX transceiver: <a href="https://www.qrp-labs.com/images/news/dayton2018/seminar.pdf">https://www.qrp-labs.com/images/news/dayton2018/seminar.pdf</a></li>
-<li>Single-chip frequency conventer: <a href="http://www.n5dux.com/ham/files/pdf/Single-Chip%20Frequency%20Converter.pdf">http://www.n5dux.com/ham/files/pdf/Single-Chip Frequency Converter.pdf</a></li>
-<li>Using the NE602: <a href="http://www.lb3hc.net/wp-content/uploads/2019/12/UsingTheNe602.pdf">http://www.lb3hc.net/wp-content/uploads/2019/12/UsingTheNe602.pdf</a></li>
+<li>DIGITALLY PROGRAMMABLE, TIME-CONTINUOUS ACTIVE FILTER：<a href="https://www.ti.com.cn/cn/lit/an/sbfa005/sbfa005.pdf?ts=1648699984042&amp;ref_url=https%253A%252F%252Fwww.ti.com.cn%252Fproduct%252Fcn%252FUAF42">https://www.ti.com.cn/cn/lit/an/sbfa005/sbfa005.pdf?ts=1648699984042&amp;ref_url=https%3A%2F%2Fwww.ti.com.cn%2Fproduct%2Fcn%2FUAF42</a></li>
+<li>FILTER DESIGN PROGRAM FOR THE UAF42 UNIVERSAL ACTIVE FILTER：<a href="https://www.ti.com.cn/cn/lit/an/sbfa002/sbfa002.pdf?ts=1648699989423&amp;ref_url=https%253A%252F%252Fwww.ti.com.cn%252Fproduct%252Fcn%252FUAF42">https://www.ti.com.cn/cn/lit/an/sbfa002/sbfa002.pdf?ts=1648699989423&amp;ref_url=https%3A%2F%2Fwww.ti.com.cn%2Fproduct%2Fcn%2FUAF42</a></li>
+<li>Designing RC Oscillator Circuits with Low Voltage Operational Amplifiers and Comparators for Precision Sensor Applications：<a href="https://www.onsemi.com/pub/Collateral/AND8054-D.PDF">https://www.onsemi.com/pub/Collateral/AND8054-D.PDF</a></li>
+<li>Designing Operational Amplifier Oscillator Circuits For Sensor Applications：<a href="https://ww1.microchip.com/downloads/en/Appnotes/00866a.pdf">https://ww1.microchip.com/downloads/en/Appnotes/00866a.pdf</a></li>
+<li>Nice state variable oscillator：<a href="https://www.eevblog.com/forum/projects/nice-state-variable-oscillator/">https://www.eevblog.com/forum/projects/nice-state-variable-oscillator/</a></li>
+<li>Developing a State Variable Oscillator for Audio Applications：<a href="http://www.williamsonic.com/AudioOsc/">http://www.williamsonic.com/AudioOsc/</a></li>
+<li>Fast Amplitude Stabilization of an RC Oscillator：<a href="https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&amp;arnumber=1050492">https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&amp;arnumber=1050492</a></li>
+<li>STATE WARIABLE OSCELLATOR HAVING IMPROVED REJECTION OF LEVELER-INDUCED DISTORTION：<a href="https://patentimages.storage.googleapis.com/11/ff/9f/cce62d8c83fc0c/US4560958.pdf">https://patentimages.storage.googleapis.com/11/ff/9f/cce62d8c83fc0c/US4560958.pdf</a></li>
 </ul>
-<h2 id="2ne602介绍"><a class="markdownIt-Anchor" href="#2ne602介绍"></a> 2.NE602介绍</h2>
-<p>NE602中集成了一个基于<strong>吉尔伯特单元</strong>的双平衡混频器、一部分震荡电路和一个电源单元。混频器的输入输出均为差分配置。NE602的结构框图和引脚分配如下图所示。</p>
-<p><img src="https://cnpp-image.oss-cn-beijing.aliyuncs.com/my-blog/blog014-2022-05-12/2-1.png" alt="2-1" /></p>
-<p>这样的组合，使得NE602可以在一些选频网络的配合下，为自己提供一个本振，起到频率变换器的作用，直接围绕NE602做个直接变频收信/发信机很是容易。在NE602的手册中，介绍了几种振荡器的接法：</p>
-<p><img src="https://cnpp-image.oss-cn-beijing.aliyuncs.com/my-blog/blog014-2022-05-12/2-2.png" alt="2-2" /></p>
-<p>实际上就是围绕NE602中的一个三极管组成考毕兹或者哈特莱这些三点式振荡器。此前我一直有个疑问，NE602是只能用这个振荡器作为本振吗，能不能使用外部提供的本振信号呢？其实看看更详细的内部等效电路就明了了：</p>
-<p><img src="https://cnpp-image.oss-cn-beijing.aliyuncs.com/my-blog/blog014-2022-05-12/2-3.png" alt="2-3" /></p>
-<p>直接从<code>6</code>脚输入本振信号，就相当于旁路了振荡器的三极管，可以直接通过缓冲级驱动混频器了。</p>
-<p>参数方面，从数据手册中摘取一些值得注意的如下：</p>
-<table>
-<thead>
-<tr>
-<th>参数</th>
-<th>值</th>
-<th>评论</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>供电电压</td>
-<td>4.5-8.0V</td>
-<td>尚可，能适配5V系统</td>
-</tr>
-<tr>
-<td>供电电流</td>
-<td>2.4-3.0mA</td>
-<td>真的相当小</td>
-</tr>
-<tr>
-<td>输入频率</td>
-<td>典型值500MHz</td>
-<td>覆盖了业余无线电常用的短波及UV段</td>
-</tr>
-<tr>
-<td>振荡器频率</td>
-<td>典型值200MHz</td>
-<td>我暂且用不上这个振荡器</td>
-</tr>
-<tr>
-<td>噪声系数（45MHz下）</td>
-<td>5.0dB</td>
-<td></td>
-</tr>
-<tr>
-<td>输入三阶交调点（条件略）</td>
-<td>-13dBm</td>
-<td>动态范围相当小，需要重视</td>
-</tr>
-<tr>
-<td>射频输入阻抗</td>
-<td>最小1.5k<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi mathvariant="normal">Ω</mi></mrow><annotation encoding="application/x-tex">\Omega</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord">Ω</span></span></span></span></td>
-<td>似乎是单端输入阻抗，需要注意</td>
-</tr>
-<tr>
-<td>射频输入电容</td>
-<td>3pF</td>
-<td></td>
-</tr>
-<tr>
-<td>混频器输出电阻</td>
-<td>1.5k<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi mathvariant="normal">Ω</mi></mrow><annotation encoding="application/x-tex">\Omega</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord">Ω</span></span></span></span></td>
-<td>单端输出阻抗</td>
-</tr>
-</tbody>
-</table>
-<p>其中，输入三阶交调点需要特别注意。</p>
-<p><img src="https://cnpp-image.oss-cn-beijing.aliyuncs.com/my-blog/blog014-2022-05-12/2-4.png" alt="2-4" /></p>
-<blockquote>
-<p>未完待续···</p>
-</blockquote>
+<h3 id="02文氏桥振荡器等"><a class="markdownIt-Anchor" href="#02文氏桥振荡器等"></a> 0.2.文氏桥振荡器等</h3>
+<ul>
+<li>Sine Wave Oscillators：<a href="https://www.kennethkuhn.com/students/ee431/oscillators_sine_wave.pdf">https://www.kennethkuhn.com/students/ee431/oscillators_sine_wave.pdf</a></li>
+<li>Using lamps for stabilizing oscillators：<a href="http://www.tronola.com/moorepage/Lamps.html">http://www.tronola.com/moorepage/Lamps.html</a></li>
+<li>Wien Bridge Oscillator：<a href="https://stompville.co.uk/?p=872">https://stompville.co.uk/?p=872</a></li>
+<li>Oscillators：<a href="http://jewel.buet.ac.bd/Electronics/Oscillators.pdf">http://jewel.buet.ac.bd/Electronics/Oscillators.pdf</a></li>
+<li>Oscillator Circuits：<a href="https://sites.science.oregonstate.edu/~giebultt/COURSES/ph412/Reading/oscillators-1p.pdf">https://sites.science.oregonstate.edu/~giebultt/COURSES/ph412/Reading/oscillators-1p.pdf</a></li>
+<li>Transistors Tutorial Part 7: “Oscillators”：<a href="http://www.learningelectronics.net/VA3AVR/tutorial/xtor/xtor7/xtor7.html">http://www.learningelectronics.net/VA3AVR/tutorial/xtor/xtor7/xtor7.html</a></li>
+</ul>
+<h3 id="03正交振荡器"><a class="markdownIt-Anchor" href="#03正交振荡器"></a> 0.3.正交振荡器</h3>
+<ul>
+<li>Quadrature Oscillator：<a href="https://freecircuitdiagram.com/979-quadrature-oscillator/">https://freecircuitdiagram.com/979-quadrature-oscillator/</a></li>
+<li>Quadrature Oscillators Using Operational Amplifiers：<a href="https://www.hindawi.com/journals/apec/2011/320367/">https://www.hindawi.com/journals/apec/2011/320367/</a></li>
+<li>Electronically Tunable Quadrature Sinusoidal Oscillator with Equal Output Amplitudes during Frequency Tuning Process：<a href="https://www.hindawi.com/journals/jece/2017/8575743/">https://www.hindawi.com/journals/jece/2017/8575743/</a></li>
+</ul>
+<h3 id="04数字振荡器"><a class="markdownIt-Anchor" href="#04数字振荡器"></a> 0.4.数字振荡器</h3>
+<ul>
+<li>A QUADRATURE OSCILLATOR：<a href="https://flylib.com/books/en/2.729.1/a_quadrature_oscillator.html">https://flylib.com/books/en/2.729.1/a_quadrature_oscillator.html</a></li>
+<li>Digital Sine Oscillator Design：<a href="https://www.njohnson.co.uk/pdf/drdes/Chap7.pdf">https://www.njohnson.co.uk/pdf/drdes/Chap7.pdf</a></li>
+<li>A New Recursive Quadrature Oscillator：<a href="https://www.vicanek.de/articles/QuadOsc.pdf">https://www.vicanek.de/articles/QuadOsc.pdf</a></li>
+<li>How to implement a digital oscillator?：<a href="https://www.vicanek.de/articles/QuadOsc.pdf">https://www.vicanek.de/articles/QuadOsc.pdf</a></li>
+<li>Digitally controlled oscillator for all-digital frequency locked loops：<a href="http://www.romjist.ro/full-texts/paper577.pdf">http://www.romjist.ro/full-texts/paper577.pdf</a></li>
+</ul>
 ]]></content>
       <categories>
-        <category>射频电路</category>
+        <category>模拟电路</category>
       </categories>
       <tags>
-        <tag>射频</tag>
+        <tag>模拟</tag>
       </tags>
   </entry>
   <entry>
@@ -750,6 +651,105 @@
       </categories>
       <tags>
         <tag>数字图像处理</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>经典双平衡混频器NE602</title>
+    <url>/2022/05/12/blog014-2022-05-12/</url>
+    <content><![CDATA[<p><img src="https://cnpp-image.oss-cn-beijing.aliyuncs.com/my-blog/blog014-2022-05-12/title.jpg" alt="title" /></p>
+<span id="more"></span>
+<h2 id="0前言"><a class="markdownIt-Anchor" href="#0前言"></a> 0.前言</h2>
+<p>在电子DIY领域，总有那么几款芯片被人津津乐道，拥有浩瀚的应用电路，甚至是许多人接触电子后第一个认识的芯片。比如有着“万能芯片”之称的<strong>555</strong>定时器，数模混合的特性使它拥有了无线可能，我制作的第一个电路就是一个基于<strong>555</strong>的方波、三角波和正弦波发生器；再之后，我又借着<strong>555</strong>，走上了开关电源之路，制作了高压电容充电器、等离子扬声器和无线充电器等视听与可玩性俱佳的小玩意</p>
+<p>据说，自七十年代初到之后的很长一段时间，运放<strong>741</strong>是最为常运的放大器，现在在一些电子DIY网站上找到的很多老电路图中的运放都是这款。而对于零零后的我们，这一最常用运放的地位也许该让位给了<strong>358</strong>，它得益于宽供电范围，比较低的输入输出下轨，可适用于大多数供电场合。它稳定的性能也使得我现在遇到电路中疑似运放故障的问题时，依然会换上一片358进行交叉排除。</p>
+<p>而今天所要说的，是射频领域的“万能芯片”：<strong>NE602</strong>双平衡混频器，也包括它的姊妹型号<strong>NE612</strong>、<strong>SA602</strong>、<strong>SA612</strong>。我第一次见到这颗芯片是在“蛙鸣”短波电台中，之后在矿石收音机论坛和各种业余无线电的DIY书籍中也频频见到它的身影，当然，这都是高中时（2018年左右）的记忆了。而最近当我拆开初版<strong>NanoVNA</strong>的屏蔽壳时，它依然在那里（不过是现在生产更多的型号<strong>SA612</strong>），在这台可以工作至900MHz的完备的掌上矢量网络分析仪中。</p>
+<p>随着我对射频与无线电的兴趣一步步加深，脑海中也逐渐浮现了一些射频仪表、收发信机之类的设计灵感。在选型时，我想找一个1GHz以下，功耗尽可能低的混频器，发现竟鲜有相关的产品（<strong>ADI</strong>挺有名的AD831混频器功耗几乎有1W，正常工作时就已经能达到烫手的程度），在道路尽头等待我的，依旧是<strong>NE602</strong>系列，以及另一款在<strong>ICOM</strong>的手台中很常用的<strong>uPC2757</strong>。</p>
+<p>也许这就是经典吧。真好最近我想尝试制作一个低成本的射频<strong>I-V</strong>法阻抗分析仪，并以<strong>SA612</strong>为主要混频器，于是一边写下此文，一边先行学习这颗经典芯片的使用方法。</p>
+<h2 id="1资料收集"><a class="markdownIt-Anchor" href="#1资料收集"></a> 1.资料收集</h2>
+<ul>
+<li>SA612A Double-balanced mixer and oscillator product data sheet: <a href="https://www.nxp.com.cn/docs/en/data-sheet/SA612A.pdf">https://www.nxp.com.cn/docs/en/data-sheet/SA612A.pdf</a></li>
+<li>AN1982 Applying the oscillator of the NE602 in low-power mixer applications: <a href="https://docs.rs-online.com/3cf1/0900766b80027aa2.pdf">https://docs.rs-online.com/3cf1/0900766b80027aa2.pdf</a></li>
+<li>AN1983 Crystal oscillators and frequency multipliers using the NE602 and NE5212: <a href="https://web.stanford.edu/class/ee133/appnotes/AN1983.pdf">https://web.stanford.edu/class/ee133/appnotes/AN1983.pdf</a></li>
+<li>PA1DSP - Why NOT to use the NE602: <a href="https://studyres.com/doc/7790754/pa1dsp---why-not-to-use-the-ne602?page=1">https://studyres.com/doc/7790754/pa1dsp---why-not-to-use-the-ne602?page=1</a></li>
+<li>Modernization of QRP RADIOS and Development of the QCX transceiver: <a href="https://www.qrp-labs.com/images/news/dayton2018/seminar.pdf">https://www.qrp-labs.com/images/news/dayton2018/seminar.pdf</a></li>
+<li>Single-chip frequency conventer: <a href="http://www.n5dux.com/ham/files/pdf/Single-Chip%20Frequency%20Converter.pdf">http://www.n5dux.com/ham/files/pdf/Single-Chip Frequency Converter.pdf</a></li>
+<li>Using the NE602: <a href="http://www.lb3hc.net/wp-content/uploads/2019/12/UsingTheNe602.pdf">http://www.lb3hc.net/wp-content/uploads/2019/12/UsingTheNe602.pdf</a></li>
+</ul>
+<h2 id="2ne602介绍"><a class="markdownIt-Anchor" href="#2ne602介绍"></a> 2.NE602介绍</h2>
+<p>NE602中集成了一个基于<strong>吉尔伯特单元</strong>的双平衡混频器、一部分震荡电路和一个电源单元。混频器的输入输出均为差分配置。NE602的结构框图和引脚分配如下图所示。</p>
+<p><img src="https://cnpp-image.oss-cn-beijing.aliyuncs.com/my-blog/blog014-2022-05-12/2-1.png" alt="2-1" /></p>
+<p>这样的组合，使得NE602可以在一些选频网络的配合下，为自己提供一个本振，起到频率变换器的作用，直接围绕NE602做个直接变频收信/发信机很是容易。在NE602的手册中，介绍了几种振荡器的接法：</p>
+<p><img src="https://cnpp-image.oss-cn-beijing.aliyuncs.com/my-blog/blog014-2022-05-12/2-2.png" alt="2-2" /></p>
+<p>实际上就是围绕NE602中的一个三极管组成考毕兹或者哈特莱这些三点式振荡器。此前我一直有个疑问，NE602是只能用这个振荡器作为本振吗，能不能使用外部提供的本振信号呢？其实看看更详细的内部等效电路就明了了：</p>
+<p><img src="https://cnpp-image.oss-cn-beijing.aliyuncs.com/my-blog/blog014-2022-05-12/2-3.png" alt="2-3" /></p>
+<p>直接从<code>6</code>脚输入本振信号，就相当于旁路了振荡器的三极管，可以直接通过缓冲级驱动混频器了。</p>
+<p>参数方面，从数据手册中摘取一些值得注意的如下：</p>
+<table>
+<thead>
+<tr>
+<th>参数</th>
+<th>值</th>
+<th>评论</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>供电电压</td>
+<td>4.5-8.0V</td>
+<td>尚可，能适配5V系统</td>
+</tr>
+<tr>
+<td>供电电流</td>
+<td>2.4-3.0mA</td>
+<td>真的相当小</td>
+</tr>
+<tr>
+<td>输入频率</td>
+<td>典型值500MHz</td>
+<td>覆盖了业余无线电常用的短波及UV段</td>
+</tr>
+<tr>
+<td>振荡器频率</td>
+<td>典型值200MHz</td>
+<td>我暂且用不上这个振荡器</td>
+</tr>
+<tr>
+<td>噪声系数（45MHz下）</td>
+<td>5.0dB</td>
+<td></td>
+</tr>
+<tr>
+<td>输入三阶交调点（条件略）</td>
+<td>-13dBm</td>
+<td>动态范围相当小，需要重视</td>
+</tr>
+<tr>
+<td>射频输入阻抗</td>
+<td>最小1.5k<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi mathvariant="normal">Ω</mi></mrow><annotation encoding="application/x-tex">\Omega</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord">Ω</span></span></span></span></td>
+<td>似乎是单端输入阻抗，需要注意</td>
+</tr>
+<tr>
+<td>射频输入电容</td>
+<td>3pF</td>
+<td></td>
+</tr>
+<tr>
+<td>混频器输出电阻</td>
+<td>1.5k<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi mathvariant="normal">Ω</mi></mrow><annotation encoding="application/x-tex">\Omega</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord">Ω</span></span></span></span></td>
+<td>单端输出阻抗</td>
+</tr>
+</tbody>
+</table>
+<p>其中，输入三阶交调点需要特别注意。</p>
+<p><img src="https://cnpp-image.oss-cn-beijing.aliyuncs.com/my-blog/blog014-2022-05-12/2-4.png" alt="2-4" /></p>
+<blockquote>
+<p>未完待续···</p>
+</blockquote>
+]]></content>
+      <categories>
+        <category>射频电路</category>
+      </categories>
+      <tags>
+        <tag>射频</tag>
       </tags>
   </entry>
   <entry>
