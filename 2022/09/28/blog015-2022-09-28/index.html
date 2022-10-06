@@ -27,23 +27,23 @@
 <meta property="og:site_name" content="橙的核电站">
 <meta property="og:description" content="随笔 我一直想制作一块如Arduino Nano 般大小的FPGA板卡，来测试一些小的HDL代码片段，以及DSP算法。因为只是作原理验证和学习探索只用，没必要把处理的频率定的很高，在音频稍高的范围即可（比如50kHz以内），同时也更希望能把精力花在算法本身而不是外围电路的设计以及通信接口的调试上。因此，我时常回去留意一些性能未必出众，但接口简洁的混合器件上。 在校期间，我曾为EDA实验课程改进">
 <meta property="og:locale" content="zh_CN">
-<meta property="og:image" content="https://cheeennpp.github.io/2022/09/28/blog015-2022-09-28/blog015-2022-09-28/title.jpg">
-<meta property="og:image" content="https://cheeennpp.github.io/2022/09/28/blog015-2022-09-28/blog015-2022-09-28/mcp3201-1.png">
-<meta property="og:image" content="https://cheeennpp.github.io/2022/09/28/blog015-2022-09-28/blog015-2022-09-28/mcp3201-2.png">
-<meta property="og:image" content="https://cheeennpp.github.io/2022/09/28/blog015-2022-09-28/blog015-2022-09-28/mcp4921-1.png">
-<meta property="og:image" content="https://cheeennpp.github.io/2022/09/28/blog015-2022-09-28/blog015-2022-09-28/mcp4921-2.png">
-<meta property="og:image" content="https://cheeennpp.github.io/2022/09/28/blog015-2022-09-28/blog015-2022-09-28/mcp4921-3.png">
-<meta property="og:image" content="https://cheeennpp.github.io/2022/09/28/blog015-2022-09-28/blog015-2022-09-28/mcp4921-4.png">
-<meta property="og:image" content="https://cheeennpp.github.io/2022/09/28/blog015-2022-09-28/blog015-2022-09-28/mcp4921-5.png">
-<meta property="og:image" content="https://cheeennpp.github.io/2022/09/28/blog015-2022-09-28/blog015-2022-09-28/mcp4921-6.png">
+<meta property="og:image" content="https://cnpp-image.oss-cn-beijing.aliyuncs.com/my-blog/blog015-2022-09-28/title.jpg">
+<meta property="og:image" content="https://cnpp-image.oss-cn-beijing.aliyuncs.com/my-blog/blog015-2022-09-28/mcp3201-1.png">
+<meta property="og:image" content="https://cnpp-image.oss-cn-beijing.aliyuncs.com/my-blog/blog015-2022-09-28/mcp3201-2.png">
+<meta property="og:image" content="https://cnpp-image.oss-cn-beijing.aliyuncs.com/my-blog/blog015-2022-09-28/mcp4921-1.png">
+<meta property="og:image" content="https://cnpp-image.oss-cn-beijing.aliyuncs.com/my-blog/blog015-2022-09-28/mcp4921-2.png">
+<meta property="og:image" content="https://cnpp-image.oss-cn-beijing.aliyuncs.com/my-blog/blog015-2022-09-28/mcp4921-3.png">
+<meta property="og:image" content="https://cnpp-image.oss-cn-beijing.aliyuncs.com/my-blog/blog015-2022-09-28/mcp4921-4.png">
+<meta property="og:image" content="https://cnpp-image.oss-cn-beijing.aliyuncs.com/my-blog/blog015-2022-09-28/mcp4921-5.png">
+<meta property="og:image" content="https://cnpp-image.oss-cn-beijing.aliyuncs.com/my-blog/blog015-2022-09-28/mcp4921-6.png">
 <meta property="article:published_time" content="2022-09-28T02:50:16.000Z">
-<meta property="article:modified_time" content="2022-10-06T15:13:19.398Z">
+<meta property="article:modified_time" content="2022-10-06T15:18:10.744Z">
 <meta property="article:author" content="CNPP">
 <meta property="article:tag" content="ADC">
 <meta property="article:tag" content="DAC">
 <meta property="article:tag" content="Microchip">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="https://cheeennpp.github.io/2022/09/28/blog015-2022-09-28/blog015-2022-09-28/title.jpg">
+<meta name="twitter:image" content="https://cnpp-image.oss-cn-beijing.aliyuncs.com/my-blog/blog015-2022-09-28/title.jpg">
 
 <link rel="canonical" href="https://cheeennpp.github.io/2022/09/28/blog015-2022-09-28/">
 
@@ -210,7 +210,7 @@
                   <i class="fa fa-calendar-check-o"></i>
                 </span>
                 <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2022-10-06 23:13:19" itemprop="dateModified" datetime="2022-10-06T23:13:19+08:00">2022-10-06</time>
+                <time title="修改时间：2022-10-06 23:18:10" itemprop="dateModified" datetime="2022-10-06T23:18:10+08:00">2022-10-06</time>
               </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -240,7 +240,7 @@
     <div class="post-body" itemprop="articleBody">
 
       
-        <p><img src="blog015-2022-09-28/title.jpg" alt="title" /></p>
+        <p><img src="https://cnpp-image.oss-cn-beijing.aliyuncs.com/my-blog/blog015-2022-09-28/title.jpg" alt="title" /></p>
 <h2 id="随笔"><a class="markdownIt-Anchor" href="#随笔"></a> 随笔</h2>
 <p>我一直想制作一块如Arduino Nano 般大小的FPGA板卡，来测试一些小的HDL代码片段，以及DSP算法。因为只是作原理验证和学习探索只用，没必要把处理的频率定的很高，在音频稍高的范围即可（比如50kHz以内），同时也更希望能把精力花在算法本身而不是外围电路的设计以及通信接口的调试上。因此，我时常回去留意一些性能未必出众，但接口简洁的混合器件上。</p>
 <p>在校期间，我曾为EDA实验课程改进过一款配合FPGA开发板实用的DSP拓展版，也就是题图。在该板上就选用了Microchip公司的ADC和DAC，接口简单，效果也不错，于是就想到再把这两颗芯片找来看看：</p>
@@ -248,24 +248,24 @@
 <p><strong>MCP4901</strong>：<a target="_blank" rel="noopener" href="https://www.microchip.com/en-us/product/MCP4921">https://www.microchip.com/en-us/product/MCP4921</a></p>
 <p>手册在上面的链接里，请大家打开来看。</p>
 <h3 id="mcp3201"><a class="markdownIt-Anchor" href="#mcp3201"></a> MCP3201</h3>
-<p><img src="blog015-2022-09-28/mcp3201-1.png" alt="1-1" /></p>
+<p><img src="https://cnpp-image.oss-cn-beijing.aliyuncs.com/my-blog/blog015-2022-09-28/mcp3201-1.png" alt="1-1" /></p>
 <p>MCP3201是一款12bit，SPI接口的ADC，采样率最高可达100ksps，可以说未必能达到不少单片机内置ADC的水平，可对于一块小FPGA来说，可是有和无的区别，做一些50kHz以内的信号处理实验，这个参数够用，而且SPI接口也是FPGA上最好写的通信接口之一。</p>
-<p><img src="blog015-2022-09-28/mcp3201-2.png" alt="1-2" /></p>
+<p><img src="https://cnpp-image.oss-cn-beijing.aliyuncs.com/my-blog/blog015-2022-09-28/mcp3201-2.png" alt="1-2" /></p>
 <p>对于很多更高分辨率的ADC，转换时间是很可观的，在主机与它们通信时，通常要等待它们发来转换完成的信号，才能进行数据的读取。这样一来，要想保证均匀的连续采样，要么提前算好转换等待时间并加以适当延长后，作为采样周期去操作，要么全由ADC来主导采样周期，都很繁琐。</p>
 <p>而MCP3201的分辨率不高，采样速度不快，通信接口的速度限定也比较慢，因此不需要等待转换完成的信号，直接在通信的前两个时钟周期它就转换完成了。每一次采样，只需要如上图读个16bit就直接完成，非常方便，就如同操作最简单的并口ADC一般。</p>
 <p>可见，MCP3201的通信接口是很好设计的，当成一个16bit的移位寄存器读就行了。手册中还给出了分8bit两次读的方法，方便一些单片机使用。</p>
 <h3 id="mcp4921"><a class="markdownIt-Anchor" href="#mcp4921"></a> MCP4921</h3>
-<p><img src="blog015-2022-09-28/mcp4921-1.png" alt="2-1" /></p>
+<p><img src="https://cnpp-image.oss-cn-beijing.aliyuncs.com/my-blog/blog015-2022-09-28/mcp4921-1.png" alt="2-1" /></p>
 <p>12bit DAC MCP4921，建立时间4.5us，也就是差不多能做到200ksps，同样拥有很简单的通信接口。</p>
-<p><img src="blog015-2022-09-28/mcp4921-2.png" alt="2-1" /></p>
+<p><img src="https://cnpp-image.oss-cn-beijing.aliyuncs.com/my-blog/blog015-2022-09-28/mcp4921-2.png" alt="2-1" /></p>
 <p>美中不足的是没有内置基准，不过VREF脚接有Buffer，使用并联型基准时可以省去外置；Buffer还可以被旁路，没错，这其实是个乘法型DAC，在旁路掉VREF的Buffer和输出的Buffer之后可以作为数字电位器使用。可以说是很灵活了。</p>
-<p><img src="blog015-2022-09-28/mcp4921-3.png" alt="2-1" /></p>
+<p><img src="https://cnpp-image.oss-cn-beijing.aliyuncs.com/my-blog/blog015-2022-09-28/mcp4921-3.png" alt="2-1" /></p>
 <p>通信协议，16个bit配置完全部，很简单。</p>
-<p><img src="blog015-2022-09-28/mcp4921-4.png" alt="2-1" /></p>
+<p><img src="https://cnpp-image.oss-cn-beijing.aliyuncs.com/my-blog/blog015-2022-09-28/mcp4921-4.png" alt="2-1" /></p>
 <p>这款DAC另一个比较有趣的点是手册中给出的应用电路部分。比如上图展示了用两颗DAC分别控制信号幅度和偏置，很适合制作信号源时使用。</p>
-<p><img src="blog015-2022-09-28/mcp4921-5.png" alt="2-1" /></p>
+<p><img src="https://cnpp-image.oss-cn-beijing.aliyuncs.com/my-blog/blog015-2022-09-28/mcp4921-5.png" alt="2-1" /></p>
 <p>这张电路很难得地给出了用两颗DAC组合增加输出分辨率的方法，并给出了比例电阻的计算公式。</p>
-<p><img src="blog015-2022-09-28/mcp4921-6.png" alt="2-1" /></p>
+<p><img src="https://cnpp-image.oss-cn-beijing.aliyuncs.com/my-blog/blog015-2022-09-28/mcp4921-6.png" alt="2-1" /></p>
 <p>这里是作为乘法型DAC的应用，控制反馈环路的增益。</p>
 <h2 id="完"><a class="markdownIt-Anchor" href="#完"></a> 完</h2>
 <p>这几款ADC、DAC的价格不贵，封装也很小巧，一个FPGA挂上好几颗同步运行，或是作为辅助器件给高速ADDA控制偏置和增益等，岂不美哉。</p>
