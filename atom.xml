@@ -6,7 +6,7 @@
   <link href="https://cheeennpp.github.io/atom.xml" rel="self"/>
   
   <link href="https://cheeennpp.github.io/"/>
-  <updated>2022-05-13T14:39:34.143Z</updated>
+  <updated>2022-10-06T15:13:19.398Z</updated>
   <id>https://cheeennpp.github.io/</id>
   
   <author>
@@ -15,6 +15,36 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>【EE随笔-4】Microchip公司几款接口简约的ADC和DAC</title>
+    <link href="https://cheeennpp.github.io/2022/09/28/blog015-2022-09-28/"/>
+    <id>https://cheeennpp.github.io/2022/09/28/blog015-2022-09-28/</id>
+    <published>2022-09-28T02:50:16.000Z</published>
+    <updated>2022-10-06T15:13:19.398Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;&lt;img src=&quot;blog015-2022-09-28/title.jpg&quot; alt=&quot;title&quot; /&gt;&lt;/p&gt;
+&lt;h2 id=&quot;随笔&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#随笔&quot;&gt;&lt;/a&gt;</summary>
+        
+      
+    
+    
+    
+    <category term="混合信号" scheme="https://cheeennpp.github.io/categories/%E6%B7%B7%E5%90%88%E4%BF%A1%E5%8F%B7/"/>
+    
+    
+    <category term="ADC" scheme="https://cheeennpp.github.io/tags/ADC/"/>
+    
+    <category term="DAC" scheme="https://cheeennpp.github.io/tags/DAC/"/>
+    
+    <category term="Microchip" scheme="https://cheeennpp.github.io/tags/Microchip/"/>
+    
+  </entry>
   
   <entry>
     <title>经典双平衡混频器NE602</title>
@@ -93,11 +123,11 @@
   </entry>
   
   <entry>
-    <title>【EE随笔-3】 高线性度混频器ADL5350</title>
+    <title>【EE随笔-3】高线性度混频器ADL5350</title>
     <link href="https://cheeennpp.github.io/2022/02/10/blog010-2022-02-10/"/>
     <id>https://cheeennpp.github.io/2022/02/10/blog010-2022-02-10/</id>
     <published>2022-02-10T14:04:31.000Z</published>
-    <updated>2022-04-06T08:12:59.310Z</updated>
+    <updated>2022-09-28T02:52:52.542Z</updated>
     
     
     <summary type="html">&lt;p&gt;&lt;img src=&quot;https://cnpp-image.oss-cn-beijing.aliyuncs.com/my-blog/blog010-2022-02-10/title.png&quot; alt=&quot;title&quot; /&gt;&lt;/p&gt;</summary>
@@ -116,7 +146,7 @@
     <link href="https://cheeennpp.github.io/2022/01/19/blog008-2022-01-19/"/>
     <id>https://cheeennpp.github.io/2022/01/19/blog008-2022-01-19/</id>
     <published>2022-01-19T11:40:32.000Z</published>
-    <updated>2022-04-01T09:46:56.828Z</updated>
+    <updated>2022-07-16T13:28:27.345Z</updated>
     
     
     <summary type="html">&lt;p&gt;&lt;img src=&quot;https://cnpp-image.oss-cn-beijing.aliyuncs.com/my-blog/blog008-2022-01-19/title.jpg&quot; alt=&quot;title&quot; /&gt;&lt;/p&gt;</summary>

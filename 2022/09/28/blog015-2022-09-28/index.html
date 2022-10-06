@@ -1,0 +1,554 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 5.4.0">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+<link rel="stylesheet" href="/lib/font-awesome/css/font-awesome.min.css">
+
+<script id="hexo-configurations">
+    var NexT = window.NexT || {};
+    var CONFIG = {"hostname":"cheeennpp.github.io","root":"/","scheme":"Pisces","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
+  </script>
+
+  <meta name="description" content="随笔 我一直想制作一块如Arduino Nano 般大小的FPGA板卡，来测试一些小的HDL代码片段，以及DSP算法。因为只是作原理验证和学习探索只用，没必要把处理的频率定的很高，在音频稍高的范围即可（比如50kHz以内），同时也更希望能把精力花在算法本身而不是外围电路的设计以及通信接口的调试上。因此，我时常回去留意一些性能未必出众，但接口简洁的混合器件上。 在校期间，我曾为EDA实验课程改进">
+<meta property="og:type" content="article">
+<meta property="og:title" content="【EE随笔-4】Microchip公司几款接口简约的ADC和DAC">
+<meta property="og:url" content="https://cheeennpp.github.io/2022/09/28/blog015-2022-09-28/index.html">
+<meta property="og:site_name" content="橙的核电站">
+<meta property="og:description" content="随笔 我一直想制作一块如Arduino Nano 般大小的FPGA板卡，来测试一些小的HDL代码片段，以及DSP算法。因为只是作原理验证和学习探索只用，没必要把处理的频率定的很高，在音频稍高的范围即可（比如50kHz以内），同时也更希望能把精力花在算法本身而不是外围电路的设计以及通信接口的调试上。因此，我时常回去留意一些性能未必出众，但接口简洁的混合器件上。 在校期间，我曾为EDA实验课程改进">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://cheeennpp.github.io/2022/09/28/blog015-2022-09-28/blog015-2022-09-28/title.jpg">
+<meta property="og:image" content="https://cheeennpp.github.io/2022/09/28/blog015-2022-09-28/blog015-2022-09-28/mcp3201-1.png">
+<meta property="og:image" content="https://cheeennpp.github.io/2022/09/28/blog015-2022-09-28/blog015-2022-09-28/mcp3201-2.png">
+<meta property="og:image" content="https://cheeennpp.github.io/2022/09/28/blog015-2022-09-28/blog015-2022-09-28/mcp4921-1.png">
+<meta property="og:image" content="https://cheeennpp.github.io/2022/09/28/blog015-2022-09-28/blog015-2022-09-28/mcp4921-2.png">
+<meta property="og:image" content="https://cheeennpp.github.io/2022/09/28/blog015-2022-09-28/blog015-2022-09-28/mcp4921-3.png">
+<meta property="og:image" content="https://cheeennpp.github.io/2022/09/28/blog015-2022-09-28/blog015-2022-09-28/mcp4921-4.png">
+<meta property="og:image" content="https://cheeennpp.github.io/2022/09/28/blog015-2022-09-28/blog015-2022-09-28/mcp4921-5.png">
+<meta property="og:image" content="https://cheeennpp.github.io/2022/09/28/blog015-2022-09-28/blog015-2022-09-28/mcp4921-6.png">
+<meta property="article:published_time" content="2022-09-28T02:50:16.000Z">
+<meta property="article:modified_time" content="2022-10-06T15:13:19.398Z">
+<meta property="article:author" content="CNPP">
+<meta property="article:tag" content="ADC">
+<meta property="article:tag" content="DAC">
+<meta property="article:tag" content="Microchip">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://cheeennpp.github.io/2022/09/28/blog015-2022-09-28/blog015-2022-09-28/title.jpg">
+
+<link rel="canonical" href="https://cheeennpp.github.io/2022/09/28/blog015-2022-09-28/">
+
+
+<script id="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome : false,
+    isPost : true,
+    lang   : 'zh-CN'
+  };
+</script>
+
+  <title>【EE随笔-4】Microchip公司几款接口简约的ADC和DAC | 橙的核电站</title>
+  
+
+
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header { opacity: initial; }
+
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+<link rel="alternate" href="/atom.xml" title="橙的核电站" type="application/atom+xml">
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div class="container use-motion">
+    <div class="headband"></div>
+
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏">
+      <span class="toggle-line toggle-line-first"></span>
+      <span class="toggle-line toggle-line-middle"></span>
+      <span class="toggle-line toggle-line-last"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <h1 class="site-title">橙的核电站</h1>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+      <p class="site-subtitle" itemprop="description">我的铍振荡器去哪了</p>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+    </div>
+  </div>
+</div>
+
+
+
+
+<nav class="site-nav">
+  <ul id="menu" class="menu">
+        <li class="menu-item menu-item-home">
+
+    <a href="/" rel="section"><i class="fa fa-fw fa-home"></i>首页</a>
+
+  </li>
+        <li class="menu-item menu-item-categories">
+
+    <a href="/categories/" rel="section"><i class="fa fa-fw fa-th"></i>分类</a>
+
+  </li>
+        <li class="menu-item menu-item-tags">
+
+    <a href="/tags/" rel="section"><i class="fa fa-fw fa-tags"></i>标签</a>
+
+  </li>
+        <li class="menu-item menu-item-archives">
+
+    <a href="/archives/" rel="section"><i class="fa fa-fw fa-archive"></i>归档</a>
+
+  </li>
+        <li class="menu-item menu-item-about">
+
+    <a href="/about/" rel="section"><i class="fa fa-fw fa-user"></i>关于</a>
+
+  </li>
+  </ul>
+</nav>
+
+
+
+
+</div>
+    </header>
+
+    
+  <div class="back-to-top">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+
+
+    <main class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+
+          <div class="content post posts-expand">
+            
+
+    
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://cheeennpp.github.io/2022/09/28/blog015-2022-09-28/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="https://cnpp-image.oss-cn-beijing.aliyuncs.com/my-blog/image/header-cheeen-1.jpg">
+      <meta itemprop="name" content="CNPP">
+      <meta itemprop="description" content="BH9FQG">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="橙的核电站">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          【EE随笔-4】Microchip公司几款接口简约的ADC和DAC
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2022-09-28 10:50:16" itemprop="dateCreated datePublished" datetime="2022-09-28T10:50:16+08:00">2022-09-28</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2022-10-06 23:13:19" itemprop="dateModified" datetime="2022-10-06T23:13:19+08:00">2022-10-06</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E6%B7%B7%E5%90%88%E4%BF%A1%E5%8F%B7/" itemprop="url" rel="index"><span itemprop="name">混合信号</span></a>
+                </span>
+            </span>
+
+          
+            <span class="post-meta-item" title="阅读次数" id="busuanzi_container_page_pv" style="display: none;">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-eye"></i>
+              </span>
+              <span class="post-meta-item-text">阅读次数：</span>
+              <span id="busuanzi_value_page_pv"></span>
+            </span>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+        <p><img src="blog015-2022-09-28/title.jpg" alt="title" /></p>
+<h2 id="随笔"><a class="markdownIt-Anchor" href="#随笔"></a> 随笔</h2>
+<p>我一直想制作一块如Arduino Nano 般大小的FPGA板卡，来测试一些小的HDL代码片段，以及DSP算法。因为只是作原理验证和学习探索只用，没必要把处理的频率定的很高，在音频稍高的范围即可（比如50kHz以内），同时也更希望能把精力花在算法本身而不是外围电路的设计以及通信接口的调试上。因此，我时常回去留意一些性能未必出众，但接口简洁的混合器件上。</p>
+<p>在校期间，我曾为EDA实验课程改进过一款配合FPGA开发板实用的DSP拓展版，也就是题图。在该板上就选用了Microchip公司的ADC和DAC，接口简单，效果也不错，于是就想到再把这两颗芯片找来看看：</p>
+<p><strong>MCP3201</strong>：<a target="_blank" rel="noopener" href="https://www.microchip.com/en-us/product/MCP3201">https://www.microchip.com/en-us/product/MCP3201</a></p>
+<p><strong>MCP4901</strong>：<a target="_blank" rel="noopener" href="https://www.microchip.com/en-us/product/MCP4921">https://www.microchip.com/en-us/product/MCP4921</a></p>
+<p>手册在上面的链接里，请大家打开来看。</p>
+<h3 id="mcp3201"><a class="markdownIt-Anchor" href="#mcp3201"></a> MCP3201</h3>
+<p><img src="blog015-2022-09-28/mcp3201-1.png" alt="1-1" /></p>
+<p>MCP3201是一款12bit，SPI接口的ADC，采样率最高可达100ksps，可以说未必能达到不少单片机内置ADC的水平，可对于一块小FPGA来说，可是有和无的区别，做一些50kHz以内的信号处理实验，这个参数够用，而且SPI接口也是FPGA上最好写的通信接口之一。</p>
+<p><img src="blog015-2022-09-28/mcp3201-2.png" alt="1-2" /></p>
+<p>对于很多更高分辨率的ADC，转换时间是很可观的，在主机与它们通信时，通常要等待它们发来转换完成的信号，才能进行数据的读取。这样一来，要想保证均匀的连续采样，要么提前算好转换等待时间并加以适当延长后，作为采样周期去操作，要么全由ADC来主导采样周期，都很繁琐。</p>
+<p>而MCP3201的分辨率不高，采样速度不快，通信接口的速度限定也比较慢，因此不需要等待转换完成的信号，直接在通信的前两个时钟周期它就转换完成了。每一次采样，只需要如上图读个16bit就直接完成，非常方便，就如同操作最简单的并口ADC一般。</p>
+<p>可见，MCP3201的通信接口是很好设计的，当成一个16bit的移位寄存器读就行了。手册中还给出了分8bit两次读的方法，方便一些单片机使用。</p>
+<h3 id="mcp4921"><a class="markdownIt-Anchor" href="#mcp4921"></a> MCP4921</h3>
+<p><img src="blog015-2022-09-28/mcp4921-1.png" alt="2-1" /></p>
+<p>12bit DAC MCP4921，建立时间4.5us，也就是差不多能做到200ksps，同样拥有很简单的通信接口。</p>
+<p><img src="blog015-2022-09-28/mcp4921-2.png" alt="2-1" /></p>
+<p>美中不足的是没有内置基准，不过VREF脚接有Buffer，使用并联型基准时可以省去外置；Buffer还可以被旁路，没错，这其实是个乘法型DAC，在旁路掉VREF的Buffer和输出的Buffer之后可以作为数字电位器使用。可以说是很灵活了。</p>
+<p><img src="blog015-2022-09-28/mcp4921-3.png" alt="2-1" /></p>
+<p>通信协议，16个bit配置完全部，很简单。</p>
+<p><img src="blog015-2022-09-28/mcp4921-4.png" alt="2-1" /></p>
+<p>这款DAC另一个比较有趣的点是手册中给出的应用电路部分。比如上图展示了用两颗DAC分别控制信号幅度和偏置，很适合制作信号源时使用。</p>
+<p><img src="blog015-2022-09-28/mcp4921-5.png" alt="2-1" /></p>
+<p>这张电路很难得地给出了用两颗DAC组合增加输出分辨率的方法，并给出了比例电阻的计算公式。</p>
+<p><img src="blog015-2022-09-28/mcp4921-6.png" alt="2-1" /></p>
+<p>这里是作为乘法型DAC的应用，控制反馈环路的增益。</p>
+<h2 id="完"><a class="markdownIt-Anchor" href="#完"></a> 完</h2>
+<p>这几款ADC、DAC的价格不贵，封装也很小巧，一个FPGA挂上好几颗同步运行，或是作为辅助器件给高速ADDA控制偏置和增益等，岂不美哉。</p>
+
+    </div>
+
+    
+    
+    
+        
+
+<div>
+<ul class="post-copyright">
+  <li class="post-copyright-author">
+    <strong>本文作者： </strong>CNPP
+  </li>
+  <li class="post-copyright-link">
+    <strong>本文链接：</strong>
+    <a href="https://cheeennpp.github.io/2022/09/28/blog015-2022-09-28/" title="【EE随笔-4】Microchip公司几款接口简约的ADC和DAC">https://cheeennpp.github.io/2022/09/28/blog015-2022-09-28/</a>
+  </li>
+  <li class="post-copyright-license">
+    <strong>版权声明： </strong>本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" rel="noopener" target="_blank"><i class="fa fa-fw fa-creative-commons"></i>BY-NC-SA</a> 许可协议。转载请注明出处！
+  </li>
+</ul>
+</div>
+
+        
+
+  <div class="followme">
+    <p>欢迎关注我的其它发布渠道</p>
+
+    <div class="social-list">
+
+        <div class="social-item">
+          <a target="_blank" class="social-link" href="/atom.xml">
+            <span class="icon">
+              <i class="fa fa-rss"></i>
+            </span>
+
+            <span class="label">RSS</span>
+          </a>
+        </div>
+    </div>
+  </div>
+
+
+      <footer class="post-footer">
+          <div class="post-tags">
+              <a href="/tags/ADC/" rel="tag"># ADC</a>
+              <a href="/tags/DAC/" rel="tag"># DAC</a>
+              <a href="/tags/Microchip/" rel="tag"># Microchip</a>
+          </div>
+
+        
+
+
+        
+    <div class="post-nav">
+      <div class="post-nav-item">
+    <a href="/2022/05/12/blog014-2022-05-12/" rel="prev" title="经典双平衡混频器NE602">
+      <i class="fa fa-chevron-left"></i> 经典双平衡混频器NE602
+    </a></div>
+      <div class="post-nav-item"></div>
+    </div>
+      </footer>
+    
+  </article>
+  
+  
+  
+
+
+
+          </div>
+          
+
+<script>
+  window.addEventListener('tabs:register', () => {
+    let { activeClass } = CONFIG.comments;
+    if (CONFIG.comments.storage) {
+      activeClass = localStorage.getItem('comments_active') || activeClass;
+    }
+    if (activeClass) {
+      let activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
+      if (activeTab) {
+        activeTab.click();
+      }
+    }
+  });
+  if (CONFIG.comments.storage) {
+    window.addEventListener('tabs:click', event => {
+      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
+      let commentClass = event.target.classList[1];
+      localStorage.setItem('comments_active', commentClass);
+    });
+  }
+</script>
+
+        </div>
+          
+  
+  <div class="toggle sidebar-toggle">
+    <span class="toggle-line toggle-line-first"></span>
+    <span class="toggle-line toggle-line-middle"></span>
+    <span class="toggle-line toggle-line-last"></span>
+  </div>
+
+  <aside class="sidebar">
+    <div class="sidebar-inner">
+
+      <ul class="sidebar-nav motion-element">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+      <!--noindex-->
+      <div class="post-toc-wrap sidebar-panel">
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E9%9A%8F%E7%AC%94"><span class="nav-text"> 随笔</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#mcp3201"><span class="nav-text"> MCP3201</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#mcp4921"><span class="nav-text"> MCP4921</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%AE%8C"><span class="nav-text"> 完</span></a></li></ol></div>
+      </div>
+      <!--/noindex-->
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <img class="site-author-image" itemprop="image" alt="CNPP"
+      src="https://cnpp-image.oss-cn-beijing.aliyuncs.com/my-blog/image/header-cheeen-1.jpg">
+  <p class="site-author-name" itemprop="name">CNPP</p>
+  <div class="site-description" itemprop="description">BH9FQG</div>
+</div>
+<div class="site-state-wrap motion-element">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+          <a href="/archives/">
+        
+          <span class="site-state-item-count">16</span>
+          <span class="site-state-item-name">日志</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+            <a href="/categories/">
+          
+        <span class="site-state-item-count">8</span>
+        <span class="site-state-item-name">分类</span></a>
+      </div>
+      <div class="site-state-item site-state-tags">
+            <a href="/tags/">
+          
+        <span class="site-state-item-count">12</span>
+        <span class="site-state-item-name">标签</span></a>
+      </div>
+  </nav>
+</div>
+  <div class="links-of-author motion-element">
+      <span class="links-of-author-item">
+        <a href="https://github.com/CheeenNPP" title="GitHub → https:&#x2F;&#x2F;github.com&#x2F;CheeenNPP" rel="noopener" target="_blank"><i class="fa fa-fw fa-github"></i>GitHub</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="/cheeennp@outlook.com" title="E-Mail → cheeennp@outlook.com"><i class="fa fa-fw fa-envelope"></i>E-Mail</a>
+      </span>
+  </div>
+  <div class="cc-license motion-element" itemprop="license">
+    <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" class="cc-opacity" rel="noopener" target="_blank"><img src="/images/cc-by-nc-sa.svg" alt="Creative Commons"></a>
+  </div>
+
+
+  <div class="links-of-blogroll motion-element">
+    <div class="links-of-blogroll-title">
+      <i class="fa fa-fw fa-link"></i>
+      Links
+    </div>
+    <ul class="links-of-blogroll-list">
+        <li class="links-of-blogroll-item">
+          <a href="https://www.emoe.xyz/" title="https:&#x2F;&#x2F;www.emoe.xyz" rel="noopener" target="_blank">E萌工作室</a>
+        </li>
+    </ul>
+  </div>
+
+      </div>
+
+    </div>
+  </aside>
+  <div id="sidebar-dimmer"></div>
+
+
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        
+
+        
+
+<div class="copyright">
+  
+  &copy; 2021 – 
+  <span itemprop="copyrightYear">2022</span>
+  <span class="with-love">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">CNPP</span>
+</div>
+  <div class="powered-by">由 <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> & <a href="https://pisces.theme-next.org/" class="theme-link" rel="noopener" target="_blank">NexT.Pisces</a> 强力驱动
+  </div>
+
+        
+<div class="busuanzi-count">
+  <script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+    <span class="post-meta-item" id="busuanzi_container_site_uv" style="display: none;">
+      <span class="post-meta-item-icon">
+        <i class="fa fa-user"></i>
+      </span>
+      <span class="site-uv" title="总访客量">
+        <span id="busuanzi_value_site_uv"></span>
+      </span>
+    </span>
+    <span class="post-meta-divider">|</span>
+    <span class="post-meta-item" id="busuanzi_container_site_pv" style="display: none;">
+      <span class="post-meta-item-icon">
+        <i class="fa fa-eye"></i>
+      </span>
+      <span class="site-pv" title="总访问量">
+        <span id="busuanzi_value_site_pv"></span>
+      </span>
+    </span>
+</div>
+
+
+
+
+
+
+
+
+      </div>
+    </footer>
+  </div>
+
+  
+  <script src="/lib/anime.min.js"></script>
+  <script src="/lib/velocity/velocity.min.js"></script>
+  <script src="/lib/velocity/velocity.ui.min.js"></script>
+
+<script src="/js/utils.js"></script>
+
+<script src="/js/motion.js"></script>
+
+
+<script src="/js/schemes/pisces.js"></script>
+
+
+<script src="/js/next-boot.js"></script>
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+      
+<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/katex@0/dist/katex.min.css">
+
+
+  
+
+</body>
+</html>
