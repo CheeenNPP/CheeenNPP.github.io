@@ -1,6 +1,41 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>博客结构</title>
+    <url>/2021/09/13/blog002-2021-09-13/</url>
+    <content><![CDATA[<h2 id="前言"><a class="markdownIt-Anchor" href="#前言"></a> 前言</h2>
+<p>一个EE的博客。</p>
+<ul>
+<li>日常的制作进度，开坑想法，小成果等，会放<code>EE-随笔</code><strong>分类</strong>中，这些仅作记录，并没有完整的工程结构。</li>
+<li>一个完整的项目，会放在特定的<strong>分类</strong>中，并会围绕此，结合Github仓库，构建工程。</li>
+</ul>
+]]></content>
+      <categories>
+        <category>生活-随笔</category>
+      </categories>
+      <tags>
+        <tag>生活</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Ground Zero</title>
+    <url>/2021/09/13/blog001-2021-09-13/</url>
+    <content><![CDATA[<blockquote class="blockquote-center">
+            <p>一切的开端</p>
+
+          </blockquote>
+<p><img src="https://cnpp-image.oss-cn-beijing.aliyuncs.com/my-blog/blog001-2021-09-13/mgsv-gz-fox.jpg" alt="mgsv-gz-fox" /></p>
+<p>现在的时间是2021年9月13日，我开始落笔写下第一篇博客。已然处于本科的随后一个秋季，保研的幻想已随着来去无踪的新冠疫情破灭，考研的决心却仍飘渺。在这些许已预料到的境遇之中，酝酿着慵懒颓唐的心态。</p>
+<p>手头几个颇有挑战与乐趣的项目业已搁置，要考研。许诺之中的电赛，本是见面眼红的死敌，却被一道晴天霹雳击开的天堑隔开，对峙良久，反而成了面面相觑。在这样一个马鞍点上，收起悬而未决之意，反而略有闲心，操刀小烹，组织些珍视的图文于次僻所，聊解心头的熵结。</p>
+]]></content>
+      <categories>
+        <category>生活-随笔</category>
+      </categories>
+      <tags>
+        <tag>生活</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>【EE随笔-1】HMC189A倍频器</title>
     <url>/2021/09/13/blog003-2021-09-13/</url>
     <content><![CDATA[<p><img src="https://cnpp-image.oss-cn-beijing.aliyuncs.com/my-blog/blog003-2021-09-13/title.jpg" alt="title" /></p>
@@ -28,41 +63,6 @@
       </categories>
       <tags>
         <tag>射频</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Ground Zero</title>
-    <url>/2021/09/13/blog001-2021-09-13/</url>
-    <content><![CDATA[<blockquote class="blockquote-center">
-            <p>一切的开端</p>
-
-          </blockquote>
-<p><img src="https://cnpp-image.oss-cn-beijing.aliyuncs.com/my-blog/blog001-2021-09-13/mgsv-gz-fox.jpg" alt="mgsv-gz-fox" /></p>
-<p>现在的时间是2021年9月13日，我开始落笔写下第一篇博客。已然处于本科的随后一个秋季，保研的幻想已随着来去无踪的新冠疫情破灭，考研的决心却仍飘渺。在这些许已预料到的境遇之中，酝酿着慵懒颓唐的心态。</p>
-<p>手头几个颇有挑战与乐趣的项目业已搁置，要考研。许诺之中的电赛，本是见面眼红的死敌，却被一道晴天霹雳击开的天堑隔开，对峙良久，反而成了面面相觑。在这样一个马鞍点上，收起悬而未决之意，反而略有闲心，操刀小烹，组织些珍视的图文于次僻所，聊解心头的熵结。</p>
-]]></content>
-      <categories>
-        <category>生活-随笔</category>
-      </categories>
-      <tags>
-        <tag>生活</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>博客结构</title>
-    <url>/2021/09/13/blog002-2021-09-13/</url>
-    <content><![CDATA[<h2 id="前言"><a class="markdownIt-Anchor" href="#前言"></a> 前言</h2>
-<p>一个EE的博客。</p>
-<ul>
-<li>日常的制作进度，开坑想法，小成果等，会放<code>EE-随笔</code><strong>分类</strong>中，这些仅作记录，并没有完整的工程结构。</li>
-<li>一个完整的项目，会放在特定的<strong>分类</strong>中，并会围绕此，结合Github仓库，构建工程。</li>
-</ul>
-]]></content>
-      <categories>
-        <category>生活-随笔</category>
-      </categories>
-      <tags>
-        <tag>生活</tag>
       </tags>
   </entry>
   <entry>
@@ -120,30 +120,6 @@
       </tags>
   </entry>
   <entry>
-    <title>【EE随笔-2】LMT4601 uModule</title>
-    <url>/2021/09/19/blog005-2021-09-19/</url>
-    <content><![CDATA[<p><img src="https://cnpp-image.oss-cn-beijing.aliyuncs.com/my-blog/blog005-2021-09-19/title.jpg" alt="title" /></p>
-<span id="more"></span>
-<h2 id="随笔"><a class="markdownIt-Anchor" href="#随笔"></a> 随笔</h2>
-<p>今日在<s>海鲜市场</s><code>30包邮</code>提得两片带板凌力尔特<s>特供巧克力月饼</s>，参数看上去甚是生猛，更兼有远端检测和锁相环等花哨功能：</p>
-<p><img src="https://cnpp-image.oss-cn-beijing.aliyuncs.com/my-blog/blog005-2021-09-19/2-1.png" alt="2-1" /></p>
-<p><img src="https://cnpp-image.oss-cn-beijing.aliyuncs.com/my-blog/blog005-2021-09-19/2-2.png" alt="2-2" /></p>
-<p><img src="https://cnpp-image.oss-cn-beijing.aliyuncs.com/my-blog/blog005-2021-09-19/1-1.jpg" alt="1-1" /></p>
-<p><img src="https://cnpp-image.oss-cn-beijing.aliyuncs.com/my-blog/blog005-2021-09-19/1-2.jpg" alt="1-2" /></p>
-<p><img src="https://cnpp-image.oss-cn-beijing.aliyuncs.com/my-blog/blog005-2021-09-19/1-3.jpg" alt="1-3" /></p>
-<p><img src="https://cnpp-image.oss-cn-beijing.aliyuncs.com/my-blog/blog005-2021-09-19/1-4.jpg" alt="1-4" /></p>
-<p>也许能做一个超大输出电流精密电源吧。</p>
-<p>至于PLL的功能，是将开关频率同步至外部的参考频率，以避免向系统中引入额外的谐波分量。在<strong>Linear</strong>的应用笔记中，也介绍过一种使用<code>D触发器</code>将开关频率与参考频率同步的方法：</p>
-<p><img src="https://cnpp-image.oss-cn-beijing.aliyuncs.com/my-blog/blog005-2021-09-19/3-1.png" alt="3-1" /></p>
-]]></content>
-      <categories>
-        <category>EE-随笔</category>
-      </categories>
-      <tags>
-        <tag>电源</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>CASIO fx-50F Calculator</title>
     <url>/2021/09/22/blog006-2021-09-22/</url>
     <content><![CDATA[<p><img src="https://cnpp-image.oss-cn-beijing.aliyuncs.com/my-blog/blog006-2021-09-22/title.jpg" alt="title" /></p>
@@ -189,6 +165,30 @@
       <tags>
         <tag>Vintage</tag>
         <tag>Hewlett-Packard</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>【EE随笔-2】LMT4601 uModule</title>
+    <url>/2021/09/19/blog005-2021-09-19/</url>
+    <content><![CDATA[<p><img src="https://cnpp-image.oss-cn-beijing.aliyuncs.com/my-blog/blog005-2021-09-19/title.jpg" alt="title" /></p>
+<span id="more"></span>
+<h2 id="随笔"><a class="markdownIt-Anchor" href="#随笔"></a> 随笔</h2>
+<p>今日在<s>海鲜市场</s><code>30包邮</code>提得两片带板凌力尔特<s>特供巧克力月饼</s>，参数看上去甚是生猛，更兼有远端检测和锁相环等花哨功能：</p>
+<p><img src="https://cnpp-image.oss-cn-beijing.aliyuncs.com/my-blog/blog005-2021-09-19/2-1.png" alt="2-1" /></p>
+<p><img src="https://cnpp-image.oss-cn-beijing.aliyuncs.com/my-blog/blog005-2021-09-19/2-2.png" alt="2-2" /></p>
+<p><img src="https://cnpp-image.oss-cn-beijing.aliyuncs.com/my-blog/blog005-2021-09-19/1-1.jpg" alt="1-1" /></p>
+<p><img src="https://cnpp-image.oss-cn-beijing.aliyuncs.com/my-blog/blog005-2021-09-19/1-2.jpg" alt="1-2" /></p>
+<p><img src="https://cnpp-image.oss-cn-beijing.aliyuncs.com/my-blog/blog005-2021-09-19/1-3.jpg" alt="1-3" /></p>
+<p><img src="https://cnpp-image.oss-cn-beijing.aliyuncs.com/my-blog/blog005-2021-09-19/1-4.jpg" alt="1-4" /></p>
+<p>也许能做一个超大输出电流精密电源吧。</p>
+<p>至于PLL的功能，是将开关频率同步至外部的参考频率，以避免向系统中引入额外的谐波分量。在<strong>Linear</strong>的应用笔记中，也介绍过一种使用<code>D触发器</code>将开关频率与参考频率同步的方法：</p>
+<p><img src="https://cnpp-image.oss-cn-beijing.aliyuncs.com/my-blog/blog005-2021-09-19/3-1.png" alt="3-1" /></p>
+]]></content>
+      <categories>
+        <category>EE-随笔</category>
+      </categories>
+      <tags>
+        <tag>电源</tag>
       </tags>
   </entry>
   <entry>
@@ -461,54 +461,6 @@ y \\
       </tags>
   </entry>
   <entry>
-    <title>振荡器资料收集</title>
-    <url>/2022/04/06/blog012-2022-04-06/</url>
-    <content><![CDATA[<p>平衡的艺术</p>
-<span id="more"></span>
-<h2 id="0资料收集"><a class="markdownIt-Anchor" href="#0资料收集"></a> 0.资料收集</h2>
-<h3 id="01状态可变振荡器"><a class="markdownIt-Anchor" href="#01状态可变振荡器"></a> 0.1.状态可变振荡器</h3>
-<ul>
-<li>DIGITALLY PROGRAMMABLE, TIME-CONTINUOUS ACTIVE FILTER：<a href="https://www.ti.com.cn/cn/lit/an/sbfa005/sbfa005.pdf?ts=1648699984042&amp;ref_url=https%253A%252F%252Fwww.ti.com.cn%252Fproduct%252Fcn%252FUAF42">https://www.ti.com.cn/cn/lit/an/sbfa005/sbfa005.pdf?ts=1648699984042&amp;ref_url=https%3A%2F%2Fwww.ti.com.cn%2Fproduct%2Fcn%2FUAF42</a></li>
-<li>FILTER DESIGN PROGRAM FOR THE UAF42 UNIVERSAL ACTIVE FILTER：<a href="https://www.ti.com.cn/cn/lit/an/sbfa002/sbfa002.pdf?ts=1648699989423&amp;ref_url=https%253A%252F%252Fwww.ti.com.cn%252Fproduct%252Fcn%252FUAF42">https://www.ti.com.cn/cn/lit/an/sbfa002/sbfa002.pdf?ts=1648699989423&amp;ref_url=https%3A%2F%2Fwww.ti.com.cn%2Fproduct%2Fcn%2FUAF42</a></li>
-<li>Designing RC Oscillator Circuits with Low Voltage Operational Amplifiers and Comparators for Precision Sensor Applications：<a href="https://www.onsemi.com/pub/Collateral/AND8054-D.PDF">https://www.onsemi.com/pub/Collateral/AND8054-D.PDF</a></li>
-<li>Designing Operational Amplifier Oscillator Circuits For Sensor Applications：<a href="https://ww1.microchip.com/downloads/en/Appnotes/00866a.pdf">https://ww1.microchip.com/downloads/en/Appnotes/00866a.pdf</a></li>
-<li>Nice state variable oscillator：<a href="https://www.eevblog.com/forum/projects/nice-state-variable-oscillator/">https://www.eevblog.com/forum/projects/nice-state-variable-oscillator/</a></li>
-<li>Developing a State Variable Oscillator for Audio Applications：<a href="http://www.williamsonic.com/AudioOsc/">http://www.williamsonic.com/AudioOsc/</a></li>
-<li>Fast Amplitude Stabilization of an RC Oscillator：<a href="https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&amp;arnumber=1050492">https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&amp;arnumber=1050492</a></li>
-<li>STATE WARIABLE OSCELLATOR HAVING IMPROVED REJECTION OF LEVELER-INDUCED DISTORTION：<a href="https://patentimages.storage.googleapis.com/11/ff/9f/cce62d8c83fc0c/US4560958.pdf">https://patentimages.storage.googleapis.com/11/ff/9f/cce62d8c83fc0c/US4560958.pdf</a></li>
-</ul>
-<h3 id="02文氏桥振荡器等"><a class="markdownIt-Anchor" href="#02文氏桥振荡器等"></a> 0.2.文氏桥振荡器等</h3>
-<ul>
-<li>Sine Wave Oscillators：<a href="https://www.kennethkuhn.com/students/ee431/oscillators_sine_wave.pdf">https://www.kennethkuhn.com/students/ee431/oscillators_sine_wave.pdf</a></li>
-<li>Using lamps for stabilizing oscillators：<a href="http://www.tronola.com/moorepage/Lamps.html">http://www.tronola.com/moorepage/Lamps.html</a></li>
-<li>Wien Bridge Oscillator：<a href="https://stompville.co.uk/?p=872">https://stompville.co.uk/?p=872</a></li>
-<li>Oscillators：<a href="http://jewel.buet.ac.bd/Electronics/Oscillators.pdf">http://jewel.buet.ac.bd/Electronics/Oscillators.pdf</a></li>
-<li>Oscillator Circuits：<a href="https://sites.science.oregonstate.edu/~giebultt/COURSES/ph412/Reading/oscillators-1p.pdf">https://sites.science.oregonstate.edu/~giebultt/COURSES/ph412/Reading/oscillators-1p.pdf</a></li>
-<li>Transistors Tutorial Part 7: “Oscillators”：<a href="http://www.learningelectronics.net/VA3AVR/tutorial/xtor/xtor7/xtor7.html">http://www.learningelectronics.net/VA3AVR/tutorial/xtor/xtor7/xtor7.html</a></li>
-</ul>
-<h3 id="03正交振荡器"><a class="markdownIt-Anchor" href="#03正交振荡器"></a> 0.3.正交振荡器</h3>
-<ul>
-<li>Quadrature Oscillator：<a href="https://freecircuitdiagram.com/979-quadrature-oscillator/">https://freecircuitdiagram.com/979-quadrature-oscillator/</a></li>
-<li>Quadrature Oscillators Using Operational Amplifiers：<a href="https://www.hindawi.com/journals/apec/2011/320367/">https://www.hindawi.com/journals/apec/2011/320367/</a></li>
-<li>Electronically Tunable Quadrature Sinusoidal Oscillator with Equal Output Amplitudes during Frequency Tuning Process：<a href="https://www.hindawi.com/journals/jece/2017/8575743/">https://www.hindawi.com/journals/jece/2017/8575743/</a></li>
-</ul>
-<h3 id="04数字振荡器"><a class="markdownIt-Anchor" href="#04数字振荡器"></a> 0.4.数字振荡器</h3>
-<ul>
-<li>A QUADRATURE OSCILLATOR：<a href="https://flylib.com/books/en/2.729.1/a_quadrature_oscillator.html">https://flylib.com/books/en/2.729.1/a_quadrature_oscillator.html</a></li>
-<li>Digital Sine Oscillator Design：<a href="https://www.njohnson.co.uk/pdf/drdes/Chap7.pdf">https://www.njohnson.co.uk/pdf/drdes/Chap7.pdf</a></li>
-<li>A New Recursive Quadrature Oscillator：<a href="https://www.vicanek.de/articles/QuadOsc.pdf">https://www.vicanek.de/articles/QuadOsc.pdf</a></li>
-<li>How to implement a digital oscillator?：<a href="https://www.vicanek.de/articles/QuadOsc.pdf">https://www.vicanek.de/articles/QuadOsc.pdf</a></li>
-<li>Digitally controlled oscillator for all-digital frequency locked loops：<a href="http://www.romjist.ro/full-texts/paper577.pdf">http://www.romjist.ro/full-texts/paper577.pdf</a></li>
-</ul>
-]]></content>
-      <categories>
-        <category>模拟电路</category>
-      </categories>
-      <tags>
-        <tag>模拟</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>图像抖动及其应用</title>
     <url>/2022/04/24/blog013-2022-04-24/</url>
     <content><![CDATA[<p><img src="https://cnpp-image.oss-cn-beijing.aliyuncs.com/my-blog/blog013-2022-04-24/title.jpg" alt="title" /></p>
@@ -775,49 +727,6 @@ y \\
       </tags>
   </entry>
   <entry>
-    <title>【EE随笔-4】Microchip公司几款接口简约的ADC和DAC</title>
-    <url>/2022/09/28/blog015-2022-09-28/</url>
-    <content><![CDATA[<p><img src="https://cnpp-image.oss-cn-beijing.aliyuncs.com/my-blog/blog015-2022-09-28/title.jpg" alt="title" /></p>
-<span id="more"></span>
-<h2 id="随笔"><a class="markdownIt-Anchor" href="#随笔"></a> 随笔</h2>
-<p>我一直想制作一块如Arduino Nano 般大小的FPGA板卡，来测试一些小的HDL代码片段，以及DSP算法。因为只是作原理验证和学习探索只用，没必要把处理的频率定的很高，在音频稍高的范围即可（比如50kHz以内），同时也更希望能把精力花在算法本身而不是外围电路的设计以及通信接口的调试上。因此，我时常回去留意一些性能未必出众，但接口简洁的混合器件上。</p>
-<p>在校期间，我曾为EDA实验课程改进过一款配合FPGA开发板实用的DSP拓展版，也就是题图。在该板上就选用了Microchip公司的ADC和DAC，接口简单，效果也不错，于是就想到再把这两颗芯片找来看看：</p>
-<p><strong>MCP3201</strong>：<a href="https://www.microchip.com/en-us/product/MCP3201">https://www.microchip.com/en-us/product/MCP3201</a></p>
-<p><strong>MCP4901</strong>：<a href="https://www.microchip.com/en-us/product/MCP4921">https://www.microchip.com/en-us/product/MCP4921</a></p>
-<p>手册在上面的链接里，请大家打开来看。</p>
-<h3 id="mcp3201"><a class="markdownIt-Anchor" href="#mcp3201"></a> MCP3201</h3>
-<p><img src="https://cnpp-image.oss-cn-beijing.aliyuncs.com/my-blog/blog015-2022-09-28/mcp3201-1.png" alt="1-1" /></p>
-<p>MCP3201是一款12bit，SPI接口的ADC，采样率最高可达100ksps，可以说未必能达到不少单片机内置ADC的水平，可对于一块小FPGA来说，可是有和无的区别，做一些50kHz以内的信号处理实验，这个参数够用，而且SPI接口也是FPGA上最好写的通信接口之一。</p>
-<p><img src="https://cnpp-image.oss-cn-beijing.aliyuncs.com/my-blog/blog015-2022-09-28/mcp3201-2.png" alt="1-2" /></p>
-<p>对于很多更高分辨率的ADC，转换时间是很可观的，在主机与它们通信时，通常要等待它们发来转换完成的信号，才能进行数据的读取。这样一来，要想保证均匀的连续采样，要么提前算好转换等待时间并加以适当延长后，作为采样周期去操作，要么全由ADC来主导采样周期，都很繁琐。</p>
-<p>而MCP3201的分辨率不高，采样速度不快，通信接口的速度限定也比较慢，因此不需要等待转换完成的信号，直接在通信的前两个时钟周期它就转换完成了。每一次采样，只需要如上图读个16bit就直接完成，非常方便，就如同操作最简单的并口ADC一般。</p>
-<p>可见，MCP3201的通信接口是很好设计的，当成一个16bit的移位寄存器读就行了。手册中还给出了分8bit两次读的方法，方便一些单片机使用。</p>
-<h3 id="mcp4921"><a class="markdownIt-Anchor" href="#mcp4921"></a> MCP4921</h3>
-<p><img src="https://cnpp-image.oss-cn-beijing.aliyuncs.com/my-blog/blog015-2022-09-28/mcp4921-1.png" alt="2-1" /></p>
-<p>12bit DAC MCP4921，建立时间4.5us，也就是差不多能做到200ksps，同样拥有很简单的通信接口。</p>
-<p><img src="https://cnpp-image.oss-cn-beijing.aliyuncs.com/my-blog/blog015-2022-09-28/mcp4921-2.png" alt="2-1" /></p>
-<p>美中不足的是没有内置基准，不过VREF脚接有Buffer，使用并联型基准时可以省去外置；Buffer还可以被旁路，没错，这其实是个乘法型DAC，在旁路掉VREF的Buffer和输出的Buffer之后可以作为数字电位器使用。可以说是很灵活了。</p>
-<p><img src="https://cnpp-image.oss-cn-beijing.aliyuncs.com/my-blog/blog015-2022-09-28/mcp4921-3.png" alt="2-1" /></p>
-<p>通信协议，16个bit配置完全部，很简单。</p>
-<p><img src="https://cnpp-image.oss-cn-beijing.aliyuncs.com/my-blog/blog015-2022-09-28/mcp4921-4.png" alt="2-1" /></p>
-<p>这款DAC另一个比较有趣的点是手册中给出的应用电路部分。比如上图展示了用两颗DAC分别控制信号幅度和偏置，很适合制作信号源时使用。</p>
-<p><img src="https://cnpp-image.oss-cn-beijing.aliyuncs.com/my-blog/blog015-2022-09-28/mcp4921-5.png" alt="2-1" /></p>
-<p>这张电路很难得地给出了用两颗DAC组合增加输出分辨率的方法，并给出了比例电阻的计算公式。</p>
-<p><img src="https://cnpp-image.oss-cn-beijing.aliyuncs.com/my-blog/blog015-2022-09-28/mcp4921-6.png" alt="2-1" /></p>
-<p>这里是作为乘法型DAC的应用，控制反馈环路的增益。</p>
-<h2 id="完"><a class="markdownIt-Anchor" href="#完"></a> 完</h2>
-<p>这几款ADC、DAC的价格不贵，封装也很小巧，一个FPGA挂上好几颗同步运行，或是作为辅助器件给高速ADDA控制偏置和增益等，岂不美哉。</p>
-]]></content>
-      <categories>
-        <category>EE-随笔</category>
-      </categories>
-      <tags>
-        <tag>ADC</tag>
-        <tag>DAC</tag>
-        <tag>Microchip</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>【模拟之旅-1】电源与虚拟地发生器</title>
     <url>/2023/01/23/blog016-2023-01-23/</url>
     <content><![CDATA[<p><img src="https://cnpp-image.oss-cn-beijing.aliyuncs.com/my-blog/blog016-2023-01-23/title.jpg" alt="title" /></p>
@@ -970,6 +879,49 @@ y \\
       </tags>
   </entry>
   <entry>
+    <title>【EE随笔-4】Microchip公司几款接口简约的ADC和DAC</title>
+    <url>/2022/09/28/blog015-2022-09-28/</url>
+    <content><![CDATA[<p><img src="https://cnpp-image.oss-cn-beijing.aliyuncs.com/my-blog/blog015-2022-09-28/title.jpg" alt="title" /></p>
+<span id="more"></span>
+<h2 id="随笔"><a class="markdownIt-Anchor" href="#随笔"></a> 随笔</h2>
+<p>我一直想制作一块如Arduino Nano 般大小的FPGA板卡，来测试一些小的HDL代码片段，以及DSP算法。因为只是作原理验证和学习探索只用，没必要把处理的频率定的很高，在音频稍高的范围即可（比如50kHz以内），同时也更希望能把精力花在算法本身而不是外围电路的设计以及通信接口的调试上。因此，我时常回去留意一些性能未必出众，但接口简洁的混合器件上。</p>
+<p>在校期间，我曾为EDA实验课程改进过一款配合FPGA开发板实用的DSP拓展版，也就是题图。在该板上就选用了Microchip公司的ADC和DAC，接口简单，效果也不错，于是就想到再把这两颗芯片找来看看：</p>
+<p><strong>MCP3201</strong>：<a href="https://www.microchip.com/en-us/product/MCP3201">https://www.microchip.com/en-us/product/MCP3201</a></p>
+<p><strong>MCP4901</strong>：<a href="https://www.microchip.com/en-us/product/MCP4921">https://www.microchip.com/en-us/product/MCP4921</a></p>
+<p>手册在上面的链接里，请大家打开来看。</p>
+<h3 id="mcp3201"><a class="markdownIt-Anchor" href="#mcp3201"></a> MCP3201</h3>
+<p><img src="https://cnpp-image.oss-cn-beijing.aliyuncs.com/my-blog/blog015-2022-09-28/mcp3201-1.png" alt="1-1" /></p>
+<p>MCP3201是一款12bit，SPI接口的ADC，采样率最高可达100ksps，可以说未必能达到不少单片机内置ADC的水平，可对于一块小FPGA来说，可是有和无的区别，做一些50kHz以内的信号处理实验，这个参数够用，而且SPI接口也是FPGA上最好写的通信接口之一。</p>
+<p><img src="https://cnpp-image.oss-cn-beijing.aliyuncs.com/my-blog/blog015-2022-09-28/mcp3201-2.png" alt="1-2" /></p>
+<p>对于很多更高分辨率的ADC，转换时间是很可观的，在主机与它们通信时，通常要等待它们发来转换完成的信号，才能进行数据的读取。这样一来，要想保证均匀的连续采样，要么提前算好转换等待时间并加以适当延长后，作为采样周期去操作，要么全由ADC来主导采样周期，都很繁琐。</p>
+<p>而MCP3201的分辨率不高，采样速度不快，通信接口的速度限定也比较慢，因此不需要等待转换完成的信号，直接在通信的前两个时钟周期它就转换完成了。每一次采样，只需要如上图读个16bit就直接完成，非常方便，就如同操作最简单的并口ADC一般。</p>
+<p>可见，MCP3201的通信接口是很好设计的，当成一个16bit的移位寄存器读就行了。手册中还给出了分8bit两次读的方法，方便一些单片机使用。</p>
+<h3 id="mcp4921"><a class="markdownIt-Anchor" href="#mcp4921"></a> MCP4921</h3>
+<p><img src="https://cnpp-image.oss-cn-beijing.aliyuncs.com/my-blog/blog015-2022-09-28/mcp4921-1.png" alt="2-1" /></p>
+<p>12bit DAC MCP4921，建立时间4.5us，也就是差不多能做到200ksps，同样拥有很简单的通信接口。</p>
+<p><img src="https://cnpp-image.oss-cn-beijing.aliyuncs.com/my-blog/blog015-2022-09-28/mcp4921-2.png" alt="2-1" /></p>
+<p>美中不足的是没有内置基准，不过VREF脚接有Buffer，使用并联型基准时可以省去外置；Buffer还可以被旁路，没错，这其实是个乘法型DAC，在旁路掉VREF的Buffer和输出的Buffer之后可以作为数字电位器使用。可以说是很灵活了。</p>
+<p><img src="https://cnpp-image.oss-cn-beijing.aliyuncs.com/my-blog/blog015-2022-09-28/mcp4921-3.png" alt="2-1" /></p>
+<p>通信协议，16个bit配置完全部，很简单。</p>
+<p><img src="https://cnpp-image.oss-cn-beijing.aliyuncs.com/my-blog/blog015-2022-09-28/mcp4921-4.png" alt="2-1" /></p>
+<p>这款DAC另一个比较有趣的点是手册中给出的应用电路部分。比如上图展示了用两颗DAC分别控制信号幅度和偏置，很适合制作信号源时使用。</p>
+<p><img src="https://cnpp-image.oss-cn-beijing.aliyuncs.com/my-blog/blog015-2022-09-28/mcp4921-5.png" alt="2-1" /></p>
+<p>这张电路很难得地给出了用两颗DAC组合增加输出分辨率的方法，并给出了比例电阻的计算公式。</p>
+<p><img src="https://cnpp-image.oss-cn-beijing.aliyuncs.com/my-blog/blog015-2022-09-28/mcp4921-6.png" alt="2-1" /></p>
+<p>这里是作为乘法型DAC的应用，控制反馈环路的增益。</p>
+<h2 id="完"><a class="markdownIt-Anchor" href="#完"></a> 完</h2>
+<p>这几款ADC、DAC的价格不贵，封装也很小巧，一个FPGA挂上好几颗同步运行，或是作为辅助器件给高速ADDA控制偏置和增益等，岂不美哉。</p>
+]]></content>
+      <categories>
+        <category>EE-随笔</category>
+      </categories>
+      <tags>
+        <tag>ADC</tag>
+        <tag>DAC</tag>
+        <tag>Microchip</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Hello World</title>
     <url>/2023/04/14/hello-world/</url>
     <content><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
@@ -987,5 +939,53 @@ y \\
 <figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
 <p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
 ]]></content>
+  </entry>
+  <entry>
+    <title>振荡器资料收集</title>
+    <url>/2022/04/06/blog012-2022-04-06/</url>
+    <content><![CDATA[<p>平衡的艺术</p>
+<span id="more"></span>
+<h2 id="0资料收集"><a class="markdownIt-Anchor" href="#0资料收集"></a> 0.资料收集</h2>
+<h3 id="01状态可变振荡器"><a class="markdownIt-Anchor" href="#01状态可变振荡器"></a> 0.1.状态可变振荡器</h3>
+<ul>
+<li>DIGITALLY PROGRAMMABLE, TIME-CONTINUOUS ACTIVE FILTER：<a href="https://www.ti.com.cn/cn/lit/an/sbfa005/sbfa005.pdf?ts=1648699984042&amp;ref_url=https%253A%252F%252Fwww.ti.com.cn%252Fproduct%252Fcn%252FUAF42">https://www.ti.com.cn/cn/lit/an/sbfa005/sbfa005.pdf?ts=1648699984042&amp;ref_url=https%3A%2F%2Fwww.ti.com.cn%2Fproduct%2Fcn%2FUAF42</a></li>
+<li>FILTER DESIGN PROGRAM FOR THE UAF42 UNIVERSAL ACTIVE FILTER：<a href="https://www.ti.com.cn/cn/lit/an/sbfa002/sbfa002.pdf?ts=1648699989423&amp;ref_url=https%253A%252F%252Fwww.ti.com.cn%252Fproduct%252Fcn%252FUAF42">https://www.ti.com.cn/cn/lit/an/sbfa002/sbfa002.pdf?ts=1648699989423&amp;ref_url=https%3A%2F%2Fwww.ti.com.cn%2Fproduct%2Fcn%2FUAF42</a></li>
+<li>Designing RC Oscillator Circuits with Low Voltage Operational Amplifiers and Comparators for Precision Sensor Applications：<a href="https://www.onsemi.com/pub/Collateral/AND8054-D.PDF">https://www.onsemi.com/pub/Collateral/AND8054-D.PDF</a></li>
+<li>Designing Operational Amplifier Oscillator Circuits For Sensor Applications：<a href="https://ww1.microchip.com/downloads/en/Appnotes/00866a.pdf">https://ww1.microchip.com/downloads/en/Appnotes/00866a.pdf</a></li>
+<li>Nice state variable oscillator：<a href="https://www.eevblog.com/forum/projects/nice-state-variable-oscillator/">https://www.eevblog.com/forum/projects/nice-state-variable-oscillator/</a></li>
+<li>Developing a State Variable Oscillator for Audio Applications：<a href="http://www.williamsonic.com/AudioOsc/">http://www.williamsonic.com/AudioOsc/</a></li>
+<li>Fast Amplitude Stabilization of an RC Oscillator：<a href="https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&amp;arnumber=1050492">https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&amp;arnumber=1050492</a></li>
+<li>STATE WARIABLE OSCELLATOR HAVING IMPROVED REJECTION OF LEVELER-INDUCED DISTORTION：<a href="https://patentimages.storage.googleapis.com/11/ff/9f/cce62d8c83fc0c/US4560958.pdf">https://patentimages.storage.googleapis.com/11/ff/9f/cce62d8c83fc0c/US4560958.pdf</a></li>
+</ul>
+<h3 id="02文氏桥振荡器等"><a class="markdownIt-Anchor" href="#02文氏桥振荡器等"></a> 0.2.文氏桥振荡器等</h3>
+<ul>
+<li>Sine Wave Oscillators：<a href="https://www.kennethkuhn.com/students/ee431/oscillators_sine_wave.pdf">https://www.kennethkuhn.com/students/ee431/oscillators_sine_wave.pdf</a></li>
+<li>Using lamps for stabilizing oscillators：<a href="http://www.tronola.com/moorepage/Lamps.html">http://www.tronola.com/moorepage/Lamps.html</a></li>
+<li>Wien Bridge Oscillator：<a href="https://stompville.co.uk/?p=872">https://stompville.co.uk/?p=872</a></li>
+<li>Oscillators：<a href="http://jewel.buet.ac.bd/Electronics/Oscillators.pdf">http://jewel.buet.ac.bd/Electronics/Oscillators.pdf</a></li>
+<li>Oscillator Circuits：<a href="https://sites.science.oregonstate.edu/~giebultt/COURSES/ph412/Reading/oscillators-1p.pdf">https://sites.science.oregonstate.edu/~giebultt/COURSES/ph412/Reading/oscillators-1p.pdf</a></li>
+<li>Transistors Tutorial Part 7: “Oscillators”：<a href="http://www.learningelectronics.net/VA3AVR/tutorial/xtor/xtor7/xtor7.html">http://www.learningelectronics.net/VA3AVR/tutorial/xtor/xtor7/xtor7.html</a></li>
+</ul>
+<h3 id="03正交振荡器"><a class="markdownIt-Anchor" href="#03正交振荡器"></a> 0.3.正交振荡器</h3>
+<ul>
+<li>Quadrature Oscillator：<a href="https://freecircuitdiagram.com/979-quadrature-oscillator/">https://freecircuitdiagram.com/979-quadrature-oscillator/</a></li>
+<li>Quadrature Oscillators Using Operational Amplifiers：<a href="https://www.hindawi.com/journals/apec/2011/320367/">https://www.hindawi.com/journals/apec/2011/320367/</a></li>
+<li>Electronically Tunable Quadrature Sinusoidal Oscillator with Equal Output Amplitudes during Frequency Tuning Process：<a href="https://www.hindawi.com/journals/jece/2017/8575743/">https://www.hindawi.com/journals/jece/2017/8575743/</a></li>
+</ul>
+<h3 id="04数字振荡器"><a class="markdownIt-Anchor" href="#04数字振荡器"></a> 0.4.数字振荡器</h3>
+<ul>
+<li>A QUADRATURE OSCILLATOR：<a href="https://flylib.com/books/en/2.729.1/a_quadrature_oscillator.html">https://flylib.com/books/en/2.729.1/a_quadrature_oscillator.html</a></li>
+<li>Digital Sine Oscillator Design：<a href="https://www.njohnson.co.uk/pdf/drdes/Chap7.pdf">https://www.njohnson.co.uk/pdf/drdes/Chap7.pdf</a></li>
+<li>A New Recursive Quadrature Oscillator：<a href="https://www.vicanek.de/articles/QuadOsc.pdf">https://www.vicanek.de/articles/QuadOsc.pdf</a></li>
+<li>How to implement a digital oscillator?：<a href="https://www.vicanek.de/articles/QuadOsc.pdf">https://www.vicanek.de/articles/QuadOsc.pdf</a></li>
+<li>Digitally controlled oscillator for all-digital frequency locked loops：<a href="http://www.romjist.ro/full-texts/paper577.pdf">http://www.romjist.ro/full-texts/paper577.pdf</a></li>
+</ul>
+]]></content>
+      <categories>
+        <category>模拟电路</category>
+      </categories>
+      <tags>
+        <tag>模拟</tag>
+      </tags>
   </entry>
 </search>
