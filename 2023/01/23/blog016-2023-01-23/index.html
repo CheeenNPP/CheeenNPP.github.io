@@ -21,12 +21,12 @@
   </script>
 
   <meta property="og:type" content="article">
-<meta property="og:title" content="【模拟之旅-1】供电与虚拟地发生器">
+<meta property="og:title" content="【模拟之旅-1】电源与虚拟地发生器">
 <meta property="og:url" content="https://cheeennpp.github.io/2023/01/23/blog016-2023-01-23/index.html">
 <meta property="og:site_name" content="橙的核电站">
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="https://cnpp-image.oss-cn-beijing.aliyuncs.com/my-blog/blog016-2023-01-23/title.jpg">
-<meta property="og:image" content="https://cheeennpp.github.io/2023/01/23/blog016-2023-01-23/blog016-2023-01-23/0-1.jpg">
+<meta property="og:image" content="https://cnpp-image.oss-cn-beijing.aliyuncs.com/my-blog/blog016-2023-01-23/0-1.jpg">
 <meta property="og:image" content="https://cnpp-image.oss-cn-beijing.aliyuncs.com/my-blog/blog016-2023-01-23/1-01.jpg">
 <meta property="og:image" content="https://cnpp-image.oss-cn-beijing.aliyuncs.com/my-blog/blog016-2023-01-23/1-02.jpg">
 <meta property="og:image" content="https://cnpp-image.oss-cn-beijing.aliyuncs.com/my-blog/blog016-2023-01-23/1-03.jpg">
@@ -57,7 +57,7 @@
 <meta property="og:image" content="https://cnpp-image.oss-cn-beijing.aliyuncs.com/my-blog/blog016-2023-01-23/3-03.jpg">
 <meta property="og:image" content="https://cnpp-image.oss-cn-beijing.aliyuncs.com/my-blog/blog016-2023-01-23/4-01.jpg">
 <meta property="article:published_time" content="2023-01-23T11:43:16.000Z">
-<meta property="article:modified_time" content="2023-06-21T08:33:41.914Z">
+<meta property="article:modified_time" content="2023-06-21T08:54:03.761Z">
 <meta property="article:author" content="CNPP">
 <meta property="article:tag" content="GND">
 <meta name="twitter:card" content="summary">
@@ -76,7 +76,7 @@
   };
 </script>
 
-  <title>【模拟之旅-1】供电与虚拟地发生器 | 橙的核电站</title>
+  <title>【模拟之旅-1】电源与虚拟地发生器 | 橙的核电站</title>
   
 
 
@@ -211,7 +211,7 @@
     </span>
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
-          【模拟之旅-1】供电与虚拟地发生器
+          【模拟之旅-1】电源与虚拟地发生器
         </h1>
 
         <div class="post-meta">
@@ -228,7 +228,7 @@
                   <i class="fa fa-calendar-check-o"></i>
                 </span>
                 <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2023-06-21 16:33:41" itemprop="dateModified" datetime="2023-06-21T16:33:41+08:00">2023-06-21</time>
+                <time title="修改时间：2023-06-21 16:54:03" itemprop="dateModified" datetime="2023-06-21T16:54:03+08:00">2023-06-21</time>
               </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -265,7 +265,7 @@
 <p>在这个过程中，CNPP探索了不少模电中，曾经未涉足过的新领域，比如非线性电路、模拟计算电路、低功耗电路和分立器件电路等，颇有一种步入桃花源般豁然开朗的快意。于是便想开启一个新的专题，名为【模拟之旅】，来和大家一起分享这一路上的奇观趣闻。</p>
 <p>那么，我们旅程的起点是哪里呢，当然是CNPP的HomeLeb。没错，CNPP已经毕业啦，告别了实验室，告别了1G带宽的示波器，告别了8G的矢网，告别了26.5G的频谱仪，回到了只有口袋仪器可堪一用的小窝，可谓悲凉~~。没事，这些都可以克服！我们研究模电的，不需要高端大气的仪器，20M的带宽，就够我们用了！但这其中最大的困难，还是电源————家里没有双路输出的实验电源呀。</p>
 <p>CNPP身边呢，一直有这样一台电源：<strong>菊水PMC18-1A</strong>，它的输出电压范围与常见实验电源的30V、36V相去甚远，输出电流也可以用纤弱来形容，这也使得它在二手市场上几乎无人问津。但这样的参数，却几乎覆盖了CNPP三年来的电子DIY旅程，再加上10圈精密调节的电流档，超低的输出纹波和安静的性格，真的是爱不释手。</p>
-<p><img src="blog016-2023-01-23/0-1.jpg" alt="0-1" /></p>
+<p><img src="https://cnpp-image.oss-cn-beijing.aliyuncs.com/my-blog/blog016-2023-01-23/0-1.jpg" alt="0-1" /></p>
 <p>可再怎么说，这也是一台单路输出的电源，而谈到模电，双电源几乎是扯不开的。CNPP想谈的解决方法就是今天的主题————<strong>虚拟地发生器</strong>，它能将单电源输入“转换”成双电源，从而可以使后面的电路可以全部使用标准的双电源设计方法。</p>
 <p>其实在高中时，CNPP一直靠着两节18650锂电池来玩特斯拉线圈、等离子扬声器这种功率电路；在电源还没运到的前些日子，还在靠9V叠层电池和虚拟地发生器来研究模拟电路，所以说工具并不是咕咕咕的理由，<strong>摸鱼才是！！</strong>，这两天CNPP也是下定决心<s>少摸点</s>，来为大家更新【模拟之旅】。</p>
 <h2 id="1模拟电路的电源"><a class="markdownIt-Anchor" href="#1模拟电路的电源"></a> 1.模拟电路的电源</h2>
@@ -414,7 +414,7 @@
   </li>
   <li class="post-copyright-link">
     <strong>本文链接：</strong>
-    <a href="https://cheeennpp.github.io/2023/01/23/blog016-2023-01-23/" title="【模拟之旅-1】供电与虚拟地发生器">https://cheeennpp.github.io/2023/01/23/blog016-2023-01-23/</a>
+    <a href="https://cheeennpp.github.io/2023/01/23/blog016-2023-01-23/" title="【模拟之旅-1】电源与虚拟地发生器">https://cheeennpp.github.io/2023/01/23/blog016-2023-01-23/</a>
   </li>
   <li class="post-copyright-license">
     <strong>版权声明： </strong>本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" rel="noopener" target="_blank"><i class="fa fa-fw fa-creative-commons"></i>BY-NC-SA</a> 许可协议。转载请注明出处！
