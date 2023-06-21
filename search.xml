@@ -1,41 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>博客结构</title>
-    <url>/2021/09/13/blog002-2021-09-13/</url>
-    <content><![CDATA[<h2 id="前言"><a class="markdownIt-Anchor" href="#前言"></a> 前言</h2>
-<p>一个EE的博客。</p>
-<ul>
-<li>日常的制作进度，开坑想法，小成果等，会放<code>EE-随笔</code><strong>分类</strong>中，这些仅作记录，并没有完整的工程结构。</li>
-<li>一个完整的项目，会放在特定的<strong>分类</strong>中，并会围绕此，结合Github仓库，构建工程。</li>
-</ul>
-]]></content>
-      <categories>
-        <category>生活-随笔</category>
-      </categories>
-      <tags>
-        <tag>生活</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Ground Zero</title>
-    <url>/2021/09/13/blog001-2021-09-13/</url>
-    <content><![CDATA[<blockquote class="blockquote-center">
-            <p>一切的开端</p>
-
-          </blockquote>
-<p><img src="https://cnpp-image.oss-cn-beijing.aliyuncs.com/my-blog/blog001-2021-09-13/mgsv-gz-fox.jpg" alt="mgsv-gz-fox" /></p>
-<p>现在的时间是2021年9月13日，我开始落笔写下第一篇博客。已然处于本科的随后一个秋季，保研的幻想已随着来去无踪的新冠疫情破灭，考研的决心却仍飘渺。在这些许已预料到的境遇之中，酝酿着慵懒颓唐的心态。</p>
-<p>手头几个颇有挑战与乐趣的项目业已搁置，要考研。许诺之中的电赛，本是见面眼红的死敌，却被一道晴天霹雳击开的天堑隔开，对峙良久，反而成了面面相觑。在这样一个马鞍点上，收起悬而未决之意，反而略有闲心，操刀小烹，组织些珍视的图文于次僻所，聊解心头的熵结。</p>
-]]></content>
-      <categories>
-        <category>生活-随笔</category>
-      </categories>
-      <tags>
-        <tag>生活</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>【EE随笔-1】HMC189A倍频器</title>
     <url>/2021/09/13/blog003-2021-09-13/</url>
     <content><![CDATA[<p><img src="https://cnpp-image.oss-cn-beijing.aliyuncs.com/my-blog/blog003-2021-09-13/title.jpg" alt="title" /></p>
@@ -120,6 +85,47 @@
       </tags>
   </entry>
   <entry>
+    <title>【EE随笔-2】LMT4601 uModule</title>
+    <url>/2021/09/19/blog005-2021-09-19/</url>
+    <content><![CDATA[<p><img src="https://cnpp-image.oss-cn-beijing.aliyuncs.com/my-blog/blog005-2021-09-19/title.jpg" alt="title" /></p>
+<span id="more"></span>
+<h2 id="随笔"><a class="markdownIt-Anchor" href="#随笔"></a> 随笔</h2>
+<p>今日在<s>海鲜市场</s><code>30包邮</code>提得两片带板凌力尔特<s>特供巧克力月饼</s>，参数看上去甚是生猛，更兼有远端检测和锁相环等花哨功能：</p>
+<p><img src="https://cnpp-image.oss-cn-beijing.aliyuncs.com/my-blog/blog005-2021-09-19/2-1.png" alt="2-1" /></p>
+<p><img src="https://cnpp-image.oss-cn-beijing.aliyuncs.com/my-blog/blog005-2021-09-19/2-2.png" alt="2-2" /></p>
+<p><img src="https://cnpp-image.oss-cn-beijing.aliyuncs.com/my-blog/blog005-2021-09-19/1-1.jpg" alt="1-1" /></p>
+<p><img src="https://cnpp-image.oss-cn-beijing.aliyuncs.com/my-blog/blog005-2021-09-19/1-2.jpg" alt="1-2" /></p>
+<p><img src="https://cnpp-image.oss-cn-beijing.aliyuncs.com/my-blog/blog005-2021-09-19/1-3.jpg" alt="1-3" /></p>
+<p><img src="https://cnpp-image.oss-cn-beijing.aliyuncs.com/my-blog/blog005-2021-09-19/1-4.jpg" alt="1-4" /></p>
+<p>也许能做一个超大输出电流精密电源吧。</p>
+<p>至于PLL的功能，是将开关频率同步至外部的参考频率，以避免向系统中引入额外的谐波分量。在<strong>Linear</strong>的应用笔记中，也介绍过一种使用<code>D触发器</code>将开关频率与参考频率同步的方法：</p>
+<p><img src="https://cnpp-image.oss-cn-beijing.aliyuncs.com/my-blog/blog005-2021-09-19/3-1.png" alt="3-1" /></p>
+]]></content>
+      <categories>
+        <category>EE-随笔</category>
+      </categories>
+      <tags>
+        <tag>电源</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>博客结构</title>
+    <url>/2021/09/13/blog002-2021-09-13/</url>
+    <content><![CDATA[<h2 id="前言"><a class="markdownIt-Anchor" href="#前言"></a> 前言</h2>
+<p>一个EE的博客。</p>
+<ul>
+<li>日常的制作进度，开坑想法，小成果等，会放<code>EE-随笔</code><strong>分类</strong>中，这些仅作记录，并没有完整的工程结构。</li>
+<li>一个完整的项目，会放在特定的<strong>分类</strong>中，并会围绕此，结合Github仓库，构建工程。</li>
+</ul>
+]]></content>
+      <categories>
+        <category>生活-随笔</category>
+      </categories>
+      <tags>
+        <tag>生活</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>CASIO fx-50F Calculator</title>
     <url>/2021/09/22/blog006-2021-09-22/</url>
     <content><![CDATA[<p><img src="https://cnpp-image.oss-cn-beijing.aliyuncs.com/my-blog/blog006-2021-09-22/title.jpg" alt="title" /></p>
@@ -168,27 +174,49 @@
       </tags>
   </entry>
   <entry>
-    <title>【EE随笔-2】LMT4601 uModule</title>
-    <url>/2021/09/19/blog005-2021-09-19/</url>
-    <content><![CDATA[<p><img src="https://cnpp-image.oss-cn-beijing.aliyuncs.com/my-blog/blog005-2021-09-19/title.jpg" alt="title" /></p>
+    <title>【EE随笔-3】高线性度混频器ADL5350</title>
+    <url>/2022/02/10/blog010-2022-02-10/</url>
+    <content><![CDATA[<p><img src="https://cnpp-image.oss-cn-beijing.aliyuncs.com/my-blog/blog010-2022-02-10/title.png" alt="title" /></p>
 <span id="more"></span>
 <h2 id="随笔"><a class="markdownIt-Anchor" href="#随笔"></a> 随笔</h2>
-<p>今日在<s>海鲜市场</s><code>30包邮</code>提得两片带板凌力尔特<s>特供巧克力月饼</s>，参数看上去甚是生猛，更兼有远端检测和锁相环等花哨功能：</p>
-<p><img src="https://cnpp-image.oss-cn-beijing.aliyuncs.com/my-blog/blog005-2021-09-19/2-1.png" alt="2-1" /></p>
-<p><img src="https://cnpp-image.oss-cn-beijing.aliyuncs.com/my-blog/blog005-2021-09-19/2-2.png" alt="2-2" /></p>
-<p><img src="https://cnpp-image.oss-cn-beijing.aliyuncs.com/my-blog/blog005-2021-09-19/1-1.jpg" alt="1-1" /></p>
-<p><img src="https://cnpp-image.oss-cn-beijing.aliyuncs.com/my-blog/blog005-2021-09-19/1-2.jpg" alt="1-2" /></p>
-<p><img src="https://cnpp-image.oss-cn-beijing.aliyuncs.com/my-blog/blog005-2021-09-19/1-3.jpg" alt="1-3" /></p>
-<p><img src="https://cnpp-image.oss-cn-beijing.aliyuncs.com/my-blog/blog005-2021-09-19/1-4.jpg" alt="1-4" /></p>
-<p>也许能做一个超大输出电流精密电源吧。</p>
-<p>至于PLL的功能，是将开关频率同步至外部的参考频率，以避免向系统中引入额外的谐波分量。在<strong>Linear</strong>的应用笔记中，也介绍过一种使用<code>D触发器</code>将开关频率与参考频率同步的方法：</p>
-<p><img src="https://cnpp-image.oss-cn-beijing.aliyuncs.com/my-blog/blog005-2021-09-19/3-1.png" alt="3-1" /></p>
+<p>好基友LingMao这两天在为新项目选型，提到了ADI的一款高线性度混频器<code>ADL5350</code>：</p>
+<p><a href="https://www.analog.com/en/products/adl5350.html">https://www.analog.com/en/products/adl5350.html</a></p>
+<p><img src="https://cnpp-image.oss-cn-beijing.aliyuncs.com/my-blog/blog010-2022-02-10/1-1.png" alt="1-1" /></p>
+<p>并发现在ADI技术论坛上有这样一个回复，ADL5350的RF和IF在芯片内是连在一起的，这下在使用中，输出滤波器不仅需要对付混频后的镜像，还要对付下RF或者IF信号（因为ADL5350既可以用作上变频器，也可以用作下变频器）。在手册中，给出了ADL5350的原理说明，它是一种GaAs pHEMT （氮化镓赝调制掺杂异质结场效应晶体管）单端无源混频器，通过FET结沟道的导电性变化来调制RF信号：</p>
+<p><img src="https://cnpp-image.oss-cn-beijing.aliyuncs.com/my-blog/blog010-2022-02-10/1-2.png" alt="1-2" /></p>
+<p>芯片外围需要不少LC网络。RF信号经过带通网络，抑制镜像并减弱宽带噪声。RF与IF在芯片内一同连接到时变负载上，这样RF信号就会受LO信号调制，并在IF端由带通网络抑制RF信号并选出混频信号。RF和IF端口应该是对称设计，并且可以互换。</p>
+<p>此外ADL5350使用了FET作为混频核心，但属于无源混频器，这使我想起了之前在电赛训练器件，经常会有“不允许使用其他有源器件”的限制，当时就“二极管是不是有源器件”、“变压器是不是有源器件”展开过激烈的讨论（本质还是想钻空子整活）。混频器也有有源与无源之分，但我未作详细的了解。在看到ADL5350手册中“The ADL5350 is a GaAs pHEMT, single-ended, passive mixer with an integrated LO buffer amplifier.”中的Passive一词时，一时不知如何翻译。索性去查询了一下电学中Passive的含义：</p>
+<p><a href="https://www.electrical4u.com/active-and-passive-elements-of-electrical-circuit/">https://www.electrical4u.com/active-and-passive-elements-of-electrical-circuit/</a></p>
+<blockquote>
+<p>A passive component is an electronic component which can only receive energy, which it can either dissipate, absorb or store it in an electric field or a magnetic field. Passive elements do not need any form of electrical power to operate.</p>
+</blockquote>
+<p>如此想来，混频核心需要使用电源的吉尔伯特型混频器、收音机里常用的单晶体管混频器等属于有源混频器；二极管混频器属于无源混频器。ADL5350的混频核心是时变负载，在工作时吸收RF或IF信号，因此属于无源混频器；同样，开关混频器也属于无源混频器。</p>
+<p>其实我认为做有源与无源的区分不是重点，重点是了解各种混频器的性能和特点，比如混频增益与线性度等。</p>
+<p>此外，在讨论中有群友提到：平衡混频器有一种用法，可以从IF口输入DC电流，RF的信号就会直接从LO出去，调电流就能调衰减。感觉是个值得研究的点。正巧我与LingMao在讨论衰减器与检波器配合完成较精准的电平控制的问题，衰减器的选型很是麻烦，不知这种混频器作为衰减器的用法能不能提供另一种可能。</p>
 ]]></content>
       <categories>
         <category>EE-随笔</category>
       </categories>
       <tags>
-        <tag>电源</tag>
+        <tag>射频</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Ground Zero</title>
+    <url>/2021/09/13/blog001-2021-09-13/</url>
+    <content><![CDATA[<blockquote class="blockquote-center">
+            <p>一切的开端</p>
+
+          </blockquote>
+<p><img src="https://cnpp-image.oss-cn-beijing.aliyuncs.com/my-blog/blog001-2021-09-13/mgsv-gz-fox.jpg" alt="mgsv-gz-fox" /></p>
+<p>现在的时间是2021年9月13日，我开始落笔写下第一篇博客。已然处于本科的随后一个秋季，保研的幻想已随着来去无踪的新冠疫情破灭，考研的决心却仍飘渺。在这些许已预料到的境遇之中，酝酿着慵懒颓唐的心态。</p>
+<p>手头几个颇有挑战与乐趣的项目业已搁置，要考研。许诺之中的电赛，本是见面眼红的死敌，却被一道晴天霹雳击开的天堑隔开，对峙良久，反而成了面面相觑。在这样一个马鞍点上，收起悬而未决之意，反而略有闲心，操刀小烹，组织些珍视的图文于次僻所，聊解心头的熵结。</p>
+]]></content>
+      <categories>
+        <category>生活-随笔</category>
+      </categories>
+      <tags>
+        <tag>生活</tag>
       </tags>
   </entry>
   <entry>
@@ -229,235 +257,6 @@ y \\
       </categories>
       <tags>
         <tag>Verilog</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>射频电路的自动增益控制</title>
-    <url>/2022/01/12/blog009-2022-01-12/</url>
-    <content><![CDATA[<p><img src="https://cnpp-image.oss-cn-beijing.aliyuncs.com/my-blog/blog009-2022-01-12/title.png" alt="title" /></p>
-<span id="more"></span>
-<h2 id="0引子"><a class="markdownIt-Anchor" href="#0引子"></a> 0.引子</h2>
-<h2 id="1自动增益控制电路"><a class="markdownIt-Anchor" href="#1自动增益控制电路"></a> 1.自动增益控制电路</h2>
-<h3 id="11一些有用的链接"><a class="markdownIt-Anchor" href="#11一些有用的链接"></a> 1.1.一些有用的链接</h3>
-<ul>
-<li><a href="https://www.analog.com/media/en/training-seminars/tutorials/42575412022953450461111812375Design_and_Operation_of_AGC_Loops.pdf">DESIGN AND OPERATION OF AUTOMATIC GAIN CONTROL LOOPS FOR RECEIVERS IN MODERN COMMUNICATIONS SYSTEMS</a></li>
-<li><a href="https://www.qsl.net/va3iul/Files/Automatic_Gain_Control.pdf">Automatic Gain Control (AGC) in Receivers</a></li>
-<li><a href="https://www.analog.com/cn/app-notes/an-1040.html">AN-1040: RF功率校准提高无线发射机的性能</a></li>
-<li><a href="https://www.analog.com/media/en/technical-documentation/application-notes/AN-1507.pdf">AN-1507: Stable, Closed-Loop, Automatic Power Control for RF Applications</a></li>
-<li><a href="https://www.analog.com/media/en/technical-documentation/application-notes/AN-1527.pdf">AN-1527: Creating a Constant Envelope Signal Using the ADL5331 RFVGA and AD8319 Log Detector</a></li>
-<li><a href="https://www.analog.com/cn/technical-articles/measurement-control-rf-power-partI.html">Measurement and Control of RF Power (Part I)</a></li>
-<li><a href="https://www.analog.com/cn/technical-articles/measurement-control-rf-power-partII.html">Measurement and Control of RF Power (Part I)</a></li>
-<li><a href="https://www.analog.com/cn/technical-articles/measurement-control-rf-power-partIII.html">Measurement and Control of RF Power (Part I)</a></li>
-<li><a href="https://www.analog.com/media/en/technical-documentation/data-sheets/AD8315.pdf">AD8315: 50 dB GSM PA Controller</a></li>
-<li><a href="https://www.analog.com/media/en/technical-documentation/data-sheets/AD8319.pdf">AD8319: 1 MHz to 10 GHz, 45 dB Log Detector/Controller</a></li>
-<li><a href="https://www.analog.com/media/en/technical-documentation/data-sheets/AD8307.pdf">AD8307: Low Cost, DC to 500 MHz, 92 dB Logarithmic Amplifier</a></li>
-<li><a href="https://www.analog.com/media/en/technical-documentation/data-sheets/hmc346ms8g.pdf">HMC346MS8G/346MS8GE: GaAs MMIC SMT VOLTAGE-VARIABLE ATTENUATOR, DC-8GHz</a></li>
-<li><a href="https://www.analog.com/media/en/technical-documentation/application-notes/designing_with_the_hmc346ms8g_voltage_variable_attenuator.pdf">Designing With The HMC346MS8G Voltage Variable Attenuator</a></li>
-</ul>
-<h3 id="12各种地方出现的agc"><a class="markdownIt-Anchor" href="#12各种地方出现的agc"></a> 1.2.各种地方出现的AGC</h3>
-<p><img src="https://cnpp-image.oss-cn-beijing.aliyuncs.com/my-blog/blog009-2022-01-12/1-2-1.png" alt="1-2-1" /></p>
-<p><img src="https://cnpp-image.oss-cn-beijing.aliyuncs.com/my-blog/blog009-2022-01-12/1-2-2.png" alt="1-2-2" /></p>
-<p><img src="https://cnpp-image.oss-cn-beijing.aliyuncs.com/my-blog/blog009-2022-01-12/1-2-3.png" alt="1-2-3" /></p>
-<h2 id="2控制环路动态分析"><a class="markdownIt-Anchor" href="#2控制环路动态分析"></a> 2.控制环路动态分析</h2>
-<p>此小节是对<code>AD8315</code>功放控制器（即对数放大器+误差放大器）数据手册中<code>CONTROL LOOP DYNAMICS</code>的翻译。</p>
-<p>要想理解AD8315是如何在一个完整的控制环路中工作的，需要引入流过积分电容的电流的方程，这个方程由输入电压<span class="katex"><span class="katex-mathml"><math><semantics><mrow><msub><mi>V</mi><mrow><mi>I</mi><mi>N</mi></mrow></msub></mrow><annotation encoding="application/x-tex">V_{IN}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.83333em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathdefault" style="margin-right:0.22222em;">V</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.32833099999999993em;"><span style="top:-2.5500000000000003em;margin-left:-0.22222em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathdefault mtight" style="margin-right:0.07847em;">I</span><span class="mord mathdefault mtight" style="margin-right:0.10903em;">N</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span>和设定电压<span class="katex"><span class="katex-mathml"><math><semantics><mrow><msub><mi>V</mi><mrow><mi>S</mi><mi>E</mi><mi>T</mi></mrow></msub></mrow><annotation encoding="application/x-tex">V_{SET}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.83333em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathdefault" style="margin-right:0.22222em;">V</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.32833099999999993em;"><span style="top:-2.5500000000000003em;margin-left:-0.22222em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathdefault mtight" style="margin-right:0.05764em;">S</span><span class="mord mathdefault mtight" style="margin-right:0.05764em;">E</span><span class="mord mathdefault mtight" style="margin-right:0.13889em;">T</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span>确立：</p>
-<p>首先，对数检波器累加得到的电流由输入决定：</p>
-<p class='katex-block'><span class="katex-display"><span class="katex"><span class="katex-mathml"><math><semantics><mrow><msub><mi>I</mi><mrow><mi>D</mi><mi>E</mi><mi>T</mi></mrow></msub><mo>=</mo><msub><mi>I</mi><mrow><mi>S</mi><mi>L</mi><mi>P</mi></mrow></msub><mi>l</mi><mi>o</mi><msub><mi>g</mi><mn>10</mn></msub><mo stretchy="false">(</mo><msub><mi>V</mi><mrow><mi>I</mi><mi>N</mi></mrow></msub><mi mathvariant="normal">/</mi><msub><mi>V</mi><mi>Z</mi></msub><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">I_{DET}=I_{SLP}log_{10}(V_{IN}/V_Z)
-</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.83333em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathdefault" style="margin-right:0.07847em;">I</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.32833099999999993em;"><span style="top:-2.5500000000000003em;margin-left:-0.07847em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathdefault mtight" style="margin-right:0.02778em;">D</span><span class="mord mathdefault mtight" style="margin-right:0.05764em;">E</span><span class="mord mathdefault mtight" style="margin-right:0.13889em;">T</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord"><span class="mord mathdefault" style="margin-right:0.07847em;">I</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.32833099999999993em;"><span style="top:-2.5500000000000003em;margin-left:-0.07847em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathdefault mtight" style="margin-right:0.05764em;">S</span><span class="mord mathdefault mtight">L</span><span class="mord mathdefault mtight" style="margin-right:0.13889em;">P</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mord mathdefault" style="margin-right:0.01968em;">l</span><span class="mord mathdefault">o</span><span class="mord"><span class="mord mathdefault" style="margin-right:0.03588em;">g</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.30110799999999993em;"><span style="top:-2.5500000000000003em;margin-left:-0.03588em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight">1</span><span class="mord mtight">0</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mopen">(</span><span class="mord"><span class="mord mathdefault" style="margin-right:0.22222em;">V</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.32833099999999993em;"><span style="top:-2.5500000000000003em;margin-left:-0.22222em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathdefault mtight" style="margin-right:0.07847em;">I</span><span class="mord mathdefault mtight" style="margin-right:0.10903em;">N</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mord">/</span><span class="mord"><span class="mord mathdefault" style="margin-right:0.22222em;">V</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.32833099999999993em;"><span style="top:-2.5500000000000003em;margin-left:-0.22222em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathdefault mtight" style="margin-right:0.07153em;">Z</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mclose">)</span></span></span></span></span></p>
-<p>其中：</p>
-<p><span class="katex"><span class="katex-mathml"><math><semantics><mrow><msub><mi>I</mi><mrow><mi>D</mi><mi>E</mi><mi>T</mi></mrow></msub></mrow><annotation encoding="application/x-tex">I_{DET}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.83333em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathdefault" style="margin-right:0.07847em;">I</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.32833099999999993em;"><span style="top:-2.5500000000000003em;margin-left:-0.07847em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathdefault mtight" style="margin-right:0.02778em;">D</span><span class="mord mathdefault mtight" style="margin-right:0.05764em;">E</span><span class="mord mathdefault mtight" style="margin-right:0.13889em;">T</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span>是经过部分滤波后得到的解调信号，之后通过积分可得到信号精确的随机值。</p>
-<p><span class="katex"><span class="katex-mathml"><math><semantics><mrow><msub><mi>I</mi><mrow><mi>S</mi><mi>L</mi><mi>P</mi></mrow></msub></mrow><annotation encoding="application/x-tex">I_{SLP}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.83333em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathdefault" style="margin-right:0.07847em;">I</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.32833099999999993em;"><span style="top:-2.5500000000000003em;margin-left:-0.07847em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathdefault mtight" style="margin-right:0.05764em;">S</span><span class="mord mathdefault mtight">L</span><span class="mord mathdefault mtight" style="margin-right:0.13889em;">P</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span>为电流斜率，每十倍<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mn>115</mn><mi>μ</mi><mi>A</mi></mrow><annotation encoding="application/x-tex">115\mu A</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8777699999999999em;vertical-align:-0.19444em;"></span><span class="mord">1</span><span class="mord">1</span><span class="mord">5</span><span class="mord mathdefault">μ</span><span class="mord mathdefault">A</span></span></span></span>（即<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mn>5.75</mn><mi>μ</mi><mi>A</mi><mi mathvariant="normal">/</mi><mi>d</mi><mi>B</mi></mrow><annotation encoding="application/x-tex">5.75\mu A/dB</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord">5</span><span class="mord">.</span><span class="mord">7</span><span class="mord">5</span><span class="mord mathdefault">μ</span><span class="mord mathdefault">A</span><span class="mord">/</span><span class="mord mathdefault">d</span><span class="mord mathdefault" style="margin-right:0.05017em;">B</span></span></span></span>）。</p>
-<p><span class="katex"><span class="katex-mathml"><math><semantics><mrow><msub><mi>V</mi><mrow><mi>I</mi><mi>N</mi></mrow></msub></mrow><annotation encoding="application/x-tex">V_{IN}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.83333em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathdefault" style="margin-right:0.22222em;">V</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.32833099999999993em;"><span style="top:-2.5500000000000003em;margin-left:-0.22222em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathdefault mtight" style="margin-right:0.07847em;">I</span><span class="mord mathdefault mtight" style="margin-right:0.10903em;">N</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span>为输入电压均方根值<span class="katex"><span class="katex-mathml"><math><semantics><mrow><msub><mi>V</mi><mrow><mi>r</mi><mi>m</mi><mi>s</mi></mrow></msub></mrow><annotation encoding="application/x-tex">V_{rms}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.83333em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathdefault" style="margin-right:0.22222em;">V</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.151392em;"><span style="top:-2.5500000000000003em;margin-left:-0.22222em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathdefault mtight" style="margin-right:0.02778em;">r</span><span class="mord mathdefault mtight">m</span><span class="mord mathdefault mtight">s</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span></p>
-<p><span class="katex"><span class="katex-mathml"><math><semantics><mrow><msub><mi>V</mi><mi>Z</mi></msub></mrow><annotation encoding="application/x-tex">V_Z</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.83333em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathdefault" style="margin-right:0.22222em;">V</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.32833099999999993em;"><span style="top:-2.5500000000000003em;margin-left:-0.22222em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathdefault mtight" style="margin-right:0.07153em;">Z</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span>为输入截断电压，其取决于输入波形，对于正弦波为<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mn>316</mn><mi>μ</mi><msub><mi>V</mi><mrow><mi>r</mi><mi>m</mi><mi>s</mi></mrow></msub></mrow><annotation encoding="application/x-tex">316\mu V_{rms}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8777699999999999em;vertical-align:-0.19444em;"></span><span class="mord">3</span><span class="mord">1</span><span class="mord">6</span><span class="mord mathdefault">μ</span><span class="mord"><span class="mord mathdefault" style="margin-right:0.22222em;">V</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.151392em;"><span style="top:-2.5500000000000003em;margin-left:-0.22222em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathdefault mtight" style="margin-right:0.02778em;">r</span><span class="mord mathdefault mtight">m</span><span class="mord mathdefault mtight">s</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span>（<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mo>−</mo><mn>70</mn><mi>d</mi><mi>B</mi><mi>V</mi></mrow><annotation encoding="application/x-tex">-70dBV</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.77777em;vertical-align:-0.08333em;"></span><span class="mord">−</span><span class="mord">7</span><span class="mord">0</span><span class="mord mathdefault">d</span><span class="mord mathdefault" style="margin-right:0.05017em;">B</span><span class="mord mathdefault" style="margin-right:0.22222em;">V</span></span></span></span>）。</p>
-<blockquote>
-<p>施工中</p>
-</blockquote>
-]]></content>
-      <categories>
-        <category>射频电路</category>
-      </categories>
-      <tags>
-        <tag>射频</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>ADF4350模块设计笔记</title>
-    <url>/2022/03/27/blog011-2022-03-27/</url>
-    <content><![CDATA[<p><img src="https://cnpp-image.oss-cn-beijing.aliyuncs.com/my-blog/blog011-2022-03-27/title.jpg" alt="title" /></p>
-<span id="more"></span>
-<p>换到<strong>KiCad6.0</strong>后画的第一块板子，为白菜价的ADF4350做一个小模块，主要还是作验证之用，方便之后开发体积更小、功能更专一的模组（比如专门输出2.2-4.4GHz的纯正弦波）。</p>
-<p>新Ki的改动不小，感觉整个操作逻辑在向鼠标偏移，而且少了我前最喜欢的<code>C</code>热键，还是有些不快的。不过弧形线和从选择的轮廓生成区域的功能非常方便，插件管理也更优秀了。</p>
-<h2 id="0资料汇总"><a class="markdownIt-Anchor" href="#0资料汇总"></a> 0.资料汇总</h2>
-<p>ADF4350与ADF4351相差不大，所以设计时参考了二者的相关资料。此外，ADF4350的数据手册似乎有些小错，于是又去查阅的ADF4351数据手册相同部分的内容。</p>
-<ul>
-<li>ADF4350锁相环数据手册：<a href="https://www.analog.com/media/en/technical-documentation/data-sheets/ADF4350.pdf">https://www.analog.com/media/en/technical-documentation/data-sheets/ADF4350.pdf</a></li>
-<li>EVAL-ADF4350EB2Z评估板手册：<a href="https://www.analog.com/media/en/technical-documentation/user-guides/UG-110.pdf">https://www.analog.com/media/en/technical-documentation/user-guides/UG-110.pdf</a></li>
-<li>ADF4351锁相环数据手册：<a href="https://www.analog.com/media/en/technical-documentation/data-sheets/ADF4351.pdf">https://www.analog.com/media/en/technical-documentation/data-sheets/ADF4351.pdf</a></li>
-<li>EVAL-ADF4350EB2Z评估板手册：<a href="https://www.analog.com/media/cn/technical-documentation/user-guides/UG-435.pdf">https://www.analog.com/media/cn/technical-documentation/user-guides/UG-435.pdf</a></li>
-<li>ADP3334低压差稳压器数据手册：<a href="https://www.analog.com/media/en/technical-documentation/data-sheets/ADP3334.pdf">https://www.analog.com/media/en/technical-documentation/data-sheets/ADP3334.pdf</a></li>
-<li>HMC284射频单刀双掷开关数据手册：<a href="https://www.analog.com/media/en/technical-documentation/data-sheets/hmc284a.pdf">https://www.analog.com/media/en/technical-documentation/data-sheets/hmc284a.pdf</a></li>
-</ul>
-<h2 id="1设计要点"><a class="markdownIt-Anchor" href="#1设计要点"></a> 1.设计要点</h2>
-<h3 id="11杂七杂八"><a class="markdownIt-Anchor" href="#11杂七杂八"></a> 1.1.杂七杂八</h3>
-<ul>
-<li>ADF4350的框图，没啥用，暂且放在这里。<br />
-<img src="https://cnpp-image.oss-cn-beijing.aliyuncs.com/my-blog/blog011-2022-03-27/1-1.png" alt="1-1" /></li>
-<li>极限参数中，供点耐受范围基本是-0.3V至+3.9V，看来不需要提供5V级别的供电。</li>
-<li>电流需求方面，数字与模拟部分合21mA，输出级6至24mA，VCO 70mA，低功耗模式下全片7至1000uA。VCO部分的电流需求还是较大的，在使用HMC860、HMC1060这种多路LDO的时候需要注意合理分配。</li>
-<li>参考时钟输入允许小于10MHz的信号，但要保证压摆率大于21V/us，在使用某些正弦输出的振荡器时要注意处理。</li>
-</ul>
-<h3 id="12输出级设计"><a class="markdownIt-Anchor" href="#12输出级设计"></a> 1.2.输出级设计</h3>
-<p>ADF4350的输出级类似集电极开路的长尾差分对，需要接入输出负载才可工作。根据使用场景，可分为有耗宽带输出匹配和窄带无耗输出匹配。同时，若有单端的输出需求，还可选择使用宽带巴伦或是窄带巴伦。</p>
-<p>这些选择决定了正常输出的频率范围以及输出功率，在将ADF4350作为本振等用途时，这些参数至关重要，需要仔细考量。下面这部分是对ADF4350手册中27页往后<code>OUTPUT MATCHING</code>部分给出的接法：</p>
-<p><img src="https://cnpp-image.oss-cn-beijing.aliyuncs.com/my-blog/blog011-2022-03-27/1-2.png" alt="1-2" /></p>
-<p>使用电阻匹配为宽带匹配；使用电感作为负载，为窄带匹配，但此时输出功率得以增强，可达到5dBm。电感匹配差分输出的元件参数选择如下：</p>
-<table>
-<thead>
-<tr>
-<th>Frequency Range (MHz)</th>
-<th>L (nH)</th>
-<th>C (nF)</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>137.5 to 500</td>
-<td>100</td>
-<td>1</td>
-</tr>
-<tr>
-<td>500 to 1000</td>
-<td>47</td>
-<td>1</td>
-</tr>
-<tr>
-<td>1000 to 2000</td>
-<td>7.5</td>
-<td>1</td>
-</tr>
-<tr>
-<td>2000 to 4400</td>
-<td>3.9</td>
-<td>1</td>
-</tr>
-</tbody>
-</table>
-<p>如果需要单端输出，可直接将差分输出的一个端口接匹配负载，使用另一个端口。这样相当于浪费了一个端口的功率。如果使用巴伦转换，则理想情况可以将两个端口的功率合路输出。ADF4350的手册中给出了一个使用无耗元件搭建窄带巴伦的示意，如上图的<code>Figure 39</code>。所需元件参数选择如下：</p>
-<table>
-<thead>
-<tr>
-<th>Frequency Range (MHz)</th>
-<th>Inductor L1 (nH)</th>
-<th>Capacitor C1 (pF)</th>
-<th>RF Choke Inductor (nH)</th>
-<th>DC Blocking Capacitor (pF)</th>
-<th>Measured Output Power (dBm)</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>137 to 300</td>
-<td>100</td>
-<td>10</td>
-<td>390</td>
-<td>1000</td>
-<td>9</td>
-</tr>
-<tr>
-<td>300 to 460</td>
-<td>51</td>
-<td>5.6</td>
-<td>180</td>
-<td>120</td>
-<td>10</td>
-</tr>
-<tr>
-<td>400 to 600</td>
-<td>30</td>
-<td>5.6</td>
-<td>120</td>
-<td>120</td>
-<td>10</td>
-</tr>
-<tr>
-<td>600 to 900</td>
-<td>18</td>
-<td>4</td>
-<td>68</td>
-<td>120</td>
-<td>10</td>
-</tr>
-<tr>
-<td>860 to 1240</td>
-<td>12</td>
-<td>2.2</td>
-<td>39</td>
-<td>10</td>
-<td>9</td>
-</tr>
-<tr>
-<td>1200 to 1600</td>
-<td>5.6</td>
-<td>1.2</td>
-<td>15</td>
-<td>10</td>
-<td>9</td>
-</tr>
-<tr>
-<td>1600 to 3600</td>
-<td>3.3</td>
-<td>0.7</td>
-<td>10</td>
-<td>10</td>
-<td>8</td>
-</tr>
-<tr>
-<td>2800 to 3800</td>
-<td>2.2</td>
-<td>0.5</td>
-<td>10</td>
-<td>10</td>
-<td>8</td>
-</tr>
-</tbody>
-</table>
-<p>从输出功率的数据看，巴伦起到了输出合路的功能，例如将两个无耗输出匹配时单端口输出的最大功率5dBm合路为10dBm。这种分立式巴伦应该是通过将两个输出端口的信号移相再合成实现的，工作带宽较窄。</p>
-<p>如果使用变压器巴伦，则带宽可以大大拓宽，例如著名的<code>TCM1-63AX+</code>：</p>
-<p><img src="https://cnpp-image.oss-cn-beijing.aliyuncs.com/my-blog/blog011-2022-03-27/1-3.png" alt="1-3" /></p>
-<p>作为测试的第一版，我决定依然采用无耗匹配，差分输出，之后在外部测试一下使用变压器巴伦的效果。此外，变压器巴伦有电流型、电压型之分，有直流接法和隔直接法之分，有待研究，先将部分资料记录在此：</p>
-<ul>
-<li>Current vs. Voltage Baluns: <a href="https://www.markimicrowave.com/blog/current-vs-voltage-baluns">https://www.markimicrowave.com/blog/current-vs-voltage-baluns</a></li>
-<li>Baluns: What They Do And How They Do lt: <a href="https://www.eznec.com/Amateur/Articles/Baluns.pdf">https://www.eznec.com/Amateur/Articles/Baluns.pdf</a></li>
-<li>RF Transformer TCM1-63AX+: <a href="https://www.minicircuits.com/pdfs/TCM1-63AX+.pdf">https://www.minicircuits.com/pdfs/TCM1-63AX+.pdf</a></li>
-<li>RF 1:1 Transmission Line ETC1-1-13: <a href="https://cdn.macom.com/datasheets/ETC1-1-13.pdf">https://cdn.macom.com/datasheets/ETC1-1-13.pdf</a></li>
-</ul>
-<p>对于备用输出端口B，不使用的时候可空置。最终输出级的设计如下图：</p>
-<p><img src="https://cnpp-image.oss-cn-beijing.aliyuncs.com/my-blog/blog011-2022-03-27/1-4.png" alt="1-4" /></p>
-<h3 id="13参考输入设计"><a class="markdownIt-Anchor" href="#13参考输入设计"></a> 1.3.参考输入设计</h3>
-<p>参考输入端基本照抄了评估板的设计。由于想加一个外部输入的选择，又不想用跳线（排针太高）和开关（太奇怪），毕竟有可能要把参考时钟给到100MHz，所以上了一片射频SPDT，然后为了方便控制，又上了个sot23封装的双非门处理逻辑，再上了个拨码开关控制非门输入，简直就是简直了。这么麻烦主要还是因为我想把通信接口往<code>PMOD</code>上靠，而<code>PMOD</code>定义给出的8根数据线实在不够呀。</p>
-<p>最终参考输入的设计如下图：</p>
-<p><img src="https://cnpp-image.oss-cn-beijing.aliyuncs.com/my-blog/blog011-2022-03-27/1-5.png" alt="1-5" /></p>
-<h2 id="2原理图及pcb设计"><a class="markdownIt-Anchor" href="#2原理图及pcb设计"></a> 2.原理图及PCB设计</h2>
-<p>基本上是照抄ADF4350的评估板，稳压器采用了ADP3334，虽说感觉LT1763更合适。这二者都号称对输出电容很宽容，但上次调LT1763给我振了个爽，不知道这次用ADP3334会不会翻车。其实最理想的选择也许是HMC860，专为RF电路设计，QFN封装也更小。但HMC860的输出电流实在是太小了，对于ADF4350的几组供电来说捉襟见肘，还是下一版再考虑吧。</p>
-<p>环路滤波器和射频输出部分的布局参考了ADF4351评估板。这ADF4350和ADF4351芯片差别不大，评估板的差别倒是挺大的，不知道是不是同一组开发的。</p>
-<p><img src="https://cnpp-image.oss-cn-beijing.aliyuncs.com/my-blog/blog011-2022-03-27/2-1.png" alt="2-1" /></p>
-<p>最后是完工的PCB设计样貌：</p>
-<p><img src="https://cnpp-image.oss-cn-beijing.aliyuncs.com/my-blog/blog011-2022-03-27/2-2.png" alt="2-2" /></p>
-<p><img src="https://cnpp-image.oss-cn-beijing.aliyuncs.com/my-blog/blog011-2022-03-27/2-3.png" alt="2-3" /></p>
-<h2 id="3上料焊接"><a class="markdownIt-Anchor" href="#3上料焊接"></a> 3.上料焊接</h2>
-<p>3月27日在嘉立创投板，4月1日拿到：</p>
-<p><img src="https://cnpp-image.oss-cn-beijing.aliyuncs.com/my-blog/blog011-2022-03-27/3-1.jpg" alt="3-1" /></p>
-<blockquote>
-<p>配BOM，未完待续</p>
-</blockquote>
-<h2 id="4驱动程序设计"><a class="markdownIt-Anchor" href="#4驱动程序设计"></a> 4.驱动程序设计</h2>
-<h2 id="5测试"><a class="markdownIt-Anchor" href="#5测试"></a> 5.测试</h2>
-]]></content>
-      <categories>
-        <category>射频电路</category>
-      </categories>
-      <tags>
-        <tag>射频</tag>
       </tags>
   </entry>
   <entry>
@@ -699,31 +498,46 @@ y \\
       </tags>
   </entry>
   <entry>
-    <title>【EE随笔-3】高线性度混频器ADL5350</title>
-    <url>/2022/02/10/blog010-2022-02-10/</url>
-    <content><![CDATA[<p><img src="https://cnpp-image.oss-cn-beijing.aliyuncs.com/my-blog/blog010-2022-02-10/title.png" alt="title" /></p>
+    <title>【EE随笔-4】Microchip公司几款接口简约的ADC和DAC</title>
+    <url>/2022/09/28/blog015-2022-09-28/</url>
+    <content><![CDATA[<p><img src="https://cnpp-image.oss-cn-beijing.aliyuncs.com/my-blog/blog015-2022-09-28/title.jpg" alt="title" /></p>
 <span id="more"></span>
 <h2 id="随笔"><a class="markdownIt-Anchor" href="#随笔"></a> 随笔</h2>
-<p>好基友LingMao这两天在为新项目选型，提到了ADI的一款高线性度混频器<code>ADL5350</code>：</p>
-<p><a href="https://www.analog.com/en/products/adl5350.html">https://www.analog.com/en/products/adl5350.html</a></p>
-<p><img src="https://cnpp-image.oss-cn-beijing.aliyuncs.com/my-blog/blog010-2022-02-10/1-1.png" alt="1-1" /></p>
-<p>并发现在ADI技术论坛上有这样一个回复，ADL5350的RF和IF在芯片内是连在一起的，这下在使用中，输出滤波器不仅需要对付混频后的镜像，还要对付下RF或者IF信号（因为ADL5350既可以用作上变频器，也可以用作下变频器）。在手册中，给出了ADL5350的原理说明，它是一种GaAs pHEMT （氮化镓赝调制掺杂异质结场效应晶体管）单端无源混频器，通过FET结沟道的导电性变化来调制RF信号：</p>
-<p><img src="https://cnpp-image.oss-cn-beijing.aliyuncs.com/my-blog/blog010-2022-02-10/1-2.png" alt="1-2" /></p>
-<p>芯片外围需要不少LC网络。RF信号经过带通网络，抑制镜像并减弱宽带噪声。RF与IF在芯片内一同连接到时变负载上，这样RF信号就会受LO信号调制，并在IF端由带通网络抑制RF信号并选出混频信号。RF和IF端口应该是对称设计，并且可以互换。</p>
-<p>此外ADL5350使用了FET作为混频核心，但属于无源混频器，这使我想起了之前在电赛训练器件，经常会有“不允许使用其他有源器件”的限制，当时就“二极管是不是有源器件”、“变压器是不是有源器件”展开过激烈的讨论（本质还是想钻空子整活）。混频器也有有源与无源之分，但我未作详细的了解。在看到ADL5350手册中“The ADL5350 is a GaAs pHEMT, single-ended, passive mixer with an integrated LO buffer amplifier.”中的Passive一词时，一时不知如何翻译。索性去查询了一下电学中Passive的含义：</p>
-<p><a href="https://www.electrical4u.com/active-and-passive-elements-of-electrical-circuit/">https://www.electrical4u.com/active-and-passive-elements-of-electrical-circuit/</a></p>
-<blockquote>
-<p>A passive component is an electronic component which can only receive energy, which it can either dissipate, absorb or store it in an electric field or a magnetic field. Passive elements do not need any form of electrical power to operate.</p>
-</blockquote>
-<p>如此想来，混频核心需要使用电源的吉尔伯特型混频器、收音机里常用的单晶体管混频器等属于有源混频器；二极管混频器属于无源混频器。ADL5350的混频核心是时变负载，在工作时吸收RF或IF信号，因此属于无源混频器；同样，开关混频器也属于无源混频器。</p>
-<p>其实我认为做有源与无源的区分不是重点，重点是了解各种混频器的性能和特点，比如混频增益与线性度等。</p>
-<p>此外，在讨论中有群友提到：平衡混频器有一种用法，可以从IF口输入DC电流，RF的信号就会直接从LO出去，调电流就能调衰减。感觉是个值得研究的点。正巧我与LingMao在讨论衰减器与检波器配合完成较精准的电平控制的问题，衰减器的选型很是麻烦，不知这种混频器作为衰减器的用法能不能提供另一种可能。</p>
+<p>我一直想制作一块如Arduino Nano 般大小的FPGA板卡，来测试一些小的HDL代码片段，以及DSP算法。因为只是作原理验证和学习探索只用，没必要把处理的频率定的很高，在音频稍高的范围即可（比如50kHz以内），同时也更希望能把精力花在算法本身而不是外围电路的设计以及通信接口的调试上。因此，我时常回去留意一些性能未必出众，但接口简洁的混合器件上。</p>
+<p>在校期间，我曾为EDA实验课程改进过一款配合FPGA开发板实用的DSP拓展版，也就是题图。在该板上就选用了Microchip公司的ADC和DAC，接口简单，效果也不错，于是就想到再把这两颗芯片找来看看：</p>
+<p><strong>MCP3201</strong>：<a href="https://www.microchip.com/en-us/product/MCP3201">https://www.microchip.com/en-us/product/MCP3201</a></p>
+<p><strong>MCP4901</strong>：<a href="https://www.microchip.com/en-us/product/MCP4921">https://www.microchip.com/en-us/product/MCP4921</a></p>
+<p>手册在上面的链接里，请大家打开来看。</p>
+<h3 id="mcp3201"><a class="markdownIt-Anchor" href="#mcp3201"></a> MCP3201</h3>
+<p><img src="https://cnpp-image.oss-cn-beijing.aliyuncs.com/my-blog/blog015-2022-09-28/mcp3201-1.png" alt="1-1" /></p>
+<p>MCP3201是一款12bit，SPI接口的ADC，采样率最高可达100ksps，可以说未必能达到不少单片机内置ADC的水平，可对于一块小FPGA来说，可是有和无的区别，做一些50kHz以内的信号处理实验，这个参数够用，而且SPI接口也是FPGA上最好写的通信接口之一。</p>
+<p><img src="https://cnpp-image.oss-cn-beijing.aliyuncs.com/my-blog/blog015-2022-09-28/mcp3201-2.png" alt="1-2" /></p>
+<p>对于很多更高分辨率的ADC，转换时间是很可观的，在主机与它们通信时，通常要等待它们发来转换完成的信号，才能进行数据的读取。这样一来，要想保证均匀的连续采样，要么提前算好转换等待时间并加以适当延长后，作为采样周期去操作，要么全由ADC来主导采样周期，都很繁琐。</p>
+<p>而MCP3201的分辨率不高，采样速度不快，通信接口的速度限定也比较慢，因此不需要等待转换完成的信号，直接在通信的前两个时钟周期它就转换完成了。每一次采样，只需要如上图读个16bit就直接完成，非常方便，就如同操作最简单的并口ADC一般。</p>
+<p>可见，MCP3201的通信接口是很好设计的，当成一个16bit的移位寄存器读就行了。手册中还给出了分8bit两次读的方法，方便一些单片机使用。</p>
+<h3 id="mcp4921"><a class="markdownIt-Anchor" href="#mcp4921"></a> MCP4921</h3>
+<p><img src="https://cnpp-image.oss-cn-beijing.aliyuncs.com/my-blog/blog015-2022-09-28/mcp4921-1.png" alt="2-1" /></p>
+<p>12bit DAC MCP4921，建立时间4.5us，也就是差不多能做到200ksps，同样拥有很简单的通信接口。</p>
+<p><img src="https://cnpp-image.oss-cn-beijing.aliyuncs.com/my-blog/blog015-2022-09-28/mcp4921-2.png" alt="2-1" /></p>
+<p>美中不足的是没有内置基准，不过VREF脚接有Buffer，使用并联型基准时可以省去外置；Buffer还可以被旁路，没错，这其实是个乘法型DAC，在旁路掉VREF的Buffer和输出的Buffer之后可以作为数字电位器使用。可以说是很灵活了。</p>
+<p><img src="https://cnpp-image.oss-cn-beijing.aliyuncs.com/my-blog/blog015-2022-09-28/mcp4921-3.png" alt="2-1" /></p>
+<p>通信协议，16个bit配置完全部，很简单。</p>
+<p><img src="https://cnpp-image.oss-cn-beijing.aliyuncs.com/my-blog/blog015-2022-09-28/mcp4921-4.png" alt="2-1" /></p>
+<p>这款DAC另一个比较有趣的点是手册中给出的应用电路部分。比如上图展示了用两颗DAC分别控制信号幅度和偏置，很适合制作信号源时使用。</p>
+<p><img src="https://cnpp-image.oss-cn-beijing.aliyuncs.com/my-blog/blog015-2022-09-28/mcp4921-5.png" alt="2-1" /></p>
+<p>这张电路很难得地给出了用两颗DAC组合增加输出分辨率的方法，并给出了比例电阻的计算公式。</p>
+<p><img src="https://cnpp-image.oss-cn-beijing.aliyuncs.com/my-blog/blog015-2022-09-28/mcp4921-6.png" alt="2-1" /></p>
+<p>这里是作为乘法型DAC的应用，控制反馈环路的增益。</p>
+<h2 id="完"><a class="markdownIt-Anchor" href="#完"></a> 完</h2>
+<p>这几款ADC、DAC的价格不贵，封装也很小巧，一个FPGA挂上好几颗同步运行，或是作为辅助器件给高速ADDA控制偏置和增益等，岂不美哉。</p>
 ]]></content>
       <categories>
         <category>EE-随笔</category>
       </categories>
       <tags>
-        <tag>射频</tag>
+        <tag>ADC</tag>
+        <tag>DAC</tag>
+        <tag>Microchip</tag>
       </tags>
   </entry>
   <entry>
@@ -879,49 +693,6 @@ y \\
       </tags>
   </entry>
   <entry>
-    <title>【EE随笔-4】Microchip公司几款接口简约的ADC和DAC</title>
-    <url>/2022/09/28/blog015-2022-09-28/</url>
-    <content><![CDATA[<p><img src="https://cnpp-image.oss-cn-beijing.aliyuncs.com/my-blog/blog015-2022-09-28/title.jpg" alt="title" /></p>
-<span id="more"></span>
-<h2 id="随笔"><a class="markdownIt-Anchor" href="#随笔"></a> 随笔</h2>
-<p>我一直想制作一块如Arduino Nano 般大小的FPGA板卡，来测试一些小的HDL代码片段，以及DSP算法。因为只是作原理验证和学习探索只用，没必要把处理的频率定的很高，在音频稍高的范围即可（比如50kHz以内），同时也更希望能把精力花在算法本身而不是外围电路的设计以及通信接口的调试上。因此，我时常回去留意一些性能未必出众，但接口简洁的混合器件上。</p>
-<p>在校期间，我曾为EDA实验课程改进过一款配合FPGA开发板实用的DSP拓展版，也就是题图。在该板上就选用了Microchip公司的ADC和DAC，接口简单，效果也不错，于是就想到再把这两颗芯片找来看看：</p>
-<p><strong>MCP3201</strong>：<a href="https://www.microchip.com/en-us/product/MCP3201">https://www.microchip.com/en-us/product/MCP3201</a></p>
-<p><strong>MCP4901</strong>：<a href="https://www.microchip.com/en-us/product/MCP4921">https://www.microchip.com/en-us/product/MCP4921</a></p>
-<p>手册在上面的链接里，请大家打开来看。</p>
-<h3 id="mcp3201"><a class="markdownIt-Anchor" href="#mcp3201"></a> MCP3201</h3>
-<p><img src="https://cnpp-image.oss-cn-beijing.aliyuncs.com/my-blog/blog015-2022-09-28/mcp3201-1.png" alt="1-1" /></p>
-<p>MCP3201是一款12bit，SPI接口的ADC，采样率最高可达100ksps，可以说未必能达到不少单片机内置ADC的水平，可对于一块小FPGA来说，可是有和无的区别，做一些50kHz以内的信号处理实验，这个参数够用，而且SPI接口也是FPGA上最好写的通信接口之一。</p>
-<p><img src="https://cnpp-image.oss-cn-beijing.aliyuncs.com/my-blog/blog015-2022-09-28/mcp3201-2.png" alt="1-2" /></p>
-<p>对于很多更高分辨率的ADC，转换时间是很可观的，在主机与它们通信时，通常要等待它们发来转换完成的信号，才能进行数据的读取。这样一来，要想保证均匀的连续采样，要么提前算好转换等待时间并加以适当延长后，作为采样周期去操作，要么全由ADC来主导采样周期，都很繁琐。</p>
-<p>而MCP3201的分辨率不高，采样速度不快，通信接口的速度限定也比较慢，因此不需要等待转换完成的信号，直接在通信的前两个时钟周期它就转换完成了。每一次采样，只需要如上图读个16bit就直接完成，非常方便，就如同操作最简单的并口ADC一般。</p>
-<p>可见，MCP3201的通信接口是很好设计的，当成一个16bit的移位寄存器读就行了。手册中还给出了分8bit两次读的方法，方便一些单片机使用。</p>
-<h3 id="mcp4921"><a class="markdownIt-Anchor" href="#mcp4921"></a> MCP4921</h3>
-<p><img src="https://cnpp-image.oss-cn-beijing.aliyuncs.com/my-blog/blog015-2022-09-28/mcp4921-1.png" alt="2-1" /></p>
-<p>12bit DAC MCP4921，建立时间4.5us，也就是差不多能做到200ksps，同样拥有很简单的通信接口。</p>
-<p><img src="https://cnpp-image.oss-cn-beijing.aliyuncs.com/my-blog/blog015-2022-09-28/mcp4921-2.png" alt="2-1" /></p>
-<p>美中不足的是没有内置基准，不过VREF脚接有Buffer，使用并联型基准时可以省去外置；Buffer还可以被旁路，没错，这其实是个乘法型DAC，在旁路掉VREF的Buffer和输出的Buffer之后可以作为数字电位器使用。可以说是很灵活了。</p>
-<p><img src="https://cnpp-image.oss-cn-beijing.aliyuncs.com/my-blog/blog015-2022-09-28/mcp4921-3.png" alt="2-1" /></p>
-<p>通信协议，16个bit配置完全部，很简单。</p>
-<p><img src="https://cnpp-image.oss-cn-beijing.aliyuncs.com/my-blog/blog015-2022-09-28/mcp4921-4.png" alt="2-1" /></p>
-<p>这款DAC另一个比较有趣的点是手册中给出的应用电路部分。比如上图展示了用两颗DAC分别控制信号幅度和偏置，很适合制作信号源时使用。</p>
-<p><img src="https://cnpp-image.oss-cn-beijing.aliyuncs.com/my-blog/blog015-2022-09-28/mcp4921-5.png" alt="2-1" /></p>
-<p>这张电路很难得地给出了用两颗DAC组合增加输出分辨率的方法，并给出了比例电阻的计算公式。</p>
-<p><img src="https://cnpp-image.oss-cn-beijing.aliyuncs.com/my-blog/blog015-2022-09-28/mcp4921-6.png" alt="2-1" /></p>
-<p>这里是作为乘法型DAC的应用，控制反馈环路的增益。</p>
-<h2 id="完"><a class="markdownIt-Anchor" href="#完"></a> 完</h2>
-<p>这几款ADC、DAC的价格不贵，封装也很小巧，一个FPGA挂上好几颗同步运行，或是作为辅助器件给高速ADDA控制偏置和增益等，岂不美哉。</p>
-]]></content>
-      <categories>
-        <category>EE-随笔</category>
-      </categories>
-      <tags>
-        <tag>ADC</tag>
-        <tag>DAC</tag>
-        <tag>Microchip</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>Hello World</title>
     <url>/2023/04/14/hello-world/</url>
     <content><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
@@ -986,6 +757,235 @@ y \\
       </categories>
       <tags>
         <tag>模拟</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>射频电路的自动增益控制</title>
+    <url>/2022/01/12/blog009-2022-01-12/</url>
+    <content><![CDATA[<p><img src="https://cnpp-image.oss-cn-beijing.aliyuncs.com/my-blog/blog009-2022-01-12/title.png" alt="title" /></p>
+<span id="more"></span>
+<h2 id="0引子"><a class="markdownIt-Anchor" href="#0引子"></a> 0.引子</h2>
+<h2 id="1自动增益控制电路"><a class="markdownIt-Anchor" href="#1自动增益控制电路"></a> 1.自动增益控制电路</h2>
+<h3 id="11一些有用的链接"><a class="markdownIt-Anchor" href="#11一些有用的链接"></a> 1.1.一些有用的链接</h3>
+<ul>
+<li><a href="https://www.analog.com/media/en/training-seminars/tutorials/42575412022953450461111812375Design_and_Operation_of_AGC_Loops.pdf">DESIGN AND OPERATION OF AUTOMATIC GAIN CONTROL LOOPS FOR RECEIVERS IN MODERN COMMUNICATIONS SYSTEMS</a></li>
+<li><a href="https://www.qsl.net/va3iul/Files/Automatic_Gain_Control.pdf">Automatic Gain Control (AGC) in Receivers</a></li>
+<li><a href="https://www.analog.com/cn/app-notes/an-1040.html">AN-1040: RF功率校准提高无线发射机的性能</a></li>
+<li><a href="https://www.analog.com/media/en/technical-documentation/application-notes/AN-1507.pdf">AN-1507: Stable, Closed-Loop, Automatic Power Control for RF Applications</a></li>
+<li><a href="https://www.analog.com/media/en/technical-documentation/application-notes/AN-1527.pdf">AN-1527: Creating a Constant Envelope Signal Using the ADL5331 RFVGA and AD8319 Log Detector</a></li>
+<li><a href="https://www.analog.com/cn/technical-articles/measurement-control-rf-power-partI.html">Measurement and Control of RF Power (Part I)</a></li>
+<li><a href="https://www.analog.com/cn/technical-articles/measurement-control-rf-power-partII.html">Measurement and Control of RF Power (Part I)</a></li>
+<li><a href="https://www.analog.com/cn/technical-articles/measurement-control-rf-power-partIII.html">Measurement and Control of RF Power (Part I)</a></li>
+<li><a href="https://www.analog.com/media/en/technical-documentation/data-sheets/AD8315.pdf">AD8315: 50 dB GSM PA Controller</a></li>
+<li><a href="https://www.analog.com/media/en/technical-documentation/data-sheets/AD8319.pdf">AD8319: 1 MHz to 10 GHz, 45 dB Log Detector/Controller</a></li>
+<li><a href="https://www.analog.com/media/en/technical-documentation/data-sheets/AD8307.pdf">AD8307: Low Cost, DC to 500 MHz, 92 dB Logarithmic Amplifier</a></li>
+<li><a href="https://www.analog.com/media/en/technical-documentation/data-sheets/hmc346ms8g.pdf">HMC346MS8G/346MS8GE: GaAs MMIC SMT VOLTAGE-VARIABLE ATTENUATOR, DC-8GHz</a></li>
+<li><a href="https://www.analog.com/media/en/technical-documentation/application-notes/designing_with_the_hmc346ms8g_voltage_variable_attenuator.pdf">Designing With The HMC346MS8G Voltage Variable Attenuator</a></li>
+</ul>
+<h3 id="12各种地方出现的agc"><a class="markdownIt-Anchor" href="#12各种地方出现的agc"></a> 1.2.各种地方出现的AGC</h3>
+<p><img src="https://cnpp-image.oss-cn-beijing.aliyuncs.com/my-blog/blog009-2022-01-12/1-2-1.png" alt="1-2-1" /></p>
+<p><img src="https://cnpp-image.oss-cn-beijing.aliyuncs.com/my-blog/blog009-2022-01-12/1-2-2.png" alt="1-2-2" /></p>
+<p><img src="https://cnpp-image.oss-cn-beijing.aliyuncs.com/my-blog/blog009-2022-01-12/1-2-3.png" alt="1-2-3" /></p>
+<h2 id="2控制环路动态分析"><a class="markdownIt-Anchor" href="#2控制环路动态分析"></a> 2.控制环路动态分析</h2>
+<p>此小节是对<code>AD8315</code>功放控制器（即对数放大器+误差放大器）数据手册中<code>CONTROL LOOP DYNAMICS</code>的翻译。</p>
+<p>要想理解AD8315是如何在一个完整的控制环路中工作的，需要引入流过积分电容的电流的方程，这个方程由输入电压<span class="katex"><span class="katex-mathml"><math><semantics><mrow><msub><mi>V</mi><mrow><mi>I</mi><mi>N</mi></mrow></msub></mrow><annotation encoding="application/x-tex">V_{IN}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.83333em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathdefault" style="margin-right:0.22222em;">V</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.32833099999999993em;"><span style="top:-2.5500000000000003em;margin-left:-0.22222em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathdefault mtight" style="margin-right:0.07847em;">I</span><span class="mord mathdefault mtight" style="margin-right:0.10903em;">N</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span>和设定电压<span class="katex"><span class="katex-mathml"><math><semantics><mrow><msub><mi>V</mi><mrow><mi>S</mi><mi>E</mi><mi>T</mi></mrow></msub></mrow><annotation encoding="application/x-tex">V_{SET}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.83333em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathdefault" style="margin-right:0.22222em;">V</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.32833099999999993em;"><span style="top:-2.5500000000000003em;margin-left:-0.22222em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathdefault mtight" style="margin-right:0.05764em;">S</span><span class="mord mathdefault mtight" style="margin-right:0.05764em;">E</span><span class="mord mathdefault mtight" style="margin-right:0.13889em;">T</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span>确立：</p>
+<p>首先，对数检波器累加得到的电流由输入决定：</p>
+<p class='katex-block'><span class="katex-display"><span class="katex"><span class="katex-mathml"><math><semantics><mrow><msub><mi>I</mi><mrow><mi>D</mi><mi>E</mi><mi>T</mi></mrow></msub><mo>=</mo><msub><mi>I</mi><mrow><mi>S</mi><mi>L</mi><mi>P</mi></mrow></msub><mi>l</mi><mi>o</mi><msub><mi>g</mi><mn>10</mn></msub><mo stretchy="false">(</mo><msub><mi>V</mi><mrow><mi>I</mi><mi>N</mi></mrow></msub><mi mathvariant="normal">/</mi><msub><mi>V</mi><mi>Z</mi></msub><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">I_{DET}=I_{SLP}log_{10}(V_{IN}/V_Z)
+</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.83333em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathdefault" style="margin-right:0.07847em;">I</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.32833099999999993em;"><span style="top:-2.5500000000000003em;margin-left:-0.07847em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathdefault mtight" style="margin-right:0.02778em;">D</span><span class="mord mathdefault mtight" style="margin-right:0.05764em;">E</span><span class="mord mathdefault mtight" style="margin-right:0.13889em;">T</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord"><span class="mord mathdefault" style="margin-right:0.07847em;">I</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.32833099999999993em;"><span style="top:-2.5500000000000003em;margin-left:-0.07847em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathdefault mtight" style="margin-right:0.05764em;">S</span><span class="mord mathdefault mtight">L</span><span class="mord mathdefault mtight" style="margin-right:0.13889em;">P</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mord mathdefault" style="margin-right:0.01968em;">l</span><span class="mord mathdefault">o</span><span class="mord"><span class="mord mathdefault" style="margin-right:0.03588em;">g</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.30110799999999993em;"><span style="top:-2.5500000000000003em;margin-left:-0.03588em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight">1</span><span class="mord mtight">0</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mopen">(</span><span class="mord"><span class="mord mathdefault" style="margin-right:0.22222em;">V</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.32833099999999993em;"><span style="top:-2.5500000000000003em;margin-left:-0.22222em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathdefault mtight" style="margin-right:0.07847em;">I</span><span class="mord mathdefault mtight" style="margin-right:0.10903em;">N</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mord">/</span><span class="mord"><span class="mord mathdefault" style="margin-right:0.22222em;">V</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.32833099999999993em;"><span style="top:-2.5500000000000003em;margin-left:-0.22222em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathdefault mtight" style="margin-right:0.07153em;">Z</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mclose">)</span></span></span></span></span></p>
+<p>其中：</p>
+<p><span class="katex"><span class="katex-mathml"><math><semantics><mrow><msub><mi>I</mi><mrow><mi>D</mi><mi>E</mi><mi>T</mi></mrow></msub></mrow><annotation encoding="application/x-tex">I_{DET}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.83333em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathdefault" style="margin-right:0.07847em;">I</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.32833099999999993em;"><span style="top:-2.5500000000000003em;margin-left:-0.07847em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathdefault mtight" style="margin-right:0.02778em;">D</span><span class="mord mathdefault mtight" style="margin-right:0.05764em;">E</span><span class="mord mathdefault mtight" style="margin-right:0.13889em;">T</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span>是经过部分滤波后得到的解调信号，之后通过积分可得到信号精确的随机值。</p>
+<p><span class="katex"><span class="katex-mathml"><math><semantics><mrow><msub><mi>I</mi><mrow><mi>S</mi><mi>L</mi><mi>P</mi></mrow></msub></mrow><annotation encoding="application/x-tex">I_{SLP}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.83333em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathdefault" style="margin-right:0.07847em;">I</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.32833099999999993em;"><span style="top:-2.5500000000000003em;margin-left:-0.07847em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathdefault mtight" style="margin-right:0.05764em;">S</span><span class="mord mathdefault mtight">L</span><span class="mord mathdefault mtight" style="margin-right:0.13889em;">P</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span>为电流斜率，每十倍<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mn>115</mn><mi>μ</mi><mi>A</mi></mrow><annotation encoding="application/x-tex">115\mu A</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8777699999999999em;vertical-align:-0.19444em;"></span><span class="mord">1</span><span class="mord">1</span><span class="mord">5</span><span class="mord mathdefault">μ</span><span class="mord mathdefault">A</span></span></span></span>（即<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mn>5.75</mn><mi>μ</mi><mi>A</mi><mi mathvariant="normal">/</mi><mi>d</mi><mi>B</mi></mrow><annotation encoding="application/x-tex">5.75\mu A/dB</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord">5</span><span class="mord">.</span><span class="mord">7</span><span class="mord">5</span><span class="mord mathdefault">μ</span><span class="mord mathdefault">A</span><span class="mord">/</span><span class="mord mathdefault">d</span><span class="mord mathdefault" style="margin-right:0.05017em;">B</span></span></span></span>）。</p>
+<p><span class="katex"><span class="katex-mathml"><math><semantics><mrow><msub><mi>V</mi><mrow><mi>I</mi><mi>N</mi></mrow></msub></mrow><annotation encoding="application/x-tex">V_{IN}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.83333em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathdefault" style="margin-right:0.22222em;">V</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.32833099999999993em;"><span style="top:-2.5500000000000003em;margin-left:-0.22222em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathdefault mtight" style="margin-right:0.07847em;">I</span><span class="mord mathdefault mtight" style="margin-right:0.10903em;">N</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span>为输入电压均方根值<span class="katex"><span class="katex-mathml"><math><semantics><mrow><msub><mi>V</mi><mrow><mi>r</mi><mi>m</mi><mi>s</mi></mrow></msub></mrow><annotation encoding="application/x-tex">V_{rms}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.83333em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathdefault" style="margin-right:0.22222em;">V</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.151392em;"><span style="top:-2.5500000000000003em;margin-left:-0.22222em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathdefault mtight" style="margin-right:0.02778em;">r</span><span class="mord mathdefault mtight">m</span><span class="mord mathdefault mtight">s</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span></p>
+<p><span class="katex"><span class="katex-mathml"><math><semantics><mrow><msub><mi>V</mi><mi>Z</mi></msub></mrow><annotation encoding="application/x-tex">V_Z</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.83333em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathdefault" style="margin-right:0.22222em;">V</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.32833099999999993em;"><span style="top:-2.5500000000000003em;margin-left:-0.22222em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathdefault mtight" style="margin-right:0.07153em;">Z</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span>为输入截断电压，其取决于输入波形，对于正弦波为<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mn>316</mn><mi>μ</mi><msub><mi>V</mi><mrow><mi>r</mi><mi>m</mi><mi>s</mi></mrow></msub></mrow><annotation encoding="application/x-tex">316\mu V_{rms}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8777699999999999em;vertical-align:-0.19444em;"></span><span class="mord">3</span><span class="mord">1</span><span class="mord">6</span><span class="mord mathdefault">μ</span><span class="mord"><span class="mord mathdefault" style="margin-right:0.22222em;">V</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.151392em;"><span style="top:-2.5500000000000003em;margin-left:-0.22222em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathdefault mtight" style="margin-right:0.02778em;">r</span><span class="mord mathdefault mtight">m</span><span class="mord mathdefault mtight">s</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span>（<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mo>−</mo><mn>70</mn><mi>d</mi><mi>B</mi><mi>V</mi></mrow><annotation encoding="application/x-tex">-70dBV</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.77777em;vertical-align:-0.08333em;"></span><span class="mord">−</span><span class="mord">7</span><span class="mord">0</span><span class="mord mathdefault">d</span><span class="mord mathdefault" style="margin-right:0.05017em;">B</span><span class="mord mathdefault" style="margin-right:0.22222em;">V</span></span></span></span>）。</p>
+<blockquote>
+<p>施工中</p>
+</blockquote>
+]]></content>
+      <categories>
+        <category>射频电路</category>
+      </categories>
+      <tags>
+        <tag>射频</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>ADF4350模块设计笔记</title>
+    <url>/2022/03/27/blog011-2022-03-27/</url>
+    <content><![CDATA[<p><img src="https://cnpp-image.oss-cn-beijing.aliyuncs.com/my-blog/blog011-2022-03-27/title.jpg" alt="title" /></p>
+<span id="more"></span>
+<p>换到<strong>KiCad6.0</strong>后画的第一块板子，为白菜价的ADF4350做一个小模块，主要还是作验证之用，方便之后开发体积更小、功能更专一的模组（比如专门输出2.2-4.4GHz的纯正弦波）。</p>
+<p>新Ki的改动不小，感觉整个操作逻辑在向鼠标偏移，而且少了我前最喜欢的<code>C</code>热键，还是有些不快的。不过弧形线和从选择的轮廓生成区域的功能非常方便，插件管理也更优秀了。</p>
+<h2 id="0资料汇总"><a class="markdownIt-Anchor" href="#0资料汇总"></a> 0.资料汇总</h2>
+<p>ADF4350与ADF4351相差不大，所以设计时参考了二者的相关资料。此外，ADF4350的数据手册似乎有些小错，于是又去查阅的ADF4351数据手册相同部分的内容。</p>
+<ul>
+<li>ADF4350锁相环数据手册：<a href="https://www.analog.com/media/en/technical-documentation/data-sheets/ADF4350.pdf">https://www.analog.com/media/en/technical-documentation/data-sheets/ADF4350.pdf</a></li>
+<li>EVAL-ADF4350EB2Z评估板手册：<a href="https://www.analog.com/media/en/technical-documentation/user-guides/UG-110.pdf">https://www.analog.com/media/en/technical-documentation/user-guides/UG-110.pdf</a></li>
+<li>ADF4351锁相环数据手册：<a href="https://www.analog.com/media/en/technical-documentation/data-sheets/ADF4351.pdf">https://www.analog.com/media/en/technical-documentation/data-sheets/ADF4351.pdf</a></li>
+<li>EVAL-ADF4350EB2Z评估板手册：<a href="https://www.analog.com/media/cn/technical-documentation/user-guides/UG-435.pdf">https://www.analog.com/media/cn/technical-documentation/user-guides/UG-435.pdf</a></li>
+<li>ADP3334低压差稳压器数据手册：<a href="https://www.analog.com/media/en/technical-documentation/data-sheets/ADP3334.pdf">https://www.analog.com/media/en/technical-documentation/data-sheets/ADP3334.pdf</a></li>
+<li>HMC284射频单刀双掷开关数据手册：<a href="https://www.analog.com/media/en/technical-documentation/data-sheets/hmc284a.pdf">https://www.analog.com/media/en/technical-documentation/data-sheets/hmc284a.pdf</a></li>
+</ul>
+<h2 id="1设计要点"><a class="markdownIt-Anchor" href="#1设计要点"></a> 1.设计要点</h2>
+<h3 id="11杂七杂八"><a class="markdownIt-Anchor" href="#11杂七杂八"></a> 1.1.杂七杂八</h3>
+<ul>
+<li>ADF4350的框图，没啥用，暂且放在这里。<br />
+<img src="https://cnpp-image.oss-cn-beijing.aliyuncs.com/my-blog/blog011-2022-03-27/1-1.png" alt="1-1" /></li>
+<li>极限参数中，供点耐受范围基本是-0.3V至+3.9V，看来不需要提供5V级别的供电。</li>
+<li>电流需求方面，数字与模拟部分合21mA，输出级6至24mA，VCO 70mA，低功耗模式下全片7至1000uA。VCO部分的电流需求还是较大的，在使用HMC860、HMC1060这种多路LDO的时候需要注意合理分配。</li>
+<li>参考时钟输入允许小于10MHz的信号，但要保证压摆率大于21V/us，在使用某些正弦输出的振荡器时要注意处理。</li>
+</ul>
+<h3 id="12输出级设计"><a class="markdownIt-Anchor" href="#12输出级设计"></a> 1.2.输出级设计</h3>
+<p>ADF4350的输出级类似集电极开路的长尾差分对，需要接入输出负载才可工作。根据使用场景，可分为有耗宽带输出匹配和窄带无耗输出匹配。同时，若有单端的输出需求，还可选择使用宽带巴伦或是窄带巴伦。</p>
+<p>这些选择决定了正常输出的频率范围以及输出功率，在将ADF4350作为本振等用途时，这些参数至关重要，需要仔细考量。下面这部分是对ADF4350手册中27页往后<code>OUTPUT MATCHING</code>部分给出的接法：</p>
+<p><img src="https://cnpp-image.oss-cn-beijing.aliyuncs.com/my-blog/blog011-2022-03-27/1-2.png" alt="1-2" /></p>
+<p>使用电阻匹配为宽带匹配；使用电感作为负载，为窄带匹配，但此时输出功率得以增强，可达到5dBm。电感匹配差分输出的元件参数选择如下：</p>
+<table>
+<thead>
+<tr>
+<th>Frequency Range (MHz)</th>
+<th>L (nH)</th>
+<th>C (nF)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>137.5 to 500</td>
+<td>100</td>
+<td>1</td>
+</tr>
+<tr>
+<td>500 to 1000</td>
+<td>47</td>
+<td>1</td>
+</tr>
+<tr>
+<td>1000 to 2000</td>
+<td>7.5</td>
+<td>1</td>
+</tr>
+<tr>
+<td>2000 to 4400</td>
+<td>3.9</td>
+<td>1</td>
+</tr>
+</tbody>
+</table>
+<p>如果需要单端输出，可直接将差分输出的一个端口接匹配负载，使用另一个端口。这样相当于浪费了一个端口的功率。如果使用巴伦转换，则理想情况可以将两个端口的功率合路输出。ADF4350的手册中给出了一个使用无耗元件搭建窄带巴伦的示意，如上图的<code>Figure 39</code>。所需元件参数选择如下：</p>
+<table>
+<thead>
+<tr>
+<th>Frequency Range (MHz)</th>
+<th>Inductor L1 (nH)</th>
+<th>Capacitor C1 (pF)</th>
+<th>RF Choke Inductor (nH)</th>
+<th>DC Blocking Capacitor (pF)</th>
+<th>Measured Output Power (dBm)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>137 to 300</td>
+<td>100</td>
+<td>10</td>
+<td>390</td>
+<td>1000</td>
+<td>9</td>
+</tr>
+<tr>
+<td>300 to 460</td>
+<td>51</td>
+<td>5.6</td>
+<td>180</td>
+<td>120</td>
+<td>10</td>
+</tr>
+<tr>
+<td>400 to 600</td>
+<td>30</td>
+<td>5.6</td>
+<td>120</td>
+<td>120</td>
+<td>10</td>
+</tr>
+<tr>
+<td>600 to 900</td>
+<td>18</td>
+<td>4</td>
+<td>68</td>
+<td>120</td>
+<td>10</td>
+</tr>
+<tr>
+<td>860 to 1240</td>
+<td>12</td>
+<td>2.2</td>
+<td>39</td>
+<td>10</td>
+<td>9</td>
+</tr>
+<tr>
+<td>1200 to 1600</td>
+<td>5.6</td>
+<td>1.2</td>
+<td>15</td>
+<td>10</td>
+<td>9</td>
+</tr>
+<tr>
+<td>1600 to 3600</td>
+<td>3.3</td>
+<td>0.7</td>
+<td>10</td>
+<td>10</td>
+<td>8</td>
+</tr>
+<tr>
+<td>2800 to 3800</td>
+<td>2.2</td>
+<td>0.5</td>
+<td>10</td>
+<td>10</td>
+<td>8</td>
+</tr>
+</tbody>
+</table>
+<p>从输出功率的数据看，巴伦起到了输出合路的功能，例如将两个无耗输出匹配时单端口输出的最大功率5dBm合路为10dBm。这种分立式巴伦应该是通过将两个输出端口的信号移相再合成实现的，工作带宽较窄。</p>
+<p>如果使用变压器巴伦，则带宽可以大大拓宽，例如著名的<code>TCM1-63AX+</code>：</p>
+<p><img src="https://cnpp-image.oss-cn-beijing.aliyuncs.com/my-blog/blog011-2022-03-27/1-3.png" alt="1-3" /></p>
+<p>作为测试的第一版，我决定依然采用无耗匹配，差分输出，之后在外部测试一下使用变压器巴伦的效果。此外，变压器巴伦有电流型、电压型之分，有直流接法和隔直接法之分，有待研究，先将部分资料记录在此：</p>
+<ul>
+<li>Current vs. Voltage Baluns: <a href="https://www.markimicrowave.com/blog/current-vs-voltage-baluns">https://www.markimicrowave.com/blog/current-vs-voltage-baluns</a></li>
+<li>Baluns: What They Do And How They Do lt: <a href="https://www.eznec.com/Amateur/Articles/Baluns.pdf">https://www.eznec.com/Amateur/Articles/Baluns.pdf</a></li>
+<li>RF Transformer TCM1-63AX+: <a href="https://www.minicircuits.com/pdfs/TCM1-63AX+.pdf">https://www.minicircuits.com/pdfs/TCM1-63AX+.pdf</a></li>
+<li>RF 1:1 Transmission Line ETC1-1-13: <a href="https://cdn.macom.com/datasheets/ETC1-1-13.pdf">https://cdn.macom.com/datasheets/ETC1-1-13.pdf</a></li>
+</ul>
+<p>对于备用输出端口B，不使用的时候可空置。最终输出级的设计如下图：</p>
+<p><img src="https://cnpp-image.oss-cn-beijing.aliyuncs.com/my-blog/blog011-2022-03-27/1-4.png" alt="1-4" /></p>
+<h3 id="13参考输入设计"><a class="markdownIt-Anchor" href="#13参考输入设计"></a> 1.3.参考输入设计</h3>
+<p>参考输入端基本照抄了评估板的设计。由于想加一个外部输入的选择，又不想用跳线（排针太高）和开关（太奇怪），毕竟有可能要把参考时钟给到100MHz，所以上了一片射频SPDT，然后为了方便控制，又上了个sot23封装的双非门处理逻辑，再上了个拨码开关控制非门输入，简直就是简直了。这么麻烦主要还是因为我想把通信接口往<code>PMOD</code>上靠，而<code>PMOD</code>定义给出的8根数据线实在不够呀。</p>
+<p>最终参考输入的设计如下图：</p>
+<p><img src="https://cnpp-image.oss-cn-beijing.aliyuncs.com/my-blog/blog011-2022-03-27/1-5.png" alt="1-5" /></p>
+<h2 id="2原理图及pcb设计"><a class="markdownIt-Anchor" href="#2原理图及pcb设计"></a> 2.原理图及PCB设计</h2>
+<p>基本上是照抄ADF4350的评估板，稳压器采用了ADP3334，虽说感觉LT1763更合适。这二者都号称对输出电容很宽容，但上次调LT1763给我振了个爽，不知道这次用ADP3334会不会翻车。其实最理想的选择也许是HMC860，专为RF电路设计，QFN封装也更小。但HMC860的输出电流实在是太小了，对于ADF4350的几组供电来说捉襟见肘，还是下一版再考虑吧。</p>
+<p>环路滤波器和射频输出部分的布局参考了ADF4351评估板。这ADF4350和ADF4351芯片差别不大，评估板的差别倒是挺大的，不知道是不是同一组开发的。</p>
+<p><img src="https://cnpp-image.oss-cn-beijing.aliyuncs.com/my-blog/blog011-2022-03-27/2-1.png" alt="2-1" /></p>
+<p>最后是完工的PCB设计样貌：</p>
+<p><img src="https://cnpp-image.oss-cn-beijing.aliyuncs.com/my-blog/blog011-2022-03-27/2-2.png" alt="2-2" /></p>
+<p><img src="https://cnpp-image.oss-cn-beijing.aliyuncs.com/my-blog/blog011-2022-03-27/2-3.png" alt="2-3" /></p>
+<h2 id="3上料焊接"><a class="markdownIt-Anchor" href="#3上料焊接"></a> 3.上料焊接</h2>
+<p>3月27日在嘉立创投板，4月1日拿到：</p>
+<p><img src="https://cnpp-image.oss-cn-beijing.aliyuncs.com/my-blog/blog011-2022-03-27/3-1.jpg" alt="3-1" /></p>
+<blockquote>
+<p>配BOM，未完待续</p>
+</blockquote>
+<h2 id="4驱动程序设计"><a class="markdownIt-Anchor" href="#4驱动程序设计"></a> 4.驱动程序设计</h2>
+<h2 id="5测试"><a class="markdownIt-Anchor" href="#5测试"></a> 5.测试</h2>
+]]></content>
+      <categories>
+        <category>射频电路</category>
+      </categories>
+      <tags>
+        <tag>射频</tag>
       </tags>
   </entry>
 </search>
