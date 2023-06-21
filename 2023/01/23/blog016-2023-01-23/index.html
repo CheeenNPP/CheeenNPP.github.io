@@ -1,0 +1,685 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 5.4.0">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+<link rel="stylesheet" href="/lib/font-awesome/css/font-awesome.min.css">
+
+<script id="hexo-configurations">
+    var NexT = window.NexT || {};
+    var CONFIG = {"hostname":"cheeennpp.github.io","root":"/","scheme":"Pisces","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
+  </script>
+
+  <meta property="og:type" content="article">
+<meta property="og:title" content="【模拟之旅-1】供电与虚拟地发生器">
+<meta property="og:url" content="https://cheeennpp.github.io/2023/01/23/blog016-2023-01-23/index.html">
+<meta property="og:site_name" content="橙的核电站">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://cnpp-image.oss-cn-beijing.aliyuncs.com/my-blog/blog016-2023-01-23/title.jpg">
+<meta property="og:image" content="https://cheeennpp.github.io/2023/01/23/blog016-2023-01-23/blog016-2023-01-23/0-1.jpg">
+<meta property="og:image" content="https://cnpp-image.oss-cn-beijing.aliyuncs.com/my-blog/blog016-2023-01-23/1-01.jpg">
+<meta property="og:image" content="https://cnpp-image.oss-cn-beijing.aliyuncs.com/my-blog/blog016-2023-01-23/1-02.jpg">
+<meta property="og:image" content="https://cnpp-image.oss-cn-beijing.aliyuncs.com/my-blog/blog016-2023-01-23/1-03.jpg">
+<meta property="og:image" content="https://cnpp-image.oss-cn-beijing.aliyuncs.com/my-blog/blog016-2023-01-23/1-04.jpg">
+<meta property="og:image" content="https://cnpp-image.oss-cn-beijing.aliyuncs.com/my-blog/blog016-2023-01-23/1-05.jpg">
+<meta property="og:image" content="https://cnpp-image.oss-cn-beijing.aliyuncs.com/my-blog/blog016-2023-01-23/1-06.jpg">
+<meta property="og:image" content="https://cnpp-image.oss-cn-beijing.aliyuncs.com/my-blog/blog016-2023-01-23/1-07.jpg">
+<meta property="og:image" content="https://cnpp-image.oss-cn-beijing.aliyuncs.com/my-blog/blog016-2023-01-23/1-08.jpg">
+<meta property="og:image" content="https://cnpp-image.oss-cn-beijing.aliyuncs.com/my-blog/blog016-2023-01-23/2-01.jpg">
+<meta property="og:image" content="https://cnpp-image.oss-cn-beijing.aliyuncs.com/my-blog/blog016-2023-01-23/2-01-01.jpg">
+<meta property="og:image" content="https://cnpp-image.oss-cn-beijing.aliyuncs.com/my-blog/blog016-2023-01-23/2-02.jpg">
+<meta property="og:image" content="https://cnpp-image.oss-cn-beijing.aliyuncs.com/my-blog/blog016-2023-01-23/2-03.jpg">
+<meta property="og:image" content="https://cnpp-image.oss-cn-beijing.aliyuncs.com/my-blog/blog016-2023-01-23/2-04.jpg">
+<meta property="og:image" content="https://cnpp-image.oss-cn-beijing.aliyuncs.com/my-blog/blog016-2023-01-23/2-05.jpg">
+<meta property="og:image" content="https://cnpp-image.oss-cn-beijing.aliyuncs.com/my-blog/blog016-2023-01-23/2-05-01.jpg">
+<meta property="og:image" content="https://cnpp-image.oss-cn-beijing.aliyuncs.com/my-blog/blog016-2023-01-23/2-05-02.jpg">
+<meta property="og:image" content="https://cnpp-image.oss-cn-beijing.aliyuncs.com/my-blog/blog016-2023-01-23/2-05-03.jpg">
+<meta property="og:image" content="https://cnpp-image.oss-cn-beijing.aliyuncs.com/my-blog/blog016-2023-01-23/2-05-04.jpg">
+<meta property="og:image" content="https://cnpp-image.oss-cn-beijing.aliyuncs.com/my-blog/blog016-2023-01-23/2-06.jpg">
+<meta property="og:image" content="https://cnpp-image.oss-cn-beijing.aliyuncs.com/my-blog/blog016-2023-01-23/2-07.jpg">
+<meta property="og:image" content="https://cnpp-image.oss-cn-beijing.aliyuncs.com/my-blog/blog016-2023-01-23/wave_r_1.jpg">
+<meta property="og:image" content="https://cnpp-image.oss-cn-beijing.aliyuncs.com/my-blog/blog016-2023-01-23/wave_r_2.jpg">
+<meta property="og:image" content="https://cnpp-image.oss-cn-beijing.aliyuncs.com/my-blog/blog016-2023-01-23/wave_r_3.jpg">
+<meta property="og:image" content="https://cnpp-image.oss-cn-beijing.aliyuncs.com/my-blog/blog016-2023-01-23/wave_r_4.jpg">
+<meta property="og:image" content="https://cnpp-image.oss-cn-beijing.aliyuncs.com/my-blog/blog016-2023-01-23/wave_r_5.jpg">
+<meta property="og:image" content="https://cnpp-image.oss-cn-beijing.aliyuncs.com/my-blog/blog016-2023-01-23/3-01.jpg">
+<meta property="og:image" content="https://cnpp-image.oss-cn-beijing.aliyuncs.com/my-blog/blog016-2023-01-23/3-02.jpg">
+<meta property="og:image" content="https://cnpp-image.oss-cn-beijing.aliyuncs.com/my-blog/blog016-2023-01-23/3-03.jpg">
+<meta property="og:image" content="https://cnpp-image.oss-cn-beijing.aliyuncs.com/my-blog/blog016-2023-01-23/4-01.jpg">
+<meta property="article:published_time" content="2023-01-23T11:43:16.000Z">
+<meta property="article:modified_time" content="2023-06-21T08:33:41.914Z">
+<meta property="article:author" content="CNPP">
+<meta property="article:tag" content="GND">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://cnpp-image.oss-cn-beijing.aliyuncs.com/my-blog/blog016-2023-01-23/title.jpg">
+
+<link rel="canonical" href="https://cheeennpp.github.io/2023/01/23/blog016-2023-01-23/">
+
+
+<script id="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome : false,
+    isPost : true,
+    lang   : 'zh-CN'
+  };
+</script>
+
+  <title>【模拟之旅-1】供电与虚拟地发生器 | 橙的核电站</title>
+  
+
+
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header { opacity: initial; }
+
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+<link rel="alternate" href="/atom.xml" title="橙的核电站" type="application/atom+xml">
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div class="container use-motion">
+    <div class="headband"></div>
+
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏">
+      <span class="toggle-line toggle-line-first"></span>
+      <span class="toggle-line toggle-line-middle"></span>
+      <span class="toggle-line toggle-line-last"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <h1 class="site-title">橙的核电站</h1>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+      <p class="site-subtitle" itemprop="description">我的铍振荡器去哪了</p>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+    </div>
+  </div>
+</div>
+
+
+
+
+<nav class="site-nav">
+  <ul id="menu" class="menu">
+        <li class="menu-item menu-item-home">
+
+    <a href="/" rel="section"><i class="fa fa-fw fa-home"></i>首页</a>
+
+  </li>
+        <li class="menu-item menu-item-categories">
+
+    <a href="/categories/" rel="section"><i class="fa fa-fw fa-th"></i>分类</a>
+
+  </li>
+        <li class="menu-item menu-item-tags">
+
+    <a href="/tags/" rel="section"><i class="fa fa-fw fa-tags"></i>标签</a>
+
+  </li>
+        <li class="menu-item menu-item-archives">
+
+    <a href="/archives/" rel="section"><i class="fa fa-fw fa-archive"></i>归档</a>
+
+  </li>
+        <li class="menu-item menu-item-about">
+
+    <a href="/about/" rel="section"><i class="fa fa-fw fa-user"></i>关于</a>
+
+  </li>
+  </ul>
+</nav>
+
+
+
+
+</div>
+    </header>
+
+    
+  <div class="back-to-top">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+
+
+    <main class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+
+          <div class="content post posts-expand">
+            
+
+    
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://cheeennpp.github.io/2023/01/23/blog016-2023-01-23/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="https://cnpp-image.oss-cn-beijing.aliyuncs.com/my-blog/image/header-cheeen-1.jpg">
+      <meta itemprop="name" content="CNPP">
+      <meta itemprop="description" content="BH9FQG">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="橙的核电站">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          【模拟之旅-1】供电与虚拟地发生器
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2023-01-23 19:43:16" itemprop="dateCreated datePublished" datetime="2023-01-23T19:43:16+08:00">2023-01-23</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2023-06-21 16:33:41" itemprop="dateModified" datetime="2023-06-21T16:33:41+08:00">2023-06-21</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E6%A8%A1%E6%8B%9F%E7%94%B5%E8%B7%AF/" itemprop="url" rel="index"><span itemprop="name">模拟电路</span></a>
+                </span>
+            </span>
+
+          
+            <span class="post-meta-item" title="阅读次数" id="busuanzi_container_page_pv" style="display: none;">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-eye"></i>
+              </span>
+              <span class="post-meta-item-text">阅读次数：</span>
+              <span id="busuanzi_value_page_pv"></span>
+            </span>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+        <p><img src="https://cnpp-image.oss-cn-beijing.aliyuncs.com/my-blog/blog016-2023-01-23/title.jpg" alt="title" /></p>
+<span id="more"></span>
+<h2 id="0前言"><a class="markdownIt-Anchor" href="#0前言"></a> 0.前言</h2>
+<p>最近半年呢，CNPP不知怎么回事，愈发迷上了模拟电路，还拾起了高中时做洞洞板电路的一套功夫，花个大半天就能做出一款，修修改改也很方便，可比打样爽快多了。</p>
+<p>在这个过程中，CNPP探索了不少模电中，曾经未涉足过的新领域，比如非线性电路、模拟计算电路、低功耗电路和分立器件电路等，颇有一种步入桃花源般豁然开朗的快意。于是便想开启一个新的专题，名为【模拟之旅】，来和大家一起分享这一路上的奇观趣闻。</p>
+<p>那么，我们旅程的起点是哪里呢，当然是CNPP的HomeLeb。没错，CNPP已经毕业啦，告别了实验室，告别了1G带宽的示波器，告别了8G的矢网，告别了26.5G的频谱仪，回到了只有口袋仪器可堪一用的小窝，可谓悲凉~~。没事，这些都可以克服！我们研究模电的，不需要高端大气的仪器，20M的带宽，就够我们用了！但这其中最大的困难，还是电源————家里没有双路输出的实验电源呀。</p>
+<p>CNPP身边呢，一直有这样一台电源：<strong>菊水PMC18-1A</strong>，它的输出电压范围与常见实验电源的30V、36V相去甚远，输出电流也可以用纤弱来形容，这也使得它在二手市场上几乎无人问津。但这样的参数，却几乎覆盖了CNPP三年来的电子DIY旅程，再加上10圈精密调节的电流档，超低的输出纹波和安静的性格，真的是爱不释手。</p>
+<p><img src="blog016-2023-01-23/0-1.jpg" alt="0-1" /></p>
+<p>可再怎么说，这也是一台单路输出的电源，而谈到模电，双电源几乎是扯不开的。CNPP想谈的解决方法就是今天的主题————<strong>虚拟地发生器</strong>，它能将单电源输入“转换”成双电源，从而可以使后面的电路可以全部使用标准的双电源设计方法。</p>
+<p>其实在高中时，CNPP一直靠着两节18650锂电池来玩特斯拉线圈、等离子扬声器这种功率电路；在电源还没运到的前些日子，还在靠9V叠层电池和虚拟地发生器来研究模拟电路，所以说工具并不是咕咕咕的理由，<strong>摸鱼才是！！</strong>，这两天CNPP也是下定决心<s>少摸点</s>，来为大家更新【模拟之旅】。</p>
+<h2 id="1模拟电路的电源"><a class="markdownIt-Anchor" href="#1模拟电路的电源"></a> 1.模拟电路的电源</h2>
+<p>不知道大家有没有想过，模拟电路的“模拟”是什么意思呢？实际上，模拟信号(<a target="_blank" rel="noopener" href="https://en.wikipedia.org/wiki/Analog_signal">Analog Signal</a>)指的是某种<strong>连续</strong>的，用来<strong>表示</strong>、<strong>模拟</strong>其他量的信号，比如说模拟音频信号，就是用连续的电压来表示声波幅度的连续变化。而“模拟电路”就是产生、处理模拟电信号的电路，其本质的目的是要解决电之外其他“量“的问题，对这些量进行记录、计算、生成、变换等。</p>
+<p>在谈及电源之前，请容我再从一些更遥远的地方说起。我对模拟电路的一种理解是，它是数学工具的具象，是使用电子元器件，以数学运算的基础方式来解决我们生活中遇到的问题（因此我们的模电课本中会介绍放大器、加法器、减法器等电路）。在通俗的数学课本中，第一个要探讨的问题一般是参与运算的数字的范围，也就是数域。相似的，在我们的模拟之旅中，首先见到的，便是模拟电路的电源问题。</p>
+<p>当结合了数学，模拟电路的电源是不是更容易理解了呢：有地，有正电源，有负电源，正如实数轴的原点、正半轴与负半轴一样。模拟电路正负电源的电压值可以任意设定，但在具体的实际应用中，是有限度的，<strong>就像是函数的定义域一样</strong>。</p>
+<p><img src="https://cnpp-image.oss-cn-beijing.aliyuncs.com/my-blog/blog016-2023-01-23/1-01.jpg" alt="1-01" /></p>
+<p>首要的是模拟电路的接地点，这是模拟电路对信号进行模拟计算的参考点；其次是正负电源供电，根据所处理信号电压值跨度的不同，可能需要正负双电源供电，也可能只需正或负单电源供电。</p>
+<h3 id="11双电源"><a class="markdownIt-Anchor" href="#11双电源"></a> 1.1.双电源</h3>
+<p>模拟电路最基础的配置就是双电源，以反向放大器为例，连接方法就如下图a中所示。一般来说，运算放大器的输出级是一个推挽结构，即由一个上晶体管负责将电流灌入负载，和一个下晶体管将电流从负载中吸出。如图b，如果将电源、接地点、运放输出级和负载电阻组成的回路单独提取出来看，可知负载电阻RL既可以获得正向的驱动电流，也可以获得反向的驱动电流；同时，负载电阻两端的电压也可以是正或者负。也就是说，双电源配置可以使运放输出正、负信号（也可输入正、负信号，分析从略）。</p>
+<p><img src="https://cnpp-image.oss-cn-beijing.aliyuncs.com/my-blog/blog016-2023-01-23/1-02.jpg" alt="1-02" /></p>
+<p>所以，在模拟电路的设计、仿真中，最通常的做法就是使用双电源，并且会用图c的方式来表示（其中的电池符号也可换成独立的电压源符号）。而当我们实际连接电路时，就会采用图d的方法：找一台双通道的实验电源，将两个通道按正-负-正-负串联，将中间的连接点视为参考地，两端分别作为正、负端口，然后接入电路（这里的实验电源也可替换为两颗电池、两个隔离的电源模块等）。</p>
+<p>双电源的概念十分简洁，通用性也更好，但硬件的连接是相对复杂的，成本也较高。倘若在一个模拟电路的应用中，输入信号全部为正信号，处理过程全部为正，输出信号也全部为正信号，那是否可以只用正半部分的电源呢？答案是肯定的，</p>
+<h3 id="12单电源"><a class="markdownIt-Anchor" href="#12单电源"></a> 1.2.单电源</h3>
+<p>同向比例放大器是常用的在正电压范围内使用的电路之一，如下图中a所示。同样，我们把它的电源、负载和输出级拿出来分析，可以发现，此时负载电阻上只能获得正向的电流，电阻两端的电压只能为正。</p>
+<p><img src="https://cnpp-image.oss-cn-beijing.aliyuncs.com/my-blog/blog016-2023-01-23/1-03.jpg" alt="1-03" /></p>
+<p>需要注意的是，如果负载不是纯阻性的，比如说是一个电容，那么其上是可能出现负的电流的。</p>
+<p>再举两个单电源的例子。如下图中a所示的低端电流检测电路，如果已知需要检测的电流只会流入检流电阻到地（即正向），且在检流电阻上产生的电压大于运放的输入下轨，那么就可以采用一个单电源供电的同向比例放大器对检流电阻两端的电压进行放大。</p>
+<p><img src="https://cnpp-image.oss-cn-beijing.aliyuncs.com/my-blog/blog016-2023-01-23/1-04.jpg" alt="1-04" /></p>
+<p>如果想对一个正信号进行低通滤波，可采用图b所示的单电源Sallen-Key滤波器，因为在这个电路中，运放处理信号的过程全在正电源范围内。而如果想要在这里使用MFB滤波器，由于其中的运放处于反向工作状态，需要进行一定的改装。</p>
+<h3 id="13虚拟双电源"><a class="markdownIt-Anchor" href="#13虚拟双电源"></a> 1.3.虚拟双电源</h3>
+<p>在了解了通用的双电源电路和特殊情况下的单电源电路后，让我们来考虑这样一个问题：如果要处理的信号既有正，又有负，但此时可供使用的电源只有正电源，此时应该如何设计相应的电路呢？我们还是通过几个例子来了解：</p>
+<p><strong>第一个例子：</strong></p>
+<p>如果需要<strong>对一个交流信号进行放大，但并不关心直流偏置</strong>，那么就可以使用单电源放大器和输入、输出的<strong>交流耦合</strong>来实现。如下图a，这是一个经典的NPN三极管共射极放大电路，其中C1和Rb1、Rb2构成了高通滤波器，可以对输入信号起到隔直的作用，这样输入信号的直流偏置就不会影响到三极管的直流工作点了；输出电容C2将被三极管放大的信号交流耦合至下一级，同样去除了共射放大器带来的直流偏置。</p>
+<p>再看中间起到放大作用的<strong>单电源</strong>电路：Rb1与Rb2将电源电压<strong>分压</strong>，为三极管提供了合适的<strong>正偏压</strong>。需要注意的是，我们并不希望三极管将这个正偏压放大太多，否则会超出电源轨，但同时又希望对交流分量有较大的放大作用，于是Re和Ce被接入了电路。Re起到了负反馈的作用，对于直流信号来说，它会大大降低放大器的增益；而对交流信号来说，Ce将Re交流短路，于是使得放大器对交流信号保持了较大的增益。</p>
+<p><img src="https://cnpp-image.oss-cn-beijing.aliyuncs.com/my-blog/blog016-2023-01-23/1-05.jpg" alt="1-05" /></p>
+<p>通过对这样一个经典的交流耦合共射极放大器的分析，我们可以得出单电源放大器的一些设计思路：<strong>使用交流耦合，提供偏置电压，降低直流增益，提高交流增益</strong>。顺着这个思路，我们再看上图的b，使用运放设计一个单电源交流耦合放大器：输入输出不在赘述；在运放的反馈中，电容C2的加入，使得放大器对与直流信号来说表现为跟随器，增益为1，对于交流信号来说，增益为（1 + Rf2/Rf1）。可以说，C2的引入是非常巧妙的，在接下来的电路中还有它的功劳。</p>
+<p><strong>第二个例子：</strong></p>
+<p>如果需要<strong>对输入信号进行操作，同时输出信号需要一定的偏置</strong>，同样可以采用<strong>加入正偏置</strong>的方法来使用正单电源放大器解决。比如为一个只能输入正电压的ADC设计一个前端电路，使其能采集交流信号，不考虑直流偏置，如下图a所示。我们采用了上个例子中提到的交流耦合单电源放大器，但此时的输出是需要带有直流偏置的，于是去除了运放输出的耦合电容。一般来说，将ADC输入端的直流偏置电压设为参考电压Vref的一半是最合适的，即需要采集的交流信号骑在0.5Vref上，于是将放大器输入的偏置分压电阻的电源由VCC改为Vref，并将阻值设为相同，这样在C2的帮助下，放大器的输出直流偏置可稳定在0.5Vref，而对输入交流信号的放大倍数依然为（1 + Rf2/Rf1）。</p>
+<p><img src="https://cnpp-image.oss-cn-beijing.aliyuncs.com/my-blog/blog016-2023-01-23/1-06.jpg" alt="1-06" /></p>
+<p>如果要为ADC设计一个有采集一定范围正、负信号，且包括直流的模拟前端，不作放大，也可以用加偏置的单电源放大器实现，如上图的b所示。不过此时的偏置不是用分压的方式加入的，而是用电阻加法器，以<strong>叠加定理</strong>的原理加入的。</p>
+<p>以上两个例子都是需要处理双极性的信号，但处理过程都是单极性的，于是可以通过加入正偏置的方法，使用单电源电路完成。还有一类应用的情况则是，处理信号的过程需要如反相这样的变换极性的操作，此时的处理就有所区别。如下图a所示的MFB型低通滤波器，如果只需要处理正信号，并想单电源使用，直接如此连接是错误的，因为其中的运放工作在反向放大的状态，输出信号是需要低于正输入端的，而此时运放的电源负和正输入端都接地，便无法正常工作。在没有负电源为运放提供更低的电源轨时，只能通过将正输入端的电压抬高来实现。</p>
+<p><img src="https://cnpp-image.oss-cn-beijing.aliyuncs.com/my-blog/blog016-2023-01-23/1-07.jpg" alt="1-07" /></p>
+<p>解决方法如上图b，使用电阻分压为正输入端提供一个位于运放供电电压之间的电压，此时这个单电源低通滤波器就可以正常处理正的信号了。</p>
+<p>通过以上的几个例子可以看出，在只有单电源的情况下，模拟电路的设计会变得复杂，各种<strong>单电源电路</strong>是根据使用的场景特殊设计的，通用性降低了，也不容易记忆。<strong>但我们也可以从这些单电源的电路中总结出一些规律，就是使用电阻分压的方法，为电路的一些关键点位提供一个位于正电源与地之间的一个稳定的直流电压，然后让信号和处理基于这个直流电压进行操作。如果结合电路分析中的参考零电位点是可以任意指定的这一观点，将这个位于正供电与地之间的稳定电压视为零电位，那么之后的电路是否就相当于是采用双电源供电的了呢？</strong></p>
+<p><strong>也就是说，我们是否可以从单电源中间创造出一个稳定的电压，视为一个虚拟的地，而这之后的电路全部按照双电源的通用电路来设计呢？</strong></p>
+<p>见下图a，我们已经知道这样连接的单电源反向放大器是无法正常工作的，但如果使用电阻从单电源中分压出一半的电源电压，如b，并以此电压作为参考点，设其为地，不但输入端口重新选择它作为地，输出端口也选择它作为地，这样中间的电路部分，便可完全采用双电源的电路进行设计。这便是<strong>虚拟双电源电路</strong>。（需要注意的是，这里的电源采用了“电池”这样一个可以<strong>悬浮供电</strong>的电源，以避免机壳这种“真实地”引发的问题，这点在后面也会提到）。</p>
+<p><img src="https://cnpp-image.oss-cn-beijing.aliyuncs.com/my-blog/blog016-2023-01-23/1-08.jpg" alt="1-08" /></p>
+<p>这样一个虚拟双电源听上去十分美好，因为我们可以采用统一的双电源模拟电路设计方法了。但这里的电阻分压是一个实用的虚拟地产生方案吗？不完全是。如果采用这种虚拟双电源的运放下一级要接入的是另一个放大器，由于放大器的输入阻抗一般较高，相当于运放接了一个阻抗较高的负载，输出电流很小，在这种情况下电阻分压式虚拟双电源是可以正常工作的。但如果运放需要驱动一个阻抗较低的负载，问题就来了，如上图c所示：</p>
+<p>我们还是采用抽象出电源、虚拟地发生器、运放输出级和负载的分析方法，假设此时运放正向负载电阻灌入电流，再次分离出相关的元件和环路，我们可以发现，当负载电阻RL上的电流上升时，虚拟地的下分压电阻R上的电流也上升，其两端的电压VR会下降（因为此时定义的VR的方向与电流方向是相反的），进而就会导致运放的正供电VCC下降。如果分压电阻R取的越大，负载电阻RL越小，VCC的下降就会越明显，从而使运放的电源轨降低，处理信号的范围受到限制。</p>
+<p>通过使用较小的分压电阻R可以改善这个问题，但带来的代价是运放的静态功耗增大，因为分压电阻是直接与电源并联的。因此我们需要思考，是否能有一个电路可以自动调节上下R的阻值，使其上的压降保持稳定，同时又能为负载提供足够的电流呢？</p>
+<h2 id="2虚拟地发生器"><a class="markdownIt-Anchor" href="#2虚拟地发生器"></a> 2.虚拟地发生器</h2>
+<p>由运放跟随器构成的虚拟地发生器可以解决上述的问题，如下图a所示。还是通过抽象分析可知，运放输出级的晶体管取代了分压电阻的作用，既可以输出足够的电流，也可以保证其两端压降的稳定，使得在虚拟地发生器之后的电路可以按照双电源的形式设计，并可以正常工作。</p>
+<p><img src="https://cnpp-image.oss-cn-beijing.aliyuncs.com/my-blog/blog016-2023-01-23/2-01.jpg" alt="2-01" /></p>
+<p>同时，也确实有基于此原理的虚拟地芯片销售，比如TI的“裂轨者”TLE2426：</p>
+<p><img src="https://cnpp-image.oss-cn-beijing.aliyuncs.com/my-blog/blog016-2023-01-23/2-01-01.jpg" alt="2-01-01" /></p>
+<p>虚拟地发生器更直观的作用如下图a所示，将0.5Vs视为虚拟地，则原Vs节点可视为正供电，原GND节点可视为负供电。但需要强调的是，<strong>虚拟地和原本的地有着本质上的不同，如果原本的地是由来自与整个系统机壳连接的非隔离电源，或是来自实验电源并且连接插座的接地点的，在连接示波器等仪器时需要特别注意，探头的地线应该夹在正真的地上，而不是虚拟地，否则就会将虚拟地对真实地短路</strong>。如下图b所示。</p>
+<p><img src="https://cnpp-image.oss-cn-beijing.aliyuncs.com/my-blog/blog016-2023-01-23/2-02.jpg" alt="2-02" /></p>
+<p>不过，这种专用芯片可能并不是那么好买，我们有必要了解如何自己设计虚拟地发生器。没错，这并不是一个跟随器那么简单。如下图a所示，如果我们仔细思考虚拟地发生器之后需要连接的电路，即按照双电源设计的电路，就会发现这里不仅会有等效的负载电阻R，还有大量的芯片去耦电容C。</p>
+<p><img src="https://cnpp-image.oss-cn-beijing.aliyuncs.com/my-blog/blog016-2023-01-23/2-03.jpg" alt="2-03" /></p>
+<p>当将这些负载抽象出来，如上图b，就可发现这颗作为虚拟地发生器的U1肩扛着多么重的负担：要驱动低阻抗、高容性的负载。“稳定性”这个词相信已经在各位的脑海中浮现了。没错，稳定地驱动高容性负载就是虚拟地发生器需要解决的最大问题。</p>
+<h3 id="21运算放大器的稳定性"><a class="markdownIt-Anchor" href="#21运算放大器的稳定性"></a> 2.1.运算放大器的稳定性</h3>
+<p>在分析运算放大器的稳定性时，需要将运放和反馈网络拆开看待，因为一旦因不稳定进入振荡状态，负反馈就不再存在了。下面的一系列图展示了对运损放大器的开环幅频特性和反馈网络的幅频特性进行分析的例子。</p>
+<p>首先，运算放大器的开环输出电阻不再能被忽略，这里用Ro表示。随着频率的增加，运放的开环增益Ao会下降，运放自身带来的开环相移也会增大。开环输出的信号经过反馈网络输入到负输入端。如果此时的信号相移等于或超过了180°，且没有被衰减，那么就会同时满足振荡的<strong>相位条件</strong>和<strong>幅度条件</strong>，预期的负反馈就成为了正反馈，运放也就进入了不稳定的振荡状态。</p>
+<p><img src="https://cnpp-image.oss-cn-beijing.aliyuncs.com/my-blog/blog016-2023-01-23/2-04.jpg" alt="2-04" /></p>
+<p>如上图a，对于跟随器，反馈网络只有一个跨接的开环输出电阻R哦，它不会带来相移和衰减；对于图b的同向比例放大器，反馈网络是一个电阻分压电路，会带来衰减但不会带来相移，这就使得这个电路达到不稳定的幅度条件更难，因此<strong>高增益的比例放大电路会比单位增益的跟随电路更加稳定</strong>。这也是为什么很多运放不能接成跟随器工作，而另一些可以接成跟随器工作的运放也会在手册上特别标注“单位增益稳定”这一优势。</p>
+<p>从上面的分析图c和d可以看出，运放输出连接的负载也是反馈网络的一部分，因此在运放驱动低阻抗、高容性的负载时，反馈网络带来的相移会相当大，此时运放就很容进入不稳定的状态。</p>
+<p>为了设计一个能够稳定工作的虚拟地发生器，我们首先要了解运放的开环幅频特性。以LT1013运放为例，在手册的图表部分，可以找到如下的开环幅频特性图。先看左图，随着频率的升高，运放的开环增益由100dB以上逐渐下降，在频率达到1MHz左右时，开环增益降到了0dB，再往下，运放就无法再放大信号了。</p>
+<p><img src="https://cnpp-image.oss-cn-beijing.aliyuncs.com/my-blog/blog016-2023-01-23/2-05.jpg" alt="2-05" /></p>
+<p>而右图则是运放在±20dB增益附近幅频特性曲线的放大图，可以看出，随着频率的升高，LT1013开环增益下降的同时，带来的相移也在增加，并且可能超过180°。在这个图中，我们可以从两个角度来考察稳定性，如记号笔所标注（以5V，0V的曲线为例）。</p>
+<p>其一如a处，当运放的增益下降到0dB时，查表知此时的频率约为600kHz，在600kHz频率处找相移，发现相移约为130°，此时尚未达到180°，也就是说，给反馈网络留下了50°的余量，这就是所谓的“相位裕度”。</p>
+<p>其二如b处，当运放的相移达到180°后，查表知此时的频率约为2.5MHz，在此频率下找增益，可知在-10dB以下，于是可知，如果LT1013接成跟随器，当工作频率升高时，就算达到了不稳定的相位条件（相移180°），也无法达成幅度条件（此时增益为-10dB以下，对信号是衰减的），因此LT1013用作跟随器的稳定的，也就是单位增益稳定。注意这里仅仅是空载稳定，并不代表带载后也能稳定。</p>
+<p>以上两个角度其实是等效的，只是第一种更便于求相位裕度，第二种更适合判断是否稳定。关于运放稳定性的更详细分析，可以查阅<a target="_blank" rel="noopener" href="https://www.analog.com/cn/landing-pages/002/Analog-Circuit-compilation-yang.html">《新概念模拟电路》</a>第三册的Section 74、75以及ADI的<a target="_blank" rel="noopener" href="https://www.analog.com/en/education/education-library/linear-circuit-design-handbook.html">Linear Circuit Design Handbook</a> Section 1-1 部分。</p>
+<p>在下面的LTSpice中，对LT1013开环以及加上高容性负载时的幅频特性进行了仿真，需要注意的是很多仿真模型并不能很好地表现运放的开环输出电阻，故在这里手动加入。可以看出在加入有高容性负载组成的反馈网络之后。整个环路在频率达到约135kHz处相移就达到了180°，而此时的环路增益仍然有3.7dB，在闭环后一定会引起振荡。</p>
+<p><img src="https://cnpp-image.oss-cn-beijing.aliyuncs.com/my-blog/blog016-2023-01-23/2-05-01.jpg" alt="2-05-01" /></p>
+<p>因此，直接使用LT1013这类普通运放接为跟随器，并不能用作虚拟地发生器，它们存在严重的稳定性隐患。而有一类运放则针对高容性的负载进行了特殊设计，使得它们甚至具有稳定驱动任意大小的容性负载的能力，如LT1364：</p>
+<p><img src="https://cnpp-image.oss-cn-beijing.aliyuncs.com/my-blog/blog016-2023-01-23/2-05-02.jpg" alt="2-05-02" /></p>
+<p>通过阅读手册可知，LT1364在后级电路中加入了自适应调整的结构，即下图中Rc与Cc组成的负反馈网络。当LT1364在驱动高容性负载时，这部分电路会主动降低放大器的增益，破坏振荡形成的幅度条件，从而使运放能够稳定驱动高容性负载。</p>
+<p><img src="https://cnpp-image.oss-cn-beijing.aliyuncs.com/my-blog/blog016-2023-01-23/2-05-03.jpg" alt="2-05-03" /></p>
+<p>类似的结构在可以驱动高容性负载的AD817中也有出现，如下图的CF处。</p>
+<p><img src="https://cnpp-image.oss-cn-beijing.aliyuncs.com/my-blog/blog016-2023-01-23/2-05-04.jpg" alt="2-05-04" /></p>
+<p>使用这类<strong>带有高容性负载驱动能力且单位增益稳定</strong>的运放，接成跟随器的形式做为虚拟地发生器是很合适的。不过它们也具有选型限制和静态功耗较高的缺点。</p>
+<h3 id="22普通运放用作虚拟地发生器"><a class="markdownIt-Anchor" href="#22普通运放用作虚拟地发生器"></a> 2.2.普通运放用作虚拟地发生器</h3>
+<p>使用一些低成本的普通运放或超低功耗运放，是否能制作合适的虚拟地发生器呢？前文中提到的补偿方案也许能帮到我们。在ADI的应用手册<a target="_blank" rel="noopener" href="https://www.analog.com/media/en/technical-documentation/application-notes/AN-257.pdf">AN-257</a>以及应用问答<a target="_blank" rel="noopener" href="https://www.analog.com/en/analog-dialogue/articles/ask-the-applications-engineer-25.html">ask-the-applications-engineer-25</a>中给出了普通运放驱动高容性负载的外部补偿方案，如下图左所示（ask-the-applications-engineer-25中的配图有误，运放的正负输入端画反了，下图是更正之后的）。</p>
+<p><img src="https://cnpp-image.oss-cn-beijing.aliyuncs.com/my-blog/blog016-2023-01-23/2-06.jpg" alt="2-06" /></p>
+<p>电路的原理大致为，使用Rx将运放与CL隔离，同时Rx与CF形成反馈网络中的高通路径，抵消CL带来的低通路径，最后由RF将大反馈环的反馈点接在负载处，保证幅值精度。具体的推导过程在AN-257中有详细的讲解，有机会我也会和大家介绍。</p>
+<p>这种补偿方案需要在已知运放开环输出电阻和负载情况之后才能确定元件的取值，具有相当大的局限性，但值得尝试。因为我们在设计完一个模拟系统板后，用了多少颗去耦电容是明确的（你还记得你用了多少颗去耦电容吗~）。将上图左的反向比例形式改为右的单位增益跟随器形式，各参数计算暂且沿用（实际上是可以重新计算出的，敬请期待，咕咕）。</p>
+<p>接下来就是实验的时刻了！我花了一下午在洞洞板上做好了测试电路（比画板子慢，但比等制版块呀，流水线操作当我没说）：</p>
+<p><img src="https://cnpp-image.oss-cn-beijing.aliyuncs.com/my-blog/blog016-2023-01-23/2-07.jpg" alt="2-07" /></p>
+<p>板子同时用上了双运放的两个单元，上半部分做成跟随器直接驱动和电阻隔离驱动二选一，下部分做成了补偿电路驱动，可以更换补偿电容CF。同时板子可以拔插设置不同的负载电阻和电容。</p>
+<p>给运放供电9V，并使用信号源输入5V-0V，50Hz的方波，对电路的阶跃响应进行测试，从而考察稳定性（也是在模拟从9V的单电源产生虚拟地的过程）。负载电阻设置为1kR，相当于需要运放输出数mA级别的电流；负载电容设为330nF，模拟大部分模拟电路板卡上的去耦电容。</p>
+<p>跟随器直接驱动高容性负载的结果如下图所示，不出所料，果然观察到了振荡现象。此方案的建立时间约为38us，振荡的幅度高达850mVpp，可以说完全不能接受。</p>
+<p><img src="https://cnpp-image.oss-cn-beijing.aliyuncs.com/my-blog/blog016-2023-01-23/wave_r_1.jpg" alt="wave_r_1" /></p>
+<p>接下来测试使用100R电阻隔离跟随器与负载的方案，可见此时输出稳定。这是因为隔离电阻降低了反馈网络的增益，破坏了振荡的幅度条件。但这种简单方案的缺点也十分明显：首先是建立时间增加到了73us，其次是输出有了稳态直流误差，约为420mV，而且这个误差会随着负载的变化而变化，造成的影响和上文1.3中提到的电阻分压方案的类似。</p>
+<p><img src="https://cnpp-image.oss-cn-beijing.aliyuncs.com/my-blog/blog016-2023-01-23/wave_r_2.jpg" alt="wave_r_2" /></p>
+<p>而当我们使用了补偿网络后，如下图，可见虽有振荡，但会快速衰减，而且最终输出的稳态直流电压是较为准确的。该方案的建立时间约为54us，稳定时间约为144us，上电时的电压过冲约为690mV。这些参数可以通过调整补偿网络参数来调节。可以说如果能接受过冲与稳定时间，补偿网络的方案很值得一用。</p>
+<p><img src="https://cnpp-image.oss-cn-beijing.aliyuncs.com/my-blog/blog016-2023-01-23/wave_r_3.jpg" alt="wave_r_3" /></p>
+<p>在以上测试中，我使用的信号源与示波器均来自ADALM2000。作为掌上虚拟仪器，它的性能是较差的，在示波器的时基调的较长时，采样率也会降低（本质是存储深度不足），这会带来一个严重的问题，如下与所示，虚拟地发生器的输出看上去一切正常：</p>
+<p><img src="https://cnpp-image.oss-cn-beijing.aliyuncs.com/my-blog/blog016-2023-01-23/wave_r_4.jpg" alt="wave_r_4" /></p>
+<p>但如果缩小时基观察，就会发现输出实际上是“毛茸茸”的，也就是振荡了。由于这个高频振荡的频率约为60kHz，所以在上一张图，示波器的采样率为10kHz时是无法展现的。因此我们在使用数字电源Debug时，一定要多切换时基大小进行观察，避免漏掉重要的细节。</p>
+<p><img src="https://cnpp-image.oss-cn-beijing.aliyuncs.com/my-blog/blog016-2023-01-23/wave_r_5.jpg" alt="wave_r_5" /></p>
+<h2 id="3虚拟地发生器的应用"><a class="markdownIt-Anchor" href="#3虚拟地发生器的应用"></a> 3.虚拟地发生器的应用</h2>
+<p>按照2.2的设计方法，我们便可以根据应用场景选择更合适的运放搭建虚拟地发生器。</p>
+<p>下图是CNPP设计的一个电池供电的低频高频增益放大器模块，使用了低功耗、低漂移的主放大器芯片，虚拟地发生器便也采用了低功耗运放LMV321（之后换成了功耗更低的SGM321）。由于是电池供电的系统，可以直接将虚拟地作为系统地，输入输出的参考地均接在这里，使用上不会有任何问题。</p>
+<p><img src="https://cnpp-image.oss-cn-beijing.aliyuncs.com/my-blog/blog016-2023-01-23/3-01.jpg" alt="3-01" /></p>
+<p>下面是另一个类似的设计——罗氏线圈的积分放大器测试板，左侧的运放作为虚拟地发生器。系统供电是一块9V电池，且用于前期测试，没有功耗需求，于是这里可以使用通用的单位增益稳定的运放，比如LM358。</p>
+<p><img src="https://cnpp-image.oss-cn-beijing.aliyuncs.com/my-blog/blog016-2023-01-23/3-02.jpg" alt="3-02" /></p>
+<p>对于实验电源供电的系统，也可使用虚拟地发生器。下图是CNPP制作的超低失真文氏桥振荡器，最左侧的LT1013的一个单元即作为了虚拟地发生器。不过在这种情况下，需要反复确认地线连接的正确与否。图中示波器探头的地线与实验电源的地线同接到了板卡的真GND上，也就是虚拟地产生之后的-Vs，然后在示波器上使用交流耦合就能正常进行测量的。</p>
+<p><img src="https://cnpp-image.oss-cn-beijing.aliyuncs.com/my-blog/blog016-2023-01-23/3-03.jpg" alt="3-03" /></p>
+<p>对于需要测量直流的情况，可以将实验电源设置为隔离（悬浮）输出，或是使用隔离电源模块，或是使用示波器的两个通道相减进行测量。</p>
+<h2 id="4总结"><a class="markdownIt-Anchor" href="#4总结"></a> 4.总结</h2>
+<p>之前提到，电源是我们整个旅程的起点，而今天给大家分享的虚拟地发生器电路更是陪伴了我大半年的时间，帮助我完成了许许多多模拟电路的新尝试（代价则是每做一块板子要多花半个小时来搭它），同时也成为了我深入了解运放的非理想特性以及系统稳定性的起点。</p>
+<p>而终于在某一天Floyd-Fish老师给我寄来了用LT3471制作的USB转正负电源模块<strong>EmoeCBB-PR001A</strong>，这可是正经产生双电源的模块，不用再受虚拟地的限制，我也终于可以和半小时的额外劳动以及交流耦合暂告一段落了：</p>
+<p><img src="https://cnpp-image.oss-cn-beijing.aliyuncs.com/my-blog/blog016-2023-01-23/4-01.jpg" alt="4-01" /></p>
+<p>但这并不代和表虚拟地发生器就此别过，在之后的便携设备以及和数字系统交互的地方，依然会有它展现的时刻。同时CNPP也会在筹划中的开关电源探索系列之中，为大家带来单电源转双电源以及隔离双电源等的设计，敬请见证。</p>
+<h2 id="5拓展及参考资料"><a class="markdownIt-Anchor" href="#5拓展及参考资料"></a> 5.拓展及参考资料</h2>
+<p>虚拟地相关文章：</p>
+<ul>
+<li>Virtual Ground Circuits：<a target="_blank" rel="noopener" href="https://tangentsoft.com/elec/vgrounds.html">https://tangentsoft.com/elec/vgrounds.html</a></li>
+</ul>
+<p>包含运放开环特性与稳定性的资料：</p>
+<ul>
+<li>《新概念模拟电路》：<a target="_blank" rel="noopener" href="https://www.analog.com/cn/landing-pages/002/Analog-Circuit-compilation-yang.html">https://www.analog.com/cn/landing-pages/002/Analog-Circuit-compilation-yang.html</a></li>
+<li>Linear Circuit Design Handbook：<a target="_blank" rel="noopener" href="https://www.analog.com/en/education/education-library/linear-circuit-design-handbook.html">https://www.analog.com/en/education/education-library/linear-circuit-design-handbook.html</a></li>
+</ul>
+<p>运放如何驱动高容性负载：</p>
+<ul>
+<li>ADI AN-257 Careful Design Times High Speed Op Amps：<a target="_blank" rel="noopener" href="https://www.analog.com/media/en/technical-documentation/application-notes/AN-257.pdf">https://www.analog.com/media/en/technical-documentation/application-notes/AN-257.pdf</a></li>
+<li>ADI Simulation Shows How Real Op Amps Can Drive Capacitive Loads：<a target="_blank" rel="noopener" href="https://www.analog.com/en/technical-articles/simulation-shows-how-real-op-amps-can-drive-capacitive-loads.html">https://www.analog.com/en/technical-articles/simulation-shows-how-real-op-amps-can-drive-capacitive-loads.html</a></li>
+<li>ADI Ask The Applications Engineer-25: Op Amps Driving Capacitive Loads：<a target="_blank" rel="noopener" href="https://www.analog.com/en/analog-dialogue/articles/ask-the-applications-engineer-25.html">https://www.analog.com/en/analog-dialogue/articles/ask-the-applications-engineer-25.html</a></li>
+<li>ADI Ask The Application Engineer—32: Practical Techniques to Avoid Instability Due to Capacitive Loading：<a target="_blank" rel="noopener" href="https://www.analog.com/en/analog-dialogue/articles/techniques-to-avoid-instability-capacitive-loading.html#:~:text=The%20ability%20of%20an%20op%20amp%20to%20drive,of%20output%20loads%2C%20input%20impedances%2C%20and%20stray%20capacitances.">https://www.analog.com/en/analog-dialogue/articles/techniques-to-avoid-instability-capacitive-loading.html#:~:text=The ability of an op amp to drive,of output loads%2C input impedances%2C and stray capacitances.</a></li>
+<li>MicroChip AN884 Driving Capacitive Loads With Op Amps：<a target="_blank" rel="noopener" href="https://ww1.microchip.com/downloads/en/appnotes/00884a.pdf">https://ww1.microchip.com/downloads/en/appnotes/00884a.pdf</a></li>
+<li>How to Drive Large Capacitive Loads with an Op-Amp Circuit：<a target="_blank" rel="noopener" href="https://www.allaboutcircuits.com/technical-articles/how-to-drive-large-capacitive-loads-op-amp-circuit/">https://www.allaboutcircuits.com/technical-articles/how-to-drive-large-capacitive-loads-op-amp-circuit/</a></li>
+</ul>
+<p>商品虚拟地发生器：</p>
+<ul>
+<li>TI TLE2426 The ‘Rail Splitter’ Precision Virtual Ground：<a target="_blank" rel="noopener" href="https://www.ti.com/product/TLE2426">https://www.ti.com/product/TLE2426</a></li>
+</ul>
+<p>具有高容性负载驱动能力的运放：</p>
+<ul>
+<li>ADI LT1364：<a target="_blank" rel="noopener" href="https://www.analog.com/media/en/technical-documentation/data-sheets/13645fa.pdf">https://www.analog.com/media/en/technical-documentation/data-sheets/13645fa.pdf</a></li>
+<li>ADI AD817：<a target="_blank" rel="noopener" href="https://www.analog.com/media/en/technical-documentation/data-sheets/AD817.pdf">https://www.analog.com/media/en/technical-documentation/data-sheets/AD817.pdf</a></li>
+</ul>
+
+    </div>
+
+    
+    
+    
+        
+
+<div>
+<ul class="post-copyright">
+  <li class="post-copyright-author">
+    <strong>本文作者： </strong>CNPP
+  </li>
+  <li class="post-copyright-link">
+    <strong>本文链接：</strong>
+    <a href="https://cheeennpp.github.io/2023/01/23/blog016-2023-01-23/" title="【模拟之旅-1】供电与虚拟地发生器">https://cheeennpp.github.io/2023/01/23/blog016-2023-01-23/</a>
+  </li>
+  <li class="post-copyright-license">
+    <strong>版权声明： </strong>本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" rel="noopener" target="_blank"><i class="fa fa-fw fa-creative-commons"></i>BY-NC-SA</a> 许可协议。转载请注明出处！
+  </li>
+</ul>
+</div>
+
+        
+
+  <div class="followme">
+    <p>欢迎关注我的其它发布渠道</p>
+
+    <div class="social-list">
+
+        <div class="social-item">
+          <a target="_blank" class="social-link" href="/atom.xml">
+            <span class="icon">
+              <i class="fa fa-rss"></i>
+            </span>
+
+            <span class="label">RSS</span>
+          </a>
+        </div>
+    </div>
+  </div>
+
+
+      <footer class="post-footer">
+          <div class="post-tags">
+              <a href="/tags/GND/" rel="tag"># GND</a>
+          </div>
+
+        
+
+
+        
+    <div class="post-nav">
+      <div class="post-nav-item">
+    <a href="/2022/09/28/blog015-2022-09-28/" rel="prev" title="【EE随笔-4】Microchip公司几款接口简约的ADC和DAC">
+      <i class="fa fa-chevron-left"></i> 【EE随笔-4】Microchip公司几款接口简约的ADC和DAC
+    </a></div>
+      <div class="post-nav-item">
+    <a href="/2023/04/14/hello-world/" rel="next" title="Hello World">
+      Hello World <i class="fa fa-chevron-right"></i>
+    </a></div>
+    </div>
+      </footer>
+    
+  </article>
+  
+  
+  
+
+
+
+          </div>
+          
+
+<script>
+  window.addEventListener('tabs:register', () => {
+    let { activeClass } = CONFIG.comments;
+    if (CONFIG.comments.storage) {
+      activeClass = localStorage.getItem('comments_active') || activeClass;
+    }
+    if (activeClass) {
+      let activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
+      if (activeTab) {
+        activeTab.click();
+      }
+    }
+  });
+  if (CONFIG.comments.storage) {
+    window.addEventListener('tabs:click', event => {
+      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
+      let commentClass = event.target.classList[1];
+      localStorage.setItem('comments_active', commentClass);
+    });
+  }
+</script>
+
+        </div>
+          
+  
+  <div class="toggle sidebar-toggle">
+    <span class="toggle-line toggle-line-first"></span>
+    <span class="toggle-line toggle-line-middle"></span>
+    <span class="toggle-line toggle-line-last"></span>
+  </div>
+
+  <aside class="sidebar">
+    <div class="sidebar-inner">
+
+      <ul class="sidebar-nav motion-element">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+      <!--noindex-->
+      <div class="post-toc-wrap sidebar-panel">
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#0%E5%89%8D%E8%A8%80"><span class="nav-text"> 0.前言</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#1%E6%A8%A1%E6%8B%9F%E7%94%B5%E8%B7%AF%E7%9A%84%E7%94%B5%E6%BA%90"><span class="nav-text"> 1.模拟电路的电源</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#11%E5%8F%8C%E7%94%B5%E6%BA%90"><span class="nav-text"> 1.1.双电源</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#12%E5%8D%95%E7%94%B5%E6%BA%90"><span class="nav-text"> 1.2.单电源</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#13%E8%99%9A%E6%8B%9F%E5%8F%8C%E7%94%B5%E6%BA%90"><span class="nav-text"> 1.3.虚拟双电源</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2%E8%99%9A%E6%8B%9F%E5%9C%B0%E5%8F%91%E7%94%9F%E5%99%A8"><span class="nav-text"> 2.虚拟地发生器</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#21%E8%BF%90%E7%AE%97%E6%94%BE%E5%A4%A7%E5%99%A8%E7%9A%84%E7%A8%B3%E5%AE%9A%E6%80%A7"><span class="nav-text"> 2.1.运算放大器的稳定性</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#22%E6%99%AE%E9%80%9A%E8%BF%90%E6%94%BE%E7%94%A8%E4%BD%9C%E8%99%9A%E6%8B%9F%E5%9C%B0%E5%8F%91%E7%94%9F%E5%99%A8"><span class="nav-text"> 2.2.普通运放用作虚拟地发生器</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3%E8%99%9A%E6%8B%9F%E5%9C%B0%E5%8F%91%E7%94%9F%E5%99%A8%E7%9A%84%E5%BA%94%E7%94%A8"><span class="nav-text"> 3.虚拟地发生器的应用</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#4%E6%80%BB%E7%BB%93"><span class="nav-text"> 4.总结</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#5%E6%8B%93%E5%B1%95%E5%8F%8A%E5%8F%82%E8%80%83%E8%B5%84%E6%96%99"><span class="nav-text"> 5.拓展及参考资料</span></a></li></ol></div>
+      </div>
+      <!--/noindex-->
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <img class="site-author-image" itemprop="image" alt="CNPP"
+      src="https://cnpp-image.oss-cn-beijing.aliyuncs.com/my-blog/image/header-cheeen-1.jpg">
+  <p class="site-author-name" itemprop="name">CNPP</p>
+  <div class="site-description" itemprop="description">BH9FQG</div>
+</div>
+<div class="site-state-wrap motion-element">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+          <a href="/archives/">
+        
+          <span class="site-state-item-count">17</span>
+          <span class="site-state-item-name">日志</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+            <a href="/categories/">
+          
+        <span class="site-state-item-count">7</span>
+        <span class="site-state-item-name">分类</span></a>
+      </div>
+      <div class="site-state-item site-state-tags">
+            <a href="/tags/">
+          
+        <span class="site-state-item-count">13</span>
+        <span class="site-state-item-name">标签</span></a>
+      </div>
+  </nav>
+</div>
+  <div class="links-of-author motion-element">
+      <span class="links-of-author-item">
+        <a href="https://github.com/CheeenNPP" title="GitHub → https:&#x2F;&#x2F;github.com&#x2F;CheeenNPP" rel="noopener" target="_blank"><i class="fa fa-fw fa-github"></i>GitHub</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="/cheeennp@outlook.com" title="E-Mail → cheeennp@outlook.com"><i class="fa fa-fw fa-envelope"></i>E-Mail</a>
+      </span>
+  </div>
+  <div class="cc-license motion-element" itemprop="license">
+    <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" class="cc-opacity" rel="noopener" target="_blank"><img src="/images/cc-by-nc-sa.svg" alt="Creative Commons"></a>
+  </div>
+
+
+  <div class="links-of-blogroll motion-element">
+    <div class="links-of-blogroll-title">
+      <i class="fa fa-fw fa-link"></i>
+      Links
+    </div>
+    <ul class="links-of-blogroll-list">
+        <li class="links-of-blogroll-item">
+          <a href="https://www.emoe.xyz/" title="https:&#x2F;&#x2F;www.emoe.xyz" rel="noopener" target="_blank">E萌工作室</a>
+        </li>
+    </ul>
+  </div>
+
+      </div>
+
+    </div>
+  </aside>
+  <div id="sidebar-dimmer"></div>
+
+
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        
+
+        
+
+<div class="copyright">
+  
+  &copy; 2021 – 
+  <span itemprop="copyrightYear">2023</span>
+  <span class="with-love">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">CNPP</span>
+</div>
+  <div class="powered-by">由 <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> & <a href="https://pisces.theme-next.org/" class="theme-link" rel="noopener" target="_blank">NexT.Pisces</a> 强力驱动
+  </div>
+
+        
+<div class="busuanzi-count">
+  <script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+    <span class="post-meta-item" id="busuanzi_container_site_uv" style="display: none;">
+      <span class="post-meta-item-icon">
+        <i class="fa fa-user"></i>
+      </span>
+      <span class="site-uv" title="总访客量">
+        <span id="busuanzi_value_site_uv"></span>
+      </span>
+    </span>
+    <span class="post-meta-divider">|</span>
+    <span class="post-meta-item" id="busuanzi_container_site_pv" style="display: none;">
+      <span class="post-meta-item-icon">
+        <i class="fa fa-eye"></i>
+      </span>
+      <span class="site-pv" title="总访问量">
+        <span id="busuanzi_value_site_pv"></span>
+      </span>
+    </span>
+</div>
+
+
+
+
+
+
+
+
+      </div>
+    </footer>
+  </div>
+
+  
+  <script src="/lib/anime.min.js"></script>
+  <script src="/lib/velocity/velocity.min.js"></script>
+  <script src="/lib/velocity/velocity.ui.min.js"></script>
+
+<script src="/js/utils.js"></script>
+
+<script src="/js/motion.js"></script>
+
+
+<script src="/js/schemes/pisces.js"></script>
+
+
+<script src="/js/next-boot.js"></script>
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+      
+<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/katex@0/dist/katex.min.css">
+
+
+  
+
+</body>
+</html>

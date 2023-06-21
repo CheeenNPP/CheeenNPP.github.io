@@ -6,7 +6,7 @@
   <link href="https://cheeennpp.github.io/atom.xml" rel="self"/>
   
   <link href="https://cheeennpp.github.io/"/>
-  <updated>2022-10-06T15:24:43.032Z</updated>
+  <updated>2021-09-13T02:55:17.753Z</updated>
   <id>https://cheeennpp.github.io/</id>
   
   <author>
@@ -15,6 +15,46 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Hello World</title>
+    <link href="https://cheeennpp.github.io/2023/04/14/hello-world/"/>
+    <id>https://cheeennpp.github.io/2023/04/14/hello-world/</id>
+    <published>2023-04-14T10:30:37.181Z</published>
+    <updated>2021-09-13T02:55:17.753Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&quot;https://hexo.io/docs/&quot;&gt;documentation&lt;/a&gt;</summary>
+        
+      
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>【模拟之旅-1】供电与虚拟地发生器</title>
+    <link href="https://cheeennpp.github.io/2023/01/23/blog016-2023-01-23/"/>
+    <id>https://cheeennpp.github.io/2023/01/23/blog016-2023-01-23/</id>
+    <published>2023-01-23T11:43:16.000Z</published>
+    <updated>2023-06-21T08:33:41.914Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;&lt;img src=&quot;https://cnpp-image.oss-cn-beijing.aliyuncs.com/my-blog/blog016-2023-01-23/title.jpg&quot; alt=&quot;title&quot; /&gt;&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="模拟电路" scheme="https://cheeennpp.github.io/categories/%E6%A8%A1%E6%8B%9F%E7%94%B5%E8%B7%AF/"/>
+    
+    
+    <category term="GND" scheme="https://cheeennpp.github.io/tags/GND/"/>
+    
+  </entry>
   
   <entry>
     <title>【EE随笔-4】Microchip公司几款接口简约的ADC和DAC</title>
@@ -322,27 +362,6 @@
     
     
     <category term="生活" scheme="https://cheeennpp.github.io/tags/%E7%94%9F%E6%B4%BB/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Hello World</title>
-    <link href="https://cheeennpp.github.io/2021/08/14/hello-world/"/>
-    <id>https://cheeennpp.github.io/2021/08/14/hello-world/</id>
-    <published>2021-08-13T17:21:06.488Z</published>
-    <updated>2021-09-13T02:55:17.753Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&quot;https://hexo.io/docs/&quot;&gt;documentation&lt;/a&gt;</summary>
-        
-      
-    
-    
-    
     
   </entry>
   
